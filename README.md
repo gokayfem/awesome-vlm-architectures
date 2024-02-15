@@ -1,6 +1,6 @@
 # Awesome-VLM-Architectures
 <details>
-  <summary><h3>LLaVA 1.5</h3></summary>
+  <summary><h3>LLaVA</h3></summary>
   
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/d1cc76f0-cade-4985-bc24-9ee356324113)  
   
