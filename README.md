@@ -1,1 +1,1 @@
-# Awseome-VLM-Architectures
+# Awesome-VLM-Architectures
