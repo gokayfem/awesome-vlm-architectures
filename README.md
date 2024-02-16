@@ -858,6 +858,8 @@
 </details>
 
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c9358aad-63e2-44d3-b3af-38e9d4f6aeaa)
   <summary>Qwen-VL</summary>
     <table>
     <thead>
