@@ -16,14 +16,14 @@
     </thead>
     <tbody>
     <tr>
-    <td><a href="https://llava-vl.github.io">LLaVA: Large Language and Vision Assistant</a></td>
-    <td>LLaVA combines a pre-trained CLIP visual encoder with Vicuna LLM, applying a simple linear layer to transform image features into language embedding tokens. This lightweight scheme enables quick iteration on data-centric experiments.</td>
-    <td>Pre-trained CLIP visual encoder for visual features, Vicuna as the LLM for language understanding, and a trainable projection matrix for converting visual features to language embedding tokens.</td>
-    <td>LLaVA uses multi-turn conversation data for instruction-tuning, applying the original auto-regressive training objective of the LLM. It involves a two-stage instruction-tuning procedure: pre-training for feature alignment using filtered CC3M to 595K image-text pairs, and fine-tuning end-to-end while keeping visual encoder weights frozen. Training includes multimodal chatbot and Science QA scenarios.</td>
-    <td>Uses a simple linear layer for aligning image features with the language model&#39;s word embedding space, allowing the model to interpret visual tokens.</td>
-    <td>The fusion of visual and text embeddings is achieved through a trainable projection matrix, facilitating the conversion of visual features into language embedding tokens.</td>
+    <td><a href="https://arxiv.org/abs/2304.08485">LLaVA: Large Language and Vision Assistant</a></td>
+    <td>LLaVA combines a pre-trained language model (LLM) with a visual model to leverage the capabilities of both for multimodal understanding. It integrates a vision encoder with a language decoder for processing and understanding language-image instruction data.</td>
+    <td>Key components include the CLIP visual encoder for image feature extraction and the Vicuna language model for processing language instructions. A simple linear layer connects image features to the word embedding space, aligning visual and language representations.</td>
+    <td>LLaVA is trained using a two-stage instruction-tuning procedure. The first stage involves pre-training for feature alignment, utilizing a filtered dataset to align image features with LLM word embeddings. The second stage involves fine-tuning both the projection layer and LLM end-to-end on specific tasks like a multimodal chatbot and Science QA, focusing on enhancing the model&#39;s instruction-following capabilities.</td>
+    <td>The model employs instruction-tuning to align text-image data, generating multimodal instruction-following data using GPT-4. This involves converting image-text pairs into formats suitable for instruction-following tasks.</td>
+    <td>A trainable projection matrix is used to convert visual features into language embedding tokens, aligning image and language representations within the same dimensional space. This facilitates encoding vision and text together effectively.</td>
     <td>Filtered CC3M, LLaVA-Instruct-158K, ScienceQA</td>
-    <td>CC3M for pre-training feature alignment, LLaVA-Instruct-158K for fine-tuning on multimodal instruction-following data, and ScienceQA for evaluating on a large-scale multimodal science question dataset.</td>
+    <td>Filtered CC3M is used for pre-training to align visual and language features. LLaVA-Instruct-158K, a dataset generated using GPT-4, is used for fine-tuning on multimodal tasks. ScienceQA is utilized to evaluate the model&#39;s performance on multimodal reasoning tasks.</td>
     </tr>
     </tbody>
     </table>
@@ -45,14 +45,14 @@
     </thead>
     <tbody>
     <tr>
-    <td><a href="https://llava-vl.github.io">Improved Baselines with Visual Instruction Tuning</a></td>
-    <td>LLaVA-1.5 enhances the original LLaVA by integrating a two-layer MLP for the vision-language connector, scaling up the visual encoder to CLIP-ViT-L-336px, and incorporating academic-task-oriented VQA datasets.</td>
-    <td>Two-layer MLP for vision-language connection, CLIP-ViT-L-336px as the vision encoder, and Vicuna LLM for language understanding.</td>
-    <td>The training involves using a varied set of datasets, including VQA, OCR, and region-level perception datasets, to enhance model capabilities. Training also involves scaling up input image resolution and LLM size, with significant improvements observed upon increasing the LLM to 13B parameters.</td>
-    <td>Utilizes an MLP-based vision-language connector for improved multimodal capabilities, enabling stronger and more effective alignment between visual and language domains.</td>
-    <td>Incorporates academic-task-oriented data for better alignment and understanding, using response formatting prompts to regularize output formats for short and long-form answers.</td>
-    <td>VQA, OCR, region-level VQA, visual conversation, language conversation datasets.</td>
-    <td>Enhance model capabilities in various academic tasks and visual perceptions, improve multimodal understanding and instruction-following capabilities.</td>
+    <td><a href="https://arxiv.org/abs/2310.03744">Improved Baselines with Visual Instruction Tuning</a></td>
+    <td>This paper introduces enhancements to LLaVA&#39;s architecture, employing a CLIP-ViT-L-336px vision encoder and an MLP projection layer, which significantly improves its data efficiency and performance across a range of benchmarks.</td>
+    <td>The enhanced architecture includes the CLIP-ViT-L-336px for visual encoding and a multi-layer perceptron (MLP) for the vision-language cross-modal connector, enhancing the model&#39;s multimodal understanding.</td>
+    <td>LLaVA-1.5 achieves state-of-the-art performance on 11 benchmarks with simple modifications, using a two-stage training approach focusing on efficient feature alignment and fine-tuning with academic-task-oriented VQA data.</td>
+    <td>The paper focuses on improving multimodal alignment through instruction tuning, employing a more powerful MLP vision-language connector over the original linear projection, facilitating better integration of visual and linguistic data.</td>
+    <td>Uses an MLP-based vision-language connector for more effective fusion of visual and textual representations, aligning them closely in the embedding space.</td>
+    <td>VQA-v2, GQA, academic-task-oriented VQA datasets, incorporating OCR and region-level perception data.</td>
+    <td>These datasets are used to significantly enhance the model&#39;s visual understanding and reasoning capabilities, demonstrating state-of-the-art performance with academic-task-oriented data.</td>
     </tr>
     </tbody>
     </table>
