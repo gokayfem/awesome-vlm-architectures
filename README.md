@@ -735,6 +735,8 @@
     </table>  
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/1ede1c4f-bdeb-48e0-ae8e-ccfbee1dea51)
   <summary>LLaVA-Plus</summary>
     <table>
     <thead>
