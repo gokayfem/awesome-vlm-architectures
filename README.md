@@ -920,6 +920,8 @@
   </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/6bf6529f-b914-44fd-96cf-d0c5d9eb054f)
   <summary>LLaVA-Med</summary>
     <table>
     <thead>
@@ -936,7 +938,7 @@
     </thead>
     <tbody>
     <tr>
-    <td><a href="https://huggingface.co/microsoft/llava-med-7b-delta">LLaVA-Med: Large Language and Vision Assistant for BioMedicine</a></td>
+    <td><a href="https://arxiv.org/abs/2306.00890">LLaVA-Med: Large Language and Vision Assistant for BioMedicine</a></td>
     <td>LLaVA-Med is a large language and vision model for the biomedical domain, derived from the general-domain LLaVA. It uses curriculum learning for continuous training, beginning with biomedical concept alignment before progressing to full-blown instruction tuning.</td>
     <td>The model integrates language and vision capabilities, starting with a foundation in LLaVA and enhancing it with specialized biomedical training.</td>
     <td>Initiated with LLaVA&#39;s general-domain foundation, LLaVA-Med undergoes curriculum learning, emphasizing biomedical concept alignment followed by instruction tuning. This approach is designed for open-ended biomedical question answering, leveraging datasets like PathVQA and VQA-RAD.</td>
@@ -949,6 +951,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3a1bf3fa-d0c5-4692-b9a8-97bea41ce226)
   <summary>SPHINX</summary>
     <table>
     <thead>
