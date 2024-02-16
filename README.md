@@ -260,3 +260,33 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2308.12966">Qwen-VL: A Versatile Vision-Language Model for Understanding Localization Text Reading and Beyond</a></td>
+    <td>Qwen-VL utilizes a large language model as its base, incorporating a Vision Transformer (ViT) as the visual encoder and a position-aware vision-language adapter. The model is designed for efficient handling of image features and alignment with language processing, featuring a compressed image feature sequence for integration into the language model.</td>
+    <td>The key components include a foundational large language model, a Vision Transformer (ViT) for visual encoding, and a vision-language adapter with cross-attention mechanisms for efficient image feature compression and integration.</td>
+    <td>The training process is divided into three stages: an initial pre-training on weakly labeled image-text pairs, multi-task pre-training with high-quality annotation data and larger input resolution, and supervised fine-tuning aimed at enhancing instruction-following and dialogue capabilities.</td>
+    <td>Techniques involve the use of special tokens to differentiate between image and text inputs, and the introduction of bounding box inputs for fine-grained visual understanding.</td>
+    <td>The model employs a cross-attention mechanism within the vision-language adapter to fuse visual and textual features, using positional encodings to retain spatial information after feature compression.</td>
+    <td>LAION-en, LAION-zh, DataComp, Coyo, CC12M, CC3M, SBU, COCO Caption for pre-training; GQA, VGQA, VQAv2, DVQA, OCR-VQA, DocVQA, GRIT, Visual Genome, RefCOCO, RefCOCO+, RefCOCOg for multi-task pre-training.</td>
+    <td>The datasets support a wide range of vision-language tasks including captioning, visual question answering, grounding, and OCR, with a focus on multilingual and fine-grained visual understanding.</td>
+    </tr>
+    </tbody>
+    </table>
+  </summary>
+</details>
