@@ -492,3 +492,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>MiniGPT-4</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2304.10592v2">MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models</a></td>
+    <td>MiniGPT-4 aligns a frozen visual encoder with a frozen advanced LLM, Vicuna, using one projection layer. It incorporates a vision encoder with a pretrained ViT and Q-Former, a single linear projection layer, and the Vicuna LLM, focusing on efficiently aligning visual features with language capabilities.</td>
+    <td>Vision encoder (pretrained ViT, Q-Former), single linear projection layer, Vicuna large language model (LLM)</td>
+    <td>MiniGPT-4 is initially trained for 20k steps using a batch size of 256 on 4 A100 GPUs, leveraging a combined image captioning dataset for aligning visual features with Vicuna. A second-stage finetuning employs 3500 detailed image description pairs to enhance generation reliability and naturalness.</td>
+    <td>The model uses a single projection layer to align encoded visual features with the Vicuna language model, while keeping other components frozen.</td>
+    <td>Alignment is achieved through a two-stage training approach: initial pretraining on image-text pairs for basic vision-language knowledge, followed by finetuning with a high-quality dataset for improved usability and natural language generation.</td>
+    <td>Conceptual Captions, SBU, LAION, a curated dataset of 3500 detailed image descriptions</td>
+    <td>Initial datasets are used for basic vision-language alignment. The curated dataset is for enhancing the model&#39;s ability to generate detailed and natural language outputs.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
