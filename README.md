@@ -318,3 +318,32 @@
   </tbody>
   </table>
 </details>
+<details>
+  <summary>LLaVA-Med: Large Language and Vision Assistant for BioMedicine</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://huggingface.co/microsoft/llava-med-7b-delta">LLaVA-Med: Large Language and Vision Assistant for BioMedicine</a></td>
+    <td>Large language and vision model trained with curriculum learning for the biomedical domain.</td>
+    <td>Derived from general-domain LLaVA, trained with biomedical concept alignment and instruction tuning.</td>
+    <td>Curriculum learning method, starting with biomedical concept alignment followed by instruction tuning.</td>
+    <td>Not specifically mentioned.</td>
+    <td>Not specifically mentioned.</td>
+    <td>PMC-15M dataset.</td>
+    <td>15 million figure-caption pairs from biomedical research articles for biomedical vision-language processing.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
