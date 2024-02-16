@@ -347,3 +347,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>SPHINX</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2311.07575v1">SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-Modal Large Language Models</a></td>
+    <td>SPHINX is a multi-modal large language model (MLLM) that integrates model weight mixing, tuning tasks, and visual embeddings for enhanced vision-language alignment. It unfreezes the large language model during pre-training for cross-modal learning.</td>
+    <td>The model includes a mix of vision encoders, two linear projection layers, and utilizes LLaMA-2 as the language model backbone. It employs a two-stage training paradigm comprising pre-training for vision-language alignment and fine-tuning for visual instruction-following.</td>
+    <td>SPHINX uses a joint mixing strategy for model weights, tuning tasks, and visual embeddings. It involves pre-training with mixed real-world and synthetic data for robust cross-modal knowledge, followed by multi-task fine-tuning to cover a wide range of visual instruction tasks. Additionally, it introduces an efficient strategy for handling high-resolution images through mixed scales and sub-images.</td>
+    <td>The model achieves vision-language alignment by unfreezing the LLM during pre-training, mixing model weights from different domains, and integrating comprehensive visual embeddings.</td>
+    <td>SPHINX utilizes a weight-mixing strategy for domain-specific knowledge and a comprehensive multi-task training paradigm for visual instruction following. It mixes visual embeddings from different network architectures and training paradigms to enhance vision-language alignment.</td>
+    <td>LAION-400M, LAION-COCO, RefinedWeb, VQAV2, GQA, OKVQA, A-OKVQA, OCRVQA, TextCaps, COCO, LVIS, RefCOCO, VG, Flickr30k</td>
+    <td>Used for multi-modal alignment, language-only tuning, visual question answering, general vision tasks like object detection and human pose estimation, referring object localization, and understanding descriptions in the context of image regions.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
