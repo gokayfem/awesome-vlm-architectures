@@ -782,3 +782,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>TinyGPT-V</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones <a href="https://arxiv.org/abs/2312.16862v1">TinyGPT-V</a></td>
+    <td>TinyGPT-V architecture includes a visual encoder (EVA of ViT), linear projection layers, and the Phi-2 language model as its backbone. It utilizes Q-Former from BLIP-2 for initial linear projection, aiming to efficiently embed visual features into the language model.</td>
+    <td>Visual encoder backbone (EVA of ViT), linear projection layers for embedding visual features, Phi-2 large language model with 2.7 billion parameters, normalization and LoRA mechanisms to stabilize training and enhance model&#39;s performance.</td>
+    <td>TinyGPT-V&#39;s training comprises four stages: warm-up training with image-text pairs, pre-training to process image modality inputs, instruction fine-tuning with image-text pairings for human-like learning, and multi-task learning to enhance conversation abilities and multimodal instruction tuning.</td>
+    <td>Uses linear projection layers and Q-Former for embedding visual features, LoRA for fine-tuning language model, normalization techniques (RMSNorm and LayerNorm) to stabilize training.</td>
+    <td>Employs linear projection layers and the Q-Former layer from BLIP-2 architecture for initial embedding of visual features into the language model, ensuring efficient encoding and fusion of vision and text.</td>
+    <td>LAION, CC3M, SBU, MiniGPT-4 Stage2 for CC &amp; SBU, Text Captions, RefCOCO, RefCOCO+, RefCOCOg, Visual Genome, GQA, VQAv2, OK-VQA, AOK-VQA, LLaVA dataset, Flickr30k, Multi-task conversation, Unnatural Instructions</td>
+    <td>Used for various stages of training including warm-up, pre-training, instruction fine-tuning, and multi-task learning. Supports the model&#39;s capabilities in vision-language understanding, generation, and performing tasks like visual question answering, image captioning, referring expression comprehension, object parsing, and grounding.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
