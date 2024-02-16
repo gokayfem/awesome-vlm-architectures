@@ -724,3 +724,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>MULTIINSTRUCT</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2212.10773">MULTIINSTRUCT: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning </a></td>
+    <td>MULTIINSTRUCT uses OFA as the base pre-trained multimodal model, adopting a Transformer-based sequence-to-sequence framework for encoding instructions, text, images, and bounding boxes within a unified token space.</td>
+    <td>The architecture components include a transformer-based encoder for processing inputs (including optional images) and instructions, and a transformer-based decoder for predicting outputs.</td>
+    <td>The model is fine-tuned on the MULTIINSTRUCT dataset with instruction tuning. Training involves mixing instances from multiple tasks, random shuffling, and randomly sampling instruction templates for batch-based training. It also explores transfer learning from the NATURAL INSTRUCTIONS dataset through Mixed Instruction Tuning and Sequential Instruction Tuning.</td>
+    <td>Uses byte-pair encoding and VQ-GAN for aligning text and image tokens within a unified vocabulary, enabling the model to process various input/output types seamlessly.</td>
+    <td>Employs a unified sequence-to-sequence model architecture to encode multimodal inputs (text, images, bounding boxes) with instructions, facilitating deep integration and alignment of vision and language modalities.</td>
+    <td>MULTIINSTRUCT, NATURAL INSTRUCTIONS</td>
+    <td>MULTIINSTRUCT is used for fine-tuning the model with multimodal tasks and instructions. NATURAL INSTRUCTIONS is used for exploring transfer learning to enhance model&#39;s performance on multimodal tasks.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
