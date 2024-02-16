@@ -666,3 +666,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>KOSMOS-1</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2302.14045">Language Is Not All You Need: Aligning Perception with Language Models</a></td>
+    <td>KOSMOS-1 is a multimodal large language model that integrates general modalities perception, zero-shot learning, few-shot learning, and generates outputs in an auto-regressive manner. Its backbone is a Transformer-based causal language model that incorporates text and other modalities.</td>
+    <td>Key components include a Transformer-based decoder for processing input sequences, embedding modules for encoding text and modalities into vectors, and MAGNETO and XPOS for architecture improvements.</td>
+    <td>Trained on web-scale multimodal corpora including monomodal data, cross-modal paired data, and interleaved multimodal data. It utilizes next-token prediction tasks for learning, with a focus on maximizing the log-likelihood of tokens.</td>
+    <td>Utilizes interleaved image-text data for aligning the perception of general modalities with language models.</td>
+    <td>The embedding module encodes both text tokens and input modalities into vectors, which are then processed by the Transformer-based decoder, integrating vision and text through sequential processing.</td>
+    <td>The Pile, Common Crawl, English LAION-2B, LAION-400M, COYO-700M, Conceptual Captions, interleaved image-text data from Common Crawl.</td>
+    <td>Text corpora for representation learning and language tasks, image-caption pairs and interleaved data for aligning perception with language models, and improving few-shot abilities.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
