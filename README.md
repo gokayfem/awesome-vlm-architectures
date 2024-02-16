@@ -202,3 +202,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>PALI</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2209.06794">PALI: A JOINTLY-SCALED MULTILINGUAL LANGUAGE-IMAGE MODEL</a></td>
+    <td>PaLI is designed for both unimodal (language, vision) and multimodal (language and vision) tasks, using a general interface that accepts image and text as input and generates text as output. The model architecture integrates a text encoder-decoder Transformer with visual tokens from a Vision Transformer (ViT).</td>
+    <td>The text encoder-decoder leverages pre-trained mT5 models, and the visual component includes a newly introduced and trained ViT architecture named ViT-e, scaling up to 4 billion parameters. Additionally, the model uses pre-trained unimodal checkpoints for efficient training.</td>
+    <td>PaLI models are trained using a mixture of pre-training tasks designed for a wide range of capabilities beneficial for downstream tasks. Training involves a high-volume image-language dataset, WebLI, covering 10 billion images and texts in over 100 languages. The largest model, PaLI-17B, undergoes a two-phase training process, including a high-resolution phase.</td>
+    <td>The model employs a unified modeling interface, treating various tasks through an &quot;image-and-text to text&quot; framework. This approach enables task agnosticism, allowing for seamless operation across different types of vision and language tasks.</td>
+    <td>The integration of vision and text embeddings is facilitated by feeding a sequence of visual tokens, derived from the Vision Transformer, to the text encoder-decoder Transformer via cross-attention, allowing for efficient fusion of multimodal information.</td>
+    <td>WebLI, Conceptual Captions (CC3M-35L), OCR data from WebLI, VQ2A-CC3M, Open Images</td>
+    <td>WebLI is utilized for pre-training PaLI in a multilingual setting with images and texts from the web, enhancing the model&#39;s understanding and generation capabilities across languages. Other datasets contribute to training the model on specific tasks such as captioning, OCR, and VQA, ensuring broad and versatile multimodal proficiency.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
