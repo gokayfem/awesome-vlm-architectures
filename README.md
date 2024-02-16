@@ -7,7 +7,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -36,7 +36,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -65,7 +65,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -96,7 +96,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -127,7 +127,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -158,7 +158,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -189,7 +189,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -220,7 +220,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -251,7 +251,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -282,7 +282,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -313,7 +313,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -344,7 +344,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -373,7 +373,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -404,7 +404,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -435,7 +435,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -467,7 +467,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -498,7 +498,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -529,7 +529,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -558,7 +558,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -587,7 +587,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -618,7 +618,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -649,7 +649,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -680,7 +680,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -711,7 +711,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -742,7 +742,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -771,7 +771,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -802,7 +802,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -833,7 +833,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -865,7 +865,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -896,7 +896,7 @@
   <thead>
   <tr>
   <th>Title</th>
-  <th>Architecture.Overview</th>
+  <th>Architecture Overview</th>
   <th>Architecture.Components</th>
   <th>Training.Methods</th>
   <th>Alignment.Techniques</th>
@@ -927,7 +927,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
@@ -958,7 +958,7 @@
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
+    <th>Architecture Overview</th>
     <th>Architecture.Components</th>
     <th>Training.Methods</th>
     <th>Alignment.Techniques</th>
