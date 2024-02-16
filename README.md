@@ -86,36 +86,6 @@
     </tbody>
     </table>
 </details>
-
-<details>
-  <summary>MIRASOL3B</summary>
-    <table>
-    <thead>
-    <tr>
-    <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td><a href="https://arxiv.org/abs/2311.05698v2">MIRASOL3B: A Multimodal Autoregressive Model for Time-Aligned and Contextual Modalities</a></td>
-    <td>MIRASOL3B is a multimodal autoregressive model that decouples the autoregressive modeling into separate components for time-aligned modalities (audio and video) and contextual modalities (text). It features a Combiner mechanism to fuse audio and video features into compact, expressive representations.</td>
-    <td>The model includes two main components: 1) An autoregressive component for time-aligned modalities like audio and video, which processes inputs in smaller, roughly synchronized chunks. 2) A separate autoregressive component for contextual modalities, using combined latent space as cross-attention inputs.</td>
-    <td>Training involves partitioning media inputs into smaller segments for efficient processing, using a Combiner to fuse audio and video features, and applying autoregressive modeling for both time-aligned and non-time-aligned modalities. The model uses a combination of losses including latent space reconstruction, video reconstruction, and unaligned text cross-entropy loss.</td>
-    <td>Cross-attention weights facilitate the coordination between the autoregressive components for time-aligned and contextual modalities.</td>
-    <td>The Combiner fuses audio and video features within concurrent timeframes into a joint representation, using techniques like Transformer and Token Turing Machine (TTM) for efficient feature combination and memory usage.</td>
-    <td>Video-Text Pairs (VTP), MSRVTT-QA, VGG-Sound, ActivityNet-QA, NExT-QA, Epic-Sound, Kinetics-Sound</td>
-    <td>The datasets were used for pretraining and fine-tuning the model across different modalities and tasks, demonstrating the model&#39;s effectiveness in multimodal understanding and generation, particularly in video question answering and audio-video benchmarks.  </td>
-    </tr>
-    </tbody>
-    </table>
-</details>
 <details>
   <summary>BLIP</summary>
     <table>
@@ -460,6 +430,36 @@
     <td>BLIVA merges learned query embeddings with encoded patch embeddings to improve text-image visual perception. The embeddings are concatenated and fed directly to the LLM, appended immediately after the question text embedding.</td>
     <td>Image captioning datasets, instruction tuning VQA data, YTTB-VQA (YouTube Thumbnail Visual Question-Answer pairs)</td>
     <td>The image captioning datasets are used for pre-training to align the LLM with visual information. Instruction tuning VQA data is used in the second training stage to enhance the LLM&#39;s performance. YTTB-VQA is utilized to demonstrate BLIVA&#39;s capability in processing text-rich images and its applicability in real-world scenarios.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+
+<details>
+  <summary>MIRASOL3B</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2311.05698v2">MIRASOL3B: A Multimodal Autoregressive Model for Time-Aligned and Contextual Modalities</a></td>
+    <td>MIRASOL3B is a multimodal autoregressive model that decouples the autoregressive modeling into separate components for time-aligned modalities (audio and video) and contextual modalities (text). It features a Combiner mechanism to fuse audio and video features into compact, expressive representations.</td>
+    <td>The model includes two main components: 1) An autoregressive component for time-aligned modalities like audio and video, which processes inputs in smaller, roughly synchronized chunks. 2) A separate autoregressive component for contextual modalities, using combined latent space as cross-attention inputs.</td>
+    <td>Training involves partitioning media inputs into smaller segments for efficient processing, using a Combiner to fuse audio and video features, and applying autoregressive modeling for both time-aligned and non-time-aligned modalities. The model uses a combination of losses including latent space reconstruction, video reconstruction, and unaligned text cross-entropy loss.</td>
+    <td>Cross-attention weights facilitate the coordination between the autoregressive components for time-aligned and contextual modalities.</td>
+    <td>The Combiner fuses audio and video features within concurrent timeframes into a joint representation, using techniques like Transformer and Token Turing Machine (TTM) for efficient feature combination and memory usage.</td>
+    <td>Video-Text Pairs (VTP), MSRVTT-QA, VGG-Sound, ActivityNet-QA, NExT-QA, Epic-Sound, Kinetics-Sound</td>
+    <td>The datasets were used for pretraining and fine-tuning the model across different modalities and tasks, demonstrating the model&#39;s effectiveness in multimodal understanding and generation, particularly in video question answering and audio-video benchmarks.  </td>
     </tr>
     </tbody>
     </table>
