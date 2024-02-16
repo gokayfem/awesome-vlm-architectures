@@ -428,6 +428,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/44c53b8a-ad35-4eca-a68b-63af32e6ccf1)
   <summary>BLIVA</summary>
     <table>
     <thead>
