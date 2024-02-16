@@ -7,7 +7,7 @@
     <th>Title</th>
     <th>Architecture.Overview</th>
     <th>Architecture.Components</th>
-    <th>Training.Methods</th>
+    <th><div style="width: 50px" >Training.Methods</div></th>
     <th>Alignment.Techniques</th>
     <th>Alignment.Fusion Methods</th>
     <th>Datasets.Used</th>
