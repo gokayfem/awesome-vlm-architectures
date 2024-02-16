@@ -3,6 +3,7 @@
   <summary>LLaVA</summary> 
   
     ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/722f0fbb-ea52-4a8a-ab1e-bec45ca7d04f)
+    
     <table>
     <thead>
     <tr>
