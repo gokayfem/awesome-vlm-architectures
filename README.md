@@ -811,3 +811,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>CoVLM</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2311.03354v1">CoVLM: Composing Visual Entities and Relationships in Large Language Models via Communicative Decoding</a></td>
+    <td>CoVLM integrates a vision module and a language model (LLM) to achieve vision-language communicative decoding. It uses communication tokens for dynamic interaction between the detection network and the LLM.</td>
+    <td>Image encoder (CLIP ViT-L), detection network (YOLOX), pre-trained Pythia model for LLM. Special communication tokens facilitate vision-language modeling and communication.</td>
+    <td>CoVLM was pre-trained on a large-scale grounded image-text dataset consisting of 97M image-text pairs from various sources. It utilizes a grounding pipeline to associate text spans with corresponding visual entities in images.</td>
+    <td>Utilizes special communication tokens for dynamic interaction and iterative communication between vision and language components, facilitating top-down language-to-vision and bottom-up vision-to-language communication.</td>
+    <td>The model embeds visual and text features into a shared embedding space, enabling seamless integration and interaction between language tokens and visual embeddings.</td>
+    <td>COCO, CC3M, CC12M, Visual Genome, SBU, LAION400M</td>
+    <td>Used for pre-training CoVLM by grounding image-text pairs, facilitating the association of text descriptions with their corresponding visual entities.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
