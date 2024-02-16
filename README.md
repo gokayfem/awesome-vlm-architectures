@@ -244,6 +244,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/bedfc8b1-7aff-44af-b605-4470ad030bdf)
   <summary>MULTIINSTRUCT</summary>
     <table>
     <thead>
