@@ -642,6 +642,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/67e5bbc7-1800-46e8-8ef1-b3b72a901a12)
   <summary>PALM-E</summary>
     <table>
     <thead>
