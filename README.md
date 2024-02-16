@@ -261,7 +261,7 @@
     </table>
 </details>
 <details>
-  <summary>
+  <summary>Qwen-VL</summary>
     <table>
     <thead>
     <tr>
@@ -287,6 +287,5 @@
     <td>The datasets support a wide range of vision-language tasks including captioning, visual question answering, grounding, and OCR, with a focus on multilingual and fine-grained visual understanding.</td>
     </tr>
     </tbody>
-    </table>
-  </summary>
+    </table>  
 </details>
