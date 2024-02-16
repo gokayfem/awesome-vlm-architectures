@@ -889,6 +889,8 @@
     </table>  
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/61a75fb4-ced7-419c-bff7-7cb2e3ddc02d)
   <summary>Fuyu-8B</summary>
   <table>
   <thead>
