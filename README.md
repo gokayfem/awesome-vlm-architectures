@@ -434,3 +434,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>BLIP-2</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2301.12597">BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models</a></td>
+    <td>BLIP-2 integrates frozen pre-trained image encoders and language models, leveraging a lightweight Querying Transformer (Q-Former) for bridging the modality gap between vision and language.</td>
+    <td>Key components include frozen image encoders for visual representation, frozen large language models (LLMs) for textual understanding, and the Q-Former for extracting and integrating visual features relevant to textual queries.</td>
+    <td>BLIP-2 employs a two-stage pre-training strategy. The first stage focuses on vision-language representation learning using frozen image encoders. The second stage involves vision-to-language generative learning leveraging frozen LLMs.</td>
+    <td>The model uses learnable query vectors in the Q-Former to perform effective vision-language alignment.</td>
+    <td>Fusion involves extracting language-informative visual representations via Q-Former, which are then integrated with LLMs to generate relevant textual outputs.</td>
+    <td>COCO, Visual Genome, CC3M, CC12M, SBU, LAION400M</td>
+    <td>These datasets facilitate comprehensive pre-training by providing diverse image-text pairs for learning visual representations and language generation tasks.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
