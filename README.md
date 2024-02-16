@@ -182,6 +182,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/50a9bbc0-b888-4407-800d-71880e248916)
   <summary>KOSMOS-1</summary>
     <table>
     <thead>
