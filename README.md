@@ -275,6 +275,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/8afc8259-fa72-4e52-8080-a4ea12208e32)
   <summary>LaVIN</summary>
     <table>
     <thead>
