@@ -248,7 +248,7 @@
     </thead>
     <tbody>
     <tr>
-    <td>PaLM-E: An Embodied Multimodal Language Model <a href="https://palm-e.github.io">PaLM-E</a></td>
+    <td><a href="https://palm-e.github.io">PaLM-E: An Embodied Multimodal Language Model </a></td>
     <td>PaLM-E integrates continuous embodied observations (images, state estimates, or other sensor modalities) into the language embedding space of a pre-trained language model. It&#39;s a decoder-only LLM generating textual completions autoregressively based on multimodal inputs.</td>
     <td>The model uses a pre-trained PaLM as the language model and incorporates continuous observations through encoders. These encoders map sensor modalities into a sequence of vectors with the same dimension as the language model&#39;s embedding space. The continuous information and text are interleaved to form multimodal sentences.</td>
     <td>PaLM-E is trained end-to-end on datasets consisting of continuous observations and text, with a cross-entropy loss function for the non-prefix tokens. The model is based on pre-trained variants of PaLM and incorporates Vision Transformers (ViTs) for image features. Training involves both pre-trained input encoders and ones trained from scratch, with variations including model freezing and co-training across diverse data.</td>
