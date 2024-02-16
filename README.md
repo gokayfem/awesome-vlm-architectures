@@ -336,13 +336,13 @@
     <tbody>
     <tr>
     <td><a href="https://huggingface.co/microsoft/llava-med-7b-delta">LLaVA-Med: Large Language and Vision Assistant for BioMedicine</a></td>
-    <td>Large language and vision model trained with curriculum learning for the biomedical domain.</td>
-    <td>Derived from general-domain LLaVA, trained with biomedical concept alignment and instruction tuning.</td>
-    <td>Curriculum learning method, starting with biomedical concept alignment followed by instruction tuning.</td>
-    <td>Not specifically mentioned.</td>
-    <td>Not specifically mentioned.</td>
-    <td>PMC-15M dataset.</td>
-    <td>15 million figure-caption pairs from biomedical research articles for biomedical vision-language processing.</td>
+    <td>LLaVA-Med is a large language and vision model for the biomedical domain, derived from the general-domain LLaVA. It uses curriculum learning for continuous training, beginning with biomedical concept alignment before progressing to full-blown instruction tuning.</td>
+    <td>The model integrates language and vision capabilities, starting with a foundation in LLaVA and enhancing it with specialized biomedical training.</td>
+    <td>Initiated with LLaVA&#39;s general-domain foundation, LLaVA-Med undergoes curriculum learning, emphasizing biomedical concept alignment followed by instruction tuning. This approach is designed for open-ended biomedical question answering, leveraging datasets like PathVQA and VQA-RAD.</td>
+    <td>Curriculum learning for concept alignment and instruction tuning.</td>
+    <td>Combines vision and language processing for biomedical applications, adapting LLaVA to the biomedical domain through targeted curriculum learning.</td>
+    <td>PMC-15M</td>
+    <td>A large-scale parallel image-text dataset from PubMed Central, with 15 million figure-caption pairs across various biomedical imagery, used for vision-language processing in biomedicine.</td>
     </tr>
     </tbody>
     </table>
