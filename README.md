@@ -114,4 +114,4 @@
     </tr>
     </tbody>
     </table>
-</details>details> 
+</details>
