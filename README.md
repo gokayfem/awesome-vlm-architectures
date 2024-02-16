@@ -289,3 +289,32 @@
     </tbody>
     </table>  
 </details>
+<details>
+  <summary>Fuyu-8B</summary>
+  <table>
+  <thead>
+  <tr>
+  <th>Title</th>
+  <th>Architecture.Overview</th>
+  <th>Architecture.Components</th>
+  <th>Training.Methods</th>
+  <th>Alignment.Techniques</th>
+  <th>Alignment.Fusion Methods</th>
+  <th>Datasets.Used</th>
+  <th>Datasets.Purpose</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><a href="https://www.adept.ai/blog/fuyu-8b">Fuyu-8B: A Multimodal Architecture for AI Agents</a></td>
+  <td>Fuyu-8B is a simplified multimodal model designed for digital agents, supporting arbitrary image resolutions and fine-grained localization. It has a decoder-only transformer architecture without a specialized image encoder, enabling direct projection of image patches into the transformer&#39;s first layer.</td>
+  <td>Decoder-only transformer, linear projection of image patches, simplified training and inference, support for arbitrary image resolutions.</td>
+  <td>Simplified compared to other models, Fuyu-8B eliminates the need for a separate image encoder and multiple training stages, allowing for direct training on images of any size without complex contrastive objectives or resolution-specific phases.</td>
+  <td>Uses direct projection of image patches into the transformer, avoiding the need for cross-attention or adapters between separate encoders and decoders.</td>
+  <td>Image and text embeddings are combined from the outset by treating image tokens similarly to text tokens, without separate position embeddings for images, simplifying the alignment.</td>
+  <td>VQAv2, OKVQA, COCO Captions, AI2D</td>
+  <td>Used to evaluate the model&#39;s performance on standard image understanding tasks like visual question-answering and captioning, despite the model&#39;s focus on digital agent applications.</td>
+  </tr>
+  </tbody>
+  </table>
+</details>
