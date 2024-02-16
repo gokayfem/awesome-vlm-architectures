@@ -213,6 +213,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/17420c9c-759d-4690-bfc8-e8d7792111e7)
   <summary>KOSMOS-2</summary>
     <table>
     <thead>
