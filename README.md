@@ -1,4 +1,4 @@
-# Awesome-VLM-Architectures
+# Awesome Visual Language Model Architectures
 <details> 
   <summary>LLaVA</summary> 
     <table>
