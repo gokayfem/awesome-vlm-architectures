@@ -231,3 +231,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>PALM-E</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>PaLM-E: An Embodied Multimodal Language Model <a href="https://palm-e.github.io">PaLM-E</a></td>
+    <td>PaLM-E integrates continuous embodied observations (images, state estimates, or other sensor modalities) into the language embedding space of a pre-trained language model. It&#39;s a decoder-only LLM generating textual completions autoregressively based on multimodal inputs.</td>
+    <td>The model uses a pre-trained PaLM as the language model and incorporates continuous observations through encoders. These encoders map sensor modalities into a sequence of vectors with the same dimension as the language model&#39;s embedding space. The continuous information and text are interleaved to form multimodal sentences.</td>
+    <td>PaLM-E is trained end-to-end on datasets consisting of continuous observations and text, with a cross-entropy loss function for the non-prefix tokens. The model is based on pre-trained variants of PaLM and incorporates Vision Transformers (ViTs) for image features. Training involves both pre-trained input encoders and ones trained from scratch, with variations including model freezing and co-training across diverse data.</td>
+    <td>The model employs encoders to inject continuous sensor data into the language embedding space, enabling alignment between the multimodal inputs. This process allows PaLM-E to understand and generate responses based on a combination of text and sensor data.</td>
+    <td>Fusion of vision and text embeddings occurs through interleaving multimodal tokens corresponding to sensor observations with text to form multimodal sentences. These sentences are processed by the model&#39;s self-attention layers in a manner analogous to text tokens, ensuring integrated encoding of vision and text information.</td>
+    <td>Internet-scale vision-and-language data, robotics tasks datasets</td>
+    <td>The diverse set of datasets, including internet-scale vision-and-language data and specific robotics tasks, is used to train PaLM-E on a wide range of embodied reasoning tasks. This enables the model to benefit from cross-domain transfer learning, improving its performance on both specific robotics applications and general vision-language tasks.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
