@@ -491,6 +491,8 @@
     </table>
 </details>
 <details> 
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/4156475d-e501-495e-98bb-66efdd5b03f7)
   <summary>FROZEN</summary> 
     <table>
     <thead>
