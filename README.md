@@ -695,3 +695,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>KOSMOS-2</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2306.14824">KOSMOS-2: Grounding Multimodal Large Language Models to the World</a></td>
+    <td>KOSMOS-2 is a grounded multimodal large language model that builds upon KOSMOS-1, integrating grounding and referring capabilities. It adopts the same Transformer-based causal language model architecture and training objectives as KOSMOS-1, with the addition of grounded image-text pairs to its training data.</td>
+    <td>The model incorporates the grounding capability by training on a web-scale dataset of grounded image-text pairs (GRIT), utilizing continuous coordinates of bounding boxes converted into discrete location tokens, and linking these with text spans in a unified input representation.</td>
+    <td>KOSMOS-2 was trained on grounded image-text pairs, monomodal text corpora, image-caption pairs, and interleaved image-text data. The training involved a large batch size and utilized the AdamW optimizer. The model was trained on 256 V100 GPUs, and the training process included instruction tuning with vision-language and language-only instruction datasets.</td>
+    <td>The model&#39;s grounding technique involves converting the continuous coordinates of bounding boxes into discrete location tokens and linking these tokens with their corresponding text spans, effectively grounding text output to visual input.</td>
+    <td>KOSMOS-2 uses a unified input representation that combines image embeddings with grounded text and location tokens, enabling the model to understand and refer to specific image regions or objects directly.</td>
+    <td>GRIT, monomodal text corpora, image-caption pairs, and interleaved image-text data. GRIT is a large-scale dataset of grounded image-text pairs created for training KOSMOS-2.</td>
+    <td>The GRIT dataset was specifically created to train the model with grounding capabilities, while the other datasets were used to enhance the model&#39;s language understanding, multimodal perception, and in-context learning abilities.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
