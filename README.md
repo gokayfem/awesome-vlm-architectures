@@ -337,6 +337,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/80e807cb-c2cf-491a-a3b4-1223afde1981)
   <summary>CoVLM</summary>
     <table>
     <thead>
