@@ -8,9 +8,33 @@
 </details>
 <details>  
   <summary><h3>LLaVA 1.5</h3></summary> 
+  <table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Architecture.Overview</th>
+<th>Architecture.Components</th>
+<th>Training.Methods</th>
+<th>Alignment.Techniques</th>
+<th>Alignment.Fusion Methods</th>
+<th>Datasets.Used</th>
+<th>Datasets.Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://llava-vl.github.io">Improved Baselines with Visual Instruction Tuning</a></td>
+<td>LLaVA-1.5 enhances the original LLaVA by integrating a two-layer MLP for the vision-language connector, scaling up the visual encoder to CLIP-ViT-L-336px, and incorporating academic-task-oriented VQA datasets.</td>
+<td>Two-layer MLP for vision-language connection, CLIP-ViT-L-336px as the vision encoder, and Vicuna LLM for language understanding.</td>
+<td>The training involves using a varied set of datasets, including VQA, OCR, and region-level perception datasets, to enhance model capabilities. Training also involves scaling up input image resolution and LLM size, with significant improvements observed upon increasing the LLM to 13B parameters.</td>
+<td>Utilizes an MLP-based vision-language connector for improved multimodal capabilities, enabling stronger and more effective alignment between visual and language domains.</td>
+<td>Incorporates academic-task-oriented data for better alignment and understanding, using response formatting prompts to regularize output formats for short and long-form answers.</td>
+<td>VQA, OCR, region-level VQA, visual conversation, language conversation datasets.</td>
+<td>Enhance model capabilities in various academic tasks and visual perceptions, improve multimodal understanding and instruction-following capabilities.</td>
+</tr>
+</tbody>
+</table>
   
-| Title                                                                           | Architecture.Overview                                                                                                                                                                                             | Architecture.Components                                                                                                          | Training.Methods                                                                                                                                                                                                                                                                                        | Alignment.Techniques                                                                                                                                                      | Alignment.Fusion Methods                                                                                                                                                         | Datasets.Used                                                                    | Datasets.Purpose                                                                                                                                      |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Improved Baselines with Visual Instruction Tuning](https://llava-vl.github.io) | LLaVA-1.5 enhances the original LLaVA by integrating a two-layer MLP for the vision-language connector, scaling up the visual encoder to CLIP-ViT-L-336px, and incorporating academic-task-oriented VQA datasets. | Two-layer MLP for vision-language connection, CLIP-ViT-L-336px as the vision encoder, and Vicuna LLM for language understanding. | The training involves using a varied set of datasets, including VQA, OCR, and region-level perception datasets, to enhance model capabilities. Training also involves scaling up input image resolution and LLM size, with significant improvements observed upon increasing the LLM to 13B parameters. | Utilizes an MLP-based vision-language connector for improved multimodal capabilities, enabling stronger and more effective alignment between visual and language domains. | Incorporates academic-task-oriented data for better alignment and understanding, using response formatting prompts to regularize output formats for short and long-form answers. | VQA, OCR, region-level VQA, visual conversation, language conversation datasets. | Enhance model capabilities in various academic tasks and visual perceptions, improve multimodal understanding and instruction-following capabilities. |
 </details>
+
 
