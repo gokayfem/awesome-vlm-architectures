@@ -579,3 +579,32 @@
     </tbody>
     </table>  
 </details>
+<details>
+  <summary>BakLLaVA</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://huggingface.co/SkunkworksAI/BakLLaVA-1">BakLLaVA</a></td>
+    <td>BakLLaVA introduces significant architecture changes to the original LLaVA implementation, focusing on baking state-of-the-art multimodality into language models.</td>
+    <td>Custom datasets, modified training process, better base models</td>
+    <td>BakLLaVA training involves a feature alignment stage using 600K filtered CC3M for vision-language connection, followed by a visual instruction tuning stage with 150K GPT-generated multimodal instructions.</td>
+    <td>Feature alignment stage for connecting vision encoder to language models</td>
+    <td>Visual instruction tuning for encoding vision and text together</td>
+    <td>CC3M, GPT-generated multimodal instructions, COCO, LAION-CC-SBU</td>
+    <td>Feature alignment, visual instruction tuning, broad concept coverage and efficiency in training</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
