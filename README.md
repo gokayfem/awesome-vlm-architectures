@@ -463,3 +463,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>InstructBLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning <a href="https://arxiv.org/abs/2305.06500v2">InstructBLIP</a></td>
+    <td>InstructBLIP builds upon the pretrained BLIP-2 models, incorporating an image encoder, a large language model (LLM), and a Query Transformer (Q-Former) to bridge the two. The architecture is designed for instruction tuning, with the Q-Former being fine-tuned while keeping the image encoder and LLM frozen.</td>
+    <td>Key components include a pre-trained BLIP-2 model (image encoder and LLM) and the Query Transformer (Q-Former), which extracts instruction-aware visual features from the image encoder&#39;s output.</td>
+    <td>InstructBLIP is trained on a diverse set of instruction data, utilizing a balanced sampling strategy to synchronize learning across datasets. It employs the standard language modeling loss for instruction tuning, with specific adaptations for datasets involving scene texts by adding OCR tokens.</td>
+    <td>Utilizes the Query Transformer (Q-Former) to achieve instruction-aware visual feature extraction, enabling the model to adapt visual representations to the task instruction.</td>
+    <td>The Q-Former interacts with the image encoder&#39;s output through cross attention, using instruction text tokens as additional input to extract task-relevant image features. These features are then fed as soft prompt input to the LLM.</td>
+    <td>26 datasets across 11 task categories, including image captioning, visual reasoning, image question answering, and more.</td>
+    <td>Datasets are transformed into instruction tuning format to train the model for a wide range of vision-language tasks and evaluate its zero-shot generalization ability on unseen data and tasks.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
