@@ -120,6 +120,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/604460f9-478c-4cc1-ba35-287447c04b26)
   <summary>BLIP-2</summary>
     <table>
     <thead>
