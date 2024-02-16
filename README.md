@@ -550,3 +550,32 @@
     </tbody>
     </table>  
 </details>
+<details>
+  <summary>LLaVA-Plus</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2311.05437">LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents</a></td>
+    <td>LLaVA-Plus integrates a wide range of vision and vision-language pre-trained models into a skill repository, systematically expanding the capabilities of large multimodal models through end-to-end training. It activates relevant tools based on users&#39; multimodal inputs, combining their execution results on-the-fly.</td>
+    <td>Skill repository containing vision and vision-language models, end-to-end trained multimodal instruction-following capabilities, and a unified scheme for representing multimodal instruction-following data.</td>
+    <td>Trained on curated multimodal instruction-following data covering visual understanding, generation, external knowledge retrieval, and their compositions. Incorporates new tools via instruction tuning, expanding abilities by learning to use these tools effectively.</td>
+    <td>Uses raw visual signals throughout human-AI interaction sessions for improved tool use performance, planning, and reasoning.</td>
+    <td>Combines user inputs, tool activation prompts, and execution results in a unified dialogue format, facilitating seamless integration of vision and text embeddings.</td>
+    <td>COCO, HierText, InfoSeek, JourneyDB, Instruct P2P</td>
+    <td>Used for training on visual understanding skills such as detection, segmentation, captioning, OCR, and external knowledge retrieval, as well as for generation tasks and skill compositions.</td>
+    </tr>
+    </tbody>
+    </table>  
+</details>
