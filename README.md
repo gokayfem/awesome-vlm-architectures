@@ -897,5 +897,33 @@
     </tr>
     </tbody>
     </table>
-
+</details>
+<details>
+  <summary>BLIVA</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2308.09936v3">BLIVA: A Simple Multimodal LLM for Better Handling of Text-Rich Visual Questions</a></td>
+    <td>BLIVA is an augmented version of InstructBLIP with Visual Assistant, designed to incorporate both learned query embeddings from InstructBLIP and directly projected encoded patch embeddings into the LLM, inspired by LLaVA. This architecture aims to capture intricate details in text-rich visual contexts that may be missed during the query decoding process.</td>
+    <td>BLIVA includes a vision tower for encoding visual representations from input images into encoded patch embeddings, a Q-former to extract refined learned query embeddings, and a projection layer allowing the LLM to grasp rich visual knowledge. These components are combined and fed directly to the LLM.</td>
+    <td>BLIVA employs a two-stage training scheme: pre-training with image-text pairs from captioning datasets to align the LLM with visual information, and instruction tuning using VQA data to enhance performance. It starts with pre-training the patch embeddings projection layer, followed by fine-tuning both the Q-former and the projection layer with instruction tuning data, keeping the image encoder and LLM frozen to avoid catastrophic forgetting.</td>
+    <td>The model uses learned query embeddings with an additional visual assistant branch utilizing encoded patch embeddings. This approach addresses the limitations of image information typically provided to LLMs.</td>
+    <td>BLIVA merges learned query embeddings with encoded patch embeddings to improve text-image visual perception. The embeddings are concatenated and fed directly to the LLM, appended immediately after the question text embedding.</td>
+    <td>Image captioning datasets, instruction tuning VQA data, YTTB-VQA (YouTube Thumbnail Visual Question-Answer pairs)</td>
+    <td>The image captioning datasets are used for pre-training to align the LLM with visual information. Instruction tuning VQA data is used in the second training stage to enhance the LLM&#39;s performance. YTTB-VQA is utilized to demonstrate BLIVA&#39;s capability in processing text-rich images and its applicability in real-world scenarios.</td>
+    </tr>
+    </tbody>
+    </table>
 </details>
