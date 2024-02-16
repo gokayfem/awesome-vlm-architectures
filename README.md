@@ -521,3 +521,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>MiniGPT-v2</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2310.09478v3">MiniGPT-v2: Large Language Model As a Unified Interface for Vision-Language Multi-task Learning</a></td>
+    <td>MiniGPT-v2 consists of a visual backbone (ViT), a linear projection layer, and a large language model (LLaMA-2-chat 7B). The model architecture aims for efficient processing of high-resolution images (448x448) by concatenating every four neighboring visual tokens into one and projects them into the language model&#39;s feature space.</td>
+    <td>Visual Backbone: ViT (frozen during training); Linear Projection Layer: Concatenates and projects visual tokens; Large Language Model: LLaMA-2-chat (7B), serving as a unified interface for vision-language tasks.</td>
+    <td>MiniGPT-v2 uses a three-stage training strategy focusing on broad vision-language knowledge acquisition with weakly-labeled and fine-grained datasets initially, then on fine-grained data for task improvement, and finally on multi-modal instruction and language datasets for enhanced multi-modal instruction response.</td>
+    <td>Utilizes task-specific identifier tokens for different vision-language tasks to reduce ambiguity and improve task distinction during training.</td>
+    <td>The model projects concatenated visual tokens into the language model&#39;s space for efficient processing and relies on language tokens for executing various vision-language tasks, integrating visual and textual information through linear projection and task-specific training.</td>
+    <td>LAION, CC3M, SBU, GRIT-20M, COCO caption, Text Captions, RefCOCO, RefCOCO+, RefCOCOg, Visual Genome, GQA, VQAv2, OCR-VQA, OK-VQA, AOK-VQA, LLaVA dataset, Flickr30k, Multi-task conversation, Unnatural Instructions</td>
+    <td>To train the model across different stages focusing on broad knowledge acquisition, task-specific improvements, and multi-modal instruction handling.</td>
+    </tr>
+    </tbody>
+    </table>  
+</details>
