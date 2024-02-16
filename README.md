@@ -144,4 +144,32 @@
     </tbody>
     </table>
 </details>
-
+<details>
+  <summary>OpenFlamingo</summary>   
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b">OpenFlamingo-9B-vitl-mpt7b</a></td>
+    <td>OpenFlamingo is an open-source implementation of DeepMind&#39;s Flamingo models, using a CLIP ViT-L/14 vision encoder and MPT-7B language model.</td>
+    <td>Includes cross-attention modules inserted in every fourth decoder block of the pretrained, frozen language model, allowing it to cross-attend to visual features during decoding.</td>
+    <td>Trained on web-scraped image-text sequences, utilizing a mixture of LAION-2B and Multimodal C4 datasets. The model employs DistributedDataParallel training across 64 A100 80GB GPUs using automatic BF16 mixed precision.</td>
+    <td>Follows the Flamingo modeling paradigm, freezing the vision and language model but training connecting modules for decoding with cross-attention to visual features.</td>
+    <td>Cross-attention modules facilitate fusion of vision and text embeddings, inserted at specific intervals within the language model&#39;s decoder blocks.</td>
+    <td>LAION-2B, Multimodal C4</td>
+    <td>Trained on image-text sequences for understanding and generating text based on visual input, enhancing capabilities in tasks like captioning, visual question answering, and image classification.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
