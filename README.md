@@ -319,7 +319,7 @@
   </table>
 </details>
 <details>
-  <summary>LLaVA-Med: Large Language and Vision Assistant for BioMedicine</summary>
+  <summary>LLaVA-Med</summary>
     <table>
     <thead>
     <tr>
@@ -401,6 +401,35 @@
     <td>The Combiner fuses audio and video features within concurrent timeframes into a joint representation, using techniques like Transformer and Token Turing Machine (TTM) for efficient feature combination and memory usage.</td>
     <td>Video-Text Pairs (VTP), MSRVTT-QA, VGG-Sound, ActivityNet-QA, NExT-QA, Epic-Sound, Kinetics-Sound</td>
     <td>The datasets were used for pretraining and fine-tuning the model across different modalities and tasks, demonstrating the model&#39;s effectiveness in multimodal understanding and generation, particularly in video question answering and audio-video benchmarks.  </td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
+  <summary>BLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2201.12086">BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation</a></td>
+    <td>BLIP introduces a Multimodal Mixture of Encoder-Decoder (MED) architecture for effective multi-task pre-training and flexible transfer learning. MED can function as a unimodal encoder, an image-grounded text encoder, or an image-grounded text decoder, allowing it to adapt to a variety of vision-language tasks.</td>
+    <td>Visual Transformer as image encoder, BERT-based text encoder, additional cross-attention layers for image-text interaction, and causal self-attention layers for text generation. MED supports three functionalities: unimodal encoding, image-grounded text encoding, and image-grounded text decoding.</td>
+    <td>Joint optimization of three pre-training objectives: Image-Text Contrastive Learning (ITC) for aligning visual and textual features, Image-Text Matching (ITM) for learning fine-grained image-text alignment, and Image-Conditioned Language Modeling (LM) for text generation from images. Uses a combination of human-annotated and web-collected noisy image-text pairs.</td>
+    <td>Uses ITC and ITM losses for text-image alignment, leveraging a multimodal representation that captures the fine-grained relationship between visual and textual information.</td>
+    <td>Employs cross-attention layers to inject visual information into the text encoder for image-grounded text encoding and modifies self-attention layers in the decoder for text generation, enabling effective encoding of vision and text together.</td>
+    <td>COCO, Visual Genome, Conceptual Captions, Conceptual 12M, SBU Captions, LAION</td>
+    <td>Used for pre-training to learn vision-language tasks, with COCO and Visual Genome providing high-quality human-annotated pairs, and the web datasets offering a large volume of image-text pairs for scalability and robustness enhancement.</td>
     </tr>
     </tbody>
     </table>
