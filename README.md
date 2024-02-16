@@ -795,6 +795,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/93d951e1-ad49-47fd-9135-c11bc69d49bc)
   <summary>CogVLM</summary>
     <table>
     <thead>
