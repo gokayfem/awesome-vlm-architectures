@@ -306,6 +306,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3e7c93bc-7963-4c2e-b207-226a03d152ca)
   <summary>TinyGPT-V</summary>
     <table>
     <thead>
