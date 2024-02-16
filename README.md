@@ -89,6 +89,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/27db1037-2b48-4097-9891-019ba77fc536)
   <summary>BLIP</summary>
     <table>
     <thead>
