@@ -173,3 +173,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>IDEFICS</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://huggingface.co/HuggingFaceM4/idefics-80b">IDEFICS: an 80 billion parameters vision and language model</a></td>
+    <td>IDEFICS is a large-scale vision and language model with 80 billion parameters, reproducing Flamingo&#39;s capabilities. It accepts sequences of images and text as inputs to generate text outputs.</td>
+    <td>It leverages a similar architecture to GPT-4 and Flamingo, integrating vision and language processing in a cohesive model framework.</td>
+    <td>The model encountered loss spikes during training, addressed through rollback strategies and learning rate adjustments. Training stability was improved with an auxiliary z-loss to normalize logits.</td>
+    <td>IDEFICS follows Flamingo&#39;s approach, using pretrained vision and language backbones and focusing on cross-modal understanding. The model&#39;s performance benefits from training on multimodal web documents.</td>
+    <td>The specific fusion techniques for vision and text embeddings are not detailed in the memo but are likely similar to those used in Flamingo, involving cross-attention mechanisms.</td>
+    <td>OBELICS, a curated collection of interleaved image-text web documents, alongside other web-scraped datasets.</td>
+    <td>OBELICS dataset aims to improve model performance on multimodal tasks by leveraging longer text contexts and diverse web document types.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
