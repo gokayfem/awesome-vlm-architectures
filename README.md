@@ -840,3 +840,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>FireLLaVA</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://fireworks.ai/blog/firellava-the-first-commercially-permissive-oss-llava-model">FireLLaVA: the first commercially permissive OSS LLaVA model</a></td>
+    <td>FireLLaVA is a multi-modal, commercially permissive VLM based on the LLaVA model framework, utilizing OSS models for data generation and training. It incorporates the CodeLlama 34B Instruct model for language understanding and leverages visual language conversations generated via bounding box labels and captions.</td>
+    <td>The model combines a language component, CodeLlama 34B Instruct, for processing textual input and a vision component similar to OpenAI&#39;s CLIP-ViT for interpreting visual content.</td>
+    <td>Training involved generating visual language conversations with a language-only OSS model by inputting bounding box labels and captions. The instruction fine-tuning stage utilized 588K lines of visual question answering or conversation data, combining permissive original LLaVA data and Fireworks.ai generated data.</td>
+    <td>Utilizes bounding box labels and captions for generating training data, aligning text and image data.</td>
+    <td>The model architecture likely involves embedding fusion at some stage to integrate vision and text inputs, though specific fusion methods are not detailed.</td>
+    <td>Original LLaVA training data, Fireworks.ai generated data</td>
+    <td>Used for instruction fine-tuning to enable the model to understand and generate responses based on both textual and visual inputs.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
