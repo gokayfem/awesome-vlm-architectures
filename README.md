@@ -637,3 +637,32 @@
     </tbody>
     </table>  
 </details>
+<details>
+  <summary>FERRET</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2310.07704v1">FERRET: Refer and Ground Anything Anywhere at Any Granularity</a></td>
+    <td>FERRET is a multimodal large language model (MLLM) designed for understanding spatial referring of any shape or granularity within an image and accurately grounding open-vocabulary descriptions. It utilizes a hybrid region representation integrating discrete coordinates and continuous features to represent image regions.</td>
+    <td>Key components include an image encoder for extracting image embeddings, a novel spatial-aware visual sampler for extracting regional continuous features, and a language model for modeling image, text, and region features jointly.</td>
+    <td>FERRET is trained on the GRIT dataset, containing 1.1M samples with hierarchical spatial knowledge. Training involves spatial-aware visual sampling, handling varying shapes and sparsity, and generating coordinates for groundable objects alongside text generation.</td>
+    <td>Hybrid region representation and spatial-aware visual sampling for fine-grained alignment between text and image regions.</td>
+    <td>Combines discrete coordinates and continuous visual features for input regions, enabling the model to process free-formed region inputs and accurately ground descriptions in outputs.</td>
+    <td>GRIT, Visual Genome, RefCOCOs, Flickr30k</td>
+    <td>GRIT for training with rich hierarchical spatial knowledge. Visual Genome, RefCOCOs, Flickr30k for object detection, phrase grounding, and evaluating model&#39;s referring and grounding capabilities.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
