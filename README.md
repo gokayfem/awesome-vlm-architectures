@@ -151,6 +151,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/5839e3a6-6fb8-469c-b84e-d60a851c1642)
   <summary>InstructBLIP</summary>
     <table>
     <thead>
