@@ -397,6 +397,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0e5e214b-be64-4aac-aba4-04c97970b9de)
   <summary>MoE-LLaVA</summary>
     <table>
     <thead>
