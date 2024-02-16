@@ -799,7 +799,7 @@
     </thead>
     <tbody>
     <tr>
-    <td>TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones <a href="https://arxiv.org/abs/2312.16862v1">TinyGPT-V</a></td>
+    <td><a href="https://arxiv.org/abs/2312.16862v1">TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones</a></td>
     <td>TinyGPT-V architecture includes a visual encoder (EVA of ViT), linear projection layers, and the Phi-2 language model as its backbone. It utilizes Q-Former from BLIP-2 for initial linear projection, aiming to efficiently embed visual features into the language model.</td>
     <td>Visual encoder backbone (EVA of ViT), linear projection layers for embedding visual features, Phi-2 large language model with 2.7 billion parameters, normalization and LoRA mechanisms to stabilize training and enhance model&#39;s performance.</td>
     <td>TinyGPT-V&#39;s training comprises four stages: warm-up training with image-text pairs, pre-training to process image modality inputs, instruction fine-tuning with image-text pairings for human-like learning, and multi-task learning to enhance conversation abilities and multimodal instruction tuning.</td>
