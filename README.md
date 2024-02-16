@@ -8,12 +8,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -37,12 +37,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -66,12 +66,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -97,12 +97,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -128,12 +128,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -159,12 +159,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -190,12 +190,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -221,12 +221,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -252,12 +252,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -283,12 +283,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -314,12 +314,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -345,12 +345,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -374,12 +374,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -405,12 +405,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -436,12 +436,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -468,12 +468,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -499,12 +499,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -530,12 +530,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -559,12 +559,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -588,12 +588,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -619,12 +619,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -650,12 +650,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -681,12 +681,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -712,12 +712,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -743,12 +743,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -772,12 +772,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -803,12 +803,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -834,12 +834,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -866,12 +866,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -897,12 +897,12 @@
   <tr>
   <th>Title</th>
   <th>Architecture Overview</th>
-  <th>Architecture.Components</th>
-  <th>Training.Methods</th>
-  <th>Alignment.Techniques</th>
-  <th>Alignment.Fusion Methods</th>
-  <th>Datasets.Used</th>
-  <th>Datasets.Purpose</th>
+  <th>Architecture Components</th>
+  <th>Training Methods</th>
+  <th>Alignment Techniques</th>
+  <th>Alignment Fusion Methods</th>
+  <th>Datasets Used</th>
+  <th>Datasets Purpose</th>
   </tr>
   </thead>
   <tbody>
@@ -928,12 +928,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -959,12 +959,12 @@
     <tr>
     <th>Title</th>
     <th>Architecture Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
