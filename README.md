@@ -1,6 +1,6 @@
 # Awesome-VLM-Architectures
 <details> 
-  <summary><h3>LLaVA</h3></summary> 
+  <summary>LLaVA</summary> 
     <table>
     <thead>
     <tr>
@@ -29,7 +29,7 @@
     </table>
 </details>
 <details>  
-  <summary><h3>LLaVA 1.5</h3></summary> 
+  <summary>LLaVA 1.5</summary> 
     <table>
     <thead>
     <tr>
@@ -58,7 +58,7 @@
     </table>
 </details>
 <details>  
-  <summary><h3>LLaVA 1.6</h3></summary> 
+  <summary>LLaVA 1.6</summary> 
     <table>
     <thead>
     <tr>
