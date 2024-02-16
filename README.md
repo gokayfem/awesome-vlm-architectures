@@ -6,14 +6,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -35,14 +35,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -64,14 +64,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -95,14 +95,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -126,14 +126,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -157,14 +157,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -188,14 +188,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -219,14 +219,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -250,14 +250,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -281,14 +281,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -312,14 +312,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -343,14 +343,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -372,14 +372,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -403,14 +403,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -434,14 +434,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -466,14 +466,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -497,14 +497,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -528,14 +528,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -557,14 +557,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -586,14 +586,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -617,14 +617,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -648,14 +648,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -679,14 +679,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -710,14 +710,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -741,14 +741,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -770,14 +770,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -801,14 +801,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -832,14 +832,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -864,14 +864,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -895,14 +895,14 @@
   <table>
   <thead>
   <tr>
-  <th width="200">Title</th>
-  <th width="200">Architecture Overview</th>
-  <th width="200">Architecture Components</th>
-  <th width="200">Training Methods</th>
-  <th width="200">Alignment Techniques</th>
-  <th width="200">Alignment Fusion Methods</th>
-  <th width="200">Datasets Used</th>
-  <th width="200">Datasets Purpose</th>
+  <th width="350">Title</th>
+  <th width="350">Architecture Overview</th>
+  <th width="350">Architecture Components</th>
+  <th width="350">Training Methods</th>
+  <th width="350">Alignment Techniques</th>
+  <th width="350">Alignment Fusion Methods</th>
+  <th width="350">Datasets Used</th>
+  <th width="350">Datasets Purpose</th>
   </tr>
   </thead>
   <tbody>
@@ -926,14 +926,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -957,14 +957,14 @@
     <table>
     <thead>
     <tr>
-    <th width="200">Title</th>
-    <th width="200">Architecture Overview</th>
-    <th width="200">Architecture Components</th>
-    <th width="200">Training Methods</th>
-    <th width="200">Alignment Techniques</th>
-    <th width="200">Alignment Fusion Methods</th>
-    <th width="200">Datasets Used</th>
-    <th width="200">Datasets Purpose</th>
+    <th width="350">Title</th>
+    <th width="350">Architecture Overview</th>
+    <th width="350">Architecture Components</th>
+    <th width="350">Training Methods</th>
+    <th width="350">Alignment Techniques</th>
+    <th width="350">Alignment Fusion Methods</th>
+    <th width="350">Datasets Used</th>
+    <th width="350">Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
