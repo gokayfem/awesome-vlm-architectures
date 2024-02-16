@@ -460,6 +460,8 @@
 </details>
 
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/bfba9ced-9b0a-4959-98d2-5150051d8548)
   <summary>MIRASOL3B</summary>
     <table>
     <thead>
