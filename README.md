@@ -704,6 +704,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/2354442a-0e96-4010-8b4f-8bc3d666427e)
   <summary>MiniGPT-v2</summary>
     <table>
     <thead>
