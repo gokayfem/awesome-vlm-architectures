@@ -611,6 +611,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/2565afb0-901c-4438-9488-c73a86261aa5)
   <summary>PALI</summary>
     <table>
     <thead>
