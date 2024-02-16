@@ -869,3 +869,33 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>MoE-LLaVA</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2401.15947">MoE-LLaVA: Mixture of Experts for Large Vision-Language Models</a></td>
+    <td>MoE-LLaVA introduces a novel architecture integrating mixtures of experts (MoE) with learnable routers within a large vision-language model framework. It features a sparse model design where each token is routed to different experts, with only the top-k experts being activated for processing.</td>
+    <td>Key components include a vision encoder, a visual projection layer (MLP), a word embedding layer, multi-head self-attention (MSA) blocks, feed-forward neural networks (FFN), and MoE blocks. The architecture uses layer normalization and residual connections within each block.</td>
+    <td>The training employs a three-stage MoE-Tuning strategy. Stage I focuses on adapting image tokens to the LLM with an MLP. Stage II involves training all LLM parameters except the vision encoder for multimodal understanding. Stage III specializes in initializing and training the MoE layers exclusively, utilizing the FFNs from Stage II as the initialization weights for the experts.</td>
+    <td>MoE-LLaVA employs learnable routers to dynamically distribute tokens to the most relevant experts for processing, effectively aligning text and image modalities.</td>
+    <td>The model concatenates visual and text tokens after processing by the vision encoder and word embedding layer, respectively. These concatenated tokens are then processed through the LLM blocks and MoE blocks, allowing for a deep integration of visual and textual information.</td>
+    <td>LLaVA-PT, Hybrid-FT, SViT, LVIS, LRV, MIMIC-IT, LLaVA-FT</td>
+    <td>These datasets are used across different training stages to enhance the model&#39;s multimodal understanding capabilities. LLaVA-PT is used for pretraining in Stage I, Hybrid-FT (a combination of several datasets) for Stage II to bolster multimodal instruction tuning, and LLaVA-FT for Stage III focusing on fine-tuning the MoE layers.</td>
+    </tr>
+    </tbody>
+    </table>
+
+</details>
