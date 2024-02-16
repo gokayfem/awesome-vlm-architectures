@@ -753,3 +753,32 @@
     </tbody>
     </table>
 </details>
+<details>
+  <summary>LaVIN</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2305.15023v3">Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models </a></td>
+    <td>LaVIN introduces a novel learning regime, Mixture-of-Modality Adaptation (MMA), leveraging lightweight adapters for vision-language (VL) instruction tuning. This approach connects the image encoder and LLM, optimizing the entire multimodal LLM via a small number of parameters.</td>
+    <td>Key components include Mixture-of-Modality Adapter (MM-Adapter) for connecting the LLM with the image encoder using lightweight adaptation modules, and Mixture-of-Modality Training (MMT) for joint optimization of multimodal LLM in an end-to-end manner.</td>
+    <td>LaVIN employs MMA, enabling efficient training by only fine-tuning inserted adapters. This scheme reduces the number of optimized parameters to a small scale (3~5M), significantly cutting training time and storage costs without additional VL pre-training.</td>
+    <td>MM-Adapter facilitates automatic shifting between single- and multi-modal instructions, enhancing adaptation to VL tasks.</td>
+    <td>MM-Adapter dynamically adjusts adaptations for input features through a routing function, allowing efficient integration of vision and text embeddings.</td>
+    <td>ScienceQA, Alphaca-52k, LLaVA-158k</td>
+    <td>ScienceQA is used for evaluating multimodal question answering performance. Alphaca-52k (text-only) and LLaVA-158k (text-image pairs) datasets are utilized for tuning and extending LaVIN to a multimodal chatbot, demonstrating its superior vision-language understanding.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
