@@ -673,6 +673,8 @@
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0e5ff945-1271-4189-8dd9-b0abd88eacc1)
   <summary>MiniGPT-4</summary>
     <table>
     <thead>
