@@ -826,6 +826,8 @@
     </table>  
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/a5ff801f-d523-4383-8b89-e2499976b2bb)
   <summary>FERRET</summary>
     <table>
     <thead>
