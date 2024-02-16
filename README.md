@@ -522,6 +522,8 @@
     </table>
 </details>
 <details> 
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/b46ebf3e-67fc-401e-a6ea-6f4797da372d)
   <summary>Flamingo</summary>   
     <table>
     <thead>
