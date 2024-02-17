@@ -1323,4 +1323,29 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </tbody>
     </table>  
 </details>
+<details>
+  <summary>ViT</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2010.11929v2.pdf">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</a></td>
+    <td>The Vision Transformer (ViT) applies the transformer architecture directly to images, processing them as a sequence of fixed-size patches. It uses standard transformer components with minimal modifications, treating image patches as equivalent to tokens in NLP.</td>
+    <td>Key components include linear embedding of image patches, position embeddings to retain positional information, a standard Transformer encoder with multiheaded self-attention (MSA) and MLP blocks, layer normalization, and residual connections.</td>
+    <td>ViT is trained on large datasets, initially without strong regularization, showing modest accuracies. However, performance significantly improves with large-scale training, overcoming the lack of inductive biases that are inherent in CNNs. Fine-tuning is performed on smaller datasets after pre-training.</td>
+    <td>ImageNet, CIFAR-100, VTAB, ImageNet-21k, JFT-300M</td>
+    <td>ImageNet and CIFAR-100 for benchmarking image classification tasks. VTAB for evaluating low-data transfer to diverse tasks. ImageNet-21k and JFT-300M for pre-training to improve performance and model generalization.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
 </details>
