@@ -373,6 +373,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+  <summary>Nous-Hermes-2-Vision - Mistral 7B</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha">Nous-Hermes-2-Vision-Alpha</a></td>
+    <td>Nous-Hermes-2-Vision is a pioneering Vision-Language Model that stands out by incorporating two significant enhancements over traditional approaches. It is built on the advancements of the OpenHermes-2.5-Mistral-7B.</td>
+    <td>The model integrates SigLIP-400M for improved performance and efficiency, diverging from the reliance on larger 3B vision encoders. It also features a custom dataset enriched with function calling capabilities, transforming it into a Vision-Language Action Model.</td>
+    <td>The model was trained using a diverse dataset comprising 220K images from LVIS-INSTRUCT4V, 60K from ShareGPT4V, 150K private function calling data, and 50K conversations from teknium&#39;s OpenHermes-2.5.</td>
+    <td>Not explicitly detailed in the available information, but the model&#39;s design suggests an advanced integration of vision and language capabilities, likely leveraging the SigLIP-400M&#39;s features.</td>
+    <td>The model uses custom datasets, including function calling data, to encode vision and text together, indicating a sophisticated method of fusion that supports action-oriented tasks and automation.</td>
+    <td>LVIS-INSTRUCT4V, ShareGPT4V, Private Function Calling Data, Conversations from teknium&#39;s OpenHermes-2.5</td>
+    <td>These datasets are used to train the model on a wide range of vision-language tasks, including object recognition, instruction following, and conversational understanding, enhancing its ability to perform complex vision-language tasks.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
 
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3e7c93bc-7963-4c2e-b207-226a03d152ca)
   <summary>TinyGPT-V</summary>
