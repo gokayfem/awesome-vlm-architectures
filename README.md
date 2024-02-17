@@ -309,6 +309,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+  <summary>Mousi</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2401.17221.pdf">MouSi: Poly-Visual-Expert Vision-Language Models</a></td>
+    <td>MouSi incorporates multiple visual experts into a single model to enhance VLM capabilities, addressing the limitations of single visual component models. It uses a poly-expert fusion network for integrating outputs from various visual experts, like CLIP for image-text matching and SAM for image segmentation, into a cohesive model that interfaces efficiently with pre-trained LLMs.</td>
+    <td>The model consists of a multi-expert visual encoder selecting experts from a pool, a poly-expert fusion network (either a projection fusion method or a Q-Former fusion method), and a pre-trained open-source LLM (e.g., Vicuna v1.5).</td>
+    <td>MouSi&#39;s training involves a pre-training phase where the text-only LLM and the multi-expert encoder are frozen, focusing on training the poly-visual fusion network. This is followed by a fine-tuning phase where the LLM is unfrozen and trained alongside the poly-visual fusion network on high-quality supervised datasets.</td>
+    <td>MouSi uses a poly-expert fusion network to integrate the outputs of different visual experts, aligning them multimodally to the vision input tokens.</td>
+    <td>The fusion is achieved either through a simple projection fusion method or a Q-Former fusion method, facilitating the encoding of vision and text together effectively by compressing multi-channel visual information.</td>
+    <td>LCS-558K, LAION-CC-SBU collection, diverse and high-quality SFT datasets</td>
+    <td>The LCS-558K and LAION-CC-SBU are used for pre-training to align the representation space of text and images. The SFT datasets are utilized in the fine-tuning phase to train the model on a wide range of multimodal tasks, enhancing its performance and capabilities.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
 
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/8afc8259-fa72-4e52-8080-a4ea12208e32)
   <summary>LaVIN</summary>
