@@ -1223,4 +1223,104 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </tbody>
     </table> 
 </details>
+<details>
+  <summary>Alpha-CLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2312.03818">Alpha-CLIP: A CLIP Model Focusing on Wherever You Want</a></td>
+    <td>Alpha-CLIP enhances the original CLIP model with region awareness by fine-tuning on millions of RGBA region-text pairs. This model maintains the visual recognition capabilities of CLIP while enabling precise control over image content emphasis.</td>
+    <td>The model architecture includes a modified CLIP image encoder that accepts an additional alpha channel along with RGB. This approach allows for detailed segmentation and region-specific processing without altering the original CLIP weights.</td>
+    <td>Alpha-CLIP is trained using a data generation pipeline to create millions of RGBA-region text pairs. This process involves the generation of natural images with foreground alpha channels and corresponding referring expressions for specific regions, enabling fine-tuning with an additional alpha channel input.</td>
+    <td>LAION-400M, LAION-5B, GRIT</td>
+    <td>These datasets provide large-scale training material for pretraining and fine-tuning. LAION datasets offer a broad spectrum of images for initial CLIP training, while GRIT, generated through pseudo-labeling, equips the model with local perception capabilities by providing fine-grained mask-level labels.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
+  <summary>GLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/abs/2112.03857">Grounded Language-Image Pre-training</a></td>
+    <td>GLIP unifies object detection and phrase grounding by reformulating object detection as a phrase grounding problem, enabling the model to learn from both detection and grounding data. This approach allows the model to leverage large-scale image-text paired data for pre-training, making it capable of understanding and performing tasks with object-level, language-aware, and semantic-rich visual representations.</td>
+    <td>Key components include a visual encoder (using CNN or Transformer as backbone) for extracting region/box features, a language encoder for processing text prompts, and prediction heads (box classifier and box regressor) trained with classification and localization loss. GLIP introduces deep fusion between image and text, fusing image and text information in the last few encoding layers.</td>
+    <td>GLIP is pre-trained on scalable and semantic-rich grounding data, using a unified formulation that combines detection and grounding tasks into one. The model is trained end-to-end, minimizing losses defined for both detection (localization and classification) and grounding (alignment scores between image regions and words in the prompt). Deep fusion of visual and language features is a key training strategy, enabling effective learning from the image-text paired data.</td>
+    <td>COCO, OpenImages, Objects365, Visual Genome, Flickr30k-entities, LVIS, PhraseCut</td>
+    <td>COCO, OpenImages, Objects365, and Visual Genome are used for object detection and grounding data, providing a broad range of object classes and scenarios. Flickr30k-entities is used specifically for the phrase grounding task, offering images with annotated bounding boxes for phrases. LVIS is utilized for instance segmentation, featuring a long-tail distribution of object categories. PhraseCut is used for referring expression segmentation, presenting images annotated with segmentation masks for referring expressions.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
+  <summary>ImageBind</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2305.05665.pdf">ImageBind: One Embedding Space To Bind Them All</a></td>
+    <td>ImageBind learns a joint embedding across six modalities (images, text, audio, depth, thermal, and IMU data) using image-paired data as a binding agent. This approach leverages large-scale vision-language models to extend zero-shot capabilities to new modalities.</td>
+    <td>Transformer architecture for all modality encoders, with specific adaptations for each modality (e.g., Vision Transformer for images). Modality-specific linear projection heads are added to each encoder for uniform embedding size.</td>
+    <td>ImageBind utilizes contrastive learning with image-paired data across different modalities without needing all modalities to co-occur. It incorporates web-scale image-text data and naturally occurring paired data (e.g., video-audio, image-depth) to learn a single joint embedding space.</td>
+    <td>Audioset, SUN RGB-D, LLVIP, Ego4D</td>
+    <td>These datasets provide naturally paired data across different modalities (audio, depth, thermal, IMU) for training ImageBind. They help in achieving emergent zero-shot classification and retrieval performance on tasks for each modality.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
+  <summary>SigLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2303.15343.pdf">Sigmoid Loss for Language Image Pre-Training</a></td>
+    <td>Proposes a simple pairwise sigmoid loss for image-text pre-training, avoiding the need for global view normalization required by softmax loss. This allows scaling up batch sizes while maintaining or improving performance.</td>
+    <td>The model uses vision transformer architecture for images and transformer architecture for texts. The key innovation is the introduction of the sigmoid loss, which processes image-text pairs independently.</td>
+    <td>Training involves the use of large batch sizes, with specific studies on the effect of batch size on model performance. The sigmoid loss allows for efficient training with large batches, including a detailed investigation of the impact of the negative to positive ratio and example pairs on training dynamics.</td>
+    <td>LiT image-text dataset, WebLI dataset</td>
+    <td>Used for training to achieve aligned representation spaces for images and texts. The datasets support the evaluation of zero-shot transfer capabilities and the exploration of the model&#39;s scalability and efficiency with sigmoid loss.</td>
+    </tr>
+    </tbody>
+    </table>  
+</details>
 </details>
