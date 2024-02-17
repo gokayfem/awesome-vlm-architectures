@@ -983,6 +983,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
   </table>
 </details>
 <details>
+  <summary>OtterHD</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2311.04219.pdf">OtterHD: A High-Resolution Multi-modality Model</a></td>
+    <td>OtterHD-8B evolves from Fuyu-8B, specifically designed for interpreting high-resolution visual inputs. It handles flexible input dimensions, enhancing versatility across various inference requirements.</td>
+    <td>OtterHD-8B is based on the Fuyu architecture, integrating pixel-level visual information directly into the language model without a separate vision encoder. It uses position embeddings to understand varying image sizes, enabling it to process high-resolution images up to 1024x1024 pixels.</td>
+    <td>Instruction-tuned with a focus on varying image resolutions. OtterHD-8B is trained on a data mixture including LLaVA-Instruct, VQAv2, GQA, OKVQA, OCRVQA, A-OKVQA, COCO-GOI, COCO-Caption, TextQA, RefCOCO, COCO-ITM, ImageNet, and LLaVA-RLHF, using PyTorch and HuggingFace transformers. It utilizes FlashAttention-2 and other fused operators for optimization.</td>
+    <td>Direct integration of pixel-level information into the language model, leveraging position embeddings for understanding varying image sizes.</td>
+    <td>OtterHD-8B does not use a conventional fusion method for vision and text embeddings. Instead, it directly processes image patches alongside textual instructions, using the inherent model architecture to understand and generate responses.</td>
+    <td>LLaVA-Instruct, VQAv2, GQA, OKVQA, OCRVQA, A-OKVQA, COCO-GOI, COCO-Caption, TextQA, RefCOCO, COCO-ITM, ImageNet, LLaVA-RLHF</td>
+    <td>These datasets are used to train OtterHD-8B, focusing on a wide range of vision and language tasks, including question answering, object recognition, and text-image alignment.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
 
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/6bf6529f-b914-44fd-96cf-d0c5d9eb054f)
   <summary>LLaVA-Med</summary>
