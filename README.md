@@ -373,6 +373,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+  <summary>COSMO</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://arxiv.org/pdf/2401.00849.pdf">COntrastive-Streamlined MultimOdal framework (CosMo)</a></td>
+    <td>CosMo introduces a novel architecture for interleaved data pre-training, combining a visual encoder with a pre-trained Large Language Model (LLM) partitioned into dedicated unimodal text processing and multimodal data handling components. It incorporates an additional contrastive loss to enhance both classification and generation tasks.</td>
+    <td>The framework consists of two main components: a visual encoder based on Vision Transformer (ViT) from Open-CLIP, and an LLM. The LLM is partitioned into two segments for diverse tasks, aiming to reduce overall parameters while handling extensive interleaved data sequences.</td>
+    <td>CosMo is trained with a blend of language modeling loss and contrastive loss, aimed at handling interleaved text and visual sequences. It employs AdamW optimizer, a cosine learning rate schedule, and DeepSpeed fp16 precision for training across 128 NVIDIA V100 GPUs, demonstrating a strategic partitioning of the LLM into dedicated components for improved computational efficiency.</td>
+    <td>CosMo enhances image-text alignment by incorporating a learnable query for global attention across all tokens, including an additional query for Text Fusion Layers. This allows a comprehensive understanding of token sets and optimizes the contrastive loss.</td>
+    <td>The model employs gated cross-attention layers for multimodal fusion, introducing bottlenecks in input and output feature channels to reduce learnable parameters. This lightweight fusion approach effectively integrates visual information for precise next-token prediction.</td>
+    <td>CC3M, SBU, LAION400M, DataComp1B, MMC4, WebVid, Howto-Interlink7M</td>
+    <td>These datasets were used to train CosMo, providing a mix of image-text, video-text, and interleaved image-text data. Howto-Interlink7M, a novel dataset introduced in this work, aims to provide high-quality annotated captions for improved video-language understanding, demonstrating the model&#39;s effectiveness across 14 diverse downstream datasets.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
   <summary>FireLLaVA</summary>
     <table>
     <thead>
