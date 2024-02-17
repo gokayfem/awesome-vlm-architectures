@@ -194,13 +194,13 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -318,13 +318,13 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -442,13 +442,13 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -473,13 +473,13 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -627,13 +627,13 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1085,13 +1085,13 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Alignment.Techniques</th>
-    <th>Alignment.Fusion Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1181,11 +1181,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1208,11 +1208,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1235,11 +1235,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1262,11 +1262,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1289,11 +1289,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1316,11 +1316,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -1343,11 +1343,11 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <thead>
     <tr>
     <th>Title</th>
-    <th>Architecture.Overview</th>
-    <th>Architecture.Components</th>
-    <th>Training.Methods</th>
-    <th>Datasets.Used</th>
-    <th>Datasets.Purpose</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
