@@ -495,6 +495,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </tbody>
     </table>
 </details>
+<details>
+  <summary>MobileVLM</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2312.16886.pdf">MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices</a></td>
+    <td>MobileVLM incorporates a visual encoder, a language model tailored for edge devices (MobileLLaMA), and an efficient projector (Lightweight Downsample Projector - LDP) to align visual and textual spaces efficiently for mobile scenarios.</td>
+    <td>The visual encoder is based on CLIP ViT-L/14 with a resolution of 336x336. MobileLLaMA, the language model, is a downscaled version of LLaMA for mobile devices. The efficient projector, LDP, facilitates visual-textual feature alignment with minimized computational cost.</td>
+    <td>Training involves three stages: pre-training language models on the text-only RedPajama v1 dataset, supervised fine-tuning on multi-turn dialogues between humans and ChatGPT, and training vision language models using multimodal datasets.</td>
+    <td>LDP (Lightweight Downsample Projector) is used for efficient alignment of visual and textual features, leveraging mobile-friendly operations like depth-wise convolution.</td>
+    <td>LDP enables the efficient fusion of vision and text embeddings by downsampling visual tokens to align with the language model&#39;s input dimension, maintaining spatial information while optimizing computational efficiency.</td>
+    <td>RedPajama v1, multimodal datasets</td>
+    <td>RedPajama v1 is used for pre-training language models on text-only data. Multimodal datasets are used for training vision language models to handle visual and textual information.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
 <details> 
 
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/4156475d-e501-495e-98bb-66efdd5b03f7)
