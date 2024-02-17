@@ -1,6 +1,6 @@
 # 👁️Awesome Vision Language Model Architectures👁️‍🗨️
 
-Vision-Language Models (VLMs) feature a multimodal architecture that processes image and text data simultaneously. They can perform Visual Question Answering (VQA), image captioning and Text-To-Image search kind of tasks. VLMs utilize techniques like multimodal fusing with cross-attention, masked-language modeling, and image-text matching to relate visual semantics to textual representations. This repository contains famous VLMs and their architectures, training procedures, datasets etc...
+Vision-Language Models (VLMs) feature a multimodal architecture that processes image and text data simultaneously. They can perform Visual Question Answering (VQA), image captioning and Text-To-Image search kind of tasks. VLMs utilize techniques like multimodal fusing with cross-attention, masked-language modeling, and image-text matching to relate visual semantics to textual representations. This repository contains famous VLMs and their architectures, training procedures, datasets.
 
 <details open>
   <summary><h3>VLMs for Text Generation</h3></summary>
