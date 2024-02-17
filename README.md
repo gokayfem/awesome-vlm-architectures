@@ -373,6 +373,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+  <summary>GLaMM</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2311.03356.pdf">GLaMM: Pixel Grounding Large Multimodal Model</a></td>
+    <td>GLaMM integrates five core components for visually grounded conversations: Global Image Encoder, Region Encoder, LLM, Grounding Image Encoder, and Pixel Decoder. It handles both textual and visual prompts, offering scene-level understanding, region-level understanding, and pixel-level grounding.</td>
+    <td>Global Image Encoder for holistic scene understanding, Region Encoder for interpreting user-specified image regions, LLM for integrating projected image features and text instructions, Grounding Image Encoder for pixel-level object grounding, and Pixel Decoder for generating segmentation masks.</td>
+    <td>Utilizes a comprehensive approach involving both automated and manual data annotation pipelines. The Grounding-anything Dataset (GranD) is developed for densely annotated captions and segmentation masks, supporting the model&#39;s training for the Grounded Conversation Generation (GCG) task.</td>
+    <td>Employs a vision-to-language (V-L) projection layer for mapping image features into the language space, enabling effective text-image alignment.</td>
+    <td>The model uses a language-to-prompt (L-P) projection layer for transforming text embeddings related to segmentation into the decoder space, facilitating the encoding of vision and text together for pixel-level grounding.</td>
+    <td>Grounding-anything Dataset (GranD)</td>
+    <td>GranD is used for pretraining and fine-tuning GLaMM, offering 7.5M unique concepts grounded in 810M regions with segmentation masks for training the model in the novel Grounded Conversation Generation task.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
   <summary>COSMO</summary>
     <table>
     <thead>
