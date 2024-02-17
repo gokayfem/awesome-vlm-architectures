@@ -187,6 +187,8 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/732d3b7b-02de-42d3-ae76-800bf035b391)
   <summary>InternLM-XComposer2</summary>
     <table>
     <thead>
