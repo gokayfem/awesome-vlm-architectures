@@ -11,14 +11,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -40,14 +40,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -69,14 +69,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -100,14 +100,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -131,14 +131,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -162,14 +162,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -193,14 +193,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -224,14 +224,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -255,14 +255,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -286,14 +286,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -317,14 +317,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -348,14 +348,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -377,14 +377,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -408,14 +408,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -439,14 +439,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -471,14 +471,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -502,14 +502,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -533,14 +533,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -562,14 +562,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -591,14 +591,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -622,14 +622,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -653,14 +653,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -684,14 +684,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -715,14 +715,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -746,14 +746,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -775,14 +775,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -806,14 +806,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -837,14 +837,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -869,14 +869,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -900,14 +900,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
   <table>
   <thead>
   <tr>
-  <th width="350">Title</th>
-  <th width="350">Architecture Overview</th>
-  <th width="350">Architecture Components</th>
-  <th width="350">Training Methods</th>
-  <th width="350">Alignment Techniques</th>
-  <th width="350">Alignment Fusion Methods</th>
-  <th width="350">Datasets Used</th>
-  <th width="350">Datasets Purpose</th>
+  <th>Title</th>
+  <th>Architecture Overview</th>
+  <th>Architecture Components</th>
+  <th>Training Methods</th>
+  <th>Alignment Techniques</th>
+  <th>Alignment Fusion Methods</th>
+  <th>Datasets Used</th>
+  <th>Datasets Purpose</th>
   </tr>
   </thead>
   <tbody>
@@ -931,14 +931,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
@@ -962,14 +962,14 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     <table>
     <thead>
     <tr>
-    <th width="350">Title</th>
-    <th width="350">Architecture Overview</th>
-    <th width="350">Architecture Components</th>
-    <th width="350">Training Methods</th>
-    <th width="350">Alignment Techniques</th>
-    <th width="350">Alignment Fusion Methods</th>
-    <th width="350">Datasets Used</th>
-    <th width="350">Datasets Purpose</th>
+    <th>Title</th>
+    <th>Architecture Overview</th>
+    <th>Architecture Components</th>
+    <th>Training Methods</th>
+    <th>Alignment Techniques</th>
+    <th>Alignment Fusion Methods</th>
+    <th>Datasets Used</th>
+    <th>Datasets Purpose</th>
     </tr>
     </thead>
     <tbody>
