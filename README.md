@@ -1199,6 +1199,8 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/a6c79d0e-a4c7-48c9-86b6-3a8cc9853e11)
   <summary>MetaCLIP</summary>
     <table>
     <thead>
