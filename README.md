@@ -187,6 +187,35 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 <details>
+  <summary>InternLM-XComposer2</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Alignment.Techniques</th>
+    <th>Alignment.Fusion Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2401.16420.pdf">InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Models</a></td>
+    <td>InternLM-XComposer2 incorporates a vision encoder and a Large Language Model (LLM) interconnected via a Partial LoRA module. The model processes images and text, using visual tokens from the vision encoder and language tokens from the tokenized text.</td>
+    <td>The model includes a vision encoder that extracts visual features, pre-trained using CLIP for image-language contrastive learning. InternLM-2 serves as the LLM, offering multi-lingual capabilities. The Partial LoRA (Low-Rank Adaptation) module aligns visual and language tokens by applying low-rank adaptation exclusively to visual tokens.</td>
+    <td>Pre-training involves fine-tuning the vision encoder and Partial LoRA to align visual tokens with the LLM, using datasets for general semantic alignment, world knowledge alignment, and vision capability enhancement. Supervised fine-tuning includes multi-task training and free-form text-image composition, enhancing the model&#39;s ability to utilize image information and compose text-image content.</td>
+    <td>Partial LoRA is used for effective alignment of different modalities, enriching the LLM with modality-specific knowledge while preserving its inherent capabilities.</td>
+    <td>Partial LoRA selectively enhances visual tokens for robust performance in both visual and textual domains, enabling detailed perception, logical reasoning, and extensive knowledge integration in multimodal understanding.</td>
+    <td>ShareGPT4V-PT, COCO, Nocaps, TextCaps, LAION400M, SBU, CC 3M, Concept Data, WanJuan, Flicker, MMC-Instruction, VQAv2, GQA, OK-VQA, AI2D, SQA, DVQA, ChartQA, MathQA, Geometry3K, A-OKVQA, KVQA, LLaVA-150k, LVIS-Instruct4V, ShareGPT-en&amp;zh, InternLM-Chat</td>
+    <td>Used for pre-training and supervised fine-tuning to equip the model with capabilities in general semantic alignment, world knowledge alignment, vision capability enhancement, and to facilitate free-form text-image composition.</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
 
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/50a9bbc0-b888-4407-800d-71880e248916)
   <summary>KOSMOS-1</summary>
