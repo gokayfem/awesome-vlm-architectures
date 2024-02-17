@@ -1171,3 +1171,56 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </table>
 </details>
 </details>
+<details open>
+  <summary><h3>VLMs for understanding text and image</h3></summary>
+<details>
+  <summary>CLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2103.00020.pdf">Learning Transferable Visual Models From Natural Language Supervision</a></td>
+    <td>CLIP learns SOTA image representations by predicting which caption goes with which image, using a dataset of 400 million (image, text) pairs. It transfers knowledge to downstream tasks via natural language, enabling zero-shot transfer.</td>
+    <td>CLIP consists of an image encoder and a text encoder. It uses a contrastive objective, training these encoders to maximize the cosine similarity of actual (image, text) pairs while minimizing it for incorrect pairings.</td>
+    <td>CLIP is trained on a large-scale dataset of 400 million (image, text) pairs. It employs a contrastive learning approach, optimizing a symmetric cross-entropy loss over the similarity scores between image and text embeddings.</td>
+    <td>A custom dataset of 400 million (image, text) pairs collected from the internet</td>
+    <td>To cover a broad set of visual concepts and provide natural language supervision for learning SOTA image representations</td>
+    </tr>
+    </tbody>
+    </table>
+</details>
+<details>
+  <summary>MetaCLIP</summary>
+    <table>
+    <thead>
+    <tr>
+    <th>Title</th>
+    <th>Architecture.Overview</th>
+    <th>Architecture.Components</th>
+    <th>Training.Methods</th>
+    <th>Datasets.Used</th>
+    <th>Datasets.Purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://ar5iv.org/pdf/2309.16671.pdf">Demystifying CLIP Data</a></td>
+    <td>MetaCLIP focuses on curating high-quality training data from raw data pools using metadata derived from CLIP&#39;s concepts, aiming to produce a balanced subset over the metadata distribution.</td>
+    <td>The MetaCLIP framework includes data curation algorithms that leverage metadata for balancing and enhancing the quality and diversity of the training dataset.</td>
+    <td>MetaCLIP is applied to CommonCrawl with 400M image-text pairs, demonstrating superior performance over CLIP&#39;s data on multiple benchmarks, including zero-shot ImageNet classification.</td>
+    <td>CommonCrawl</td>
+    <td>To curate a balanced and high-quality dataset of 400M image-text pairs, significantly improving performance on standard benchmarks compared to CLIP&#39;s original dataset.</td>
+    </tr>
+    </tbody>
+    </table> 
+</details>
+</details>
