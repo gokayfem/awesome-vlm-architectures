@@ -1396,6 +1396,6 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
 </details>
 
 📚 **Important References**:
-[Guide to Vision-Language Models (VLMs) by Görkem Polat](https://encord.com/blog/vision-language-models-guide/)
-[VLM Primer by Aman Chadha](https://aman.ai/primers/ai/VLM/#google_vignette)
-[Generalized Visual Language Models by Lilian Weng](https://lilianweng.github.io/posts/2022-06-09-vlm/)
+- [Guide to Vision-Language Models (VLMs) by Görkem Polat](https://encord.com/blog/vision-language-models-guide/)
+- [VLM Primer by Aman Chadha](https://aman.ai/primers/ai/VLM/#google_vignette)
+- [Generalized Visual Language Models by Lilian Weng](https://lilianweng.github.io/posts/2022-06-09-vlm/)
