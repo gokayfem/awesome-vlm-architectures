@@ -1174,6 +1174,8 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
 <details open>
   <summary><h3>VLMs for Understanding Text and Images</h3></summary>
 <details>
+
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c335c342-9a2c-4d4e-83d6-d3077cc32643)
   <summary>CLIP</summary>
     <table>
     <thead>
