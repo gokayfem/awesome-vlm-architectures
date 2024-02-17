@@ -1,14 +1,27 @@
 # 👁️‍🗨️Awesome Vision Language Model Architectures👁️‍🗨️
 
 Vision-Language Models (VLMs) feature a multimodal architecture that processes image and text data simultaneously. They can perform Visual Question Answering (VQA), image captioning and Text-To-Image search kind of tasks. VLMs utilize techniques like multimodal fusing with cross-attention, masked-language modeling, and image-text matching to relate visual semantics to textual representations. This repository contains information on famous Vision Language Models (VLMs), including details about their architectures, training procedures, and the datasets used for training. Click to expand and learn more about any VLM.
-
+<style>
+    .wide-table {
+        width: 100%; /* Adjust the table width as needed */
+        table-layout: fixed; /* This makes the column widths more predictable */
+    }
+    .wide-table th, .wide-table td {
+        width: auto; /* Adjust column width as needed */
+        word-wrap: break-word; /* Ensures text wraps within the cell */
+        padding: 8px; /* Adjust padding for readability */
+    }
+    .wide-table th {
+        background-color: #f2f2f2; /* Background color for the header */
+    }
+</style>
 <details open>
   <summary><h3>VLMs for Text Generation</h3></summary>
 <details> 
   
   ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/722f0fbb-ea52-4a8a-ab1e-bec45ca7d04f)
   <summary>LLaVA</summary>    
-    <table>
+    <table class="wide-table">
     <thead>
     <tr>
     <th>Title</th>
