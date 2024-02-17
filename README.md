@@ -1340,7 +1340,7 @@
 </details>
 <details>
 
-  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c0a90519-69c0-4064-810c-c4ad0d2e7649)
+  ![image](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/60018313-37dd-4dbd-8eb4-a3075fd26663)
   <summary>SigLIP</summary>
     <table>
     <thead>
