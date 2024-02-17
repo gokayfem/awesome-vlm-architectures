@@ -35,6 +35,37 @@ Vision-Language Models (VLMs) feature a multimodal architecture that processes i
     </tbody>
     </table>
 </details>
+<details>
+  <summary>LLaVA</summary>
+  <div style="overflow-x: auto;">
+    <table style="width: 100%; table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 10%;">Title</th>
+          <th style="width: 15%;">Architecture Overview</th>
+          <th style="width: 15%;">Architecture Components</th>
+          <th style="width: 15%;">Training Methods</th>
+          <th style="width: 10%;">Alignment Techniques</th>
+          <th style="width: 15%;">Alignment Fusion Methods</th>
+          <th style="width: 10%;">Datasets Used</th>
+          <th style="width: 10%;">Datasets Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://arxiv.org/abs/2304.08485">LLaVA: Large Language and Vision Assistant</a></td>
+          <td>LLaVA combines a pre-trained language model (LLM) with a visual model to leverage the capabilities of both for multimodal understanding. It integrates a vision encoder with a language decoder for processing and understanding language-image instruction data.</td>
+          <td>Key components include the CLIP visual encoder for image feature extraction and the Vicuna language model for processing language instructions. A simple linear layer connects image features to the word embedding space, aligning visual and language representations.</td>
+          <td>LLaVA is trained using a two-stage instruction-tuning procedure. The first stage involves pre-training for feature alignment, utilizing a filtered dataset to align image features with LLM word embeddings. The second stage involves fine-tuning both the projection layer and LLM end-to-end on specific tasks like a multimodal chatbot and Science QA, focusing on enhancing the model's instruction-following capabilities.</td>
+          <td>The model employs instruction-tuning to align text-image data, generating multimodal instruction-following data using GPT-4. This involves converting image-text pairs into formats suitable for instruction-following tasks.</td>
+          <td>A trainable projection matrix is used to convert visual features into language embedding tokens, aligning image and language representations within the same dimensional space. This facilitates encoding vision and text together effectively.</td>
+          <td>Filtered CC3M, LLaVA-Instruct-158K, ScienceQA</td>
+          <td>Filtered CC3M is used for pre-training to align visual and language features. LLaVA-Instruct-158K, a dataset generated using GPT-4, is used for fine-tuning on multimodal tasks. ScienceQA is utilized to evaluate the model's performance on multimodal reasoning tasks.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</details>
 <details>  
   <summary>LLaVA 1.5</summary> 
     <table>
