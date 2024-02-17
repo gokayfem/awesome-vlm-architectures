@@ -1,4 +1,4 @@
-# Awesome Visual Language Model Architectures
+# Awesome Vision Language Model Architectures
 
 Vision-Language Models (VLMs) merge visual and linguistic data processing to mimic human-like understanding and interaction capabilities. By integrating computer vision and natural language processing techniques, VLMs handle both image and text inputs, aiming to achieve tasks such as image interpretation, text generation from visual cues, and visual-based question answering. The focus of VLM development is on creating models that can seamlessly bridge the gap between the visual and textual realms, enhancing machine understanding of complex multimodal data. 
 
