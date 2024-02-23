@@ -9,7 +9,8 @@
   <p align="center">
   <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/722f0fbb-ea52-4a8a-ab1e-bec45ca7d04f" />
   </p>
-  <summary>LLaVA [![arXiv](https://img.shields.io/badge/arXiv-2311.03079-b31b1b.svg)](https://arxiv.org/abs/2304.08485) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/haotian-liu/LLaVA)</summary>    
+  <summary>LLaVA</summary>    
+    [![arXiv](https://img.shields.io/badge/arXiv-2311.03079-b31b1b.svg)](https://arxiv.org/abs/2304.08485) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/haotian-liu/LLaVA)
     <table>
     <thead>
     <tr>
