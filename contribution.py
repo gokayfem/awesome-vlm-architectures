@@ -48,7 +48,7 @@ def generate_markdown(submission):
     image_markdown = f"""<p align="center">\n<img src="{submission['image_url']}" />\n</p>"""  if submission['image_url'] else ""
     description_markdown = f"\n<details>\n\n{submission['description']}\n</details>  \n"
     
-    return f"{title_markdown}{badges_markdown}  \n{authors_markdown}{image_markdown}{description_markdown}"
+    return f"{title_markdown}{badges_markdown}  \n{authors_markdown}{image_markdown}{description_markdown}  "
 
 # Function to insert Markdown content into README.md before "Important References"
 def insert_content_into_readme(markdown_content, readme_path="README.md"):
