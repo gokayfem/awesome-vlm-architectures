@@ -1,20 +1,6 @@
 import json
 import os
 
-# Define the template with badge slots ready for URLs
-template = {
-    "title": "",
-    "authors": "",
-    "badges": {
-        "arXiv": "",
-        "GitHub": "",
-        "Gradio": "",
-        "Model": ""  # Placeholder for other badges as needed
-    },
-    "image_url": "",
-    "description": ""
-}
-
 # Function to generate badge Markdown from URLs
 def generate_badges_markdown(badges):
     markdown_badges = []
