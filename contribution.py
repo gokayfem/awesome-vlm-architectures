@@ -32,7 +32,7 @@ def generate_markdown(submission):
     badges_markdown = generate_badges_markdown(submission['badges'])
     authors_markdown = f"{submission['authors']}  \n"
     image_markdown = f"""<p align="center">\n<img src="{submission['image_url']}" />\n</p>"""  if submission['image_url'] else ""
-    description_markdown = f"\n<details>\n\n{submission['description']}\n</details>  \n"
+    description_markdown = f"\n<details>\n\n{submission['description']}\n</details>  \n<summary>ℹ️ <i>More Information</i></summary>  \n\n"
     
     return f"{title_markdown}{badges_markdown}  \n{authors_markdown}{image_markdown}{description_markdown}  "
 
