@@ -37,7 +37,7 @@ Haotian Liu, Chunyuan Li, Yuheng Li, Yong Jae Lee
 </details> 
 
 ### **LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge**
-[![GitHub](https://badges.aleen42.com/src/github.svg)](https://llava-vl.github.io/blog/2024-01-30-llava-next/)
+[![GitHub](https://badges.aleen42.com/src/github.svg)](https://llava-vl.github.io/blog/2024-01-30-llava-next/)  
 Haotian Liu, Chunyuan Li, Yuheng Li, Bo Li, Yuanhan Zhang, Sheng Shen, Yong Jae Lee
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/032ef144-ec10-41da-80a1-2cecd66c86ee" />
