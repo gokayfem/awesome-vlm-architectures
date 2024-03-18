@@ -13,7 +13,7 @@
 
 ### **LLaVA: Large Language and Vision Assistant - Visual Instruction Tuning**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2304.08485-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2304.08485) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/haotian-liu/LLaVA) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://llava.hliu.cc/)  
+[![arXiv](https://img.shields.io/badge/arXiv-2304.08485-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2304.08485) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/haotian-liu/LLaVA)
 Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/722f0fbb-ea52-4a8a-ab1e-bec45ca7d04f" />
@@ -25,7 +25,7 @@ Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
 </details> 
 
 ### **LLaVA 1.5: Improved Baselines with Visual Instruction Tuning**
-[![arXiv](https://img.shields.io/badge/arXiv-2310.03744-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2310.03744) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/haotian-liu/LLaVA) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://llava.hliu.cc/)  
+[![arXiv](https://img.shields.io/badge/arXiv-2310.03744-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2310.03744)
 Haotian Liu, Chunyuan Li, Yuheng Li, Yong Jae Lee
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c7112b75-3b86-48a2-9c0f-f1dc1dc6ee06" />
@@ -37,7 +37,7 @@ Haotian Liu, Chunyuan Li, Yuheng Li, Yong Jae Lee
 </details> 
 
 ### **LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge**
-[![GitHub](https://badges.aleen42.com/src/github.svg)](https://llava-vl.github.io/blog/2024-01-30-llava-next/) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://llava.hliu.cc/)  
+[![GitHub](https://badges.aleen42.com/src/github.svg)](https://llava-vl.github.io/blog/2024-01-30-llava-next/)
 Haotian Liu, Chunyuan Li, Yuheng Li, Bo Li, Yuanhan Zhang, Sheng Shen, Yong Jae Lee
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/032ef144-ec10-41da-80a1-2cecd66c86ee" />
