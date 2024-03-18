@@ -1,5 +1,5 @@
 # Contribution Guidelines
-Fill the **submission file** in the ```contribution.py``` then run it and send a pull request.
+Fill the **submission dictionary** in the ```contribution.py``` then run it and send a pull request.
 - Description should be at least 100 words.
 
 ```python
