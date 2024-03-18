@@ -535,8 +535,8 @@ Rohit Girdhar, Alaaeldin El-Nouby, Zhuang Liu, Mannat Singh, Kalyan Vasudev Alwa
 </details>
 
 ### **SigLIP: Sigmoid Loss for Language Image Pre-Training**
-[![arXiv](https://img.shields.io/badge/arXiv-2303.15343-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2303.15343) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/google-research/big_vision)  
-Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov, Lucas Beyer
+[![arXiv](https://img.shields.io/badge/arXiv-2303.15343-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2303.15343)  
+Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov, Lucas Beyer  
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/60018313-37dd-4dbd-8eb4-a3075fd26663" />
 </p> 
