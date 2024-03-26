@@ -1,18 +1,26 @@
-# Contribution Guidelines
-Fill the **submission dictionary** in the ```contribution.py``` then run it and send a pull request.
-- Description should be at least 100 words.
+# Contributing
+First of all, your contributions are always welcome!
 
-```python
-submission = {
-        "title": "Example Architecture",
-        "authors": "John Doe, Jane Doe",
-        "badges": {
-            "arXiv": "https://arxiv.org/abs/2304.08485",
-            "GitHub": "https://github.com/haotian-liu/LLaVA",
-            "Gradio": "",
-            "Model": "https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha"
-        },
-        "image_url": "https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/fbf8bcdd-b1bb-4fd8-8723-3c82e84ef759",
-        "description": "Represents a notable advancement in the realm of Vision-Language Models, Training methodologies for ViT are characterized by its scalability and the significant impact of dataset size on its performance. Initially, ViT exhibits modest accuracies without strong regularization techniques. However, its performance escalates with the scale of training, showcasing its potential to outperform traditional CNN approaches through extensive pre-training on large datasets. This process highlights the critical role of dataset selection in ViT's training regimen. It is fine-tuned on smaller datasets following a comprehensive pre-training phase that leverages large datasets like ImageNet-21k and JFT-300M to enhance model generalization and performance across a wide range of tasks. The datasets employed, including ImageNet, CIFAR-100, VTAB, ImageNet-21k, and JFT-300M, serve dual purposes: benchmarking the model's image classification capabilities and evaluating its transferability to diverse tasks with limited data, thereby establishing ViT's versatility and effectiveness in advancing image recognition tasks..."
-    }
-```
+This list aims to provide a concise overview of significant Vision-Language Models (VLMs) and resources. This means that the suggested models or resources are:
+
+- Endorsed by a broad audience, not just based on individual preference.
+- Subject to widespread discussion within the community for its groundbreaking aspects.
+- Fills a specific void, catering to a particular need.
+## Guidelines
+To ensure your pull request is accepted, please follow these guidelines:
+
+- Verify if your suggestion has already been submitted to prevent redundancy.
+- Ensure the recommended item is under active development. Avoid suggestions that are unmaintained, deprecated, have an archived repository, or lack documentation.
+- Submit one pull request per suggestion for clarity.
+- Contributions that introduce new categories or refine the existing framework are encouraged.
+- Documentation should be in English.
+- Proofread your submission to avoid spelling or grammatical errors.
+- Adjust your text editor settings to remove trailing whitespace.
+- While we appreciate contributions, we advise against submitting your own projects. It's preferable to have someone else recognize the value of your work and recommend it.
+
+## Pull requests
+1. Fork it!
+2. Create your branch: git checkout -b my-new-branch
+3. Commit your changes: git commit -am 'fix stuff'
+4. Push to the branch: git push origin my-new-branch
+5. Submit a pull request
