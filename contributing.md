@@ -6,6 +6,7 @@ This list aims to provide a concise overview of significant Vision-Language Mode
 - Endorsed by a broad audience, not just based on individual preference.
 - Subject to widespread discussion within the community for its groundbreaking aspects.
 - Fills a specific void, catering to a particular need.
+
 ## Guidelines
 To ensure your pull request is accepted, please follow these guidelines:
 
