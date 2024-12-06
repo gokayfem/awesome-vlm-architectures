@@ -4,6 +4,23 @@
 **Vision-Language Models (VLMs)** feature a multimodal architecture that processes image and text data simultaneously. They can perform **Visual Question Answering (VQA)**, **image captioning** and **Text-To-Image search** kind of tasks. VLMs utilize techniques like multimodal fusing with cross-attention, masked-language modeling, and image-text matching to relate visual semantics to textual representations. This repository contains information on famous Vision Language Models (VLMs), including details about their architectures, training procedures, and the datasets used for training. **Click to expand for further details for every architecture**
 - 📙 <a href="https://github.com/gokayfem/ComfyUI_VLM_nodes">Visit my other repo to try Vision Language Models on ComfyUI</a>
 
+## Summary
+
+### huggingface demo space
+---
+ - [VisionZip](http://202.104.135.156:7860/)
+ - []() 
+
+
+
+
+---------
+### Papers and Models
+--------
+| Model Name | Code | Paper | Conferences
+|---------|--------|-------------|-------------|
+| VisionZip | [github-VisionZip](https://github.com/dvlab-research/VisionZip) | [paper](https://arxiv.org/abs/2412.04467) | Microsoft 2024 | 
+-----
 ## Contents
 
 - [Architectures](#architectures)
