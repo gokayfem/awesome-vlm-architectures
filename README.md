@@ -158,7 +158,7 @@ The paper demonstrates that, despite having modality-generic experts, ARIA natur
 
 
 
-### **EVE: Encoder-free Vision-language modEl**
+### **EVE: Unveiling Encoder-Free Vision-Language Models**
 
 EVE is an encoder-free vision-language model (VLM) that directly processes images and text within a unified decoder-only architecture, eliminating the need for a separate vision encoder. It achieves competitive performance with encoder-based VLMs of similar size on multiple vision-language benchmarks using only 35M publicly accessible data, with the model efficiently handling high-resolution images with arbitrary aspect ratios.
 
@@ -183,8 +183,8 @@ Okay, let's break down the information from the provided paper on EVEv2 and crea
 
 EVEv2 represents a significant advancement in encoder-free vision-language models (VLMs), addressing limitations of previous approaches by introducing a "Divide-and-Conquer" architecture that maximizes scaling efficiency, reduces inter-modality interference, and achieves strong performance with superior data efficiency.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.11832-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2406.11832)
-[![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/baaivision/EVE)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.11832-b31b1b.svg?style=flat-square)](https://github.com/baaivision/EVE/blob/main/EVEv2/images/EVEv2.0.pdf)
+[![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/baaivision/EVE/blob/main/EVEv2/README.md)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/BAAI/EVE-7B-HD-v2.0)  
 Haiwen Diao, Xiaotong Li, Yufeng Cui, Yueze Wang, Haoge Deng, Ting Pan, Wenxuan Wang, Huchuan Lu, Xinlong Wang
 
