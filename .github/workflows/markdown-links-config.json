@@ -3,10 +3,15 @@
     "retryOn429": true,
     "retryCount": 5,
     "fallbackRetryDelay": "30s",
+    "ignorePatterns": [
+        {
+            "pattern": "^https://github.com/user-attachments/assets/"
+        }
+    ],
     "aliveStatusCodes": [
         403,
         429,
         200,
-        0
+        206
     ]
 }
