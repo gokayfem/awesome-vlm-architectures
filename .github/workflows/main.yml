@@ -33,6 +33,8 @@ jobs:
         run: npx --yes markdownlint-cli2@0.18.1 "*.md"
       - name: Check release timeline coverage
         run: python scripts/build_release_timeline.py --check
+      - name: Check architecture figure mappings
+        run: python scripts/embed_architecture_figures.py --check
       - name: Check repository formatting
         run: >-
           npx --yes prettier@3.6.2 --check

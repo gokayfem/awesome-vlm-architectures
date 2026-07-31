@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Backfill audited release dates and build the collapsed release timeline."""
+"""Generate the chronological model index, timeline, and architecture catalog."""
 
 from __future__ import annotations
 
@@ -12,10 +12,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 
-# Entries 1–58 were already source-audited and carry Released metadata in README.
-# The records below are the primary-source audit for the previously undated catalog.
+# The 58-entry catalog expansion carries Released metadata inside its README panels.
+# These immutable migration IDs retain the primary-source audit for the 97 legacy
+# panels; they are converted to a title-keyed lookup before any chronological sort.
 # Values are (date, basis, primary source).
-AUDITED_RELEASES: dict[int, tuple[str, str, str]] = {
+LEGACY_RELEASES_BY_MIGRATION_ID: dict[int, tuple[str, str, str]] = {
     59: ("2023-04-17", "arXiv v1", "https://arxiv.org/abs/2304.08485"),
     60: ("2023-10-05", "arXiv v1", "https://arxiv.org/abs/2310.03744"),
     61: ("2024-01-30", "official release", "https://llava-vl.github.io/blog/2024-01-30-llava-next/"),
@@ -115,7 +116,7 @@ AUDITED_RELEASES: dict[int, tuple[str, str, str]] = {
     155: ("2020-10-22", "arXiv v1", "https://arxiv.org/abs/2010.11929"),
 }
 
-AUDITED_LABELS = [
+LEGACY_LABELS_BY_MIGRATION_ID = [
     "LLaVA", "LLaVA 1.5", "LLaVA 1.6", "PaliGemma", "PaliGemma 2", "AIMv2",
     "Apollo", "ARIA", "EVE", "EVEv2", "Janus and Janus-Pro", "LLaVA-CoT",
     "LLM2CLIP", "Maya", "MiniMax-01", "NVLM", "OmniVLM", "Pixtral 12B", "Sa2VA",
@@ -136,8 +137,10 @@ AUDITED_LABELS = [
 ]
 
 AUDITED_RELEASES_BY_LABEL = {
-    label: AUDITED_RELEASES[index]
-    for index, label in zip(range(59, 156), AUDITED_LABELS, strict=True)
+    label: LEGACY_RELEASES_BY_MIGRATION_ID[index]
+    for index, label in zip(
+        range(59, 156), LEGACY_LABELS_BY_MIGRATION_ID, strict=True
+    )
 }
 
 # Preserve the hand-edited concise descriptions from the original timeline.
@@ -270,13 +273,49 @@ def release_date(section: dict[str, object]) -> str:
     )
 
 
+def chronological_sections(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Return newest-first sections while preserving same-day editorial order."""
+    return sorted(sections, key=release_date, reverse=True)
+
+
+def github_anchor(heading: str) -> str:
+    """Mirror GitHub's heading anchors for the characters used in this catalog."""
+    cleaned = "".join(
+        character
+        for character in heading.lower()
+        if character.isalnum() or character in {" ", "-", "_"}
+    )
+    return cleaned.replace(" ", "-")
+
+
+def models_block(sections: list[dict[str, object]]) -> str:
+    years: dict[str, list[str]] = {}
+    for section in sections:
+        year = release_date(section)[:4]
+        label = str(section["label"])
+        anchor = github_anchor(str(section["heading"]))
+        years.setdefault(year, []).append(f"[{label}](#{anchor})")
+    lines = [
+        "## Models",
+        "",
+        "All architecture panels are ordered by release date, newest first. Models released on the same day retain editorial catalog order.",
+        "",
+        "<details>",
+        f"<summary>🧭 <i>Chronological Model Index ({len(sections)} architectures, newest first)</i></summary>",
+        "",
+    ]
+    for year, links in years.items():
+        lines.extend([f"**{year}:** " + " | ".join(links), ""])
+    lines.extend(["</details>", ""])
+    return "\n".join(lines) + "\n"
+
+
 def timeline_block(sections: list[dict[str, object]]) -> str:
     rows = []
     for section in sections:
         value = release_date(section)
         date.fromisoformat(value)
         rows.append((value, int(section["index"]), str(section["label"]), str(section["contribution"])))
-    rows.sort(key=lambda row: (row[0], -row[1]), reverse=True)
     lines = [
         "## Release Timeline",
         "",
@@ -302,10 +341,9 @@ def timeline_block(sections: list[dict[str, object]]) -> str:
     return "\n".join(lines)
 
 
-def replace_timeline(text: str, block: str) -> str:
-    start = text.index("## Release Timeline")
-    end = text.index("## Architectures", start)
-    return text[:start] + block + text[end:]
+def architectures_block(sections: list[dict[str, object]]) -> str:
+    panels = "\n\n".join(str(section["raw"]).strip() for section in sections)
+    return f"## Architectures\n\n{panels}\n\n"
 
 
 def validate(text: str) -> None:
@@ -314,6 +352,19 @@ def validate(text: str) -> None:
     duplicates = sorted({label for label in labels if labels.count(label) > 1})
     if duplicates:
         raise ValueError(f"duplicate architecture labels: {duplicates}")
+    dates = [release_date(section) for section in sections]
+    if dates != sorted(dates, reverse=True):
+        raise ValueError("architecture panels are not newest-first")
+
+    models_start = text.index("## Models")
+    models_end = text.index("## Release Timeline", models_start)
+    model_links = re.findall(r"\[[^]]+]\(#([^)]+)\)", text[models_start:models_end])
+    expected_links = [github_anchor(str(section["heading"])) for section in sections]
+    if len(expected_links) != len(set(expected_links)):
+        raise ValueError("duplicate GitHub heading anchors in architecture panels")
+    if model_links != expected_links:
+        raise ValueError("model index and architecture panels are not in identical order")
+
     start = text.index("## Release Timeline")
     end = text.index("## Architectures", start)
     timeline = text[start:end]
@@ -328,10 +379,13 @@ def validate(text: str) -> None:
     table_labels = [record[1] for record in table_records]
     if table_dates != sorted(table_dates, reverse=True):
         raise ValueError("release timeline is not newest-first")
-    if sorted(table_labels) != sorted(labels):
+    if table_labels != labels:
         missing = sorted(set(labels) - set(table_labels))
         extra = sorted(set(table_labels) - set(labels))
-        raise ValueError(f"timeline/architecture mismatch; missing={missing}, extra={extra}")
+        raise ValueError(
+            "timeline/architecture order mismatch; "
+            f"missing={missing}, extra={extra}"
+        )
     expected_summary = (
         f"<summary>🗓️ <i>Release Timeline ({len(sections)} architectures, newest first)"
         "</i></summary>\n\n| Date"
@@ -341,8 +395,16 @@ def validate(text: str) -> None:
 
 
 def build(original: str) -> str:
-    sections = parse_sections(original)
-    result = replace_timeline(original, timeline_block(sections))
+    sections = chronological_sections(parse_sections(original))
+    models_start = original.index("## Models")
+    references_start = original.index("## Important References")
+    result = (
+        original[:models_start]
+        + models_block(sections)
+        + timeline_block(sections)
+        + architectures_block(sections)
+        + original[references_start:]
+    )
     validate(result)
     return result
 

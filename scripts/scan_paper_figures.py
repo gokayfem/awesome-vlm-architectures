@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 PDF_DIR = ROOT / "tmp" / "pdfs"
 OUTPUT = PDF_DIR / "candidates.json"
-NEW_ENTRY_COUNT = 58
+MANIFEST = ROOT / "assets" / "architectures" / "manifest.json"
 
 ARCHITECTURE_WORDS = {
     "architecture": 12,
@@ -49,20 +49,22 @@ NEGATIVE_WORDS = {
 }
 
 
-def slugify(value: str) -> str:
-    value = value.lower().replace("×", "x")
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    return value.strip("-")
-
-
-def read_new_entries() -> list[dict[str, object]]:
+def read_manifest_entries() -> list[dict[str, object]]:
     text = README.read_text(encoding="utf-8")
     architecture_text = text.split("## Architectures", 1)[1]
     starts = list(re.finditer(r"^### \*\*(.+?)\*\*", architecture_text, re.M))
+    sections = {}
+    for position, match in enumerate(starts):
+        end = starts[position + 1].start() if position + 1 < len(starts) else len(architecture_text)
+        sections[match.group(1)] = architecture_text[match.start() : end]
+
+    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))["figures"]
     entries: list[dict[str, object]] = []
-    for index, match in enumerate(starts[:NEW_ENTRY_COUNT], start=1):
-        end = starts[index].start() if index < len(starts) else len(architecture_text)
-        body = architecture_text[match.start() : end]
+    for record in manifest:
+        title = str(record["title"])
+        if title not in sections:
+            raise RuntimeError(f"missing architecture panel for manifest record: {title}")
+        body = sections[title]
         ids = list(
             dict.fromkeys(
                 re.findall(r"arxiv\.org/(?:abs|pdf)/([0-9]+\.[0-9]+)", body)
@@ -70,9 +72,9 @@ def read_new_entries() -> list[dict[str, object]]:
         )
         entries.append(
             {
-                "index": index,
-                "title": match.group(1),
-                "slug": slugify(match.group(1).split(":", 1)[0]),
+                "index": record["index"],
+                "title": title,
+                "slug": record["slug"],
                 "arxiv_ids": ids,
             }
         )
@@ -142,7 +144,7 @@ def scan_pdf(path: Path) -> list[dict[str, object]]:
 def main() -> int:
     records = []
     failures = []
-    for entry in read_new_entries():
+    for entry in read_manifest_entries():
         ids = entry["arxiv_ids"]
         if not ids:
             records.append({**entry, "status": "no-arxiv", "candidates": []})
