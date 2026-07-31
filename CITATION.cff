@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this catalog, please cite it using the metadata below."
+title: "Awesome VLM Architectures"
+type: dataset
+authors:
+  - alias: gokayfem
+    website: "https://github.com/gokayfem"
+repository-code: "https://github.com/gokayfem/awesome-vlm-architectures"
+url: "https://github.com/gokayfem/awesome-vlm-architectures"
+date-released: 2024-02-15
+license: CC0-1.0
