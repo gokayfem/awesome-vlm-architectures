@@ -1,0 +1,8 @@
+{
+  "config": {
+    // Long badge rows, model indexes, and timeline tables are intentional.
+    "MD013": false,
+    // The catalog relies on HTML disclosure blocks, images, and line breaks.
+    "MD033": false
+  }
+}

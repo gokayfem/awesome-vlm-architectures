@@ -1,4 +1,5 @@
 # Contributing
+
 First of all, your contributions are always welcome!
 
 This list provides architecture-focused explanations of significant Vision-Language Models (VLMs) and their primary sources. A suggested model should:
@@ -9,6 +10,7 @@ This list provides architecture-focused explanations of significant Vision-Langu
 - Be documented well enough for readers to trace every substantive claim to an original source.
 
 ## Guidelines
+
 To ensure your pull request is accepted, please follow these guidelines:
 
 - Verify if your suggestion has already been submitted to prevent redundancy.
@@ -33,6 +35,7 @@ Keep the established three-layer format: a short architecture-first summary, pri
 - Do not add proprietary models whose architecture is not disclosed in enough detail for a technical entry.
 
 ## Pull requests
+
 1. Fork it!
 2. Create your branch: git checkout -b my-new-branch
 3. Commit your changes: git commit -am 'fix stuff'

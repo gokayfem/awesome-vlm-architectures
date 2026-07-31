@@ -3,6 +3,7 @@
 ![VLM](https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/5c9ee091-1f37-4d92-8398-a7d4e006c014)
 
 **Vision-Language Models (VLMs)** feature a multimodal architecture that processes image and text data simultaneously. They can perform **Visual Question Answering (VQA)**, **image captioning** and **Text-To-Image search** kind of tasks. VLMs utilize techniques like multimodal fusing with cross-attention, masked-language modeling, and image-text matching to relate visual semantics to textual representations. This repository contains information on famous Vision Language Models (VLMs), including details about their architectures, training procedures, and the datasets used for training. **Click to expand for further details for every architecture**
+
 - 📙 <a href="https://github.com/gokayfem/ComfyUI_VLM_nodes">Visit my other repo to try Vision Language Models on ComfyUI</a>
 
 *Last reviewed: July 31, 2026.*
@@ -1208,11 +1209,11 @@ Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/722f0fbb-ea52-4a8a-ab1e-bec45ca7d04f" alt="Architecture diagram for LLaVA: Large Language and Vision Assistant - Visual Instruction Tuning" />
 </p>
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
   
 **LLaVA**: At the heart of LLaVA's architecture is the fusion of a pre-trained language model with a visual model, specifically designed to process and understand language-image instruction data effectively. This integration enables LLaVA to leverage the distinct strengths of both models, employing the CLIP visual encoder for robust image feature extraction and the Vicuna language model for intricate language instruction processing. A noteworthy feature of this architecture is the use of **a simple linear layer** that bridges image features to the word embedding space, facilitating a seamless alignment between visual and linguistic representations. The training methodology of LLaVA is meticulously structured into a two-stage instruction-tuning procedure. Initially, the model undergoes pre-training focused on feature alignment, utilizing a carefully filtered dataset to synchronize image features with LLM word embeddings. Subsequently, the model is fine-tuned end-to-end on tailored tasks such as multimodal chatbot functionalities and Science QA, with the aim of refining its instruction-following prowess. This sophisticated training regimen is underpinned by the use of multimodal instruction-following data generated via GPT-4, converting image-text pairs into formats conducive to instruction-following tasks. The alignment of text and image data is innovatively achieved through **a trainable projection matrix**, converting visual features into language embedding tokens within a unified dimensional space, thereby enhancing the model's ability to encode vision and text cohesively.The datasets deployed for LLaVA's training and evaluation are strategically selected to bolster its multimodal capabilities. The Filtered CC3M dataset serves as the foundation for pre-training, aligning visual and language features, while the LLaVA-Instruct-158K dataset generated using GPT-4 is pivotal for fine-tuning the model on diverse multimodal tasks. Additionally, the ScienceQA dataset plays a critical role in assessing LLaVA's proficiency in multimodal reasoning tasks, demonstrating the model's comprehensive training and its potential to significantly advance the field of multimodal interaction and understanding.
-</details> 
+</details>
 
 ### **LLaVA 1.5: Improved Baselines with Visual Instruction Tuning**
 
@@ -1223,11 +1224,11 @@ Haotian Liu, Chunyuan Li, Yuheng Li, Yong Jae Lee
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c7112b75-3b86-48a2-9c0f-f1dc1dc6ee06" alt="Architecture diagram for LLaVA 1.5: Improved Baselines with Visual Instruction Tuning" />
 </p>
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **LLaVA 1.5**: This iteration introduces a refined architecture that incorporates a CLIP-ViT-L-336px vision encoder alongside **a multi-layer perceptron (MLP) projection layer**. This combination not only boosts the model's data efficiency but also its performance across various benchmarks, showcasing a leap in multimodal understanding. The architecture's core components, the CLIP-ViT-L for visual encoding and the MLP for vision-language cross-modal connection, work synergistically to enhance the model's capacity to integrate and interpret visual and linguistic inputs.Training methods have been optimized in LLaVA 1.5 to achieve unprecedented performance on 11 benchmarks, utilizing a two-stage approach that emphasizes efficient feature alignment and fine-tuning with VQA data specifically tailored for academic tasks. The paper highlights a shift towards more sophisticated multimodal alignment techniques, **replacing the original linear projection** with a more powerful **MLP vision-language connector**. This strategic improvement facilitates a deeper and more nuanced integration of visual and linguistic data. Moreover, the adoption of an MLP-based vision-language connector for alignment fusion methods further strengthens the model's ability to merge visual and textual representations effectively, ensuring closer alignment in the embedding space.The utilization of datasets such as VQA-v2, GQA, and other academic-task-oriented VQA datasets, enriched with OCR and region-level perception data, underscores the model's enhanced visual understanding and reasoning capabilities. These datasets play a crucial role in elevating LLaVA 1.5's performance, enabling it to set new standards with academic-task-oriented data. Through these advancements, LLaVA 1.5 not only pushes the boundaries of multimodal learning but also sets a new benchmark for future research in the field.
-</details> 
+</details>
 
 ### **LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge**
 
@@ -1238,11 +1239,11 @@ Haotian Liu, Chunyuan Li, Yuheng Li, Bo Li, Yuanhan Zhang, Sheng Shen, Yong Jae 
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/032ef144-ec10-41da-80a1-2cecd66c86ee" alt="Architecture diagram for LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge" />
 </p>  
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **LLaVA-NeXT**: Represents a significant step forward in the evolution of large language models with visual capabilities, building upon the foundations laid by LLaVA-1.5. This model introduces several enhancements aimed at improving image resolution, visual reasoning, optical character recognition (OCR), and the integration of world knowledge, all while retaining the minimalist and data-efficient design of its predecessor. The architecture of LLaVA-NeXT is optimized for high performance, supporting input image resolutions up to 672x672, 336x1344, and 1344x336 pixels. This improvement facilitates a more detailed visual perception, which, coupled with an enhanced visual instruction tuning data mixture, significantly bolsters the model's reasoning and OCR capabilities. Furthermore, LLaVA-NeXT achieves efficient deployment through the use of SGLang, a feature that underscores its design's focus on performance and data efficiency.Training LLaVA-NeXT requires less than 1 million visual instruction tuning samples, leveraging the **pre-trained connector** from LLaVA-1.5 for efficient knowledge transfer. The training process, remarkably swift, utilizes 32 A100 GPUs and completes in approximately one day, a testament to the model's efficient design and deployment strategy. The alignment techniques in LLaVA-NeXT are particularly noteworthy, utilizing high-resolution images and a high-quality data mixture to enhance the model's capabilities in visual conversation and instruction following. The model's use of dynamic high-resolution techniques, known as 'AnyRes', allows for effective handling of images with varying resolutions, improving the model's overall visual understanding.The datasets employed in training LLaVA-NeXT, including LAION-GPT-V, ShareGPT-4V, DocVQA, SynDog-EN, ChartQA, DVQA, and AI2D, are meticulously chosen to augment the model's visual reasoning, OCR capabilities, and comprehension of charts and diagrams. This strategic selection aims to elevate the model's performance across a wide range of multimodal tasks, emphasizing its enhanced ability to process and understand complex visual information. Through these improvements, LLaVA-NeXT sets a new benchmark for models at the intersection of language and vision, offering unprecedented capabilities in visual reasoning, OCR, and the application of world knowledge in multimodal contexts.
-</details> 
+</details>
 
 ### **PaliGemma: A Versatile and Transferable 3B Vision-Language Model**
 
@@ -1296,12 +1297,10 @@ Enrico Fini, Mustafa Shukor, David Haldimann, Sai Aitharaju, Alexander Toshev, M
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
-
 AIMv2 (Autoregressive Image Models v2) introduces a novel pre-training method for large-scale vision encoders that extends autoregressive pre-training to a multimodal setting, encompassing both images and text. The core architecture pairs a Vision Transformer (ViT) encoder with a causal multimodal decoder. The vision encoder processes raw image patches (using prefix attention), while the multimodal decoder autoregressively generates both image patches (using pixel MSE loss) and text tokens (using cross-entropy loss). Crucially, image patches and text tokens are treated as a single, unified sequence. This allows the model to learn a joint representation of visual and textual information. The image is always prepended to the beginning of text sequence. The training process is streamlined and efficient. It resembles that of AIM and LLMs, relying solely on the autoregressive objective. There are no specialized inter-batch communication methods or excessively large batch sizes are required. This contrasts with contrastive methods (e.g., CLIP, SigLIP), which are often more challenging to train and scale. The training data consists of a mixture of publicly available (DFN-2B, COYO) and proprietary datasets (HQITP), comprising both alt-text and synthetic captions. AIMv2 demonstrates strong scaling properties, consistently improving performance with increased data or model parameters. The model family includes variants ranging from 300 million to 3 billion parameters. A key optimization is the use of prefix attention within the vision encoder, enabling bidirectional attention during inference without fine-tuning. Other architectural choices include the incorporation of SwiGLU and RMSNorm, inspired by recent successes in language modeling. AIMv2 excels in a variety of tasks. It performs favorably on multimodal understanding benchmarks compared to state-of-the-art vision-language pre-trained methods . It also exhibits strong performance on open-vocabulary object detection and referring expression comprehension, surpassing DINOv2. Additionally, it achieves impressive recognition performance with a frozen trunk. The model supports native image resolution and adaptation to zero-shot recognition, demonstrating its flexibility. Post-training strategies, including high-resolution adaptation, further enhance the model's capabilities. Ablation studies demonstrate the importance of joint image and text modeling, validate design choices, and explore scaling characteristics.
 </details>
 
 ### **Apollo: An Exploration of Video Understanding in Large Multimodal Models**
-
 
 Apollo is a family of Large Multimodal Models (LMMs) designed for video understanding. Its study introduces "Scaling Consistency" and examines video sampling, architecture, data composition, and training schedules; at publication, the authors reported that Apollo-3B outperformed most compared 7B models.
 
@@ -1315,7 +1314,6 @@ Orr Zohar, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-E
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
-
 
 Apollo leverages the Qwen2.5 series of Large Language Models (LLMs) with 1.5B, 3B, and 7B parameters. The key architectural innovation is the combination of a SigLIP-SO400M image encoder and an InternVideo2 video encoder. Features from both encoders are interpolated and concatenated channel-wise before being fed into a Perceiver Resampler, which outputs 32 tokens per frame. This combination was empirically found to be superior to other encoder choices. The model uses a 3-stage training approach. Critically, the paper introduces the concept of "Scaling Consistency," demonstrating that design decisions made on smaller models and datasets (up to a critical size) effectively transfer to larger models. This allows for more efficient experimentation. The paper also advocates for frames-per-second (fps) sampling during training, as opposed to uniform frame sampling, and demonstrates its superiority. The optimal number of tokens is 8-32 per frame. It also includes a curated benchmark, ApolloBench, that reduces evaluation time by 41x compared to existing benchmarks while maintaining high correlation and focusing on temporal reasoning and perception. The exploration also includes Token Resampling showing that Perceiver resampling has a good performace. Token Integration is also discussed: Adding tokens (text, learned, etc.) between the video tokens derived from different frames
 or clips is sufficient for efficient token integration. Training Stages is also disscussed, concluding that progressively unfreezing the different components in different stages leads to superior model training dynamics. Finally, training the Video Encoder is discussed. The paper concludes that Finetuning video encoders on only video data further improves overall performance,
@@ -1343,8 +1341,6 @@ Dongxu Li, Yudong Liu, Haoning Wu, Yue Wang, Zhiqi Shen, Bowen Qu, Xinyao Niu, F
 ARIA's architecture is centered around a fine-grained Mixture-of-Experts (MoE) decoder, which is more efficient than traditional dense decoders.  This MoE approach activates 3.5B parameters per text token and 3.9B per visual token, out of a total of 24.9B parameters. The model uses 66 experts in each MoE layer, with 2 shared across all inputs for common knowledge, and 6 activated per token by a router. The visual encoder is a lightweight (438M parameter) Vision Transformer (ViT) combined with a projection module.  The ViT processes images at various resolutions (medium, high, and ultra-high), preserving aspect ratios. The projection module uses cross-attention and an FFN layer to convert image embeddings into visual tokens, which are then integrated with text tokens by the MoE. ARIA's training uses a 4-stage pipeline: (1) Language pre-training (6.4T text tokens, 8K context window); (2) Multimodal pre-training (400B multimodal tokens, including interleaved image-text, synthetic image captions, document transcriptions and QA, video captions and QA); (3) Multimodal long-context pre-training (extending context to 64K tokens); and (4) Multimodal post-training (instruction following with 20B tokens).  The data curation process is rigorous, incorporating techniques like de-duplication, quality filtering, and data clustering. The training infrastructure avoids pipeline parallelism, using a combination of expert parallelism and ZeRO-1 data parallelism, which contributes to efficient training without the need for tensor parallelism. A load-balancing loss and z-loss are used to stabilize training.
 The paper demonstrates that, despite having modality-generic experts, ARIA naturally develops expert specialization during pre-training.  Analysis of expert activation shows distinct visual specialization in several layers, particularly for image, video, and PDF content.  ARIA also shows excellent performance in handling long-context multimodal data, surpassing other open models and competing favorably with proprietary models in tasks like long video and document understanding.
 </details>
-
-
 
 ### **EVE: Unveiling Encoder-Free Vision-Language Models**
 
@@ -1382,9 +1378,6 @@ Haiwen Diao, Xiaotong Li, Yufeng Cui, Yueze Wang, Haoge Deng, Ting Pan, Wenxuan 
 
 EVEv2 departs from the traditional encoder-based VLM approach.  Instead of relying on a pre-trained vision encoder (like CLIP), it builds visual perception *directly within* a decoder-only Large Language Model (LLM).  Key architectural features include: **Divide-and-Conquer:** This is the core innovation.  Instead of mixing visual and textual information throughout the entire LLM, EVEv2 introduces *modality-specific* components.  This means separate attention matrices (query, key, value), Layer Normalization layers, and Feed-Forward Networks for visual and textual tokens.  This reduces interference and allows for more efficient learning.  It's a fully sparse, decoder-only architecture. **Patch Embedding Layer:**  A minimalist patch embedding layer is learned *from scratch*.  This avoids the inductive biases of pre-trained vision encoders.  It uses two convolutional layers (Conv1 and Conv2) to process image patches. **Lossless Encoding:**  Unlike some encoder-free models that use discrete tokenization (which can lose information), EVEv2 aims for lossless encoding of visual information. **LLM Adaptation:** The architecture is designed for seamless adaptation to existing LLMs.  The paper experiments with Vicuna-7B and Qwen2-7B. **Multi-Stage Training:** A four-stage training process is used: **LLM-guided Pre-aligning:**  Only the patch embedding layer is trained, using re-captioned web data (EVE-recap-10M).  The LLM is frozen. This establishes a basic alignment between visual and textual representations. **Vision Perception Learning:** Vision layers within the LLM are trained, using progressively larger datasets and image resolutions.  The LLM weights are still frozen. **Vision-Text Fully alligning:** The entire network is update. **Supervised Fine-tuning (SFT):**  The entire model is fine-tuned on question-answering and instruction-following datasets. **DenseFusion++:** A new, efficient captioning engine is introduced to generate high-quality image-text pairs for training.  This is crucial for building strong visual perception from scratch. It leverages multiple vision experts. **Data Efficiency:** A key focus of the research is demonstrating that EVEv2 can achieve strong performance with *less* data than comparable encoder-based models, thanks to its efficient architecture.
 </details>
-
-
-
 
 ### **Janus and Janus-Pro: Decoupled Visual Understanding and Generation**
 
@@ -1443,7 +1436,7 @@ Weiquan Huang, Aoqi Wu, Yifan Yang, Xufang Luo, Yuqing Yang, Liang Hu, Qi Dai, X
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
-LLM2CLIP is fine-tuning approach. It integrates LLM (Large Language Models) to already pretrained CLIP visual encoders. The main problem which is tried to be solved is that; LLM's text understanding capability is not reflected on CLIP models. The authors highlight that directly incorporating LLMs into CLIP often fails due to the poor separability of LLM output features.  To tackle this, they introduce a two-stage approach. **Stage 1: Caption Contrastive (CC) Fine-tuning:** The LLM (specifically Llama-3 8B) is fine-tuned using a contrastive learning framework on a dataset of image captions (CC3M). This stage *doesn't train for autoregressive capabilities*, instead, it is transforming the causal attention to bidirectional, to function it as an encoder. This stage aims to improve the discriminative power of the LLM's output space, making it easier to distinguish between different captions, using supervised SimCSE loss. **Stage 2: CLIP Vision Encoder Fine-tuning:**  The pre-trained CLIP visual encoder is fine-tuned using the CC-fine-tuned LLM, now acting as a "super" text encoder.  The LLM's gradients are *frozen* during this stage to preserve its acquired knowledge and reduce computational cost.  Learnable adapters (linear layers) are added after the LLM to facilitate alignment with the CLIP visual encoder. 
+LLM2CLIP is fine-tuning approach. It integrates LLM (Large Language Models) to already pretrained CLIP visual encoders. The main problem which is tried to be solved is that; LLM's text understanding capability is not reflected on CLIP models. The authors highlight that directly incorporating LLMs into CLIP often fails due to the poor separability of LLM output features.  To tackle this, they introduce a two-stage approach. **Stage 1: Caption Contrastive (CC) Fine-tuning:** The LLM (specifically Llama-3 8B) is fine-tuned using a contrastive learning framework on a dataset of image captions (CC3M). This stage *doesn't train for autoregressive capabilities*, instead, it is transforming the causal attention to bidirectional, to function it as an encoder. This stage aims to improve the discriminative power of the LLM's output space, making it easier to distinguish between different captions, using supervised SimCSE loss. **Stage 2: CLIP Vision Encoder Fine-tuning:**  The pre-trained CLIP visual encoder is fine-tuned using the CC-fine-tuned LLM, now acting as a "super" text encoder.  The LLM's gradients are *frozen* during this stage to preserve its acquired knowledge and reduce computational cost.  Learnable adapters (linear layers) are added after the LLM to facilitate alignment with the CLIP visual encoder.
 Instead of the typical image-text contrastive loss, a caption-to-caption contrastive framework is used during LLM fine-tuning.  This forces the LLM to produce distinct representations for different captions describing the same image. It uses Supervised SimCSE. Makes the model encoder. Freezing the LLM during CLIP fine-tuning is crucial for efficiency and preserving the LLM's knowledge. These adapters bridge the gap between the frozen LLM and the CLIP visual encoder. The method is surprisingly efficient, requiring only a small amount of open-source data (15M or even 3M image-text pairs) and a single epoch of training in some cases. It leverages LoRA (Low-Rank Adaptation) for efficient fine-tuning. LLM2CLIP can effectively leverage dense captions (detailed image descriptions), a known limitation of standard CLIP. Uses ShareCaptioner-modified CC-3M (for CC fine-tuning), Wikitext-103, and a combination of CC-3M, CC-12M, YFCC-15M, and Recaption-1B for CLIP fine-tuning. The paper demonstrates that, after fine-tuning of the output space of the LLM, using LLM has a significant impact and it substantially improves the performance on downstream tasks.
 </details>
 
@@ -1591,7 +1584,6 @@ Yujia Qin, Yining Ye, Junjie Fang, Haoming Wang, Shihao Liang, Shizuo Tian, Jund
 UI-TARS leverages several key innovations: (1) **Enhanced Perception**, utilizing a large-scale GUI screenshot dataset for context-aware understanding and precise captioning of UI elements; (2) **Unified Action Modeling**, standardizing actions into a unified space across platforms and achieving precise grounding through large-scale action traces; (3) **System-2 Reasoning**, incorporating deliberate reasoning for multi-step decision-making, including task decomposition, reflection, and milestone recognition; and (4) **Iterative Training with Reflective Online Traces**, addressing the data bottleneck by automatically collecting, filtering, and refining interaction traces on hundreds of virtual machines.  The model is trained iteratively and tuned via reflection, continuously learning from mistakes and adapting to new situations with minimal human intervention.  The architecture takes screenshots as input and uses a Vision-Language Model (VLM), specifically Qwen-2-VL 7B and 72B, to process visual information and generate actions.  The action space is unified across platforms (mobile, desktop, web) and includes actions like click, type, scroll, and drag.  Reasoning is infused by generating explicit "thoughts" before each action, inspired by reasoning-and-acting frameworks. These thoughts are generated through a combination of curated GUI tutorials and augmented action traces, incorporating patterns like task decomposition, long-term consistency, milestone recognition, trial and error, and reflection.  The training process involves multiple stages, starting with perception enhancement using a curated dataset of GUI screenshots and associated metadata.  This dataset supports tasks like element description, dense captioning, state transition captioning, question answering, and set-of-mark prompting. Action modeling is improved by creating a large-scale dataset of action traces and using grounding data to pair element descriptions with spatial coordinates.  The model is trained using a combination of supervised fine-tuning (SFT) and Direct Preference Optimization (DPO) with reflection tuning to learn from errors.
 </details>
 
-
 ### **VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling**
 
 VideoChat-Flash is a system designed for handling long-form video content in multimodal large language models (MLLMs). It introduces a Hierarchical visual token Compression (HiCo) method to reduce computational load while preserving essential details, and uses a multi-stage learning approach with a new long-video dataset (LongVid) to achieve state-of-the-art performance on both long and short video benchmarks.
@@ -1675,11 +1667,11 @@ Hugo Laurençon, Léo Tronchon, Matthieu Cord, Victor Sanh
 <p align="center">
 <img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/c197c8c5-8da2-4d96-8999-8e05e81f1506" alt="Architecture diagram for Idefics2" />
 </p>  
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
   
 IDEFICS2 is an 8B parameter open-source vision-language model adept at handling interleaved image and text sequences. IDEFICS2 utilizes a vision-language architecture designed for efficient processing of image and text sequences. It employs the SigLIP model as the vision encoder, extracting features from images in their native resolutions and aspect ratios. The Mistral-7B model serves as the LLM backbone, providing language understanding and generation capabilities. For text encoding, IDEFICS2 leverages a **Perceiver pooling layer** followed by an **MLP projection** to integrate visual features with the LLM's embedding space. This combination of vision encoder, LLM, and text encoder enables IDEFICS2 to handle various multimodal tasks, with a particular focus on OCR and document understanding.  The model is trained on a diverse dataset encompassing OBELICS, LAION Coco, and PMD, with additional data for OCR tasks. Fine-tuning is performed on instruction datasets like The Cauldron and OpenHermes-2.5.
-</details> 
+</details>
 
 ### **Idefics3-8B: Building and Better Understanding Vision-Language Models**
 
@@ -1705,12 +1697,12 @@ InternLM-XComposer2 excels in free-form text-image composition and comprehension
 Xiaoyi Dong, Pan Zhang, Yuhang Zang, Yuhang Cao, Bin Wang, Linke Ouyang, Xilin Wei, Songyang Zhang, Haodong Duan, Maosong Cao, Wenwei Zhang, Yining Li, Hang Yan, Yang Gao, Xinyue Zhang, Wei Li, Jingwen Li, Kai Chen, Conghui He, Xingcheng Zhang, Yu Qiao, Dahua Lin, Jiaqi Wang
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/732d3b7b-02de-42d3-ae76-800bf035b391" alt="Architecture diagram for InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **InternLM-XComposer2**: This model introduces a sophisticated architecture that leverages a vision encoder and a Large Language Model (LLM), interconnected through a Partial Low-Rank Adaptation (LoRA) module. This innovative setup allows InternLM-XComposer2 to effectively process both images and text, employing visual tokens generated by the vision encoder alongside language tokens derived from the tokenized text. The vision encoder, pre-trained using CLIP for image-language contrastive learning, and InternLM-2, which serves as the LLM with multi-lingual capabilities, are key components of this architecture. **The Partial LoRA** module distinguishes itself by aligning visual and language tokens through low-rank adaptation applied specifically to visual tokens, enhancing the model's multimodal understanding and processing efficiency. The training methodology of InternLM-XComposer2 is multifaceted, focusing on fine-tuning the vision encoder and Partial LoRA to align visual tokens with the LLM across various datasets. This process involves general semantic alignment, world knowledge alignment, and vision capability enhancement to refine the model's ability to interpret image information and compose text-image content. Supervised fine-tuning further includes multi-task training and free-form text-image composition, aiming to optimize the model's performance in leveraging image information for comprehensive text-image generation and understanding. Alignment techniques and fusion methods in InternLM-XComposer2 utilize the Partial LoRA module for the effective integration of different modalities, thereby enriching the LLM with modality-specific knowledge while preserving its inherent capabilities. This selective enhancement of visual tokens through Partial LoRA enables the model to exhibit robust performance across visual and textual domains, facilitating detailed perception, logical reasoning, and extensive knowledge integration in multimodal understanding. The model employs a diverse array of datasets, including ShareGPT4V-PT, COCO, Nocaps, TextCaps, and many others, for pre-training and supervised fine-tuning. These datasets serve to equip InternLM-XComposer2 with a broad range of capabilities, including general semantic alignment, world knowledge alignment, vision capability enhancement, and the facilitation of free-form text-image composition, marking a significant advancement in the field of vision-language large models.
-</details> 
+</details>
 
 ### **InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD**
 
@@ -1720,12 +1712,12 @@ InternLM-XComposer2-4KHD, building on its predecessor, pioneers high-resolution 
 Xiaoyi Dong, Pan Zhang, Yuhang Zang, Yuhang Cao, Bin Wang, Linke Ouyang, Songyang Zhang, Haodong Duan, Wenwei Zhang, Yining Li, Hang Yan, Yang Gao, Zhe Chen, Xinyue Zhang, Wei Li, Jingwen Li, Wenhai Wang, Kai Chen, Conghui He, Xingcheng Zhang, Jifeng Dai, Yu Qiao, Dahua Lin, Jiaqi Wang  
 <p align="center">
 <img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/c09b67fb-32eb-43de-82fa-96c3af22caf4" alt="Architecture diagram for InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD" />
-</p> 
-<details> 
-<summary>ℹ️ <i>More Information</i></summary>    
+</p>
+<details>
+<summary>ℹ️ <i>More Information</i></summary>
   
 **InternLM-XComposer2-4KHD**: Cutting-edge Large Vision-Language Model (LVLM) designed to handle ultra-high resolutions, up to 4K HD and beyond, while also supporting diverse resolutions from 336 pixels. The model builds upon the InternLM-XComposer2 architecture, incorporating a novel **dynamic resolution with automatic patch configuration** technique. This allows the model to dynamically adjust patch layouts and counts based on the input image's aspect ratio, enabling efficient processing of high-resolution images while preserving their original proportions. To address potential ambiguity arising from variable patch configurations, a newline token is introduced to delineate rows of patch tokens, significantly improving performance. InternLM-XComposer2-4KHD is pre-trained on a diverse dataset, including image-caption pairs, concept knowledge, and OCR datasets, focusing on enhancing high-resolution and structural image understanding. Supervised fine-tuning further incorporates a mixed-resolution strategy, employing higher resolution for tasks requiring fine-grained detail, like HD-OCR tasks, and dynamically adjusted resolution for other tasks. This approach enables the model to excel in both high-resolution scenarios and general vision-language understanding tasks.
-</details> 
+</details>
 
 ### **InternLM-XComposer-2.5: A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output**
 
@@ -1771,12 +1763,12 @@ DeepSeek-VL, utilizing a hybrid vision encoder combining SigLIP-L and SAM-B, exc
 Haoyu Lu, Wen Liu, Bo Zhang, Bingxuan Wang, Kai Dong, Bo Liu, Jingxiang Sun, Tongzheng Ren, Zhuoshu Li, Hao Yang, Yaofeng Sun, Chengqi Deng, Hanwei Xu, Zhenda Xie, Chong Ruan  
 <p align="center">
 <img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/7b7283d2-b2d5-4ab6-891a-18a9760ef7ca" alt="Architecture diagram for DeepSeek-VL: Towards Real-World Vision-Language Understanding" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
 
 **DeepSeek-VL**: Employs a hybrid vision encoder architecture, fusing a **SigLIP-L encoder** for semantic understanding with a **SAM-B encoder** for high-resolution detail extraction. This allows for efficient processing of 1024x1024 images while capturing both global and fine-grained visual features. **A two-layer hybrid MLP adapter** then integrates these features with the DeepSeek LLM backbone. The model is pre-trained on a diverse dataset encompassing web screenshots, PDFs, OCR, charts, and knowledge-based content from sources like Common Crawl, Web Code, E-books, and arXiv articles. This pretraining is further refined using a curated instruction-tuning dataset based on real user scenarios and categorized into a comprehensive taxonomy covering recognition, conversion, analysis, reasoning, evaluation, and safety tasks. By combining this diverse data with its unique architecture and fusion strategies, DeepSeek-VL aims to deliver robust performance across a wide range of real-world vision-language applications.  
-</details> 
+</details>
 
 ### **DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding**
 
@@ -1798,7 +1790,6 @@ DeepSeek-VL2 builds upon a LLaVA-style architecture. it consists of three core m
 
 </details>
 
-
 ### **MANTIS: Mastering Multi-Image Understanding Through Interleaved Instruction Tuning**
 
 MANTIS is a family of open-source large multimodal models that demonstrate state-of-the-art performance on multi-image visual language tasks. By focusing on instruction tuning with a carefully curated multi-image dataset, MANTIS achieves superior results using significantly less data than models trained with massive web datasets. This efficient approach opens new avenues for developing powerful multi-image LMMs with limited resources.
@@ -1807,12 +1798,12 @@ MANTIS is a family of open-source large multimodal models that demonstrate state
 Dongfu Jiang, Xuan He, Huaye Zeng, Cong Wei, Max Ku, Qian Liu, Wenhu Chen  
 <p align="center">
 <img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/dd4bbdf4-5ab9-4e12-89bd-94c5beb2d114" alt="Architecture diagram for MANTIS: Mastering Multi-Image Understanding Through Interleaved Instruction Tuning" />
-</p> 
-<details> 
-<summary>ℹ️ <i>More Information</i></summary> 
+</p>
+<details>
+<summary>ℹ️ <i>More Information</i></summary>
 
 **Mantis**: a powerful and efficient multi-image Large Multimodal Models (LMMs), demonstrating that massive pre-training on noisy web data is not the only path towards achieving state-of-the-art performance in complex visual-language tasks. Instead, MANTIS focuses on instruction tuning using high-quality, academic-level data, achieving remarkable results on various multi-image benchmarks while using significantly less data than its counterparts. Central to MANTIS's success is the meticulously curated MANTIS-INSTRUCT dataset, a collection of 721K multi-image instruction data carefully designed to instill four crucial skills: co-reference, comparison, reasoning, and temporal understanding. These skills equip MANTIS with a comprehensive toolkit for tackling the challenges of multi-image understanding. Co-reference enables the model to understand references like "second image" in natural language and correctly identify the corresponding image within the input. Comparison fosters the ability to analyze and identify subtle differences and commonalities between multiple images, a skill crucial for tasks like visual similarity assessment and difference description. Reasoning empowers the model to go beyond simple comparisons and make complex inferences by combining its world knowledge with the information extracted from multiple images, allowing it to solve intricate logical reasoning puzzles and answer challenging multi-image questions. Finally, temporal understanding equips MANTIS with the capability to process and understand image sequences, capturing the dynamic aspects of videos, comics, and other temporal visual data. MANTIS leverages a simple yet effective architecture based on existing pre-trained LLMs like LLaMA-3 and vision transformer encoders from CLIP or SigLIP. A multimodal projector, similar to the one used in LLaVA, aligns the visual embeddings with the text embeddings, facilitating their seamless integration within the LLM. This streamlined approach avoids the complexity of previous architectures like Q-Former while retaining high performance. Extensive evaluations on five multi-image benchmarks, including NLVR2, QBench, BLINK, MVBench, and a newly curated Mantis-Eval dataset, demonstrate MANTIS's superior performance, exceeding existing open-source LMMs and even matching the results of the powerful GPT-4V. Notably, MANTIS surpasses Idefics2-8B, a model pre-trained on 200x larger interleaved multi-image data, showcasing the effectiveness of instruction tuning with high-quality academic-level data. Furthermore, MANTIS retains strong single-image performance on par with existing state-of-the-art models, demonstrating its versatility and adaptability. MANTIS's impressive results, combined with its efficient training and open-source nature, offer a compelling alternative to traditional pre-training-heavy approaches, opening new possibilities for researchers and practitioners seeking to develop powerful and versatile multi-image LMMs with minimal computational resources.
-</details> 
+</details>
 
 ### **Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond**
 
@@ -1823,12 +1814,12 @@ Qwen-VL distinguishes itself by integrating a Vision Transformer with a large la
 Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, Jingren Zhou
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c9358aad-63e2-44d3-b3af-38e9d4f6aeaa" alt="Architecture diagram for Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **Qwen-VL**: Represents an advanced architecture in the vision-language domain, constructed on a foundational large language model with the integration of a Vision Transformer (ViT) for visual encoding. This model stands out for its innovative approach to processing and aligning visual and linguistic data, featuring a **vision-language adapter equipped with cross-attention mechanisms**. These mechanisms enable the efficient compression and integration of image features into the language model, a critical component for achieving precise alignment between visual inputs and text. The architecture's design focuses on optimizing the handling of image features, employing a position-aware strategy to maintain spatial relevance of visual data when merged with textual information.The training methodology of Qwen-VL is meticulously structured into **three distinct phases**, starting with an **initial pre-training** on a diverse collection of weakly labeled image-text pairs. This is followed by **multi-task pre-training**, utilizing high-quality annotated datasets and larger input resolutions to refine the model's capabilities in various tasks such as instruction following and dialogue. The final phase involves **supervised fine-tuning**, further honing the model's performance across a spectrum of vision-language tasks. Special tokens and bounding box inputs are utilized for differentiating between image and text inputs and achieving fine-grained visual understanding, respectively.Qwen-VL's alignment techniques are innovative, employing a cross-attention mechanism within its vision-language adapter to fuse visual and textual features effectively. This approach ensures the preservation of spatial information post feature compression through the use of positional encodings. The model leverages an extensive suite of datasets for training, including LAION-en, LAION-zh, and various others for pre-training, alongside specialized datasets like GQA, VGQA, and VQAv2 for multi-task pre-training. These datasets are instrumental in supporting a broad array of vision-language tasks, emphasizing multilingual capabilities, fine-grained visual understanding, and the model's proficiency in captioning, visual question answering, grounding, and OCR tasks.
-</details> 
+</details>
 
 ### **Qwen2-VL: A Powerful Open-Source Vision-Language Model for Image and Video Understanding**
 
@@ -1874,7 +1865,7 @@ moondream1 and moondream2 are vision-language models with moondream2 building up
 @vikhyatk
 <p align="center">
 <img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/e979d327-3423-4a91-92f2-02a3dc3189a8" alt="Architecture diagram for moondream1 and moondream2" />
-</p> 
+</p>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>  
   
@@ -1888,7 +1879,6 @@ Moondream is a compact (1.9B parameters) vision-language model (VLM) that priori
 [![arXiv](https://img.shields.io/badge/Blog-Moondream%20Blog-b31b1b.svg?style=flat-square)](https://moondream.ai/)
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/vikhyat/moondream)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/vikhyatk/moondream-next)
-
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1904,10 +1894,10 @@ SPHINX-X refines multi-modal large language models by streamlining its architect
 Peng Gao, Renrui Zhang, Chris Liu, Longtian Qiu, Siyuan Huang, Weifeng Lin, Shitian Zhao, Shijie Geng, Ziyi Lin, Peng Jin, Kaipeng Zhang, Wenqi Shao, Chao Xu, Conghui He, Junjun He, Hao Shao, Pan Lu, Hongsheng Li, Yu Qiao
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/1c4e9a86-9a21-4911-bcb6-d2a79c181510" alt="Architecture diagram for SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models" />
-</p> 
+</p>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **SPHINX-X**: Represents an advanced iteration in the development of Multi-modal Large Language Models (MLLM), building upon its predecessor, SPHINX, by optimizing both architecture and training efficiency. The core modifications introduced in SPHINX-X include the elimination of redundant visual encoders, the incorporation of **learnable skip tokens** to bypass **fully-padded sub-images**, and the simplification of the multi-stage training process into a singular, **all-in-one training** paradigm. This approach is designed to enhance the model's efficiency and effectiveness across a broad spectrum of multi-modal tasks. The architecture of SPHINX-X retains two key visual encoders, **CLIP-ConvNeXt and DINOv2**, ensuring robust text-image alignment capabilities, especially for high-resolution images and varied aspect ratios. This streamlined model architecture enables a unified encoding approach for both vision and text, emphasizing scalable and efficient training methodologies. The training strategy is comprehensive, directly engaging all model parameters across a wide-ranging multi-modal dataset, which encompasses public resources covering language, vision, and vision-language tasks. Additionally, SPHINX-X enriches this dataset with specially curated OCR-intensive and Set-of-Mark datasets to further extend the model's versatility and generalization capabilities. The datasets utilized in SPHINX-X aim to foster a deep, comprehensive understanding across multiple domains, enhancing the model's performance in OCR, document layout detection, and fine-grained multi-modal understanding. By training over various base Large Language Models (LLMs) with different parameter sizes and multilingual capabilities, SPHINX-X achieves a spectrum of MLLMs that showcase a strong correlation between multi-modal performance and the scales of data and parameters involved. This strategy allows SPHINX-X to set a new benchmark in multi-modal large language model performance, significantly advancing the field's capabilities in handling complex, multi-domain tasks.
 </details>
 
@@ -1920,11 +1910,11 @@ Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/27db1037-2b48-4097-9891-019ba77fc536" alt="Architecture diagram for BLIP: Bootstrapping Language-Image Pre-training" />
 </p>  
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **BLIP**: Introduces an innovative approach to unified vision-language understanding and generation through its Multimodal Mixture of Encoder-Decoder (MED) architecture. This architecture is designed to be highly versatile, capable of serving as a unimodal encoder, an image-grounded text encoder, or an image-grounded text decoder. This flexibility allows BLIP to adeptly handle a wide array of vision-language tasks, showcasing its adaptability across various applications. The MED architecture incorporates a Visual Transformer to encode images, a BERT-based text encoder for processing textual information, additional **cross-attention layers** to facilitate image-text interaction, and **causal self-attention layers** for generating text based on image inputs. These components enable BLIP to support three key functionalities: encoding of either modality on its own, encoding of text grounded in images, and decoding of text from images, thus covering a comprehensive range of tasks from understanding to generation.BLIP's training methodology is grounded in the joint optimization of three pre-training objectives: Image-Text Contrastive Learning (ITC), Image-Text Matching (ITM), and Image-Conditioned Language Modeling (LM). These objectives are designed to align visual and textual features, learn fine-grained image-text alignment, and enable text generation from images, respectively. The model utilizes a mix of human-annotated and web-collected noisy image-text pairs for training, balancing the precision of manually annotated data with the scale and diversity of data collected from the web. This approach ensures robustness and scalability in BLIP's performance across vision-language tasks.For alignment and fusion of multimodal information, BLIP employs ITC and ITM losses to achieve precise text-image alignment, utilizing a multimodal representation that accurately captures the nuanced relationship between visual and textual data. The architecture's cross-attention layers play a crucial role in incorporating visual information into the text encoder for image-grounded text encoding. Simultaneously, modifications to the self-attention layers in the decoder facilitate text generation, effectively merging vision and text for unified processing. BLIP's pre-training leverages a diverse set of datasets, including COCO, Visual Genome, Conceptual Captions, Conceptual 12M, SBU Captions, and LAION. These datasets are instrumental in learning a broad spectrum of vision-language tasks, with high-quality human-annotated pairs and extensive web datasets providing the necessary depth and breadth for comprehensive pre-training.
-</details> 
+</details>
 
 ### **BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models**
 
@@ -1935,11 +1925,11 @@ Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weishen
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/604460f9-478c-4cc1-ba35-287447c04b26" alt="Architecture diagram for BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models" />
 </p>  
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **BLIP-2**: The model architecture integrates frozen pre-trained image encoders and large language models (LLMs), employing a lightweight **Querying Transformer (Q-Former)** to facilitate the interaction between these modalities. The Q-Former plays a crucial role in extracting and integrating visual features relevant to textual queries, allowing for a more nuanced understanding and generation of language based on visual inputs.The training methodology of BLIP-2 is structured around a two-stage pre-training strategy. Initially, it focuses on learning vision-language representations utilizing the frozen image encoders. Subsequently, it advances to vision-to-language generative learning, leveraging the capabilities of frozen LLMs. This strategy, coupled with the use of **learnable query vectors within the Q-Former**, enables effective vision-language alignment. The alignment process is further enhanced through fusion methods that extract language-informative visual representations, which are then synthesized with the outputs of LLMs to generate pertinent textual descriptions. A diverse array of datasets including COCO, Visual Genome, CC3M, CC12M, SBU, and LAION400M underpins the comprehensive pre-training regime of BLIP-2. These datasets provide a rich variety of image-text pairs, essential for training the model across a broad spectrum of visual representations and language generation tasks. The model's architecture and training approaches are designed to address the prohibitive costs associated with vision-and-language pre-training, offering a more efficient pathway to developing multimodal understanding and generation capabilities.
-</details> 
+</details>
 
 ### **xGen-MM (BLIP-3): An Open-Source Framework for Building Powerful and Responsible Large Multimodal Models**
 
@@ -1966,12 +1956,12 @@ InstructBLIP enhances the BLIP-2 framework by introducing instruction tuning to 
 Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, Steven Hoi
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/5839e3a6-6fb8-469c-b84e-d60a851c1642" alt="Architecture diagram for InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **InstructBLIP**: represents an advanced step in the development of vision-language models through instruction tuning, building on the capabilities of the pre-trained BLIP-2 models. It integrates an image encoder, a large language model (LLM), and **a Query Transformer (Q-Former)**, which is specifically fine-tuned to bridge the visual and linguistic components while keeping the image encoder and LLM static. This architecture enables the extraction of instruction-aware visual features, enhancing the model's responsiveness to varied instructional contexts. Training InstructBLIP involves a careful selection of 26 datasets across 11 task categories, transformed into an instruction tuning format to foster the model's adaptability across a broad spectrum of vision-language tasks. The model employs a balanced sampling strategy and standard language modeling loss, augmented with OCR tokens for datasets involving scene texts, to fine-tune its instruction following capabilities. The unique approach of instruction-aware visual feature extraction through the Q-Former allows the model to tailor feature extraction to the specific requirements of the instruction, significantly improving performance across both seen and unseen tasks. Implementation details reveal the flexibility of InstructBLIP's architecture, which is easily adaptable to incorporate various LLMs, thanks to the modular design of the BLIP-2 framework. The model showcases state-of-the-art zero-shot performance across a wide range of vision-language tasks, outperforming previous models like BLIP-2 and Flamingo in zero-shot evaluations and achieving notable results when fine-tuned on specific downstream tasks. InstructBLIP's open-source availability and its performance across different benchmarks highlight its potential as a general-purpose vision-language model.
-</details> 
+</details>
 
 ### **KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models**
 
@@ -1981,12 +1971,12 @@ KOSMOS-1, a multimodal large language model, leverages a Transformer-based archi
 Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, Tengchao Lv, Lei Cui, Owais Khan Mohammed, Barun Patra, Qiang Liu, Kriti Aggarwal, Zewen Chi, Johan Bjorck, Vishrav Chaudhary, Subhojit Som, Xia Song, Furu Wei
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/33fd99a9-e89a-4905-8917-f03452fd5e6a" alt="Architecture diagram for KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **KOSMOS-1**: A transformative multimodal large language model, meticulously designed to harmonize the perception of general modalities with linguistic models, facilitating zero-shot learning, few-shot learning, and auto-regressive output generation. At its core, KOSMOS-1 employs a Transformer-based causal language model architecture, adept at processing both textual and various other modalities. This innovative approach is bolstered by key architectural components, including a Transformer-based decoder for input sequence handling, embedding modules for vector encoding of text and modalities, and the integration of **MAGNETO and XPOS** for architectural enhancements. These elements collectively enable the model to adeptly navigate and process multimodal information. The training regimen of KOSMOS-1 is distinguished by its comprehensive utilization of web-scale multimodal corpora, which encompasses monomodal data, cross-modal paired data, and interleaved multimodal data, emphasizing the next-token prediction tasks to optimize the log-likelihood of tokens. This methodology ensures a robust foundation for the model, enhancing its ability to understand and generate content across various modalities. Furthermore, the alignment techniques employed are particularly noteworthy; by leveraging interleaved image-text data, KOSMOS-1 aligns the perceptual capabilities of general modalities with language models in an unprecedented manner, thereby enriching the model's understanding and interpretative capacities. KOSMOS-1's training datasets, including The Pile, Common Crawl, English LAION-2B, LAION-400M, COYO-700M, and Conceptual Captions, are meticulously selected to serve dual purposes: fostering representation learning and language tasks through text corpora, and aligning perception with language models via image-caption pairs and interleaved data. This strategic selection of datasets not only bolsters the model's linguistic competencies but also significantly enhances its few-shot abilities, marking a significant milestone in the integration of perception and language models.
-</details> 
+</details>
 
 ### **KOSMOS-2: Grounding Multimodal Large Language Models to the World**
 
@@ -1996,12 +1986,12 @@ KOSMOS-2, extending the KOSMOS-1 architecture, incorporates grounded image-text 
 Zhiliang Peng, Wenhui Wang, Li Dong, Yaru Hao, Shaohan Huang, Shuming Ma, Furu Wei
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/17420c9c-759d-4690-bfc8-e8d7792111e7" alt="Architecture diagram for KOSMOS-2: Grounding Multimodal Large Language Models to the World" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **KOSMOS-2**: Built upon the foundational architecture of KOSMOS-1, it retains the Transformer-based causal language model architecture and training objectives, while introducing a significant innovation by incorporating grounded image-text pairs into its training regimen. This addition seeks to bridge the gap between visual and textual information, enabling a more cohesive understanding of multimodal content. The model differentiates itself by training on a web-scale dataset of grounded image-text pairs, known as GRIT, which includes continuous coordinates of bounding boxes translated into discrete location tokens. These tokens are intricately linked with text spans, creating a unified input representation that seamlessly integrates visual and textual elements. The training of KOSMOS-2 is extensive and multifaceted, utilizing grounded image-text pairs, monomodal text corpora, image-caption pairs, and interleaved image-text data to foster a robust learning environment. The model's training leverages a large batch size and employs the AdamW optimizer, running on 256 V100 GPUs. This process is augmented by instruction tuning with both vision-language and language-only instruction datasets, aiming to refine the model's understanding and processing capabilities across different modalities. The grounding technique is a pivotal aspect of KOSMOS-2, where **continuous coordinates of bounding boxes** are converted into **discrete location tokens**. These tokens are then linked with corresponding text spans, anchoring the textual output to specific visual inputs, enhancing the model's ability to refer to and describe particular image regions or objects with precision. KOSMOS-2's alignment techniques and fusion methods play a critical role in its ability to understand and refer to specific parts of an image directly, employing a unified input representation that combines image embeddings with grounded text and location tokens. This approach not only improves the model's referential accuracy but also its overall multimodal comprehension. The model is trained using a variety of datasets, including the specially created GRIT dataset for grounding capabilities, along with monomodal text corpora, image-caption pairs, and interleaved image-text data to bolster its language understanding, multimodal perception, and in-context learning abilities. Through these innovations, KOSMOS-2 represents a significant advancement in grounding multimodal large language models, offering enhanced capabilities in linking textual and visual information cohesively.
-</details> 
+</details>
 
 ### **ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models**
 
@@ -2104,7 +2094,6 @@ Yiwei Ma, Zhibin Wang, Xiaoshuai Sun, Weihuang Lin, Qiang Zhou, Jiayi Ji, Rongro
 
 INF-LLaVA pushes the boundaries of Multimodal Large Language Models (MLLMs) by tackling the critical challenge of high-resolution image perception. It aims to leverage the richness of detail present in high-resolution images without succumbing to the computational limitations imposed by traditional MLLM architectures. INF-LLaVA achieves this through a sophisticated approach that combines innovative cropping and feature enhancement techniques, resulting in a model capable of simultaneously capturing fine-grained local details and comprehensive global context. At the core of INF-LLaVA lies the Dual-perspective Cropping Module (DCM), a strategic cropping strategy that surpasses conventional approaches by integrating both local and global perspectives. This dual-perspective approach ensures that each extracted sub-image retains not only the intricate details essential for accurate analysis but also the broader contextual information crucial for understanding the relationships between objects. While local-perspective cropping preserves continuous visual information at high resolution, capturing the essence of individual objects and regions, global-perspective cropping leverages a unique interleaving technique to preserve the overall spatial relationships between objects within the high-resolution image. This balanced combination ensures that the model can perceive both the "trees" and the "forest," enabling a holistic understanding of the visual scene. To further enhance the model's understanding, INF-LLaVA introduces the Dual-perspective Enhancement Module (DEM). This module facilitates efficient and effective interaction between the local and global features extracted by the vision encoder, enriching the representation with multi-scale information. Instead of relying on computationally expensive cross-attention directly on high-resolution features, DEM employs a more resource-efficient strategy. It leverages 2D positional priors to concatenate global-perspective sub-image features back into the original image's shape, effectively recreating a high-resolution representation of the global context. These recombined features are then re-cropped from a local perspective, and cross-attention is performed between corresponding local and global sub-images to enhance global features with fine-grained local details. A symmetrical process enhances local features with global context. This meticulously designed interaction between local and global features ensures that the resulting representation is not only rich in detail but also cognizant of the broader context. The dual-enhanced features are then projected into a format compatible with the LLM through a linear connector. The LLM then processes the combined visual and textual information to generate a coherent and contextually relevant response. Through extensive evaluations on a diverse set of benchmarks, including ScienceQA-img, OKVQA, SEEDBench, MMBench, AI2D, LLaVA-Bench-in-the-wild, and MMMU, INF-LLaVA demonstrates its superior performance over existing MLLMs. Its ability to effectively handle high-resolution images while maintaining computational efficiency establishes a new state-of-the-art in the field. The open-source release of INF-LLaVA, along with its pretrained model and code, paves the way for further research and exploration of high-resolution image perception in multimodal large language models, pushing the boundaries of multimodal understanding and enabling the development of more powerful and versatile AI systems.
 </details>
-
 
 ### **VILA²: VILA Augmented VILA**
 
@@ -2263,12 +2252,12 @@ MULTIINSTRUCT leverages the OFA model as its foundation, employing a Transformer
 Zhiyang Xu, Ying Shen, Lifu Huang
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/bedfc8b1-7aff-44af-b605-4470ad030bdf" alt="Architecture diagram for MULTIINSTRUCT: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MULTIINSTRUCT**: introduces a novel approach to enhance multi-modal zero-shot learning by leveraging instruction tuning, built upon the foundation of the **OFA (Omnipotent Fast Adapters)** as its core pre-trained multi-modal model. This model adopts a Transformer-based sequence-to-sequence architecture that efficiently encodes a mix of instructions, text, images, and bounding boxes within a unified token space. Such a design enables MULTIINSTRUCT to process and interpret a wide range of input types, including optional images, through a comprehensive encoder-decoder framework. The encoder component is dedicated to processing the diverse inputs and instructions, while the decoder is tasked with generating the corresponding outputs. At the heart of MULTIINSTRUCT's training methodology is the innovative use of the model-specific MULTIINSTRUCT dataset, alongside instruction tuning techniques that incorporate instances from multiple tasks. This approach involves a combination of random shuffling and sampling of instruction templates for batch training, significantly enriching the learning process. Furthermore, the model explores advanced transfer learning strategies through Mixed Instruction Tuning and Sequential Instruction Tuning, utilizing the NATURAL INSTRUCTIONS dataset. This strategy not only enhances the model's adaptability across a wide spectrum of multi-modal tasks but also boosts its performance in zero-shot learning scenarios. The alignment techniques employed by MULTIINSTRUCT, such as byte-pair encoding and VQ-GAN, play a crucial role in aligning text and image tokens within a unified vocabulary. This seamless integration allows the model to effectively process and interpret various types of inputs and outputs. The use of a unified sequence-to-sequence architecture facilitates a deeper integration and alignment of vision and language modalities, underscoring the model's innovative approach to bridging the gap between different types of data. The datasets used for training and fine-tuning, namely MULTIINSTRUCT and NATURAL INSTRUCTIONS, are specifically chosen to bolster the model's capabilities in handling multi-modal tasks and instructions, showcasing its versatility and effectiveness in enhancing multi-modal zero-shot learning.
-</details> 
+</details>
 
 ### **MouSi: Poly-Visual-Expert Vision-Language Models**
 
@@ -2278,12 +2267,12 @@ MouSi pushes the boundaries of VLMs by incorporating multiple visual experts lik
 Xiaoran Fan, Tao Ji, Changhao Jiang, Shuo Li, Senjie Jin, Sirui Song, Junke Wang, Boyang Hong, Lu Chen, Guodong Zheng, Ming Zhang, Caishuang Huang, Rui Zheng, Zhiheng Xi, Yuhao Zhou, Shihan Dou, Junjie Ye, Hang Yan, Tao Gui, Qi Zhang, Xipeng Qiu, Xuanjing Huang, Zuxuan Wu, Yu-Gang Jiang
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/7e09c9d8-4c18-4970-9a24-b5e538285a72" alt="Architecture diagram for MouSi: Poly-Visual-Expert Vision-Language Models" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MouSi**: Represents an innovative approach to Vision-Language Models (VLMs) by integrating multiple visual experts into a unified architecture, aiming to surpass the limitations inherent to models reliant on a singular visual component. This architecture leverages a poly-expert fusion network, which incorporates outputs from varied visual experts, such as CLIP for image-text matching and SAM for image segmentation. This network facilitates an efficient interface with pre-trained Large Language Models (LLMs), notably utilizing a model like Vicuna v1.5. MouSi distinguishes itself by employing a multi-expert visual encoder that selects relevant experts from a pool, and it features two types of **poly-expert fusion networks: a projection fusion method and a Q-Former fusion method.** The training methodology of MouSi is characterized by a two-phase approach. Initially, during the pre-training phase, both the text-only LLM and the multi-expert encoder are kept static, with the training focus squarely on the poly-visual fusion network. Subsequently, in the fine-tuning phase, the LLM is activated for training in conjunction with the poly-visual fusion network, using high-quality supervised datasets. This methodology ensures that MouSi benefits from robust pre-existing language models while simultaneously enhancing its capability to process and integrate complex visual information. For alignment and fusion of the multimodal inputs, MouSi employs its poly-expert fusion network to amalgamate the outputs from the various visual experts, aligning them with the vision input tokens. This alignment is critical for encoding vision and text cohesively, a process facilitated by either the projection fusion method or the more complex Q-Former fusion method. These methods allow for the effective compression of multi-channel visual information into a format that can be efficiently processed alongside textual data. The datasets used in MouSi's training regimen include LCS-558K and the LAION-CC-SBU collection for pre-training, aimed at aligning text and image representation spaces, and diverse, high-quality SFT datasets for fine-tuning, enhancing the model's performance across a broad spectrum of multimodal tasks.
-</details> 
+</details>
 
 ### **LaVIN: Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models**
 
@@ -2293,12 +2282,12 @@ LaVIN offers an efficient and cost-effective approach to vision-language instruc
 Gen Luo, Yiyi Zhou, Tianhe Ren, Shengxin Chen, Xiaoshuai Sun, Rongrong Ji
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/8afc8259-fa72-4e52-8080-a4ea12208e32" alt="Architecture diagram for LaVIN: Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **LaVIN**: This model introduces the Mixture-of-Modality Adaptation (MMA) learning regime, a pioneering method that leverages **lightweight adapters** to fine-tune LLMs for vision-language (VL) instruction tasks. The core of LaVIN's architecture is the **Mixture-of-Modality Adapter (MM-Adapter)**, which connects the image encoder to the LLM using minimal adaptation modules, allowing for a streamlined optimization of the multimodal LLM through a relatively small number of parameters. The training methodology of LaVIN is notably efficient, employing the MMA strategy to fine-tune only the inserted adapters, thus significantly reducing the optimized parameter count to between three to five million. This method substantially lowers both training time and storage requirements, circumventing the need for additional VL pre-training. The MM-Adapter is instrumental in facilitating the seamless transition between single- and multi-modal instructions, thereby enhancing the model's adaptability to various VL tasks. Additionally, it employs a dynamic routing function that adjusts adaptations for input features, enabling an effective integration of vision and text embeddings. LaVIN's performance and versatility are further demonstrated through its application on diverse datasets, including ScienceQA, Alphaca-52k, and LLaVA-158k. ScienceQA is utilized to assess the model's multimodal question-answering capabilities, while the Alphaca-52k (text-only) and LLaVA-158k (text-image pairs) datasets are leveraged to refine and expand LaVIN's functionality as a multimodal chatbot. This strategic use of datasets underscores LaVIN's advanced vision-language understanding, illustrating its potential to significantly contribute to the field of multimodal learning and interaction.
-</details> 
+</details>
 
 ### **Nous-Hermes-2-Vision - Mistral 7B**
 
@@ -2306,11 +2295,11 @@ Nous-Hermes-2-Vision builds upon OpenHermes-2.5 by integrating the efficient Sig
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha)  
 This project is led by qnguyen3 and teknium.
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **Nous-Hermes-2-Vision**: Represents a notable advancement in the realm of Vision-Language Models, marking its distinction through the integration of two key enhancements that elevate its capabilities beyond traditional models. This model is an evolution from its predecessor, **OpenHermes-2.5-Mistral-7B**, and distinguishes itself by incorporating the **SigLIP-400M** for significantly improved performance and efficiency, moving away from the standard reliance on larger 3B vision encoders. Additionally, it introduces a custom dataset that includes function calling capabilities, transforming it into a more dynamic Vision-Language Action Model. The training of Nous-Hermes-2-Vision utilized a diverse dataset comprising 220K images from LVIS-INSTRUCT4V, 60K from ShareGPT4V, 150K private function calling data, and 50K conversations from teknium's OpenHermes-2.5. Such a varied dataset ensures the model's proficiency across a broad spectrum of vision-language tasks, including object recognition, instruction following, and conversational understanding. The model's innovative approach to integrating vision and language, particularly through the use of custom datasets for function calling, allows for encoding vision and text together in a way that supports action-oriented tasks and automation. A key feature of Nous-Hermes-2-Vision is its ability to interact with images to extract valuable text information from visual content, thus enabling detailed analyses and responses in natural language. This capability is underscored by the model's utilization of the SigLIP-400M, opting for a more lightweight and efficient architecture while enhancing performance in vision-language tasks. The model is further enriched with a custom dataset that includes **function calling**, allowing for the extraction of written information from images through specific tags, thus broadening its application scope for developers and researchers alike. Despite its innovative features, early usage of Nous-Hermes-2-Vision has revealed some challenges, such as hallucinations and spamming of EOS tokens. Recognizing these issues, the research team, led by Quan Nguyen and Teknium, has committed to releasing an updated version to address these problems, demonstrating their dedication to refining the model's capabilities.
-</details> 
+</details>
 
 ### **TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones**
 
@@ -2320,12 +2309,12 @@ TinyGPT-V prioritizes efficiency in multimodal large language models by combinin
 Zhengqing Yuan, Zhaoxu Li, Lichao Sun
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3e7c93bc-7963-4c2e-b207-226a03d152ca" alt="Architecture diagram for TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **TinyGPT-V**: introduces a compact yet powerful architecture tailored for efficient multimodal large language model applications, leveraging small backbones for streamlined processing. This model integrates a visual encoder, specifically EVA of Vision Transformer (ViT), with **linear projection layers** and the Phi-2 language model, constituting its core components. The visual encoder remains inactive during training, focusing on image resolution adjustments across various stages to enhance image understanding. The **linear projection layers**, particularly with the incorporation of the **Q-Former layer** from BLIP-2, aim to efficiently embed visual features into the language model, reducing the number of parameters needing training. The Phi-2 large language model backbone, a 2.7 billion-parameter model, excels in reasoning and language comprehension, effectively handling vision-language operations including spatial location tasks through textual bounding box depictions. The training of TinyGPT-V unfolds across four stages: warm-up, pre-training, instruction fine-tuning, and multi-task learning. Each stage is meticulously designed to progressively enhance the model's capabilities in understanding and generating language based on visual inputs, with a special emphasis on human-like learning and conversation abilities in later stages. The use of datasets such as LAION, CC3M, SBU, and more, across these stages, supports the model's development in vision-language understanding, generation, and task execution like visual question answering and image captioning. A noteworthy aspect of TinyGPT-V's architecture is the implementation of normalization techniques and LoRA (Low-Rank Adaptation) to stabilize training and optimize the model's performance across different modalities. Addressing challenges like NaN or INF values in multimodal data computation, these mechanisms enhance training stability and efficiency. Furthermore, the model employs a multi-task instruction template to manage task ambiguity, utilizing MiniGPT-v2 tokens for task-specific instructions, facilitating precise and accurate task execution.
-</details> 
+</details>
 
 ### **CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding**
 
@@ -2335,12 +2324,12 @@ CoVLM distinguishes itself by using novel communication tokens to enable dynamic
 Junyan Li, Delin Chen, Yining Hong, Zhenfang Chen, Peihao Chen, Yikang Shen, Chuang Gan
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/80e807cb-c2cf-491a-a3b4-1223afde1981" alt="Architecture diagram for CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **CoVLM**: This model is distinct in its approach, employing a novel set of **communication tokens** that facilitate dynamic interaction between a vision encoder, detection network, and a language model (LLM). The architecture of CoVLM integrates a CLIP ViT-L image encoder and a YOLOX detection network, alongside a pre-trained Pythia model for language processing. These components work in tandem to guide the LLM in composing visual entities and relationships within the textual context, enhancing the model's ability to dynamically communicate with the vision encoder and detection network. CoVLM is pre-trained on a diverse and extensive image-text dataset comprising 97 million image-text pairs, drawn from a variety of sources. This extensive dataset supports the model's grounding pipeline, which is crucial for associating text spans with their corresponding visual entities in images. The model utilizes special communication tokens for facilitating iterative communication between its vision and language components, enabling a sophisticated form of top-down and bottom-up communication. This communication is key to achieving high performance in vision-language tasks, as it allows the model to seamlessly integrate and interact between language tokens and visual embeddings. The datasets employed for pre-training, such as COCO, CC3M, CC12M, Visual Genome, SBU, and LAION400M, are meticulously selected to enhance the model's ability to ground image-text pairs effectively. This strategic choice is aimed at facilitating the association of textual descriptions with their corresponding visual entities, thereby improving the model's overall performance across a range of multimodal tasks. CoVLM's innovative approach to integrating visual detection networks with LLMs enables a new level of compositional reasoning, setting it apart from previous vision-language models.
-</details> 
+</details>
 
 ### **GLaMM: Pixel Grounding Large Multimodal Model**
 
@@ -2350,12 +2339,12 @@ GLaMM excels in pixel-level grounding by utilizing a five-component architecture
 Hanoona Rasheed, Muhammad Maaz, Sahal Shaji Mullappilly, Abdelrahman Shaker, Salman Khan, Hisham Cholakkal, Rao M. Anwer, Erix Xing, Ming-Hsuan Yang, Fahad S. Khan  
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/ccb22206-6a48-4b77-8cc1-094fe86d72fd" alt="Architecture diagram for GLaMM: Pixel Grounding Large Multimodal Model" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **GLaMM**: At its core, GLaMM comprises five essential components: the **Global Image Encoder, Region Encoder, Language Model (LLM), Grounding Image Encoder, and Pixel Decoder**. This architecture is designed to facilitate a wide range of interactions with visual content, from scene-level understanding through the Global Image Encoder, to detailed region-level interpretations via the Region Encoder, and down to precise pixel-level object grounding with the Grounding Image Encoder. The Pixel Decoder component further enriches the model's capabilities by generating **segmentation masks**, enabling GLaMM to respond to both textual and visual prompts with high fidelity. The training methodology of GLaMM involves a dual-pathway approach, encompassing both automated and manual data annotation pipelines to create the Grounding-anything Dataset (GranD). GranD is pivotal for the model's training, especially for its Grounded Conversation Generation (GCG) task, offering a rich set of 7.5 million unique concepts grounded in 810 million regions, complete with segmentation masks. This dataset not only supports the pretraining and fine-tuning phases of GLaMM but also underlines its unique ability to generate grounded conversations that are contextually relevant to the visual stimuli. Alignment techniques within GLaMM utilize a vision-to-language (V-L) projection layer, facilitating the mapping of image features into the language space, thereby ensuring effective text-image alignment. Furthermore, the model employs a language-to-prompt (L-P) projection layer, transforming text embeddings related to segmentation into the decoder space. This dual-projection system allows for an integrated encoding of vision and text, bolstering GLaMM's capacity for pixel-level grounding and positioning it as a significant advancement in the field of multimodal interactions.
-</details> 
+</details>
 
 ### **COSMO: COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training**
 
@@ -2366,24 +2355,24 @@ COSMO presents a streamlined multimodal framework by combining a Vision Transfor
 Alex Jinpeng Wang, Linjie Li, Kevin Qinghong Lin, Jianfeng Wang, Kevin Lin, Zhengyuan Yang, Lijuan Wang, Mike Zheng Shou
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0c256daa-1573-4110-a665-5927ee2e293f" alt="Architecture diagram for COSMO: COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **COSMO**: This framework is distinctive for its architecture that merges a visual encoder, leveraging the Vision Transformer (ViT) from Open-CLIP, with a partitioned Large Language Model (LLM). The LLM is systematically divided into segments dedicated to unimodal text processing and multimodal data handling, aiming to streamline the overall processing of interleaved data sequences. The introduction of an additional contrastive loss component stands out as a strategy to improve performance across both classification and generation tasks. Training of COSMO is carried out through a unique combination of language modeling loss and contrastive loss, focusing on the efficient management of interleaved text and visual sequences. This process is optimized with the use of the AdamW optimizer, a cosine learning rate schedule, and the implementation of DeepSpeed fp16 precision, distributed across 128 NVIDIA V100 GPUs. The partitioning strategy of the LLM into dedicated components is a testament to the framework's commitment to computational efficiency and efficacy in handling extensive data sequences. The model's alignment techniques are notably advanced, featuring a learnable query that facilitates global attention across all tokens, alongside an additional query for **Text Fusion Layers**, optimizing the model's understanding of token sets and enhancing image-text alignment through contrastive loss. **The gated cross-attention layers** for multimodal fusion introduce a significant reduction in learnable parameters by introducing bottlenecks in input and output feature channels. This method of lightweight fusion is pivotal in integrating visual information for precise next-token prediction. COSMO's training leverages a diverse array of datasets including CC3M, SBU, LAION400M, DataComp1B, MMC4, WebVid, and Howto-Interlink7M. The introduction of Howto-Interlink7M, in particular, underscores the model's innovative approach to improving video-language understanding through high-quality annotated captions, demonstrating its effectiveness across 14 diverse downstream tasks.
-</details> 
+</details>
 
 ### **FireLLaVA**
 
 FireLLaVA breaks new ground by combining the CodeLlama 34B Instruct model for advanced language understanding with a CLIP-ViT-based visual interpretation component, training on a unique dataset incorporating bounding box labels and captions to excel in visual language conversations.
 
-[![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/fireworks-ai/FireLLaVA-13b)   
+[![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/fireworks-ai/FireLLaVA-13b)
 
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **FireLLaVA**: As the first of its kind within the LLaVA lineage, FireLLaVA integrates a dual-component architecture that leverages the CodeLlama 34B Instruct model for nuanced language understanding and a visual interpretation component akin to OpenAI's CLIP-ViT. This model is distinctive for its use of bounding box labels and captions to generate visual language conversations, a method that underscores its innovative approach to multi-modal training. The training regimen for FireLLaVA is meticulously crafted, utilizing 588K lines of visual question answering and conversation data. This dataset amalgamates permissive original LLaVA data with newly generated data from Fireworks.ai, demonstrating a unique approach to instruction fine-tuning that enhances the model's ability to comprehend and articulate responses that bridge textual and visual inputs. The integration of bounding box labels and captions not only serves as a mechanism for generating training data but also facilitates the alignment of text and image data, a crucial step in achieving coherent multi-modal understanding. Although the specific methods employed for alignment fusion within FireLLaVA's architecture remain under-described, it is inferred that embedding fusion plays a critical role in synthesizing vision and text inputs. By drawing on original LLaVA training materials and Fireworks.ai's proprietary data, FireLLaVA sets a precedent for the development of VLMs capable of navigating the complexities of commercial applications. This model embodies a significant advancement in the field of visual language modeling, offering insights into the potential of OSS models to contribute to the evolving landscape of multi-modal AI research and deployment.
-</details> 
+</details>
 
 ### **u-LLaVA: Unifying Multi-Modal Tasks via Large Language Model**
 
@@ -2393,12 +2382,12 @@ u-LLaVA introduces a novel projector-based architecture that unifies multi-modal
 Jinjin Xu, Liwu Xu, Yuzhe Yang, Xiang Li, Yanchun Xie, Yi-Jie Huang, Yaqian Li
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/dcb6b046-fa56-4a02-9123-2ef2185c635a" alt="Architecture diagram for u-LLaVA: Unifying Multi-Modal Tasks via Large Language Model" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
   
 **u-LLaVA**: Represents a pioneering approach in the integration of Large Language Models (LLMs) with specialized expert models to address a wide array of multi-modal tasks. This architecture is designed to leverage the strengths of LLMs as a central hub, facilitating seamless modality alignment and multi-task learning. Through a novel **projector-based structure** that incorporates CLIP's Vision Transformer (ViT-L/14) and LLaMA2, u-LLaVA introduces a flexible framework capable of handling diverse modalities and tasks. The system integrates special tokens for modality and task expressions, alongside dedicated modules for segmentation, grounding, and in-painting, to enrich its multi-modal capabilities. The training methodology of u-LLaVA is executed in two distinct stages, beginning with a coarse-grained alignment to ensure the alignment of representation spaces across different modalities. This foundational step is crucial for establishing a common ground for further, more nuanced task-specific adaptations. Following this, a fine-grained alignment phase focuses on the refinement of task-specific instruction data, optimizing the model's performance for targeted applications. This dual-stage training approach ensures that u-LLaVA can efficiently adapt to a variety of tasks with minimal additional training requirements. Central to u-LLaVA's effectiveness is its innovative use of projector-based alignment techniques and fusion methods, which enable the integration of visual and textual representations within the LLM's framework. By mapping hidden states and text embeddings through projectors, u-LLaVA facilitates modality fusion, leveraging the extensive knowledge embedded within LLMs for complex task solving. The datasets utilized for training, including LLaVA CC3M, Conversation-58K, Detail-23K, and others, are meticulously curated to support the model's versatile capabilities across tasks such as image captioning, video captioning, visual question answering (VQA), referential expression comprehension (RES), semantic segmentation, and salient object detection/segmentation. This strategic selection and organization of datasets underscore u-LLaVA's commitment to advancing multi-modal task unification through Large Language Models.
-</details> 
+</details>
 
 ### **MoE-LLaVA: Mixture of Experts for Large Vision-Language Models**
 
@@ -2408,12 +2397,12 @@ MoE-LLaVA introduces a novel approach by incorporating Mixture of Experts (MoE) 
 Bin Lin, Zhenyu Tang, Yang Ye, Jiaxi Cui, Bin Zhu, Peng Jin, Jinfa Huang, Junwu Zhang, Munan Ning, Li Yuan
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0e5e214b-be64-4aac-aba4-04c97970b9de" alt="Architecture diagram for MoE-LLaVA: Mixture of Experts for Large Vision-Language Models" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MoE-LLaVA**: Represents an innovative leap in the development of large vision-language models through the integration of **Mixture of Experts (MoE)** within a sophisticated architectural framework. This model is characterized by its sparse design, wherein individual tokens are directed towards a selection of experts based on **learnable routers**, ensuring that only the top-k experts are activated for any given token's processing. Such an approach not only enhances the model's efficiency but also its capability to handle diverse and complex data inputs by leveraging specialized processing paths for different types of information. At the heart of MoE-LLaVA's architecture are several critical components, including a vision encoder, **a visual projection MLP layer**, **word embedding layers**, **multi-head self-attention blocks**, **feed-forward neural networks**, and notably, **the MoE blocks** themselves. These elements are seamlessly integrated through the use of layer normalization and residual connections, establishing a robust and adaptable framework capable of deep multimodal understanding. The training methodology for MoE-LLaVA is meticulously structured in three stages, each designed to gradually enhance the model's proficiency in integrating and processing visual and textual data. This includes initial adaptation of image tokens, training of all LLM parameters excluding the vision encoder, and specialized training of the MoE layers, with the latter utilizing initialization weights from previous stages for optimal performance. Alignment techniques and fusion methods employed by MoE-LLaVA are pivotal in achieving a harmonious integration of text and image modalities. By utilizing learnable routers to dynamically allocate tokens to the most apt experts and subsequently processing these through a combination of LLM and MoE blocks, the model achieves a nuanced understanding of multimodal inputs. The datasets employed throughout the training phases—ranging from LLaVA-PT for pretraining to Hybrid-FT for multimodal instruction tuning, and LLaVA-FT for fine-tuning the MoE layers—further underscore the model's ability to refine its understanding across a broad spectrum of multimodal tasks. This strategic deployment of diverse datasets not only facilitates a comprehensive tuning of the model's capabilities but also underscores its potential in advancing the field of vision-language processing.
-</details> 
+</details>
 
 ### **BLIVA: A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions**
 
@@ -2423,12 +2412,12 @@ BLIVA augments the InstructBLIP model with a Visual Assistant, incorporating enc
 Wenbo Hu, Yifan Xu, Yi Li, Weiyue Li, Zeyuan Chen, Zhuowen Tu
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/44c53b8a-ad35-4eca-a68b-63af32e6ccf1" alt="Architecture diagram for BLIVA: A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **BLIVA**: This model builds upon the foundation of InstructBLIP, incorporating a Visual Assistant to enhance its understanding and processing of text-rich visual contexts. BLIVA's architecture is designed to capture the intricacies of visual content that may be overlooked during the query decoding process by melding learned query embeddings from InstructBLIP with directly projected encoded patch embeddings. The core components of BLIVA include a vision tower, responsible for encoding visual inputs into patch embeddings; a **Q-former**, which refines query embeddings; and a **projection layer** that bridges the visual and linguistic domains, enabling the LLM to access a rich tapestry of visual knowledge. The training methodology of BLIVA is structured around a two-stage scheme: initial pre-training on image-text pairs derived from captioning datasets, followed by instruction tuning using Visual Question Answering (VQA) data. This process begins with the pre-training of the projection layer for patch embeddings, succeeded by the fine-tuning of both the Q-former and the projection layer, while the image encoder and LLM remain static to prevent catastrophic forgetting. This approach ensures that BLIVA is finely attuned to visual information, enhancing its ability to handle complex visual questions. BLIVA's alignment techniques and fusion methods stand out for their integration of learned query embeddings with an additional visual assistant branch that utilizes encoded patch embeddings. By concatenating these embeddings and feeding them directly into the LLM, BLIVA significantly improves the model's text-image visual perception capabilities. This enhanced multimodal understanding is further demonstrated through the use of diverse datasets, including image captioning datasets for pre-training, instruction tuning VQA data for performance enhancement, and YTTB-VQA (YouTube Thumbnail Visual Question-Answer pairs) to showcase BLIVA's proficiency in processing text-rich images and its suitability for real-world applications.
-</details> 
+</details>
 
 ### **MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices**
 
@@ -2438,12 +2427,12 @@ MobileVLM offers a mobile-optimized vision-language model that combines a CLIP V
 Xiangxiang Chu, Limeng Qiao, Xinyang Lin, Shuang Xu, Yang Yang, Yiming Hu, Fei Wei, Xinyu Zhang, Bo Zhang, Xiaolin Wei, Chunhua Shen
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/59a06109-ba49-4299-951c-d7c0c562bca3" alt="Architecture diagram for MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MobileVLM**: Introduces a compact yet robust architecture designed to facilitate efficient vision-language tasks on mobile devices, distinguishing itself through a blend of specialized components and a streamlined training methodology tailored for edge computing environments. At its core, MobileVLM integrates a visual encoder based on the CLIP ViT-L/14 model with a resolution of 336x336, MobileLLaMA—a language model optimized for mobile devices, and a **Lightweight Downsample Projector (LDP)** that bridges the gap between visual and textual data with minimal computational overhead. This synergy between components ensures that MobileVLM can process and align multimodal inputs effectively, making it well-suited for mobile applications where resource efficiency is paramount. The training regimen for MobileVLM unfolds in three distinct phases, each contributing uniquely to the model's development. Initially, the language model undergoes pre-training using the text-centric RedPajama v1 dataset, laying a solid linguistic foundation. Subsequent supervised fine-tuning leverages multi-turn dialogues between humans and ChatGPT, refining the model's conversational abilities. The final stage involves training the integrated vision-language model on diverse multimodal datasets, equipping MobileVLM with the capacity to interpret and respond to both visual and textual stimuli. This comprehensive training approach ensures that MobileVLM achieves a balance between performance and efficiency, making it adept at handling complex vision-language interactions on mobile platforms. Central to MobileVLM's effectiveness is the Lightweight Downsample Projector (LDP), a novel component designed for the efficient alignment of visual and textual features. By employing mobile-friendly operations such as depth-wise convolution, LDP manages to downsample visual tokens to match the language model's input dimensions, preserving spatial information while minimizing computational demands. This alignment mechanism, in conjunction with the efficient fusion of vision and text embeddings, enables MobileVLM to maintain high levels of accuracy and responsiveness in mobile environments. Through the use of carefully selected datasets, including RedPajama v1 for linguistic pre-training and various multimodal datasets for comprehensive vision-language modeling, MobileVLM showcases its capability to navigate the challenges of mobile-based vision-language tasks with remarkable efficiency.
-</details> 
+</details>
 
 ### **FROZEN: Multimodal Few-Shot Learning with Frozen Language Models**
 
@@ -2453,12 +2442,12 @@ FROZEN enables multimodal few-shot learning by pairing a pre-trained, frozen lan
 Maria Tsimpoukelli, Jacob Menick, Serkan Cabi, S. M. Ali Eslami, Oriol Vinyals, Felix Hill
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/4156475d-e501-495e-98bb-66efdd5b03f7" alt="Architecture diagram for FROZEN: Multimodal Few-Shot Learning with Frozen Language Models" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **FROZEN**: Presents an innovative approach to extending the few-shot learning capabilities of pre-existing language models into the multimodal domain, specifically targeting the integration of visual and linguistic elements without the need to alter the foundational language model parameters. This methodology introduces a vision encoder, specifically an **NF-ResNet-50**, designed to translate images into a continuous sequence of embeddings. These embeddings serve as a visual prefix to the input for a pre-trained autoregressive language model based on the Transformer architecture, enabling the language model to process and generate content relevant to the given visual context. The core innovation lies in the system's modularity, achieved by keeping the language model's weights static while **only updating the vision encoder** during training. This approach leverages the Conceptual Captions dataset, focusing on the alignment of image-caption pairs to train the vision encoder, thereby simplifying the integration of visual data into language models. The architecture of FROZEN is distinguished by its use of a dynamic visual prefix, a departure from the conventional static text prompts typical in prefix tuning. This dynamic prefix is achieved by linearly mapping and reshaping the vision encoder's output into a sequence of embeddings, mirroring the functionality of text-based prefix tokens in traditional language model tuning. This mechanism allows the model to adapt more fluidly to multimodal inputs, enhancing its ability to interpret and generate language that is contextually aligned with visual data. The employment of a dynamic visual prefix is a key factor in FROZEN's ability to improve task performance across multimodal settings through in-context learning, providing a novel solution to the challenge of incorporating visual information into the language generation process. The utilization of the Conceptual Captions dataset is central to FROZEN's training methodology, enabling the **vision encoder to adeptly convert images** into a format that the language model can process. This dataset serves the dual purpose of enhancing the model's understanding of visual content and its associated linguistic descriptions, thereby facilitating the generation of accurate and contextually relevant captions. The strategic combination of a static language model with a trainable vision encoder encapsulates FROZEN's approach to multimodal few-shot learning, offering a streamlined and effective pathway to integrating visual data into linguistic models.
-</details> 
+</details>
 
 ### **Flamingo: a Visual Language Model for Few-Shot Learning**
 
@@ -2468,12 +2457,12 @@ Flamingo pioneers a Perceiver-based VLM architecture that utilizes a Perceiver R
 Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katie Millican, Malcolm Reynolds, Roman Ring, Eliza Rutherford, Serkan Cabi, Tengda Han, Zhitao Gong, Sina Samangooei, Marianne Monteiro, Jacob Menick, Sebastian Borgeaud, Andrew Brock, Aida Nematzadeh, Sahand Sharifzadeh, Mikolaj Binkowski, Ricardo Barreira, Oriol Vinyals, Andrew Zisserman, Karen Simonyan
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/b46ebf3e-67fc-401e-a6ea-6f4797da372d" alt="Architecture diagram for Flamingo: a Visual Language Model for Few-Shot Learning" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **Flamingo**: Represents an innovative approach in the realm of Visual Language Models (VLMs), specifically designed to excel in few-shot learning tasks. This model is distinguished by its capacity to process sequences of text tokens that are interwoven with visual data, such as images or videos, to generate textual outputs. At the core of Flamingo's architecture is the adoption of a Perceiver-based framework that adeptly manages high-resolution visual inputs. This design choice enables the handling of complex, multimodal information streams by transforming large visual feature maps into a concise number of visual tokens through the **Perceiver Resampler**. Further refining its architecture, Flamingo incorporates **gated cross-attention dense (GATED XATTN-DENSE) layers**, which play a pivotal role in conditioning the language model on visual inputs, thereby facilitating a nuanced understanding and generation of language based on the visual context. The training regimen of Flamingo is both extensive and diverse, encompassing a wide array of datasets culled from the web. This includes a rich mixture of interleaved image and text data, image-text pairs, and video-text pairs, which collectively contribute to the model's robust few-shot learning capabilities. A distinctive aspect of Flamingo's training is its strategy to minimize a weighted sum of per-dataset expected negative log-likelihoods of text given visual inputs. This approach, combined with a gradient accumulation strategy across all datasets, ensures comprehensive learning from varied multimodal contexts. The datasets employed in training, namely MultiModal MassiveWeb (M3W), ALIGN dataset, Long Text & Image Pairs (LTIP), and Video & Text Pairs (VTP), each serve a specific purpose. M3W facilitates training on interleaved text and image data, ALIGN on image-text pairs, LTIP on high-quality image-text pairs, and VTP on video-text pairs, ensuring Flamingo's adeptness across different visual language tasks. In its alignment techniques, Flamingo introduces an image-causal modeling approach to manage text-to-image cross-attention effectively, allowing the model to attend selectively to visual tokens of the image that immediately precede the given text token in the sequence. This capability is further enhanced by the gated cross-attention layers, which employ a tanh-gating mechanism to merge the output of these layers with the input representation from the residual connection. Such an alignment fusion method ensures that Flamingo can seamlessly integrate vision and text embeddings, underscoring its innovative architecture and the breadth of its training. Through these mechanisms, Flamingo stands out as a significant advancement in the integration of visual and textual data for language model training, showcasing its versatility and effectiveness in few-shot learning scenarios.
-</details> 
+</details>
 
 ### **OpenFlamingo: An Open-Source Framework for Training Large Autoregressive Vision-Language Models**
 
@@ -2481,22 +2470,22 @@ OpenFlamingo, an open-source adaptation of DeepMind's Flamingo, combines a CLIP 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2308.01390-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2308.01390) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/mlfoundations/open_flamingo)  
 Anas Awadalla, Irena Gao, Josh Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **OpenFlamingo**: Represents an innovative leap in the integration of vision and language models, providing an open-source adaptation of DeepMind's Flamingo framework. This model is structured around a powerful combination of a CLIP Vision Transformer Large (ViT-L/14) for encoding visual inputs and a 7-billion parameter Multimodal Pretrained Transformer (MPT-7B) for language processing. The architecture is distinctive for its inclusion of cross-attention modules within every fourth decoder block of the language model, which remains frozen during training. These modules are pivotal for the model's ability to attentively merge visual information with textual context during the decoding process, thereby enhancing its multimodal understanding. The training methodology for OpenFlamingo is grounded in a comprehensive strategy that harnesses the vast data landscape of the internet. It utilizes a rich dataset amalgam comprising LAION-2B and the Multimodal version of the Common Crawl (C4) dataset, focusing on image-text pair sequences. This approach is facilitated by DistributedDataParallel training across an impressive array of 64 A100 80GB GPUs, leveraging automatic BF16 mixed precision for optimized performance. The model's alignment techniques are inspired by the original Flamingo's design philosophy, which emphasizes the importance of keeping the core vision and language models static while dynamically training the connecting **cross-attention modules** for decoding. This selective training process ensures that OpenFlamingo can effectively fuse visual and textual data, thereby significantly improving its proficiency in generating relevant text based on visual cues. Furthermore, the datasets used are instrumental in refining OpenFlamingo's capacity for understanding complex visual-textual interactions. Trained specifically on image-text sequences, the model demonstrates superior performance in tasks requiring nuanced interpretation of visual content, such as captioning, visual question answering, and image classification. This strategic focus on multimodal datasets underscores the model's purpose to bridge the gap between visual perception and linguistic expression, marking a substantial advancement in the field of multimodal AI. Through these architectural innovations and training strategies, OpenFlamingo sets a new standard for open-source models in the domain of visual-language tasks.
-</details> 
+</details>
 
 ### **IDEFICS**
 
 IDEFICS, an 80B parameter vision-language model inspired by Flamingo, processes interleaved image and text sequences, utilizing a GPT-4 and Flamingo-based architecture to achieve robust multimodal understanding, trained on a diverse range of web-based datasets, including the specialized OBELICS dataset.
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/HuggingFaceM4/idefics-80b)
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **IDEFICS**: stands for "an 80 billion parameters vision and language model," distinguishing itself as a robust model designed to mimic Flamingo's capabilities while integrating substantial advancements in handling multimodal inputs. This model is crafted to accept sequences of images and text, generating text outputs that reflect a deep understanding of both visual and textual information. The architecture of IDEFICS builds on the foundations laid by GPT-4 and Flamingo, showcasing a harmonious blend of vision and language processing capabilities within a singular model framework. This strategic design allows IDEFICS to process and interpret complex multimodal inputs efficiently, setting a new precedent in the field of integrated vision-language models. During its development, IDEFICS faced challenges related to loss spikes, which were effectively mitigated through rollback strategies and precise adjustments in the learning rate. An auxiliary z-loss was introduced to normalize logits, significantly enhancing training stability. The model adopts Flamingo's methodological approach for alignment, utilizing pretrained vision and language backbones to foster a nuanced cross-modal understanding. Although specific details on fusion techniques for vision and text embeddings remain under wraps, it is inferred that the model employs **cross-attention mechanisms** akin to Flamingo's, facilitating a sophisticated integration of visual and textual data. Training on OBELICS—a meticulously curated collection of interleaved image-text web documents—and other web-scraped datasets, IDEFICS aims to excel in multimodal tasks. The OBELICS dataset, in particular, is designed to augment the model's performance by providing access to longer text contexts and a diverse array of web document types. This strategic dataset selection underscores IDEFICS's commitment to enhancing its proficiency across a spectrum of multimodal applications, leveraging the rich, varied content found in web documents to refine its understanding and output generation capabilities.
-</details> 
+</details>
 
 ### **PaLI: A Jointly-Scaled Multilingual Language-Image Model**
 
@@ -2506,12 +2495,12 @@ PaLI distinguishes itself as a jointly-scaled multilingual language-image model 
 Xi Chen, Xiao Wang, Lucas Beyer, Alexander Kolesnikov, Jialin Wu, Paul Voigtlaender, Basil Mustafa, Sebastian Goodman, Ibrahim Alabdulmohsin, Piotr Padlewski, Daniel Salz, Xi Xiong, Daniel Vlasic, Filip Pavetic, Keran Rong, Tianli Yu, Daniel Keysers, Xiaohua Zhai, Radu Soricut
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/2565afb0-901c-4438-9488-c73a86261aa5" alt="Architecture diagram for PaLI: A Jointly-Scaled Multilingual Language-Image Model" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **PALI**: This model stands out by its ability to handle both unimodal (language or vision) and multimodal (language and vision together) tasks through a unified interface that accepts images and text as inputs, subsequently generating text as the output. The architecture of PALI ingeniously integrates a text encoder-decoder Transformer, based on pre-trained mT5 models, with visual tokens processed by a Vision Transformer (ViT) named ViT-e. ViT-e marks a significant advancement in visual processing with up to 4 billion parameters, setting a new precedent for the integration of visual components within language models. The PALI model utilizes pre-trained unimodal checkpoints, optimizing the efficiency of its training processes. Training methodologies for PALI are robust and diverse, incorporating a mixture of pre-training tasks aimed at enhancing the model's capability across a broad spectrum of downstream applications. Leveraging the expansive image-language dataset WebLI, which encompasses 10 billion images and texts across over 100 languages, PALI undergoes a comprehensive two-phase training regime. This includes a specific focus on high-resolution training for its largest model variant, PALI-17B. Such an approach ensures that PALI is not just multilingual but also highly adept at processing and understanding complex visual and textual data. The alignment and fusion techniques employed by PALI are particularly noteworthy. By adopting a unified modeling interface, the model treats various tasks with a task-agnostic perspective, allowing it to seamlessly transition between different types of vision and language tasks. The fusion of vision and text is achieved through **a cross-attention mechanism**, where a sequence of visual tokens from the Vision Transformer is integrated with the text encoder-decoder Transformer. This method enables an efficient and effective blending of multimodal information. The use of datasets such as WebLI, Conceptual Captions, and OCR data from WebLI, along with others like VQ2A-CC3M and Open Images, further enriches PALI's training, equipping it with a vast and versatile multimodal proficiency. This proficiency spans across multilingual settings, captioning, OCR, and visual question answering (VQA), ensuring PALI's comprehensive understanding and generation capabilities across a wide array of languages and tasks.
-</details> 
+</details>
 
 ### **PaLI-3 Vision Language Models: Smaller, Faster, Stronger**
 
@@ -2521,12 +2510,12 @@ PaLI-3 presents a powerful yet efficient vision-language model that integrates a
 Xi Chen, Xiao Wang, Lucas Beyer, Alexander Kolesnikov, Jialin Wu, Paul Voigtlaender, Basil Mustafa, Sebastian Goodman, Ibrahim Alabdulmohsin, Piotr Padlewski, Daniel Salz, Xi Xiong, Daniel Vlasic, Filip Pavetic, Keran Rong, Tianli Yu, Daniel Keysers, Xiaohua Zhai, Radu Soricut
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/92d34b30-b13b-44ed-90b5-3c8568a9b634" alt="Architecture diagram for PaLI-3 Vision Language Models: Smaller, Faster, Stronger" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
-**PaLI-3** :Its architecture integrates a contrastively pretrained 2B **SigLIP vision model** with a 3B encoder-decoder UL2 Transformer, focusing on the efficient processing of visual and textual data. The training methodology of PaLI-3 includes **contrastive pretraining of the image encoder** on a vast scale of image-text data, subsequent multimodal training, and resolution increase stages to refine its performance further. These stages ensure that PaLI-3 achieves a nuanced understanding of visually-situated text and object localization, supported by datasets such as Web-scale image-text data, RefCOCO, WebLI, CC3M-35L, and various VQA datasets. The visual component of PaLI-3 utilizes a vision transformer pretrained in a contrastive manner, emphasizing efficiency, scalability, and robustness. This approach allows for a more nuanced pretraining of the image embedding component, which, when combined with text embeddings, enhances the model's ability to understand and generate text based on visual inputs. The full model employs these visual tokens alongside embedded input text tokens within a UL2 encoder-decoder framework, demonstrating its capability in generating text outputs for tasks such as captioning and visual question answering (VQA). PaLI-3's training process involves several key stages, starting with unimodal pretraining of the image encoder using image-text pairs from the web. This is followed by multimodal training, where the image encoder and text encoder-decoder are combined and trained on a mixture of tasks and data, focusing on visually-situated text and object detection. The resolution increase stage further enhances performance by fine-tuning the model with high-resolution inputs. Finally, task specialization involves fine-tuning PaLI-3 on individual benchmark tasks, optimizing its performance across a wide range of applications. 
-</details> 
+
+**PaLI-3** :Its architecture integrates a contrastively pretrained 2B **SigLIP vision model** with a 3B encoder-decoder UL2 Transformer, focusing on the efficient processing of visual and textual data. The training methodology of PaLI-3 includes **contrastive pretraining of the image encoder** on a vast scale of image-text data, subsequent multimodal training, and resolution increase stages to refine its performance further. These stages ensure that PaLI-3 achieves a nuanced understanding of visually-situated text and object localization, supported by datasets such as Web-scale image-text data, RefCOCO, WebLI, CC3M-35L, and various VQA datasets. The visual component of PaLI-3 utilizes a vision transformer pretrained in a contrastive manner, emphasizing efficiency, scalability, and robustness. This approach allows for a more nuanced pretraining of the image embedding component, which, when combined with text embeddings, enhances the model's ability to understand and generate text based on visual inputs. The full model employs these visual tokens alongside embedded input text tokens within a UL2 encoder-decoder framework, demonstrating its capability in generating text outputs for tasks such as captioning and visual question answering (VQA). PaLI-3's training process involves several key stages, starting with unimodal pretraining of the image encoder using image-text pairs from the web. This is followed by multimodal training, where the image encoder and text encoder-decoder are combined and trained on a mixture of tasks and data, focusing on visually-situated text and object detection. The resolution increase stage further enhances performance by fine-tuning the model with high-resolution inputs. Finally, task specialization involves fine-tuning PaLI-3 on individual benchmark tasks, optimizing its performance across a wide range of applications.
+</details>
 
 ### **PaLM-E: An Embodied Multimodal Language Model**
 
@@ -2536,12 +2525,12 @@ PaLM-E innovates by embedding continuous sensory data, including images and sens
 Danny Driess, Fei Xia, Mehdi S. M. Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, Wenlong Huang, Yevgen Chebotar, Pierre Sermanet, Daniel Duckworth, Sergey Levine, Vincent Vanhoucke, Karol Hausman, Marc Toussaint, Klaus Greff, Andy Zeng, Igor Mordatch, Pete Florence
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/67e5bbc7-1800-46e8-8ef1-b3b72a901a12" alt="Architecture diagram for PaLM-E: An Embodied Multimodal Language Model" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **PaLM-E**: Represents an innovative step in the development of multimodal language models by integrating continuous embodied observations—ranging from images and state estimates to various sensor modalities—into the linguistic embedding space of a pre-trained language model. It utilizes a decoder-only large language model (LLM) architecture that generates textual completions autoregressively, taking multimodal inputs into account. The core architecture of PaLM-E leverages a pre-trained PaLM as its language backbone, enhancing it with encoders that transform sensor modalities into a **sequence of vectors** compatible with the language model's embedding dimensions. This integration allows for the seamless combination of continuous sensor information with textual data, crafting multimodal sentences that the model processes. Training methodologies for PaLM-E are comprehensive and end-to-end, utilizing datasets composed of both continuous observations and textual information. The model employs a cross-entropy loss function for non-prefix tokens, with a training regimen that includes pre-trained Vision Transformers (ViTs) for image feature extraction alongside novel and pre-trained input encoders. The approach allows for flexibility in model training, including options for freezing pre-trained components or co-training them across varied data sets. This strategy ensures that PaLM-E benefits from both the depth of pre-trained models and the specificity of tailored encoders for continuous data. PaLM-E's alignment techniques and fusion methods are pivotal for its operation, employing encoders to integrate continuous sensor data into the linguistic embedding space effectively. This integration facilitates an understanding and generation of responses that reflect a blend of textual and sensor input, mimicking embodied reasoning. The model processes multimodal sentences—interleaved sequences of sensor observations and text—through its **self-attention layers**, similar to how it handles traditional text tokens. This methodology ensures a cohesive encoding of vision and text information. PaLM-E's training leverages a diverse array of datasets, including large-scale vision-and-language data and specialized robotics tasks datasets, aiming to excel across a broad spectrum of embodied reasoning tasks. This diverse training background enables PaLM-E to harness cross-domain transfer learning, enhancing its capabilities in specific robotics applications and general vision-language tasks alike.
-</details> 
+</details>
 
 ### **MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models**
 
@@ -2551,12 +2540,12 @@ MiniGPT-4 seamlessly blends visual and language processing by connecting a pretr
 Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, Mohamed Elhoseiny
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0e5ff945-1271-4189-8dd9-b0abd88eacc1" alt="Architecture diagram for MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MiniGPT-4**: presents an advanced integration of vision and language processing capabilities through a meticulously designed architecture that marries a frozen visual encoder with a frozen advanced Large Language Model (LLM), specifically Vicuna. At the heart of MiniGPT-4 is its novel approach to aligning visual and linguistic modalities: it employs **a single linear projection layer** to bridge the pretrained Vision Transformer (ViT) and **Q-Former** with the Vicuna LLM. This design choice underscores a commitment to efficiency, focusing on leveraging existing, robust components to achieve a seamless integration of visual features with sophisticated language capabilities. The training methodology for MiniGPT-4 is bifurcated into two distinct stages, optimizing both the initial alignment of visual and language features and the subsequent enhancement of generation reliability and naturalness. Initially, MiniGPT-4 undergoes training for 20,000 steps with a batch size of 256 on 4 A100 GPUs, utilizing a combined dataset from sources like Conceptual Captions, SBU, and LAION for foundational vision-language knowledge. This stage is crucial for establishing the basic alignment between the visual encoder and the Vicuna LLM. The second stage of finetuning, leveraging a curated dataset of 3,500 detailed image descriptions, is pivotal for refining the model's output, focusing on generating more detailed, reliable, and naturally flowing text. The strategic use of datasets in MiniGPT-4's training regimen underscores its dual objectives: foundational vision-language alignment and the enhancement of output naturalness and detail. Initial datasets facilitate the basic integration of visual and linguistic elements, while the curated dataset of detailed image descriptions serves to significantly improve the model's capability in generating nuanced and accurate natural language descriptions. Through this comprehensive and staged training approach, MiniGPT-4 achieves a refined balance between efficient visual-language alignment and the production of high-quality, detailed textual outputs, marking a significant step forward in the field of vision-language understanding.
-</details> 
+</details>
 
 ### **MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning**
 
@@ -2566,12 +2555,12 @@ MiniGPT-v2 acts as a unified interface for vision-language multi-task learning b
 Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/2354442a-0e96-4010-8b4f-8bc3d666427e" alt="Architecture diagram for MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning" />
-</p> 
+</p>
 <details>  
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MiniGPT-v2**: A sophisticated model designed to serve as a unified interface for vision-language multi-task learning, leveraging the innovative integration of a visual backbone with a large language model. At its core, the architecture combines a Visual Transformer (ViT) as its visual backbone, which is kept static during training, with **a linear projection layer** that effectively merges every four neighboring visual tokens into one. These consolidated tokens are then projected into the feature space of LLaMA-2-chat, a 7-billion parameter language model, facilitating the processing of high-resolution images (448x448 pixels). This structure allows MiniGPT-v2 to efficiently bridge the gap between visual input and language model processing, catering to a wide array of vision-language tasks. The training methodology employed by MiniGPT-v2 is particularly noteworthy, encompassing a three-stage strategy to comprehensively cover the spectrum of knowledge acquisition and task-specific performance enhancement. Initially, the model is exposed to a mix of weakly-labeled and fine-grained datasets, focusing on broad vision-language understanding. The training progressively shifts towards more fine-grained data to hone in on specific task improvements. In the final stage, MiniGPT-v2 is trained on multi-modal instruction and language datasets, aiming to refine its response to multi-modal instructions. The use of task-specific identifier tokens during training plays a crucial role in reducing ambiguity and sharpening task distinction, enabling the model to adeptly navigate the complexities of vision-language tasks. To support its extensive training and operational capabilities, MiniGPT-v2 utilizes a diverse array of datasets, including LAION, CC3M, SBU, GRIT-20M, COCO caption, and several others, each selected to fulfill distinct stages of the training process—from broad knowledge acquisition to task-specific improvements and sophisticated multi-modal instruction handling. This strategic dataset employment underscores MiniGPT-v2's capacity to assimilate and apply knowledge across a broad range of vision-language contexts, positioning it as a versatile tool in the evolving landscape of multi-task learning interfaces.
-</details> 
+</details>
 
 ### **LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents**
 
@@ -2581,23 +2570,23 @@ LLaVA-Plus pioneers the creation of multimodal agents by integrating diverse vis
 Shilong Liu, Hao Cheng, Haotian Liu, Hao Zhang, Feng Li, Tianhe Ren, Xueyan Zou, Jianwei Yang, Hang Su, Jun Zhu, Lei Zhang, Jianfeng Gao, Chunyuan Li
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/1ede1c4f-bdeb-48e0-ae8e-ccfbee1dea51" alt="Architecture diagram for LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **LLaVA-Plus**: Represents an innovative leap in the design of multimodal agents, integrating a diverse array of vision and vision-language pre-trained models into a comprehensive skill repository. This integration enables LLaVA-Plus to leverage end-to-end training to systematically expand its capabilities, allowing it to activate and combine relevant tools based on the users' multimodal inputs. The architecture of LLaVA-Plus is centered around a unified scheme for representing **multimodal instruction-following data**, which is essential for its advanced end-to-end trained multimodal instruction-following capabilities. The model is distinguished by its training methods, which utilize curated multimodal instruction-following data covering a broad spectrum of tasks, including visual understanding, generation, external knowledge retrieval, and their combinations. This approach allows LLaVA-Plus to incorporate new tools through instruction tuning, thereby expanding its abilities by learning to use these tools effectively. The training datasets—COCO, HierText, InfoSeek, JourneyDB, and Instruct P2P—are meticulously selected to enhance the model's training on visual understanding skills such as detection, segmentation, captioning, OCR, and external knowledge retrieval, alongside generation tasks and skill compositions. LLaVA-Plus employs unique alignment techniques and fusion methods that utilize raw visual signals during human-AI interaction sessions to improve tool use performance, planning, and reasoning. These techniques enable the seamless integration of vision and text embeddings by combining user inputs, tool activation prompts, and execution results into a unified dialogue format. This strategic approach not only facilitates enhanced interaction between the model and its users but also significantly boosts the model's overall performance and versatility in handling complex multimodal tasks.
-</details> 
+</details>
 
 ### **BakLLaVA**
 
 BakLLaVA elevates the LLaVA framework by employing a Mistral 7B base enhanced with LLaVA 1.5 architecture, undergoing a meticulous two-stage training process on a diverse dataset to achieve superior performance in multimodal benchmarks, outperforming competitors like Llama 2 13B.
 
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/skunkworksai/bakllava) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/SkunkworksAI/BakLLaVA-1)
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **BakLLaVA**: Represents an innovative advancement in the realm of AI models, distinguishing itself with significant architectural enhancements over its predecessor, LLaVA. Developed with a strong focus on integrating multimodal capabilities into language models, BakLLaVA leverages a **Mistral 7B** base, augmented with the advanced **LLaVA 1.5 architecture**, to push the boundaries of performance in various benchmarks. This model has been meticulously designed to outperform notable predecessors, such as Llama 2 13B, across several benchmarks, showcasing the efficiency and effectiveness of its underlying architecture .The training methodology of BakLLaVA is particularly noteworthy, employing a feature alignment stage that utilizes 600K filtered CC3M images for establishing a robust vision-language connection. This process is complemented by a visual instruction tuning stage, where 150K GPT-generated multimodal instructions are utilized, signifying a tailored approach towards encoding vision and text together. Such a methodological approach not only enhances feature alignment but also optimizes the model for a broad spectrum of conceptual coverage, efficiency in training, and overall performance. BakLLaVA's architecture benefits from a diverse dataset compilation including 558K filtered image-text pairs from LAION/CC/SBU, captioned by BLIP, alongside 158K GPT-generated multimodal instruction-following data, 450K academic-task-oriented VQA data, and 40K ShareGPT data, among others. This extensive dataset collection is pivotal for the model's training, ensuring broad concept coverage and reinforcing the model's capabilities in feature alignment and visual instruction tuning. The strategic selection of datasets underscores BakLLaVA's commitment to advancing AI's understanding and processing of complex visual and textual information, setting a new standard for multimodal AI models.
-</details> 
+</details>
 
 ### **CogVLM: Visual Expert for Pretrained Language Models**
 
@@ -2607,11 +2596,11 @@ CogVLM enhances pretrained language models with a dedicated visual expert module
 Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, Jiazheng Xu, Bin Xu, Juanzi Li, Yuxiao Dong, Ming Ding, Jie Tang
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/93d951e1-ad49-47fd-9135-c11bc69d49bc" alt="Architecture diagram for CogVLM: Visual Expert for Pretrained Language Models" />
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **CogVLM**: This approach enables the model to deeply fuse vision-language features, enhancing its ability to process and understand multimodal inputs. The architecture of CogVLM is built around several key components: a Vision Transformer (ViT) encoder, **an MLP adapter**, a pretrained large language model akin to GPT, and the innovative visual expert module. These components work in tandem to facilitate the model's advanced capabilities in handling complex visual and textual information. The training methodology for CogVLM is comprehensive, encompassing both pretraining and fine-tuning phases. During pretraining, the model undergoes learning with a focus on image captioning loss and Referring Expression Comprehension (REC) across an extensive dataset comprising over 1.5 billion image-text pairs and a visual grounding dataset featuring 40 million images. The fine-tuning phase employs a unified instruction-supervised approach across a variety of visual question-answering datasets, further refining the model's performance. CogVLM's alignment techniques are particularly noteworthy, employing **a visual expert module** in each layer that leverages a **QKV (Query, Key, Value) matrix** and an **MLP (Multilayer Perceptron)** to achieve deep visual-language feature alignment. This method not only allows for the seamless integration of image features into the language model's processing layers but also significantly enhances the model's overall multimodal processing capabilities. The datasets employed in training and refining CogVLM include LAION-2B, COYO-700M, a visual grounding dataset of 40 million images, and several visual question-answering datasets like VQAv2, OKVQA, TextVQA, OCRVQA, and ScienceQA. These datasets serve multiple purposes, from pretraining and instruction alignment to enhancing the model's proficiency in tasks such as image captioning and referring expression comprehension. Through this strategic use of diverse datasets, CogVLM is positioned to excel in a wide array of multimodal tasks, marking a significant advancement in the field of vision-language models.
-</details> 
+</details>
 
 ### **CogVLM2: Enhanced Vision-Language Models for Image and Video Understanding**
 
@@ -2630,7 +2619,6 @@ Wenyi Hong, Weihan Wang, Ming Ding, Wenmeng Yu, Qingsong Lv, Yan Wang, Yean Chen
 CogVLM2 is a new generation visual language model designed for comprehensive image and video understanding. It leverages a powerful ViT encoder to extract visual features from high-resolution images or video sequences, which are then downsampled by a convolutional layer and aligned with linguistic representations through a SwiGLU module. This adapter efficiently bridges the visual and language modalities while preserving critical image information. The model then utilizes a visual expert architecture, integrating visual features into both the attention and FFN modules of the language decoder. This approach allows for deep vision-language fusion without compromising the model's inherent language capabilities. Notably, CogVLM2-Video extends this architecture to handle videos, incorporating timestamps alongside multi-frame inputs to enable temporal localization and question-answering capabilities. The CogVLM2 family has achieved state-of-the-art results on various benchmarks, including MMBench, MM-Vet, TextVQA, MVBench, and VCG-Bench, showcasing its versatility and effectiveness across a wide range of image and video understanding tasks.
 </details>
 
-
 ### **Ferret: Refer and Ground Anything Anywhere at Any Granularity**
 
 FERRET, a multimodal large language model, excels in spatial referencing and grounding by using a hybrid region representation that combines discrete coordinates with continuous features, allowing it to precisely pinpoint objects and regions within images, regardless of their complexity.
@@ -2639,11 +2627,11 @@ FERRET, a multimodal large language model, excels in spatial referencing and gro
 Haoxuan You, Haotian Zhang, Zhe Gan, Xianzhi Du, Bowen Zhang, Zirui Wang, Liangliang Cao, Shih-Fu Chang, Yinfei Yang
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/a5ff801f-d523-4383-8b89-e2499976b2bb" alt="Architecture diagram for Ferret: Refer and Ground Anything Anywhere at Any Granularity" />
-<details> 
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **FERRET**: stands as a multimodal large language model (MLLM) that pioneers in spatially referring to any object within an image, irrespective of its shape or granularity, and grounding open-vocabulary descriptions with precision. The architecture of FERRET is distinguished by its hybrid region representation, which marries discrete coordinates with continuous features to depict image regions. This novel approach enables the model to handle a wide range of spatial referring tasks, from pinpointing precise locations to addressing more abstract, shapeless areas within images. At the core of FERRET's architecture are several key components: an image encoder tasked with deriving image embeddings, **a spatial-aware visual sampler** designed to extract regional continuous features, and a language model that integrates image, text, and region features. This intricate setup facilitates the model's unique ability to understand and generate language that refers to spatial elements in images with unprecedented accuracy. The training of FERRET is conducted on the GRIT dataset, which includes over 1.1 million samples imbued with hierarchical spatial knowledge. This process is augmented by spatial-aware visual sampling techniques that cater to the diverse shapes and densities found in spatial data, allowing for the simultaneous generation of text and coordinates for objects within images.FERRET's alignment techniques and fusion methods are particularly noteworthy. By blending discrete coordinates with continuous visual features, the model can process inputs of freely formed regions and ground descriptions in its outputs accurately. This capability is supported by a diverse dataset portfolio, including GRIT for its rich spatial annotations, and Visual Genome, RefCOCOs, and Flickr30k for tasks such as object detection, phrase grounding, and evaluating the model's proficiency in referring and grounding. Through these methodologies, FERRET advances the field of multimodal language models by providing a versatile framework for spatial reasoning and language grounding in visual contexts.
-</details> 
+</details>
 
 ### **Fuyu-8B: A Multimodal Architecture for AI Agents**
 
@@ -2655,10 +2643,10 @@ Rohan Bavishi, Erich Elsen, Curtis Hawthorne, Maxwell Nye, Augustus Odena, Arush
 
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/61a75fb4-ced7-419c-bff7-7cb2e3ddc02d" alt="Architecture diagram for Fuyu-8B: A Multimodal Architecture for AI Agents" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **Fuyu-8B**: A streamlined multimodal model tailored for digital agents, distinguished by its unique approach to handling visual data and its integration with textual information. At the core of Fuyu-8B's architecture is a decoder-only transformer, a departure from traditional models that rely on separate image encoders. This design facilitates the direct projection of image patches into the transformer's initial layer with **a linear projection**, allowing Fuyu-8B to process images of any resolution without the need for complex training stages or the integration of resolution-specific mechanisms. The simplicity of this architecture does not only lie in its unified processing of image and text data but also in its elimination of the need for cross-attention mechanisms or adapters, streamlining the model's training and inference processes. In terms of alignment techniques, Fuyu-8B employs a novel approach by treating image tokens on par with text tokens from the inception of the model's processing pipeline. This method does away with separate position embeddings for images, thereby simplifying the alignment process between textual and visual data. The model's ability to support arbitrary image resolutions and perform fine-grained localization is particularly advantageous for applications requiring detailed visual understanding alongside textual interaction. The datasets utilized in Fuyu-8B's development, including VQAv2, OKVQA, COCO Captions, and AI2D, are instrumental in benchmarking the model against standard image understanding tasks such as visual question answering and caption generation. Despite Fuyu-8B's primary focus on applications within digital agents, the selection of these datasets ensures a comprehensive evaluation of its capabilities in broader contexts of image understanding and multimodal interaction. Through its innovative architecture and methodological simplicity, Fuyu-8B sets a new direction for the development of AI agents capable of sophisticated multimodal reasoning.
 </details>
 
@@ -2671,7 +2659,7 @@ OtterHD-8B, inspired by Fuyu-8B, directly integrates pixel-level information fro
 Bo Li, Peiyuan Zhang, Jingkang Yang, Yuanhan Zhang, Fanyi Pu, Ziwei Liu
 <details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **OtterHD-8B**: Represents an evolutionary step in multi-modality model design, building on the foundation of the **Fuyu-8B architecture** to interpret high-resolution visual inputs with exceptional precision. Unlike traditional models limited by fixed-size vision encoders, OtterHD-8B is equipped to handle flexible input dimensions, allowing for enhanced versatility across a variety of inference requirements. This model integrates pixel-level visual information directly into the language model without the need for a separate vision encoder, employing position embeddings to comprehend varying image sizes and enabling the processing of high-resolution images up to 1024x1024 pixels. Instruction tuning in OtterHD-8B is tailored towards accommodating various image resolutions, with the model being trained on a diverse dataset mixture including LLaVA-Instruct, VQAv2, GQA, OKVQA, OCRVQA, A-OKVQA, COCO-GOI, COCO-Caption, TextQA, RefCOCO, COCO-ITM, ImageNet, and LLaVA-RLHF. This training employs FlashAttention-2 and other fused operators for optimization, leveraging PyTorch and Hugging Face Transformers. The direct integration of pixel-level information into the language model, facilitated by position embeddings, enables OtterHD-8B to understand and generate responses to high-resolution images alongside textual instructions without conventional vision and text embedding fusion methods. The datasets chosen for training OtterHD-8B underscore its focus on a broad array of vision and language tasks, including question answering, object recognition, and text-image alignment, aiming to enhance the model's capabilities in these areas. By directly processing image patches alongside textual instructions, OtterHD-8B eschews traditional fusion methods, leveraging its architecture to interpret and respond to complex multimodal inputs. This approach not only marks a significant advancement in handling high-resolution images but also in the model's overall ability to comprehend and interact with visual and textual data, positioning OtterHD-8B as a notable development in the field of multi-modality models.
 </details>
 
@@ -2683,10 +2671,10 @@ SPHINX pushes the boundaries of multi-modal LLMs by jointly mixing model weights
 Ziyi Lin, Chris Liu, Renrui Zhang, Peng Gao, Longtian Qiu, Han Xiao, Han Qiu, Chen Lin, Wenqi Shao, Keqin Chen, Jiaming Han, Siyuan Huang, Yichi Zhang, Xuming He, Hongsheng Li, Yu Qiao
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3a1bf3fa-d0c5-4692-b9a8-97bea41ce226" alt="Architecture diagram for SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models" />
-</p> 
+</p>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **SPHINX**: stands out as a multi-modal large language model (MLLM) designed to enhance the integration of language and vision through an innovative approach that includes the **joint mixing of model weights**, tuning tasks, and visual embeddings. This model is particularly distinguished by its methodology of unfreezing the large language model during pre-training to foster more effective cross-modal learning. The architecture of SPHINX is built upon a foundation that combines vision encoders, **two linear projection layers**, and leverages LLaMA-2 as the language model backbone. It adopts a two-stage training paradigm that emphasizes pre-training for vision-language alignment followed by fine-tuning aimed at visual instruction-following tasks. In the realm of training methodologies, SPHINX employs a strategy that emphasizes **the joint mixing of model weights**, tuning tasks, and visual embeddings, setting a precedent for robust cross-modal knowledge acquisition. This approach is complemented by a pre-training regimen that utilizes both real-world and synthetic data, thereby ensuring a comprehensive understanding across various visual instruction tasks. The model introduces an efficient strategy for processing high-resolution images, utilizing mixed scales and sub-images to accommodate diverse visual inputs. Moreover, SPHINX achieves vision-language alignment by integrating comprehensive visual embeddings, unfreezing the LLM during pre-training, and employing a weight-mixing strategy that bridges domain-specific knowledge across different network architectures and training paradigms. The datasets utilized in training SPHINX, including LAION-400M, LAION-COCO, RefinedWeb, VQAV2, GQA, OKVQA, A-OKVQA, OCRVQA, TextCaps, COCO, LVIS, RefCOCO, VG, and Flickr30k, serve a multifaceted purpose. They are instrumental in achieving multi-modal alignment, language-only tuning, and addressing a wide spectrum of visual question answering and general vision tasks. These tasks range from object detection and human pose estimation to referring object localization and understanding descriptions within the context of image regions. SPHINX, through its meticulous design and strategic training approach, sets a new benchmark in the field of multi-modal large language models, advancing the capabilities in vision-language integration.
 </details>
 
@@ -2698,12 +2686,12 @@ CLIP leverages a contrastive learning approach, training separate image and text
 Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, Ilya Sutskever
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c335c342-9a2c-4d4e-83d6-d3077cc32643" alt="Architecture diagram for CLIP: Contrastive Language-Image Pre-training" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **CLIP**: model represents a groundbreaking approach in the field of machine learning, aiming to bridge the gap between visual and textual information through natural language supervision. Its architecture is designed to understand and predict **the most fitting captions for given images**, a methodology that stems from its training on a vast dataset of 400 million image-text pairs. This extensive training enables CLIP to learn state-of-the-art (SOTA) image representations and apply this knowledge to a wide range of downstream tasks without the need for task-specific training data, facilitating zero-shot transfer capabilities. At the core of CLIP are two primary components: **an image encoder** and **a text encoder**. These encoders are trained using a contrastive learning approach, optimizing for a contrastive objective that seeks to maximize the cosine similarity between correct image-text pairs while minimizing it for incorrect ones. This process is achieved through **a symmetric cross-entropy loss over the similarity scores between the embeddings of images and texts**, enabling the model to effectively link visual concepts with their linguistic descriptions. The model's ability to generalize across various tasks is further enhanced by its training methodology and the specific datasets it utilizes. By covering a broad spectrum of visual concepts and leveraging natural language for supervision, CLIP is adept at learning representations that are highly transferable to new tasks and domains. The custom dataset of 400 million image-text pairs, curated from the internet, plays a pivotal role in this process, providing the diverse and extensive visual and textual information necessary for the model to learn effectively. Through these innovations, CLIP sets a new standard for learning transferable visual models, showcasing the power of natural language in facilitating robust and versatile visual understanding.
-</details> 
+</details>
 
 ### **MetaCLIP: Demystifying CLIP Data**
 
@@ -2713,12 +2701,12 @@ MetaCLIP refines the data curation process for training vision-language models b
 Hu Xu, Saining Xie, Xiaoqing Ellen Tan, Po-Yao Huang, Russell Howes, Vasu Sharma, Shang-Wen Li, Gargi Ghosh, Luke Zettlemoyer, Christoph Feichtenhofer
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/a6c79d0e-a4c7-48c9-86b6-3a8cc9853e11" alt="Architecture diagram for MetaCLIP: Demystifying CLIP Data" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **MetaCLIP**: Represents an innovative approach in the realm of data curation for machine learning, specifically targeting the **enhancement of training datasets** through metadata utilization derived from CLIP's concepts. This model is designed to sift through extensive raw data pools, such as the CommonCrawl dataset, to curate a high-quality, balanced subset that significantly betters the diversity and performance metrics of the data used for training machine learning models. The essence of MetaCLIP lies in its unique architecture that incorporates data curation algorithms, which are adept at leveraging metadata for the purpose of balancing and enriching the training dataset both in terms of quality and diversity. The architecture of MetaCLIP is structured around these **data curation algorithms**, which play a pivotal role in the framework by identifying and assembling a balanced and high-quality dataset from a vast collection of 400 million image-text pairs initially sourced from CommonCrawl. This process is instrumental in MetaCLIP's ability to demonstrate superior performance on various benchmarks, including zero-shot ImageNet classification, when compared to datasets curated using CLIP's original methodologies. The training methods employed by MetaCLIP, therefore, are not just about processing and learning from data but also about intelligently selecting the data that is most beneficial for the training process, ensuring that the model is trained on a dataset that is representative, diverse, and of high quality. The purpose behind employing datasets like CommonCrawl within the MetaCLIP framework is to address and overcome the limitations observed in CLIP's original dataset. By curating a balanced and high-quality dataset of 400 million image-text pairs, MetaCLIP sets a new precedent in the field of machine learning data curation. This strategic selection and enhancement of the training dataset enable MetaCLIP to significantly improve performance on standard benchmarks compared to its predecessor, highlighting the importance of dataset quality and diversity in achieving high performance in machine learning tasks. Through its innovative approach to data curation, MetaCLIP offers a promising avenue for enhancing the capabilities of machine learning models, particularly in applications requiring robust image-text understanding and classification.
-</details> 
+</details>
 
 ### **Alpha-CLIP: A CLIP Model Focusing on Wherever You Want**
 
@@ -2729,13 +2717,13 @@ Alpha-CLIP builds upon the CLIP model by incorporating region awareness through 
 Zeyi Sun, Ye Fang, Tong Wu, Pan Zhang, Yuhang Zang, Shu Kong, Yuanjun Xiong, Dahua Lin, Jiaqi Wang
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/07bd6161-1682-4954-97f3-3770258bfa8c" alt="Architecture diagram for Alpha-CLIP: A CLIP Model Focusing on Wherever You Want" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
   
 **Alpha-CLIP**: Introduces a significant enhancement to the original CLIP model, incorporating region awareness to its repertoire of capabilities. This model is fine-tuned on millions of RGBA region-text pairs, enabling it to maintain CLIP's visual recognition prowess while offering precise control over the emphasis of image content. By integrating an additional **alpha channel into the CLIP image encoder**, Alpha-CLIP allows for detailed segmentation and region-specific processing without modifying the foundational CLIP weights, thus facilitating a nuanced approach to image understanding that respects the spatial dynamics of visual data.
 The training of Alpha-CLIP leverages a novel data generation pipeline designed to produce a vast array of RGBA-region text pairs. This process involves the creation of natural images equipped with foreground alpha channels and their corresponding referring expressions for specific regions. Such a methodology not only enables the fine-tuning of the model with an additional alpha channel input but also underpins its ability to perform with heightened specificity across various tasks. These tasks range from image recognition to multimodal large language models, and extend into both 2D and 3D generation domains, showcasing Alpha-CLIP's versatility and broad applicability. Datasets like LAION-400M, LAION-5B, and GRIT play a crucial role in training Alpha-CLIP, providing a wide spectrum of images for initial training and fine-grained mask-level labels for enhancing local perception capabilities. This strategic choice of datasets ensures that Alpha-CLIP is not only well-equipped for general visual recognition tasks but also capable of nuanced, region-specific processing and understanding, setting a new standard for models at the intersection of language and vision.
-</details> 
+</details>
 
 ### **GLIP: Grounded Language-Image Pre-training**
 
@@ -2745,10 +2733,10 @@ GLIP revolutionizes language-image pre-training by unifying object detection and
 Liunian Harold Li, Pengchuan Zhang, Haotian Zhang, Jianwei Yang, Chunyuan Li, Yiwu Zhong, Lijuan Wang, Lu Yuan, Lei Zhang, Jenq-Neng Hwang, Kai-Wei Chang, Jianfeng Gao
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/06e6f8dc-fbd8-49da-8651-a22ee2edcf3d" alt="Architecture diagram for GLIP: Grounded Language-Image Pre-training" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **GLIP**: A novel approach that innovatively unifies the tasks of object detection and phrase grounding by redefining object detection as a phrase grounding challenge. This strategic reformation allows the model to exploit extensive image-text paired datasets for pre-training, equipping it with the capability to comprehend and execute tasks that require object-level precision, language awareness, and semantically rich visual representations. At its core, GLIP's architecture is designed to deeply integrate visual and textual information, enhancing its understanding of complex visual scenes in conjunction with textual prompts. The architecture of GLIP is composed of several critical components, including a visual encoder that can either be a Convolutional Neural Network (CNN) or a Transformer, tasked with extracting features from regions or bounding boxes within images. It also includes a language encoder dedicated to processing text prompts and prediction heads (box classifier and box regressor) that are trained using **classification** and **localization loss**. A distinctive feature of GLIP is its method of deep fusion between image and text, specifically in the latter stages of encoding, which merges visual and textual information more comprehensively than traditional methods. GLIP's training methodology is as innovative as its architecture, employing a unified formulation that amalgamates detection and grounding tasks into a singular workflow. This model is trained end-to-end, optimizing losses defined for **both detection** (focusing on localization and classification) and **grounding** (centering on alignment scores between image regions and corresponding words in the prompt). Such deep integration of visual and language features during training is pivotal, facilitating the model's ability to learn effectively from paired image-text data. The datasets utilized for training GLIP, including COCO, OpenImages, Objects365, Visual Genome, Flickr30k-entities, LVIS, and PhraseCut, are meticulously selected to cover a wide array of object classes and scenarios, each serving a unique purpose from object detection and phrase grounding to instance segmentation and referring expression segmentation. Through this comprehensive training, GLIP sets a new precedent in the realm of language-image pre-training, demonstrating advanced capabilities in interpreting and interacting with both visual and textual data.
 </details>
 
@@ -2760,10 +2748,10 @@ ImageBind revolutionizes multimodal learning by creating a single, joint embeddi
 Rohit Girdhar, Alaaeldin El-Nouby, Zhuang Liu, Mannat Singh, Kalyan Vasudev Alwala, Armand Joulin, Ishan Misra
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/fbf8bcdd-b1bb-4fd8-8723-3c82e84ef759" alt="Architecture diagram for ImageBind: One Embedding Space To Bind Them All" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **ImageBind**: Introduces an innovative approach to multimodal learning by creating **a joint embedding space** that encompasses six different modalities: **images, text, audio, depth, thermal, and IMU (Inertial Measurement Unit)** data. This model uniquely employs image-paired data as a central binding agent, enabling it to leverage the capabilities of large-scale vision-language models to extend zero-shot capabilities to new, previously unlinked modalities. By doing so, ImageBind not only facilitates a deeper integration of diverse data types but also opens up new avenues for zero-shot classification and retrieval across a wide range of applications. At the heart of ImageBind's architecture lies a transformer-based design, adapted for each specific modality to ensure optimal processing and representation. For instance, it utilizes a Vision Transformer for image data, with each modality encoder being augmented by **modality-specific linear projection heads**. These adaptations are crucial for maintaining a uniform embedding size across the disparate data types, ensuring that the model can effectively learn from and link together the various modalities. This uniformity is key to ImageBind's ability to create a cohesive and comprehensive embedding space that captures the nuances of each data type. The training methodology behind ImageBind is particularly noteworthy. It employs contrastive learning, utilizing both web-scale image-text data and naturally occurring paired data from various modalities, such as video-audio and image-depth pairs. This strategy allows the model to learn a single joint embedding space without requiring all modalities to co-occur, a significant advantage that enhances its flexibility and applicability. The use of datasets like Audioset, SUN RGB-D, LLVIP, and Ego4D, which provide naturally paired data across the model's target modalities, is critical to this process. These datasets enable ImageBind to achieve emergent zero-shot classification and retrieval performance on tasks tailored to each modality, showcasing the model's ability to seamlessly navigate and leverage the complex interplay between different forms of data.
 </details>
 
@@ -2775,10 +2763,10 @@ SigLIP introduces a simple pairwise sigmoid loss for language-image pre-training
 Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov, Lucas Beyer  
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/60018313-37dd-4dbd-8eb4-a3075fd26663" alt="Architecture diagram for SigLIP: Sigmoid Loss for Language Image Pre-Training" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **SigLIP**: A novel approach to language-image pre-training by proposing **a simple pairwise sigmoid loss**. This method contrasts with standard contrastive learning that utilizes softmax normalization, as it operates directly on image-text pairs without necessitating a global view of pairwise similarities for normalization. The primary advantage of this approach is its scalability, allowing for the use of larger batch sizes without compromising performance. The architecture leverages a vision transformer for image processing and a conventional transformer for text, with the sigmoid loss facilitating independent processing of image-text pairs. This design enables more efficient training dynamics, particularly in the context of large batch sizes, by examining the effects of varying the negative to positive ratio and the selection of example pairs. Training methodologies focus on exploiting large batch sizes, delving into the dynamics of how batch size variations influence model performance. The introduction of sigmoid loss is pivotal, enabling the model to train effectively with these large batches by investigating the relationship between the ratio of negative to positive examples and the optimization of example pair selection. The use of the LiT image-text dataset and the WebLI dataset is integral to the model's training, aiming to achieve aligned representational spaces between images and texts. These datasets are chosen for their utility in assessing zero-shot transfer capabilities, as well as in exploring the scalability and efficiency of the model's sigmoid loss-based training. In essence, SigLIP marks a significant stride in language-image pre-training through its innovative use of sigmoid loss, enhancing scalability and training efficiency. This approach not only simplifies the training process by eliminating the need for global normalization but also showcases the model's adaptability to large-scale data handling. The strategic selection of datasets further underscores the model's capability to forge aligned representational spaces, paving the way for advanced zero-shot learning and efficient multimodal integration.
 </details>
 
@@ -2790,10 +2778,10 @@ The Vision Transformer (ViT) revolutionizes image recognition by applying the Tr
 Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby
 <p align="center">
 <img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/b2f77966-c2e8-4204-ba90-be51196a7dee" alt="Architecture diagram for ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" />
-</p> 
-<details> 
+</p>
+<details>
 <summary>ℹ️ <i>More Information</i></summary>  
-    
+
 **The Vision Transformer (ViT)**: A paradigm shift in image recognition by applying the transformer architecture, predominantly used in natural language processing, directly to images. It innovatively processes images as **a sequence of fixed-size patches**, akin to how tokens are treated in **text applications**. This approach is facilitated through minimal modifications to the standard transformer components, emphasizing the model's adaptability to visual tasks without relying on the convolutional neural networks' (CNNs) inductive biases. ViT's architecture is distinguished by its use of linear embedding for **image patches** and **position embeddings**, which are crucial for maintaining the spatial hierarchy of image data. The core of ViT is a standard Transformer encoder that includes multiheaded self-attention (MSA) and multilayer perceptron (MLP) blocks, complemented by layer normalization and residual connections, underscoring its efficiency and robustness in handling visual data. Training methodologies for ViT are characterized by its scalability and the significant impact of dataset size on its performance. Initially, ViT exhibits modest accuracies without strong regularization techniques. However, its performance escalates with the scale of training, showcasing its potential to outperform traditional CNN approaches through extensive pre-training on large datasets. This process highlights the critical role of dataset selection in ViT's training regimen. It is fine-tuned on smaller datasets following a comprehensive pre-training phase that leverages large datasets like ImageNet-21k and JFT-300M to enhance model generalization and performance across a wide range of tasks. The datasets employed, including ImageNet, CIFAR-100, VTAB, ImageNet-21k, and JFT-300M, serve dual purposes: benchmarking the model's image classification capabilities and evaluating its transferability to diverse tasks with limited data, thereby establishing ViT's versatility and effectiveness in advancing image recognition tasks.
 </details>
 

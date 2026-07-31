@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '17 6 * * 1'
+    - cron: "17 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -25,8 +25,16 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Awesome lint
         run: npx --yes awesome-lint@2.3.0 README.md
+      - name: Markdown lint
+        run: npx --yes markdownlint-cli2@0.18.1 "*.md"
+      - name: Check repository formatting
+        run: >-
+          npx --yes prettier@3.6.2 --check
+          .github/workflows/main.yml
+          .github/workflows/markdown-links-config.json
+          CITATION.cff
       - name: Check links
         uses: gaurav-nelson/github-action-markdown-link-check@7481451f70251762f149d69596e3e276ebf2b236 # v1.0.9
         with:
           config-file: .github/workflows/markdown-links-config.json
-          use-verbose-mode: 'yes'
+          use-verbose-mode: "yes"
