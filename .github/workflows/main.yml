@@ -33,15 +33,15 @@ jobs:
           .github/workflows/main.yml
           .github/workflows/markdown-links-config.json
           CITATION.cff
+
+  Link_Check:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825a76410c181273ba90b1 # v7.0.1
       - name: Check links
-        id: link-check
-        continue-on-error: true
-        uses: gaurav-nelson/github-action-markdown-link-check@7481451f70251762f149d69596e3e276ebf2b236 # v1.0.9
-        with:
-          config-file: .github/workflows/markdown-links-config.json
-          use-verbose-mode: "yes"
-      - name: Retry link check after a transient failure
-        if: steps.link-check.outcome == 'failure'
         uses: gaurav-nelson/github-action-markdown-link-check@7481451f70251762f149d69596e3e276ebf2b236 # v1.0.9
         with:
           config-file: .github/workflows/markdown-links-config.json
