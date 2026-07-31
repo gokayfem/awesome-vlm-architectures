@@ -70,12 +70,12 @@ def update_readme(records: list[dict[str, object]]) -> None:
             re.S,
         )
         section = marker_pattern.sub("", section)
-        summary = re.search(r"<summary>.*?</summary>\n", section)
-        if not summary:
-            raise RuntimeError(f"missing details summary for entry {record['index']}")
-        insertion = summary.end()
-        remainder = section[insertion:].lstrip("\n")
-        section = section[:insertion] + "\n" + figure_block(record) + remainder
+        details = re.search(r"(?m)^<details>\s*$", section)
+        if not details:
+            raise RuntimeError(f"missing details panel for entry {record['index']}")
+        before = section[: details.start()].rstrip("\n")
+        remainder = section[details.start() :].lstrip("\n")
+        section = before + "\n\n" + figure_block(record) + remainder
         architecture = architecture[:start] + section + architecture[end:]
 
     README.write_text(prefix + architecture + suffix, encoding="utf-8")
