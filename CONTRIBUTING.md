@@ -27,7 +27,8 @@ To ensure your pull request is accepted, please follow these guidelines:
 Keep the established three-layer format: a short architecture-first summary, primary-source badges and authors, followed by an expandable deep dive.
 
 - Use one entry per architecture family. Fold point releases and new parameter sizes into the family unless the architecture changes materially.
-- Record the first public date as `**Released:** YYYY-MM-DD`. Prefer the first official model release; when that date is unavailable, use the paper's arXiv v1 submission or the first official technical report.
+- Record the first public date as `**Released:** YYYY-MM-DD`. Prefer the first documented official model release; when that date is unavailable, use the paper's arXiv v1 submission or the first official technical report. A family entry uses its earliest member's release, while later point releases remain folded into that family.
+- After adding or changing an architecture, run `python scripts/build_release_timeline.py` and commit the regenerated timeline. `python scripts/build_release_timeline.py --check` verifies that all architecture panels appear exactly once.
 - Order badges as Paper, Code, then Model or Demo. Labels must match their destinations.
 - Describe the mechanism before benchmark results. Attribute time-sensitive performance claims to the authors and publication date.
 - Organize the expanded explanation as architecture, training or alignment, then datasets.

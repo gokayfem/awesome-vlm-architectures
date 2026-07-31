@@ -43,15 +43,18 @@ Architecture images are credited individually in the [figure credits](assets/arc
 
 **2025 additions:** [ERNIE 5.0](#ernie-50-unified-autoregressive-omnimodal-mixture-of-experts) | [DeepSeek-OCR](#deepseek-ocr-visual-context-compression-through-deepencoder) | [PaddleOCR-VL](#paddleocr-vl-ultra-compact-multilingual-document-parsing) | [Qwen3-VL](#qwen3-vl-deepstack-vision-language-models) | [Step3](#step3-model-system-co-design-for-cost-effective-multimodal-intelligence) | [GLM-4.1V-Thinking](#glm-41v-thinking-general-purpose-multimodal-reasoning-through-curriculum-sampled-rl) | [ERNIE 4.5-VL](#ernie-45-vl-heterogeneous-modality-mixture-of-experts) | [MiMo-VL](#mimo-vl-multimodal-pretraining-with-mixed-on-policy-reinforcement-learning) | [BAGEL](#bagel-a-mixture-of-transformer-experts-for-unified-understanding-and-generation) | [Seed1.5-VL](#seed15-vl-sparse-moe-multimodal-understanding-and-agentic-reasoning) | [InternVL3 / 3.5](#internvl3-and-internvl35-native-multimodal-pretraining-and-adaptive-resolution) | [Kimi-VL](#kimi-vl-native-resolution-vision-with-a-sparse-moe-decoder) | [Llama 4](#llama-4-scout-and-maverick-native-multimodal-mixture-of-experts-models) | [Qwen2.5-Omni](#qwen25-omni-streaming-multimodal-perception-and-speech-generation) | [Gemma 3](#gemma-3-long-context-multimodality-with-efficient-interleaved-attention) | [Aya Vision](#aya-vision-multilingual-multimodality-through-cross-modal-model-merging) | [Phi-4-multimodal](#phi-4-multimodal-text-vision-and-speech-through-mixture-of-loras) | [SigLIP 2](#siglip-2-multilingual-vision-language-encoders-with-native-aspect-ratio-support)
 
-**2024 additions:** [ShowUI](#showui-vision-language-action-modeling-for-gui-agents) | [Janus / Janus-Pro](#janus-and-janus-pro-decoupled-visual-understanding-and-generation) | [Emu3](#emu3-next-token-prediction-across-text-image-and-video) | [Molmo / PixMo](#molmo-and-pixmo-open-weights-open-data-and-grounded-pointing) | [VILA-U](#vila-u-fully-autoregressive-visual-understanding-and-generation) | [Show-o](#show-o-autoregressive-language-and-discrete-diffusion-vision-in-one-transformer) | [Transfusion](#transfusion-next-token-text-prediction-and-continuous-image-diffusion) | [mPLUG-Owl3](#mplug-owl3-hyper-attention-for-long-image-sequences) | [Cambrian-1](#cambrian-1-vision-centric-multimodal-llms) | [Ovis](#ovis-structural-visual-text-embedding-alignment) | [Phi-3-Vision](#phi-3-vision-and-phi-35-vision-compact-long-context-multimodal-reasoning) | [Chameleon](#chameleon-mixed-modal-early-fusion-foundation-models) | [MM1](#mm1-methods-analysis-and-insights-from-multimodal-pre-training) | [AnyGPT](#anygpt-unified-any-to-any-multimodal-modeling-with-discrete-tokens)
+**2024 additions:** [ShowUI](#showui-vision-language-action-modeling-for-gui-agents) | [Janus / Janus-Pro](#janus-and-janus-pro-decoupled-visual-understanding-and-generation) | [Emu3](#emu3-next-token-prediction-across-text-image-and-video) | [Molmo / PixMo](#molmo-and-pixmo-open-weights-open-data-and-grounded-pointing) | [VILA-U](#vila-u-fully-autoregressive-visual-understanding-and-generation) | [Show-o](#show-o-autoregressive-language-and-discrete-diffusion-vision-in-one-transformer) | [Transfusion](#transfusion-next-token-text-prediction-and-continuous-image-diffusion) | [mPLUG-Owl3](#mplug-owl3-hyper-attention-for-long-image-sequences) | [Cambrian-1](#cambrian-1-vision-centric-multimodal-llms) | [Ovis](#ovis-structural-visual-text-embedding-alignment) | [Phi-3-Vision](#phi-3-vision-and-phi-35-vision-compact-long-context-multimodal-reasoning) | [Chameleon](#chameleon-mixed-modal-early-fusion-foundation-models) | [MM1](#mm1-methods-analysis-and-insights-from-multimodal-pre-training) | [AnyGPT](#anygpt-unified-any-to-any-multimodal-modeling-with-discrete-tokens) | [VILA²](#vila²-vila-augmented-vila)
 
 [LLaVA](#llava-large-language-and-vision-assistant---visual-instruction-tuning) | [LLaVA 1.5](#llava-15-improved-baselines-with-visual-instruction-tuning) | [LLaVA 1.6](#llava-16-llava-next-improved-reasoning-ocr-and-world-knowledge) | [PaliGemma](#paligemma-a-versatile-and-transferable-3b-vision-language-model) | [PaliGemma 2](#paligemma-2-a-family-of-versatile-vlms-for-transfer) | [AIMv2](#aimv2-multimodal-autoregressive-pre-training-of-large-vision-encoders) | [Apollo](#apollo-an-exploration-of-video-understanding-in-large-multimodal-models) | [ARIA](#aria-an-open-multimodal-native-mixture-of-experts-model) | [EVE](#eve-unveiling-encoder-free-vision-language-models) | [EVEv2](#evev2-improved-baselines-for-encoder-free-vision-language-models) | [Janus / Janus-Pro](#janus-and-janus-pro-decoupled-visual-understanding-and-generation) | [LLaVA-CoT](#llava-cot-let-vision-language-models-reason-step-by-step) | [LLM2CLIP](#llm2clip-powerful-language-model-unlocks-richer-visual-representation) | [Maya](#maya-an-instruction-finetuned-multilingual-multimodal-model) | [MiniMax-01](#minimax-01-scaling-foundation-models-with-lightning-attention) | [NVLM](#nvlm-open-frontier-class-multimodal-llms) | [OmniVLM](#omnivlm-a-token-compressed-sub-billion-parameter-vision-language-model-for-efficient-on-device-inference) | [Pixtral 12B](#pixtral-12b-a-cutting-edge-open-multimodal-language-model) | [Sa2VA](#sa2va-marrying-sam2-with-llava-for-dense-grounded-understanding-of-images-and-videos) | [Tarsier2](#tarsier2-advancing-large-vision-language-models-from-detailed-video-description-to-comprehensive-video-understanding) | [UI-TARS](#ui-tars-pioneering-automated-gui-interaction-with-native-agents) | [VideoChat-Flash](#videochat-flash-hierarchical-compression-for-long-context-video-modeling) | [VideoLLaMA 3](#videollama-3-frontier-multimodal-foundation-models-for-image-and-video-understanding) | [Llama 3.2-Vision](#llama-32-vision-enhanced-multimodal-capabilities-built-on-llama-3) | [SmolVLM](#smolvlm-a-small-efficient-and-open-source-vision-language-model) | [IDEFICS](#idefics) | [IDEFICS2](#idefics2) | [IDEFICS3-8B](#idefics3-8b-building-and-better-understanding-vision-language-models) | [InternLM-XComposer2](#internlm-xcomposer2-mastering-free-form-text-image-composition-and-comprehension-in-vision-language-large-model) | [InternLM-XComposer2-4KHD](#internlm-xcomposer2-4khd-a-pioneering-large-vision-language-model-handling-resolutions-from-336-pixels-to-4k-hd) | [InternLM-XComposer-2.5](#internlm-xcomposer-25-a-versatile-large-vision-language-model-supporting-long-contextual-input-and-output) | [InternVL 2.5](#internvl-25-expanding-performance-boundaries-of-open-source-multimodal-models-with-model-data-and-test-time-scaling) | [DeepSeek-VL](#deepseek-vl-towards-real-world-vision-language-understanding) | [DeepSeek-VL2](#deepseek-vl2-mixture-of-experts-vision-language-models-for-advanced-multimodal-understanding) | [MANTIS](#mantis-mastering-multi-image-understanding-through-interleaved-instruction-tuning) | [Qwen-VL](#qwen-vl-a-versatile-vision-language-model-for-understanding-localization-text-reading-and-beyond) | [Qwen2-VL](#qwen2-vl-a-powerful-open-source-vision-language-model-for-image-and-video-understanding) | [Qwen2.5-VL](#qwen25-vl-enhanced-vision-language-capabilities-in-the-qwen-series) | [moondream1](#moondream1-and-moondream2) | [moondream2](#moondream1-and-moondream2) | [Moondream-next](#moondream-next-compact-vision-language-model-with-enhanced-capabilities) | [SPHINX-X](#sphinx-x-scaling-data-and-parameters-for-a-family-of-multi-modal-large-language-models) | [BLIP](#blip-bootstrapping-language-image-pre-training) | [BLIP-2](#blip-2-bootstrapping-language-image-pre-training-with-frozen-image-encoders-and-large-language-models) | [xGen-MM (BLIP-3)](#xgen-mm-blip-3-an-open-source-framework-for-building-powerful-and-responsible-large-multimodal-models) | [InstructBLIP](#instructblip-towards-general-purpose-vision-language-models-with-instruction-tuning) | [KOSMOS-1](#kosmos-1-language-is-not-all-you-need-aligning-perception-with-language-models) | [KOSMOS-2](#kosmos-2-grounding-multimodal-large-language-models-to-the-world) | [ConvLLaVA](#convllava-hierarchical-backbones-as-visual-encoder-for-large-multimodal-models) | [Parrot](#parrot-multilingual-visual-instruction-tuning) | [OMG-LLaVA](#omg-llava-bridging-image-level-object-level-pixel-level-reasoning-and-understanding) | [EVLM](#evlm-an-efficient-vision-language-model-for-visual-understanding) | [SlowFast-LLaVA](#slowfast-llava-a-strong-training-free-baseline-for-video-large-language-models) | [Nous-Hermes-2-Vision - Mistral 7B](#nous-hermes-2-vision---mistral-7b) | [TinyGPT-V](#tinygpt-v-efficient-multimodal-large-language-model-via-small-backbones) | [CoVLM](#covlm-composing-visual-entities-and-relationships-in-large-language-models-via-communicative-decoding) | [GLaMM](#glamm-pixel-grounding-large-multimodal-model) | [COSMO](#cosmo-contrastive-streamlined-multimodal-model-with-interleaved-pre-training) | [FireLLaVA](#firellava) | [u-LLaVA](#u-llava-unifying-multi-modal-tasks-via-large-language-model) | [MoE-LLaVA](#moe-llava-mixture-of-experts-for-large-vision-language-models) | [BLIVA](#bliva-a-simple-multimodal-llm-for-better-handling-of-text-rich-visual-questions) | [MobileVLM](#mobilevlm-a-fast-strong-and-open-vision-language-assistant-for-mobile-devices) | [FROZEN](#frozen-multimodal-few-shot-learning-with-frozen-language-models) | [Flamingo](#flamingo-a-visual-language-model-for-few-shot-learning) | [OpenFlamingo](#openflamingo-an-open-source-framework-for-training-large-autoregressive-vision-language-models) | [PaLI](#pali-a-jointly-scaled-multilingual-language-image-model) | [PaLI-3](#pali-3-vision-language-models-smaller-faster-stronger) | [PaLM-E](#palm-e-an-embodied-multimodal-language-model) | [MiniGPT-4](#minigpt-4-enhancing-vision-language-understanding-with-advanced-large-language-models) | [MiniGPT-v2](#minigpt-v2-large-language-model-as-a-unified-interface-for-vision-language-multi-task-learning) | [LLaVA-Plus](#llava-plus-learning-to-use-tools-for-creating-multimodal-agents) | [BakLLaVA](#bakllava) | [CogVLM](#cogvlm-visual-expert-for-pretrained-language-models) | [CogVLM2](#cogvlm2-enhanced-vision-language-models-for-image-and-video-understanding) | [Ferret](#ferret-refer-and-ground-anything-anywhere-at-any-granularity) | [Fuyu-8B](#fuyu-8b-a-multimodal-architecture-for-ai-agents) | [OtterHD](#otterhd-a-high-resolution-multi-modality-model) | [SPHINX](#sphinx-the-joint-mixing-of-weights-tasks-and-visual-embeddings-for-multi-modal-large-language-models) | [Eagle 2](#eagle-2-building-post-training-data-strategies-from-scratch-for-frontier-vision-language-models) | [EAGLE](#eagle-exploring-the-design-space-for-multimodal-llms-with-mixture-of-encoders) | [VITA](#vita-towards-open-source-interactive-omni-multimodal-llm) | [LLaVA-OneVision](#llava-onevision-easy-visual-task-transfer) | [MiniCPM-o-2.6](#minicpm-o-26-a-gpt-4o-level-mllm-for-vision-speech-and-multimodal-live-streaming) | [MiniCPM-V](#minicpm-v-a-gpt-4v-level-mllm-on-your-phone) | [INF-LLaVA](#inf-llava-high-resolution-image-perception-for-multimodal-large-language-models) | [Florence-2](#florence-2-a-deep-dive-into-its-unified-architecture-and-multi-task-capabilities) | [MULTIINSTRUCT](#multiinstruct-improving-multi-modal-zero-shot-learning-via-instruction-tuning) | [MouSi](#mousi-poly-visual-expert-vision-language-models) | [LaVIN](#lavin-cheap-and-quick-efficient-vision-language-instruction-tuning-for-large-language-models) | [CLIP](#clip-contrastive-language-image-pre-training) | [MetaCLIP](#metaclip-demystifying-clip-data) | [Alpha-CLIP](#alpha-clip-a-clip-model-focusing-on-wherever-you-want) | [GLIP](#glip-grounded-language-image-pre-training) | [ImageBind](#imagebind-one-embedding-space-to-bind-them-all) | [SigLIP](#siglip-sigmoid-loss-for-language-image-pre-training) | [ViT](#vit-an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale)
 
 ## Release Timeline
 
-Dates below use the first official model release when one is documented; otherwise they use the paper's arXiv v1 submission or the first technical report. Point releases are folded into their architecture family.
+Dates use the first documented official model release; when none is available, they use the paper's arXiv v1 submission or first technical report. Family point releases are folded into their first architecture release, and same-day entries retain catalog order.
 
 <!--lint disable table-pipe-alignment table-cell-padding-->
+
+<details>
+<summary>🗓️ <i>Release Timeline (155 architectures, newest first)</i></summary>
 
 | Date | Architecture | Distinctive contribution |
 | --- | --- | --- |
@@ -73,14 +76,14 @@ Dates below use the first official model release when one is documented; otherwi
 | 2026-04-29 | GLM-5V-Turbo | Perception integrated into reasoning, planning, tools, and execution |
 | 2026-04-21 | PLaMo 2.1-VL | Compact Japanese VQA and grounding for edge deployment |
 | 2026-04-09 | EXAONE 4.5 | Native multimodal pretraining with document-focused data and 256K context |
-| 2026-04-02 | BidirLM / BidirLM-Omni | Converting causal decoders into bidirectional multimodal encoders |
+| 2026-04-02 | BidirLM and BidirLM-Omni | Converting causal decoders into bidirectional multimodal encoders |
 | 2026-03-31 | Gemma 4 | Dense and MoE native multimodality, including an encoder-free 12B design |
 | 2026-03-06 | Penguin-VL | Text-LLM-initialized vision encoder and priority-aware token compression |
 | 2026-03-04 | Phi-4-Reasoning-Vision | Mid-fusion compact VLM with explicit reasoning and direct-answer modes |
-| 2026-03-01 | V-SONAR / V-LCM | Vision-language alignment and prediction in multilingual concept space |
+| 2026-03-01 | V-SONAR and V-LCM | Vision-language alignment and prediction in multilingual concept space |
 | 2026-02-16 | Qwen3.5 | Native early fusion with hybrid linear/full attention and sparse MoE variants |
 | 2026-01-27 | Youtu-VL | Unified autoregressive visual tokens that emit dense vision outputs without task heads |
-| 2026-01-27 | Kimi K2.5 / K2.6 | Trillion-parameter native multimodal MoE for agents and computer use |
+| 2026-01-27 | Kimi K2.5 and K2.6 | Trillion-parameter native multimodal MoE for agents and computer use |
 | 2026-01-14 | Step3-VL-10B | Language-aligned perception encoder with 16-fold visual-token compression |
 | 2025-11-13 | ERNIE 5.0 | One autoregressive sparse MoE for text, images, video, audio, and generation |
 | 2025-10-20 | DeepSeek-OCR | DeepEncoder compresses high-resolution documents into very short visual contexts |
@@ -92,28 +95,126 @@ Dates below use the first official model release when one is documented; otherwi
 | 2025-06-04 | MiMo-VL | Four-stage multimodal pretraining followed by mixed on-policy RL |
 | 2025-05-20 | BAGEL | Mixture-of-Transformer-Experts for understanding and generation |
 | 2025-05-11 | Seed1.5-VL | Compact vision encoder with a 20B-active MoE for reasoning and agents |
-| 2025-04-11 | InternVL3 | Native multimodal pretraining, later extended with adaptive resolution and cascade RL |
+| 2025-04-11 | InternVL3 and InternVL3.5 | Native multimodal pretraining, later extended with adaptive resolution and cascade RL |
 | 2025-04-10 | Kimi-VL | MoonViT native-resolution packing with a sparse MoE decoder |
-| 2025-04-05 | Llama 4 | Early-fusion native multimodality in sparse-MoE Scout and Maverick models |
+| 2025-04-05 | Llama 4 Scout and Maverick | Early-fusion native multimodality in sparse-MoE Scout and Maverick models |
 | 2025-03-26 | Qwen2.5-Omni | Streaming Thinker-Talker architecture for multimodal input and speech output |
 | 2025-03-12 | Gemma 3 | Efficient local/global attention with long-context image understanding |
 | 2025-03-04 | Aya Vision | Cross-modal model merging for multilingual multimodality without language forgetting |
 | 2025-03-03 | Phi-4-multimodal | Mixture-of-LoRAs for text, vision, and speech |
 | 2025-02-20 | SigLIP 2 | Multilingual, localization-aware, native-aspect-ratio vision-language encoding |
+| 2025-02-08 | EVEv2 | Improved Baselines for Encoder-Free Vision-Language Models |
+| 2025-01-26 | Qwen2.5-VL | Enhanced Vision-Language Capabilities in the Qwen Series |
+| 2025-01-21 | VideoLLaMA 3 | Frontier Multimodal Foundation Models for Image and Video Understanding |
+| 2025-01-20 | UI-TARS | Pioneering Automated GUI Interaction with Native Agents |
+| 2025-01-14 | MiniMax-01 | Scaling Foundation Models with Lightning Attention |
+| 2025-01-12 | MiniCPM-o-2.6 | A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming |
+| 2025-01-10 | Eagle 2 | Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models |
+| 2025-01-07 | Sa2VA | Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos |
+| 2024-12-31 | VideoChat-Flash | Hierarchical Compression for Long-Context Video Modeling |
+| 2024-12-16 | OmniVLM | A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference |
+| 2024-12-13 | Apollo | An Exploration of Video Understanding in Large Multimodal Models |
+| 2024-12-13 | DeepSeek-VL2 | Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding |
+| 2024-12-10 | Maya | An Instruction Finetuned Multilingual Multimodal Model |
+| 2024-12-05 | InternVL 2.5 | Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling |
+| 2024-12-04 | PaliGemma 2 | A Family of Versatile VLMs for Transfer |
 | 2024-11-26 | ShowUI | UI-guided visual-token selection and interleaved action histories |
-| 2024-10-17 | Janus | Decoupled visual encoders for understanding and generation with one transformer |
+| 2024-11-26 | SmolVLM | A Small, Efficient, and Open-Source Vision-Language Model |
+| 2024-11-21 | AIMv2 | Multimodal Autoregressive Pre-training of Large Vision Encoders |
+| 2024-11-15 | LLaVA-CoT | Let Vision Language Models Reason Step-by-Step |
+| 2024-11-06 | LLM2CLIP | Powerful Language Model Unlocks Richer Visual Representation |
+| 2024-11-05 | Tarsier2 | Advancing Large Vision-Language Models from Detailed Video Description to Comprehensive Video Understanding |
+| 2024-10-17 | Janus and Janus-Pro | Decoupled visual encoders for understanding and generation with one transformer |
+| 2024-10-08 | ARIA | An Open Multimodal Native Mixture-of-Experts Model |
 | 2024-09-27 | Emu3 | One next-token objective over discrete text, image, and video tokens |
-| 2024-09-25 | Molmo / PixMo | Open data pipeline with human captions and grounded pointing supervision |
+| 2024-09-25 | Molmo and PixMo | Open data pipeline with human captions and grounded pointing supervision |
+| 2024-09-25 | Llama 3.2-Vision | Enhanced Multimodal Capabilities Built on Llama 3 |
+| 2024-09-17 | NVLM | Open Frontier-Class Multimodal LLMs |
+| 2024-09-11 | Pixtral 12B | A Cutting-Edge Open Multimodal Language Model |
 | 2024-09-06 | VILA-U | Shared discrete visual tokens for autoregressive understanding and generation |
+| 2024-08-29 | Qwen2-VL | A Powerful Open-Source Vision-Language Model for Image and Video Understanding |
+| 2024-08-28 | EAGLE | Exploring The Design Space for Multimodal LLMs with Mixture of Encoders |
 | 2024-08-22 | Show-o | Autoregressive language and discrete-diffusion image generation in one transformer |
+| 2024-08-22 | Idefics3-8B | Building and Better Understanding Vision-Language Models |
 | 2024-08-20 | Transfusion | Autoregressive text and continuous image diffusion in one transformer |
 | 2024-08-09 | mPLUG-Owl3 | Hyper-attention for long image sequences and video |
+| 2024-08-09 | VITA | Towards Open-Source Interactive Omni Multimodal LLM |
+| 2024-08-05 | LLaVA-OneVision | Easy Visual Task Transfer |
+| 2024-07-24 | VILA² | VILA Augmented VILA |
+| 2024-07-23 | INF-LLaVA | High-Resolution Image Perception for Multimodal Large Language Models |
+| 2024-07-22 | SlowFast-LLaVA | A Strong Training-Free Baseline for Video Large Language Models |
+| 2024-07-19 | EVLM | An Efficient Vision-Language Model for Visual Understanding |
+| 2024-07-03 | InternLM-XComposer-2.5 | A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output |
+| 2024-06-27 | OMG-LLaVA | Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding |
 | 2024-06-24 | Cambrian-1 | Spatial Vision Aggregator and systematic multi-encoder study |
+| 2024-06-17 | EVE | Unveiling Encoder-Free Vision-Language Models |
 | 2024-06-14 | Ovis | Learnable visual vocabulary for structural visual-text embedding alignment |
-| 2024-05-21 | Phi-3-Vision | Compact dynamic-resolution VLM with 128K context |
+| 2024-06-04 | Parrot | Multilingual Visual Instruction Tuning |
+| 2024-05-24 | ConvLLaVA | Hierarchical Backbones as Visual Encoder for Large Multimodal Models |
+| 2024-05-21 | Phi-3-Vision and Phi-3.5-Vision | Compact dynamic-resolution VLM with 128K context |
+| 2024-05-20 | CogVLM2 | Enhanced Vision-Language Models for Image and Video Understanding |
 | 2024-05-16 | Chameleon | Mixed-modal early fusion over a shared token sequence |
+| 2024-05-14 | PaliGemma | A Versatile and Transferable 3B Vision-Language Model |
+| 2024-05-06 | xGen-MM (BLIP-3) | An Open-Source Framework for Building Powerful and Responsible Large Multimodal Models |
+| 2024-05-02 | MANTIS | Mastering Multi-Image Understanding Through Interleaved Instruction Tuning |
+| 2024-04-19 | Moondream-next | Compact Vision-Language Model with Enhanced Capabilities |
+| 2024-04-15 | Idefics2 | Open 8B VLM with native-resolution inputs and strong OCR and document understanding |
+| 2024-04-09 | InternLM-XComposer2-4KHD | A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD |
 | 2024-03-14 | MM1 | Controlled study of encoders, connectors, token counts, and data mixtures |
+| 2024-03-08 | DeepSeek-VL | Towards Real-World Vision-Language Understanding |
 | 2024-02-19 | AnyGPT | Any-to-any autoregression over discrete text, image, speech, and music tokens |
+| 2024-02-08 | SPHINX-X | Scaling Data and Parameters for a Family of Multi-modal Large Language Models |
+| 2024-01-30 | LLaVA 1.6 | LLaVA-NeXT Improved reasoning, OCR, and world knowledge |
+| 2024-01-30 | MiniCPM-V | A GPT-4V Level MLLM on Your Phone |
+| 2024-01-30 | MouSi | Poly-Visual-Expert Vision-Language Models |
+| 2024-01-29 | InternLM-XComposer2 | Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model |
+| 2024-01-29 | MoE-LLaVA | Mixture of Experts for Large Vision-Language Models |
+| 2024-01-20 | moondream1 and moondream2 | Compact SigLIP–Phi VLMs optimized for efficient edge inference |
+| 2024-01-05 | FireLLaVA | LLaVA derivative trained rapidly on a curated multimodal instruction mixture |
+| 2024-01-01 | COSMO | COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training |
+| 2023-12-28 | TinyGPT-V | Efficient Multimodal Large Language Model via Small Backbones |
+| 2023-12-28 | MobileVLM | A Fast, Strong and Open Vision Language Assistant for Mobile Devices |
+| 2023-12-06 | Alpha-CLIP | A CLIP Model Focusing on Wherever You Want |
+| 2023-11-28 | Nous-Hermes-2-Vision - Mistral 7B | SigLIP-equipped Mistral VLM with OCR and function-calling data |
+| 2023-11-13 | SPHINX | The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models |
+| 2023-11-10 | Florence-2 | A Deep Dive into its Unified Architecture and Multi-Task Capabilities |
+| 2023-11-09 | u-LLaVA | Unifying Multi-Modal Tasks via Large Language Model |
+| 2023-11-09 | LLaVA-Plus | Learning to Use Tools for Creating Multimodal Agents |
+| 2023-11-07 | OtterHD | A High-Resolution Multi-modality Model |
+| 2023-11-06 | CoVLM | Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding |
+| 2023-11-06 | GLaMM | Pixel Grounding Large Multimodal Model |
+| 2023-10-17 | Fuyu-8B | A Multimodal Architecture for AI Agents |
+| 2023-10-13 | PaLI-3 Vision Language Models | Smaller, Faster, Stronger |
+| 2023-10-13 | MiniGPT-v2 | large language model as a unified interface for vision-language multi-task learning |
+| 2023-10-12 | BakLLaVA | Mistral-based LLaVA variant with a CLIP vision encoder and projection adapter |
+| 2023-10-11 | Ferret | Refer and Ground Anything Anywhere at Any Granularity |
+| 2023-10-05 | LLaVA 1.5 | Improved Baselines with Visual Instruction Tuning |
+| 2023-10-05 | CogVLM | Visual Expert for Pretrained Language Models |
+| 2023-09-28 | MetaCLIP | Demystifying CLIP Data |
+| 2023-08-24 | Qwen-VL | A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond |
+| 2023-08-22 | IDEFICS | Open Flamingo-style model for interleaved image-text generation |
+| 2023-08-19 | BLIVA | A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions |
+| 2023-06-26 | KOSMOS-2 | Grounding Multimodal Large Language Models to the World |
+| 2023-05-24 | LaVIN | Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models |
+| 2023-05-11 | InstructBLIP | Towards General-purpose Vision-Language Models with Instruction Tuning |
+| 2023-05-09 | ImageBind | One Embedding Space To Bind Them All |
+| 2023-04-17 | LLaVA | Large Language and Vision Assistant - Visual Instruction Tuning |
+| 2023-04-16 | MiniGPT-4 | Enhancing Vision-Language Understanding with Advanced Large Language Models |
+| 2023-03-27 | SigLIP | Sigmoid Loss for Language Image Pre-Training |
+| 2023-03-14 | OpenFlamingo | An Open-Source Framework for Training Large Autoregressive Vision-Language Models |
+| 2023-03-06 | PaLM-E | An Embodied Multimodal Language Model |
+| 2023-02-27 | KOSMOS-1 | Language Is Not All You Need: Aligning Perception with Language Models |
+| 2023-01-30 | BLIP-2 | Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models |
+| 2022-12-21 | MULTIINSTRUCT | Improving Multi-Modal Zero-Shot Learning via Instruction Tuning |
+| 2022-09-14 | PaLI | A Jointly-Scaled Multilingual Language-Image Model |
+| 2022-04-28 | Flamingo | a Visual Language Model for Few-Shot Learning |
+| 2022-01-28 | BLIP | Bootstrapping Language-Image Pre-training |
+| 2021-12-07 | GLIP | Grounded Language-Image Pre-training |
+| 2021-06-25 | FROZEN | Multimodal Few-Shot Learning with Frozen Language Models |
+| 2021-01-05 | CLIP | Contrastive Language-Image Pre-training |
+| 2020-10-22 | ViT | An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale |
+
+</details>
 
 <!--lint enable table-pipe-alignment table-cell-padding-->
 
