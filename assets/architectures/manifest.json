@@ -1478,6 +1478,2695 @@
         1675,
         1084
       ]
+    },
+    {
+      "index": 59,
+      "title": "EVEv2: Improved Baselines for Encoder-Free Vision-Language Models",
+      "slug": "evev2",
+      "source_url": "https://arxiv.org/abs/2502.06788",
+      "selection_note": "Primary technical paper; Figure 3 is the explicit overview of the proposed EVEv2.0 framework and was visually verified on PDF page 4.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2502.06788",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "",
+      "display_caption": "EVEv2.0 architecture: lossless patch embeddings and text tokens enter a unified decoder-only VLM whose attention, feed-forward, and normalization layers use modality-specific weights.",
+      "alt": "EVEv2: Improved Baselines for Encoder-Free Vision-Language Models architecture: EVEv2.0 architecture: lossless patch embeddings and text tokens enter a unified decoder-only VLM whose attention, feed-forward, and normalization layers use modality-specific weights.",
+      "file": "evev2-2025-arch.png",
+      "extracted_caption": "Figure 3. Overview of our proposed EVEv2.0 framework. We first adopt a patch embedding layer to encode images losslessly, and then concatenate visual and textual tokens into a unified decoder-only vision-language model. Here, it extends the standard autoregressive transformer by incorporating modality-specific weights for each multi-head self-attention layer, feed-forward layer, and layer normalization.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        210.78
+      ],
+      "image_size": [
+        1800,
+        496
+      ]
+    },
+    {
+      "index": 60,
+      "title": "Qwen2.5-VL: Enhanced Vision-Language Capabilities in the Qwen Series",
+      "slug": "qwen2-5-vl",
+      "source_url": "https://arxiv.org/abs/2502.13923",
+      "selection_note": "Primary technical report; Figure 1 is the paper's complete model framework and was visually verified on PDF page 3.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2502.13923",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "",
+      "display_caption": "Qwen2.5-VL framework: a vision encoder processes native-resolution images and dynamic-FPS video into variable-length tokens for a Qwen2.5 language-model decoder with multimodal rotary position encoding.",
+      "alt": "Qwen2.5-VL: Enhanced Vision-Language Capabilities in the Qwen Series architecture: Qwen2.5-VL framework: a vision encoder processes native-resolution images and dynamic-FPS video into variable-length tokens for a Qwen2.5 language-model decoder with multimodal rotary position encoding.",
+      "file": "qwen2-5-vl-2025-arch.png",
+      "extracted_caption": "Figure 1: The Qwen2.5-VL framework demonstrates the integration of a vision encoder and a language model decoder to process multimodal inputs, including images and videos. The vision encoder is designed to handle inputs at their native resolution and supports dynamic FPS sampling. Images of varying sizes and video frames with different FPS rates are dynamically mapped to token sequences of varying lengths. Notably, MRoPE aligns time IDs with absolute time along the temporal dimension, enabling the model to better comprehend temporal dynamics, such as the pace of events and precise moment localization. The processed visual data is subsequently fed into the Qwen2.5 LM Decoder. We have re-engineered the vision transformer (ViT) architecture, incorporating advanced components such as FFN with SwiGLU activation, RMSNorm for normalization, and window-based attention mechanisms to enhance performance and efficiency.",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.44,
+        375.39
+      ],
+      "image_size": [
+        1800,
+        1285
+      ]
+    },
+    {
+      "index": 61,
+      "title": "VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding",
+      "slug": "videollama-3",
+      "source_url": "https://arxiv.org/abs/2501.13106",
+      "selection_note": "Primary paper; Figure 3 presents the overall model pipeline and its two central architectural mechanisms, visually verified on PDF page 4.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.13106",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3 The overall pipeline of our VideoLLaMA3. There are two key technical points: ❶Any-resolution Vision Tokeniza-",
+      "display_caption": "VideoLLaMA 3 pipeline with any-resolution vision tokenization and a differential frame pruner that compresses redundant video tokens before language-model processing.",
+      "alt": "VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding architecture: VideoLLaMA 3 pipeline with any-resolution vision tokenization and a differential frame pruner that compresses redundant video tokens before language-model processing.",
+      "file": "videollama-3-2025-arch.png",
+      "extracted_caption": "Figure 3 The overall pipeline of our VideoLLaMA3. There are two key technical points: ❶Any-resolution Vision Tokeniza- tion (AVT): AVT converts images or videos of any resolution into a set of 1-D token sequences, enabling compatibility with varying amounts of input images and videos of different resolutions, thereby supporting more flexible vision input; ❷Differential Frame Pruner (DiffFP): Serving as a video compressor, DiffFP eliminates video content with minimal differences between adjacent frames. This approach enhances video processing efficiency, particularly for long-form videos.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        319.86
+      ],
+      "image_size": [
+        1800,
+        1156
+      ]
+    },
+    {
+      "index": 62,
+      "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents",
+      "slug": "ui-tars",
+      "source_url": "https://arxiv.org/abs/2501.12326",
+      "selection_note": "Primary paper; Figure 4 is explicitly described as the model architecture and core-capability overview and was visually verified on PDF page 14.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.12326",
+      "figure": "4",
+      "pdf_page": 14,
+      "paper_caption": "Figure 4: Overview of UI-TARS. We illustrate the architecture of the model and its core capabilities.",
+      "display_caption": "UI-TARS architecture and capability overview, connecting visual GUI observations and interaction histories to perception, action, system-level reasoning, and learning from prior experience.",
+      "alt": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents architecture: UI-TARS architecture and capability overview, connecting visual GUI observations and interaction histories to perception, action, system-level reasoning, and learning from prior experience.",
+      "file": "ui-tars-2025-arch.png",
+      "extracted_caption": "Figure 4: Overview of UI-TARS. We illustrate the architecture of the model and its core capabilities.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        383.02
+      ],
+      "image_size": [
+        1800,
+        1424
+      ]
+    },
+    {
+      "index": 63,
+      "title": "MiniMax-01: Scaling Foundation Models with Lightning Attention",
+      "slug": "minimax-01",
+      "source_url": "https://arxiv.org/abs/2501.08313",
+      "selection_note": "Primary MiniMax-01 paper; Figure 3 is the explicit foundation-model architecture inherited by MiniMax-VL-01. The paper does not publish a separate vision-language architecture diagram. Visually verified on PDF page 4.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.08313",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3 | The architecture of MiniMax-Text-01.",
+      "display_caption": "MiniMax-Text-01 backbone architecture, interleaving Lightning Attention and softmax-attention transformer blocks with routed mixture-of-experts feed-forward layers.",
+      "alt": "MiniMax-01: Scaling Foundation Models with Lightning Attention architecture: MiniMax-Text-01 backbone architecture, interleaving Lightning Attention and softmax-attention transformer blocks with routed mixture-of-experts feed-forward layers.",
+      "file": "minimax-01-2025-arch.png",
+      "extracted_caption": "Figure 3 | The architecture of MiniMax-Text-01.",
+      "crop_pdf_points": [
+        291.69,
+        294.01,
+        574.44,
+        594.56
+      ],
+      "image_size": [
+        1186,
+        1406
+      ]
+    },
+    {
+      "index": 64,
+      "title": "MiniCPM-o-2.6: A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming",
+      "slug": "minicpm-o-2-6",
+      "source_url": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "selection_note": "Official OpenBMB model card; the unnumbered architecture asset is the primary published diagram for version 2.6 and was visually verified directly. No version-2.6 paper PDF page applies.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "source_image_url": "https://github.com/OpenBMB/MiniCPM-o/raw/main/assets/minicpm-o-26-framework-v2.png",
+      "arxiv_id": null,
+      "figure": "Unnumbered MiniCPM-o 2.6 Model Architecture figure",
+      "pdf_page": null,
+      "paper_caption": "",
+      "display_caption": "MiniCPM-o 2.6 end-to-end omni-modal streaming architecture, using time-division multiplexing to combine visual, audio, and query streams in a shared backbone with streaming speech decoding.",
+      "alt": "MiniCPM-o-2.6: A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming architecture: MiniCPM-o 2.6 end-to-end omni-modal streaming architecture, using time-division multiplexing to combine visual, audio, and query streams in a shared backbone with streaming speech decoding.",
+      "file": "minicpm-o-2-6-official-arch.png"
+    },
+    {
+      "index": 65,
+      "title": "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models",
+      "slug": "eagle-2",
+      "source_url": "https://arxiv.org/abs/2501.14818",
+      "selection_note": "Primary paper; Figure 11 is the model-specific vision architecture, making it more suitable than the paper's data-strategy illustrations. Visually verified on PDF page 7.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.14818",
+      "figure": "11",
+      "pdf_page": 7,
+      "paper_caption": "Figure 11 | Tiled Mixture of Vision Encoders.",
+      "display_caption": "Eagle 2's tiled mixture of vision encoders, combining SigLIP and ConvNeXt features through dynamic image splitting, feature concatenation, pixel shuffle, and an MLP connector to the LLM.",
+      "alt": "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models architecture: Eagle 2's tiled mixture of vision encoders, combining SigLIP and ConvNeXt features through dynamic image splitting, feature concatenation, pixel shuffle, and an MLP connector to the LLM.",
+      "file": "eagle-2-2025-arch.png",
+      "extracted_caption": "Figure 11 | Tiled Mixture of Vision Encoders.",
+      "crop_pdf_points": [
+        300.0,
+        80.0,
+        538.0,
+        232.0
+      ],
+      "image_size": [
+        1148,
+        716
+      ],
+      "crop_override_pdf_points": [
+        300,
+        80,
+        538,
+        232
+      ]
+    },
+    {
+      "index": 66,
+      "title": "Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos",
+      "slug": "sa2va",
+      "source_url": "https://arxiv.org/abs/2501.04001",
+      "selection_note": "Primary paper; Figure 2 is explicitly the proposed Sa2VA model and was visually verified on PDF page 5.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.04001",
+      "figure": "2",
+      "pdf_page": 5,
+      "paper_caption": "Figure 2 Proposed Sa2VA model. The model first encodes the input texts, visual prompts, images, and videos into",
+      "display_caption": "Sa2VA model: text, prompts, images, and videos are encoded for an LLM, whose segmentation token is combined with SAM 2 features to decode image or video masks.",
+      "alt": "Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos architecture: Sa2VA model: text, prompts, images, and videos are encoded for an LLM, whose segmentation token is combined with SAM 2 features to decode image or video masks.",
+      "file": "sa2va-2025-arch.png",
+      "extracted_caption": "Figure 2 Proposed Sa2VA model. The model first encodes the input texts, visual prompts, images, and videos into token embeddings. These tokens are then processed through a large language model (LLM). The output text tokens are used to generate the “[SEG]” token and associated language outputs. The SAM-2 decoder receives the image and video features from the SAM-2 encoder, along with the “[SEG]” token, to generate corresponding image and video masks. Modules with a fire icon are trained during the one-shot instruction-tuning.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        275.15
+      ],
+      "image_size": [
+        1800,
+        735
+      ]
+    },
+    {
+      "index": 67,
+      "title": "VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling",
+      "slug": "videochat-flash",
+      "source_url": "https://arxiv.org/abs/2501.00574",
+      "selection_note": "Primary paper; Figure 3 is the complete hierarchical-compression framework and was visually verified on PDF page 3.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.00574",
+      "figure": "3",
+      "pdf_page": 3,
+      "paper_caption": "Figure 3. Framework of VideoChat-Flash with Hierarchical Video Token Compression. Video tokens will be compressed at the",
+      "display_caption": "VideoChat-Flash framework with hierarchical video-token compression: shared encoders and connectors first compress clips, then the LLM performs video-level compression for long-context inference.",
+      "alt": "VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling architecture: VideoChat-Flash framework with hierarchical video-token compression: shared encoders and connectors first compress clips, then the LLM performs video-level compression for long-context inference.",
+      "file": "videochat-flash-2025-arch.png",
+      "extracted_caption": "Figure 3. Framework of VideoChat-Flash with Hierarchical Video Token Compression. Video tokens will be compressed at the Clip-level by leveraging the local redundancy of the video modality during video encoding. Subsequently, during LLM processing, they will be compressed at the Video-level by taking advantage of the sparsity in the interaction between the text modality and the video modality.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        237.55
+      ],
+      "image_size": [
+        1800,
+        642
+      ]
+    },
+    {
+      "index": 68,
+      "title": "OmniVLM: A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference",
+      "slug": "omnivlm",
+      "source_url": "https://arxiv.org/abs/2412.11475",
+      "selection_note": "Primary paper; Figure 1 is explicitly labeled as the OmniVLM model architecture and was visually verified on PDF page 3.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2412.11475",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "Figure 1 | The OmniVLM model architecture.",
+      "display_caption": "OmniVLM architecture: a vision transformer feeds a reshape-based projector that compresses image tokens before they join text tokens in the Qwen2.5-0.5B-Instruct language model.",
+      "alt": "OmniVLM: A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference architecture: OmniVLM architecture: a vision transformer feeds a reshape-based projector that compresses image tokens before they join text tokens in the Qwen2.5-0.5B-Instruct language model.",
+      "file": "omnivlm-2024-arch.png",
+      "extracted_caption": "Figure 1 | The OmniVLM model architecture.",
+      "crop_pdf_points": [
+        100.0,
+        195.0,
+        495.0,
+        425.0
+      ],
+      "image_size": [
+        1800,
+        814
+      ],
+      "crop_override_pdf_points": [
+        100,
+        195,
+        495,
+        425
+      ]
+    },
+    {
+      "index": 69,
+      "title": "Apollo: An Exploration of Video Understanding in Large Multimodal Models",
+      "slug": "apollo",
+      "source_url": "https://arxiv.org/abs/2412.10360",
+      "selection_note": "Primary paper; Figure 8 is the dedicated Apollo architecture overview and was visually verified on PDF page 21.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2412.10360",
+      "figure": "8",
+      "pdf_page": 21,
+      "paper_caption": "Figure 8 Apollo architecture overview. Apollo encodes clips of N (dependent on the video encoder) frames. Output",
+      "display_caption": "Apollo architecture: image and video encoders process N-frame clips, interpolated features are concatenated channel-wise, and a Perceiver resampler produces a fixed token set for the language model.",
+      "alt": "Apollo: An Exploration of Video Understanding in Large Multimodal Models architecture: Apollo architecture: image and video encoders process N-frame clips, interpolated features are concatenated channel-wise, and a Perceiver resampler produces a fixed token set for the language model.",
+      "file": "apollo-2024-arch.png",
+      "extracted_caption": "Figure 8 Apollo architecture overview. Apollo encodes clips of N (dependent on the video encoder) frames. Output features are interpolated and concatenated along the channel dimension before being fed to a connector. The connector up-projects the features to the Large Language Models’ hidden dimension and then resamples them into a pre-set number of T tokens/clip. Images are duplicated N times and encoded the same way as video clips.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        265.61
+      ],
+      "image_size": [
+        1800,
+        763
+      ]
+    },
+    {
+      "index": 70,
+      "title": "DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding",
+      "slug": "deepseek-vl2",
+      "source_url": "https://arxiv.org/abs/2412.10302",
+      "selection_note": "Primary paper; Figure 2 is the overall architecture overview and was visually verified on PDF page 4.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2412.10302",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2 | Overview of DeepSeek-VL2. The overall structure is a llava-style architecture, which",
+      "display_caption": "DeepSeek-VL2 architecture: dynamic image tiling feeds a vision encoder and vision-language adapter whose image tokens join text tokens in a DeepSeek-MoE language model.",
+      "alt": "DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding architecture: DeepSeek-VL2 architecture: dynamic image tiling feeds a vision encoder and vision-language adapter whose image tokens join text tokens in a DeepSeek-MoE language model.",
+      "file": "deepseek-vl2-2024-arch.png",
+      "extracted_caption": "Figure 2 | Overview of DeepSeek-VL2. The overall structure is a llava-style architecture, which includes a vision encoder, a VL adaptor, and a MoE-based LLM.",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.44,
+        270.85
+      ],
+      "image_size": [
+        1800,
+        698
+      ]
+    },
+    {
+      "index": 71,
+      "title": "Maya: An Instruction Finetuned Multilingual Multimodal Model",
+      "slug": "maya",
+      "source_url": "https://arxiv.org/abs/2412.07112",
+      "selection_note": "Primary paper; Figure 7 is explicitly labeled as the Maya architecture and was visually verified on PDF page 5.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2412.07112",
+      "figure": "7",
+      "pdf_page": 5,
+      "paper_caption": "Figure 7. Maya Architecture adapted from LLaVA [36]",
+      "display_caption": "Maya's LLaVA-derived architecture, projecting multilingual SigLIP vision features into the embedding space of a multilingual language model for instruction following.",
+      "alt": "Maya: An Instruction Finetuned Multilingual Multimodal Model architecture: Maya's LLaVA-derived architecture, projecting multilingual SigLIP vision features into the embedding space of a multilingual language model for instruction following.",
+      "file": "maya-2024-arch.png",
+      "extracted_caption": "Figure 7. Maya Architecture adapted from LLaVA [36]",
+      "crop_pdf_points": [
+        299.88,
+        32.0,
+        590.58,
+        169.1
+      ],
+      "image_size": [
+        1287,
+        504
+      ]
+    },
+    {
+      "index": 72,
+      "title": "InternVL 2.5: Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
+      "slug": "internvl-2-5",
+      "source_url": "https://arxiv.org/abs/2412.05271",
+      "selection_note": "Direct full-model diagram; preferred over the later training-pipeline figure.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2412.05271",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: Overall architecture. InternVL 2.5 retains the same model architecture as InternVL 1.5 [35] and",
+      "display_caption": "InternVL 2.5's ViT-MLP-LLM architecture with pixel-unshuffle visual-token compression.",
+      "alt": "InternVL 2.5: Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling architecture: InternVL 2.5's ViT-MLP-LLM architecture with pixel-unshuffle visual-token compression.",
+      "file": "internvl-2-5-2024-arch.png",
+      "extracted_caption": "Figure 2: Overall architecture. InternVL 2.5 retains the same model architecture as InternVL 1.5 [35] and InternVL 2.0, i.e. the widely-used “ViT-MLP-LLM” paradigm, which combines a pre-trained InternViT-300M or InternViT-6B with LLMs [19, 229] of various sizes via an MLP projector. Consistent with previous versions, we apply a pixel unshuffle operation to reduce the 1024 visual tokens produced by each 448×448 image tile to 256 tokens. Moreover, compared to InternVL 1.5, InternVL 2.0 and 2.5 introduced additional data types, incorporating multi-image and video data alongside the existing single-image and text-only data.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        227.26
+      ],
+      "image_size": [
+        1800,
+        614
+      ]
+    },
+    {
+      "index": 73,
+      "title": "PaliGemma 2: A Family of Versatile VLMs for Transfer",
+      "slug": "paligemma-2",
+      "source_url": "https://arxiv.org/abs/2412.03555",
+      "selection_note": "Compact canonical architecture showing all principal components and resolution-dependent token counts.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2412.03555",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "Figure 1 | PaliGemma 2 processes a 224px2/",
+      "display_caption": "PaliGemma 2 processes variable-resolution images with SigLIP, a linear projector, and Gemma 2.",
+      "alt": "PaliGemma 2: A Family of Versatile VLMs for Transfer architecture: PaliGemma 2 processes variable-resolution images with SigLIP, a linear projector, and Gemma 2.",
+      "file": "paligemma-2-2024-arch.png",
+      "extracted_caption": "Figure 1 | PaliGemma 2 processes a 224px2/ 448px2/896px2 image with a SigLIP-400m en- coder with patch size 14px2, yielding 256/1024/ 4096 tokens. After a linear projection, the image tokens are concatenated with the input text to- kens and Gemma 2 autoregressively completes this prefix with an answer.",
+      "crop_pdf_points": [
+        55.0,
+        72.0,
+        297.0,
+        225.0
+      ],
+      "image_size": [
+        1172,
+        720
+      ],
+      "crop_override_pdf_points": [
+        55,
+        72,
+        297,
+        225
+      ]
+    },
+    {
+      "index": 74,
+      "title": "SmolVLM: A Small, Efficient, and Open-Source Vision-Language Model",
+      "slug": "smolvlm",
+      "source_url": "https://huggingface.co/blog/smolvlm",
+      "selection_note": "Official launch article's dedicated architecture graphic is the primary-source system figure.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "source_image_url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/self_attention_architecture_smolvlm.png",
+      "arxiv_id": null,
+      "figure": "Unnumbered image under Architecture",
+      "pdf_page": null,
+      "paper_caption": "",
+      "display_caption": "SmolVLM's SigLIP vision encoder, aggressive pixel-shuffle compression, and SmolLM2 language backbone.",
+      "alt": "SmolVLM: A Small, Efficient, and Open-Source Vision-Language Model architecture: SmolVLM's SigLIP vision encoder, aggressive pixel-shuffle compression, and SmolLM2 language backbone.",
+      "file": "smolvlm-official-arch.png"
+    },
+    {
+      "index": 75,
+      "title": "AIMv2: Multimodal Autoregressive Pre-training of Large Vision Encoders",
+      "slug": "aimv2",
+      "source_url": "https://arxiv.org/abs/2411.14402",
+      "selection_note": "Canonical architecture and objectives; later figures report scaling and downstream results.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2411.14402",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "Figure 1. AIMV2 pre-training Overview. (Left) Image patches are processed by a vision encoder trained with prefix attention [33, 95].",
+      "display_caption": "AIMv2's prefix-attention vision encoder and joint autoregressive multimodal decoder.",
+      "alt": "AIMv2: Multimodal Autoregressive Pre-training of Large Vision Encoders architecture: AIMv2's prefix-attention vision encoder and joint autoregressive multimodal decoder.",
+      "file": "aimv2-2024-arch.png",
+      "extracted_caption": "Figure 1. AIMV2 pre-training Overview. (Left) Image patches are processed by a vision encoder trained with prefix attention [33, 95]. The resulting visual representations are concatenated with the text embeddings of their corresponding captions. This combined multimodal sequence is then processed by a joint decoder. The model is pre-trained to autoregressively reconstruct the shifted input. (Right) Pseudocode for the forward pass during AIMV2 pre-training. The pre-training process of AIMV2 is straightforward to implement, resembling that of AIM and LLMs as it relies solely on a simple autoregressive objective.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        249.5
+      ],
+      "image_size": [
+        1800,
+        646
+      ]
+    },
+    {
+      "index": 76,
+      "title": "LLaVA-CoT: Let Vision Language Models Reason Step-by-Step",
+      "slug": "llava-cot",
+      "source_url": "https://arxiv.org/abs/2411.10440",
+      "selection_note": "Best model-specific system diagram; the neural backbone itself is unchanged Llama-3.2-Vision, so this is an inference architecture rather than a network diagram.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2411.10440",
+      "figure": "4",
+      "pdf_page": 5,
+      "paper_caption": "Figure 4. An illustration of inference approaches. Best-of-N search generates N complete responses and selects the best one among",
+      "display_caption": "LLaVA-CoT's Best-of-N, stage-wise beam-search, and stage-wise retracing inference procedures.",
+      "alt": "LLaVA-CoT: Let Vision Language Models Reason Step-by-Step architecture: LLaVA-CoT's Best-of-N, stage-wise beam-search, and stage-wise retracing inference procedures.",
+      "file": "llava-cot-2024-arch.png",
+      "extracted_caption": "Figure 4. An illustration of inference approaches. Best-of-N search generates N complete responses and selects the best one among them. Stage-wise beam search generates M candidate responses for each reasoning stage and selects the top N to proceed to the next stage. Stage-wise retracing search, when generating responses for a given stage, retraces to the previous reasoning stage for regeneration if all candidate responses are of low quality, thereby enhancing the model’s self-reflection and error correction capabilities.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        261.95
+      ],
+      "image_size": [
+        1800,
+        728
+      ]
+    },
+    {
+      "index": 77,
+      "title": "LLM2CLIP: Powerful Language Model Unlocks Richer Visual Representation",
+      "slug": "llm2clip",
+      "source_url": "https://arxiv.org/abs/2411.04997",
+      "selection_note": "Canonical end-to-end method overview from caption-contrastive LLM tuning to CLIP training.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2411.04997",
+      "figure": "1",
+      "pdf_page": 1,
+      "paper_caption": "Figure 1: LLM2CLIP Overview. After applying caption",
+      "display_caption": "LLM2CLIP fine-tunes an LLM for caption discrimination before using it to train stronger CLIP representations.",
+      "alt": "LLM2CLIP: Powerful Language Model Unlocks Richer Visual Representation architecture: LLM2CLIP fine-tunes an LLM for caption discrimination before using it to train stronger CLIP representations.",
+      "file": "llm2clip-2024-arch.png",
+      "extracted_caption": "Figure 1: LLM2CLIP Overview. After applying caption contrastive fine-tuning to the LLM, the increased textual discriminability enables more effective CLIP training. We leverage the open-world knowledge and general capabilities of the LLM to better process dense captions, addressing the previous limitations of the pretrained CLIP visual encoder and providing richer textual supervision.",
+      "crop_pdf_points": [
+        312.0,
+        225.0,
+        565.0,
+        425.0
+      ],
+      "image_size": [
+        1222,
+        958
+      ],
+      "crop_override_pdf_points": [
+        312,
+        225,
+        565,
+        425
+      ]
+    },
+    {
+      "index": 78,
+      "title": "Tarsier2: Advancing Large Vision-Language Models from Detailed Video Description to Comprehensive Video Understanding",
+      "slug": "tarsier2",
+      "source_url": "https://arxiv.org/abs/2501.07888",
+      "selection_note": "The paper contains capability, dataset, DPO-construction, and benchmark figures but inherits Qwen2-VL and provides no architecture overview; a training diagram would be misleading.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The paper contains capability, dataset, DPO-construction, and benchmark figures but inherits Qwen2-VL and provides no architecture overview; a training diagram would be misleading."
+    },
+    {
+      "index": 79,
+      "title": "Janus and Janus-Pro: Decoupled Visual Understanding and Generation",
+      "slug": "janus-and-janus-pro",
+      "source_url": "https://arxiv.org/abs/2501.17811",
+      "selection_note": "Newest family paper's exact architecture; the paper states that the core design is the same as Janus.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2501.17811",
+      "figure": "3",
+      "pdf_page": 3,
+      "paper_caption": "",
+      "display_caption": "Janus-Pro decouples visual understanding and generation encoders around a shared autoregressive transformer.",
+      "alt": "Janus and Janus-Pro: Decoupled Visual Understanding and Generation architecture: Janus-Pro decouples visual understanding and generation encoders around a shared autoregressive transformer.",
+      "file": "janus-and-janus-pro-2025-arch.png",
+      "extracted_caption": "Figure 3 | Architecture of our Janus-Pro. We decouple visual encoding for multimodal under- standing and visual generation. “Und. Encoder” and “Gen. Encoder” are abbreviations for “Understanding Encoder” and “Generation Encoder”, respectively. Best viewed on screen.",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.44,
+        280.18
+      ],
+      "image_size": [
+        1800,
+        692
+      ]
+    },
+    {
+      "index": 80,
+      "title": "ARIA: An Open Multimodal Native Mixture-of-Experts Model",
+      "slug": "aria",
+      "source_url": "https://arxiv.org/abs/2410.05993",
+      "selection_note": "ARIA's visual encoder, projection layer, and fine-grained MoE are described in prose and a configuration table; its only numbered model figure visualizes expert specialization, not architecture.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "ARIA's visual encoder, projection layer, and fine-grained MoE are described in prose and a configuration table; its only numbered model figure visualizes expert specialization, not architecture."
+    },
+    {
+      "index": 81,
+      "title": "Llama 3.2-Vision: Enhanced Multimodal Capabilities Built on Llama 3",
+      "slug": "llama-3-2-vision",
+      "source_url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md",
+      "selection_note": "The official source describes the image encoder and cross-attention adapter in prose; benchmark tables and marketing artwork are not legitimate substitutes.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The official source describes the image encoder and cross-attention adapter in prose; benchmark tables and marketing artwork are not legitimate substitutes."
+    },
+    {
+      "index": 82,
+      "title": "NVLM: Open Frontier-Class Multimodal LLMs",
+      "slug": "nvlm",
+      "source_url": "https://arxiv.org/abs/2409.11402",
+      "selection_note": "Full comparison of all three NVLM architecture variants and their shared visual pathway.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2409.11402",
+      "figure": "3",
+      "pdf_page": 9,
+      "paper_caption": "Figure 3: NVLM-1.0 offers three architectural options: the cross-attention-based NVLM-X (top), the hybrid",
+      "display_caption": "NVLM-X, NVLM-H, and NVLM-D share a dynamic-high-resolution visual pathway but integrate vision differently.",
+      "alt": "NVLM: Open Frontier-Class Multimodal LLMs architecture: NVLM-X, NVLM-H, and NVLM-D share a dynamic-high-resolution visual pathway but integrate vision differently.",
+      "file": "nvlm-2024-arch.png",
+      "extracted_caption": "Figure 3: NVLM-1.0 offers three architectural options: the cross-attention-based NVLM-X (top), the hybrid NVLM-H (middle), and the decoder-only NVLM-D (bottom). The dynamic high-resolution vision pathway is shared by all three models. However, different architectures process the image features from thumbnails and regular local tiles in distinct ways.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        377.05
+      ],
+      "image_size": [
+        1800,
+        1335
+      ]
+    },
+    {
+      "index": 83,
+      "title": "Pixtral 12B: A Cutting-Edge Open Multimodal Language Model",
+      "slug": "pixtral-12b",
+      "source_url": "https://arxiv.org/abs/2410.07073",
+      "selection_note": "Full architecture; preferable to Figure 2's encoder-only view.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2410.07073",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3: Complete Pixtral Architecture. Pixtral has two components: a vision encoder, which tokenizes",
+      "display_caption": "Pixtral combines a variable-resolution vision encoder with a 128K-context multimodal decoder.",
+      "alt": "Pixtral 12B: A Cutting-Edge Open Multimodal Language Model architecture: Pixtral combines a variable-resolution vision encoder with a 128K-context multimodal decoder.",
+      "file": "pixtral-12b-2024-arch.png",
+      "extracted_caption": "Figure 3: Complete Pixtral Architecture. Pixtral has two components: a vision encoder, which tokenizes images, and a multimodal decoder, which predicts the next text token given a sequence of text and images. Pixtral can take an arbitrary number of images as input, provided they fit within its 128K context window.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        240.63
+      ],
+      "image_size": [
+        1800,
+        811
+      ]
+    },
+    {
+      "index": 84,
+      "title": "Qwen2-VL: A Powerful Open-Source Vision-Language Model for Image and Video Understanding",
+      "slug": "qwen2-vl",
+      "source_url": "https://arxiv.org/abs/2409.12191",
+      "selection_note": "The report has no full-system schematic; this is its genuine model-specific architectural innovation rather than a benchmark or example.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2409.12191",
+      "figure": "3",
+      "pdf_page": 5,
+      "paper_caption": "",
+      "display_caption": "Qwen2-VL's M-RoPE decomposes multimodal position encoding into temporal, height, and width components.",
+      "alt": "Qwen2-VL: A Powerful Open-Source Vision-Language Model for Image and Video Understanding architecture: Qwen2-VL's M-RoPE decomposes multimodal position encoding into temporal, height, and width components.",
+      "file": "qwen2-vl-2024-arch.png",
+      "extracted_caption": "Figure 3: A demonstration of M-RoPE. By decomposing rotary embedding into temporal, height, and width components, M-RoPE can explicitly model the positional information of text, images, and video in LLM.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        174.03
+      ],
+      "image_size": [
+        1800,
+        391
+      ]
+    },
+    {
+      "index": 85,
+      "title": "EAGLE: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "slug": "eagle",
+      "source_url": "https://arxiv.org/abs/2408.15998",
+      "selection_note": "Most architecture-focused figure; Figure 1 mixes benchmarks with a roadmap and Figure 3 is a training pipeline.",
+      "editorial_confidence": "medium-high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.15998",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2: Overview of the Eagle exploration. In this work, we explore the design space of",
+      "display_caption": "EAGLE explores mixtures of vision experts and alternative fusion strategies for multimodal language models.",
+      "alt": "EAGLE: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders architecture: EAGLE explores mixtures of vision experts and alternative fusion strategies for multimodal language models.",
+      "file": "eagle-2024-arch.png",
+      "extracted_caption": "Figure 2: Overview of the Eagle exploration. In this work, we explore the design space of Multi-Modal Large Language Models (MLLMs) with multiple vision encoders, aiming to identify optimized design choices and enhance MLLM perception. We collect a range of vision experts and adapt them for integration into MLLMs. A systematic comparison of popular fusion paradigms is then conducted under controlled settings. After identifying discrepancies between vision experts pre-trained on different tasks, we optimize the pre-training strategy through a pre-alignment stage and use round-robin searching to determine the optimal combination of vision encoders.",
+      "crop_pdf_points": [
+        60.0,
+        65.0,
+        575.0,
+        255.0
+      ],
+      "image_size": [
+        1800,
+        733
+      ],
+      "crop_override_pdf_points": [
+        60,
+        65,
+        575,
+        255
+      ]
+    },
+    {
+      "index": 86,
+      "title": "Idefics3-8B: Building and Better Understanding Vision-Language Models",
+      "slug": "idefics3-8b",
+      "source_url": "https://arxiv.org/abs/2408.12637",
+      "selection_note": "The paper's explicit architecture figure; its caption notes that the retained design is reproduced from the preceding Idefics work.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.12637",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "Figure 1: From Laurençon et al. (2024). The self-attention, or fully-autoregressive, architecture:",
+      "display_caption": "Idefics3 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model.",
+      "alt": "Idefics3-8B: Building and Better Understanding Vision-Language Models architecture: Idefics3 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model.",
+      "file": "idefics3-8b-2024-arch.png",
+      "extracted_caption": "Figure 1: From Laurençon et al. (2024). The self-attention, or fully-autoregressive, architecture: Input images are processed by the Vision encoder. The resulting visual features are mapped (and optionally pooled) to the LLM input space to get the visual tokens. They are concatenated (and potentially interleaved) with the input sequence of text embeddings (green and red column). The concatenated sequence is fed to the language model (LLM), which predicts the text tokens output.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        235.38
+      ],
+      "image_size": [
+        1765,
+        788
+      ]
+    },
+    {
+      "index": 87,
+      "title": "VITA: Towards Open-Source Interactive Omni Multimodal LLM",
+      "slug": "vita",
+      "source_url": "https://arxiv.org/abs/2408.05211",
+      "selection_note": "Complete multimodal system architecture; Figure 3 is only the training pipeline.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.05211",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: Architecture of VITA. VITA is capable of processing inputs in the form of pure text/audio,",
+      "display_caption": "VITA unifies text, audio, image, and video inputs with state tokens, an LLM, and speech output.",
+      "alt": "VITA: Towards Open-Source Interactive Omni Multimodal LLM architecture: VITA unifies text, audio, image, and video inputs with state tokens, an LLM, and speech output.",
+      "file": "vita-2024-arch.png",
+      "extracted_caption": "Figure 2: Architecture of VITA. VITA is capable of processing inputs in the form of pure text/audio, as well as video/image combined with text/audio. Besides, we set different state tokens for different query inputs. <1> corresponds to the effective query audio, such as “what is the biggest animal in the world?”, for which we expect a response from the model. <2> corresponds to the noisy audio, such as someone in the environment calls me to eat, for which we expect the model not to reply. <3> corresponds to the query text, i.e., the question given by the user in text form. During the training phase, we try to teach the model to automatically distinguish different input queries. During the deployment phase, with <2> we can implement non-awakening interaction. Based on this, we further introduce a duplex scheme for the audio interrupt interaction. Two models are running at the same time, where the generation model is responsible for handling user queries. When the generation model starts working, the other model monitors the environment. If the user interrupts with another effective audio query, the monitoring model aggregates the historical context to respond to the latest query, while the generation model is paused and tune to monitor, i.e., the two models swap identities.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        256.51
+      ],
+      "image_size": [
+        1800,
+        860
+      ]
+    },
+    {
+      "index": 88,
+      "title": "LLaVA-OneVision: Easy Visual Task Transfer",
+      "slug": "llava-onevision",
+      "source_url": "https://arxiv.org/abs/2408.03326",
+      "selection_note": "Canonical current instantiation and generalized architecture in one figure.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.03326",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "Figure 1: LLaVA-OneVision network architecture. Left: The current model instantiation; Right: the",
+      "display_caption": "LLaVA-OneVision extends the minimal LLaVA vision-encoder, projector, and LLM architecture to multiple visual signals.",
+      "alt": "LLaVA-OneVision: Easy Visual Task Transfer architecture: LLaVA-OneVision extends the minimal LLaVA vision-encoder, projector, and LLM architecture to multiple visual signals.",
+      "file": "llava-onevision-2024-arch.png",
+      "extracted_caption": "Figure 1: LLaVA-OneVision network architecture. Left: The current model instantiation; Right: the general form of LLaVA architecture in [83], but is extended to support more visual signals.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        249.07
+      ],
+      "image_size": [
+        1800,
+        827
+      ]
+    },
+    {
+      "index": 89,
+      "title": "VILA²: VILA Augmented VILA",
+      "slug": "vila",
+      "source_url": "https://arxiv.org/abs/2407.17453",
+      "selection_note": "Central model-specific system diagram; the neural architecture itself follows VILA, so this depicts the self-augmentation system rather than a new backbone.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2407.17453",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "In this work, we aim to answer “whether it is possible that the VLM itself can remedy dataset deficiency and enhance its training.” We delve deep into the potential of using VLM itself to refine and augment pretraining data and performance iteratively. Our new training regime, summarized in Figure 1, consists of two main steps: a self-augment step and a specialist-augment step. We start with the self-augment loop \u0000 Figure 1 (a) \u0001 that leverages VLMs to enhance the quality of pretraining data. We demonstrate that synthetic data, combined with the original data, can collaboratively generate stronger models in a bootstrapped loop manner. Intuitively and as we observed, the loops offer performance boosts for free, but suffers diminishing returns after 3 rounds. To facilitate further learning, we reformulate a more challenging task-specific loop \u0000 Figure 1 (b) \u0001 . In this loop, specialists wi",
+      "display_caption": "VILA² improves itself through generic model-in-the-loop recaptioning and specialist-model augmentation.",
+      "alt": "VILA²: VILA Augmented VILA architecture: VILA² improves itself through generic model-in-the-loop recaptioning and specialist-model augmentation.",
+      "file": "vila-2024-arch.png",
+      "extracted_caption": "Figure 1: The schematic diagram to train VILA2, short for VILA-augmented VILA. We re-formulate visual language model (VLM) training with “model in the loop” to remedy training data defficacy. We start with validating design options in constructing a self-augmenting loop (Section. 2.1) to improve on caption quality of the default training task. After the saturation of this process, we challenge the VLM to generate data conforming to extra SFT-enabled tasks to further VLM learning (Section. 2.2). Our new design insights yield off-the-shelf performance boosts to VLMs (Section. 3).",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        147.25
+      ],
+      "image_size": [
+        1800,
+        500
+      ]
+    },
+    {
+      "index": 90,
+      "title": "INF-LLaVA: High-Resolution Image Perception for Multimodal Large Language Models",
+      "slug": "inf-llava",
+      "source_url": "https://arxiv.org/abs/2407.16198",
+      "selection_note": "Complete high-resolution system architecture rather than a component detail or qualitative example.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2407.16198",
+      "figure": "2",
+      "pdf_page": 5,
+      "paper_caption": "Figure 2: Overview of the proposed INF-LLaVA framework. To address the limitations of processing high-resolution images",
+      "display_caption": "INF-LLaVA combines dual-perspective cropping, CLIP encoding, feature recombination, enhancement, and language reasoning.",
+      "alt": "INF-LLaVA: High-Resolution Image Perception for Multimodal Large Language Models architecture: INF-LLaVA combines dual-perspective cropping, CLIP encoding, feature recombination, enhancement, and language reasoning.",
+      "file": "inf-llava-2024-arch.png",
+      "extracted_caption": "Figure 2: Overview of the proposed INF-LLaVA framework. To address the limitations of processing high-resolution images directly with the pretrained CLIP-ViT encoder, Dual-perspective Cropping Module (DCM) segments the high-resolution image into sub-images from both local and global perspectives. Each sub-image is then individually passed through the CLIP-ViT encoder to extract distinct visual features. These features are subsequently recombined based 2D positional priors, resulting in a comprehensive set of high-resolution local and global features. Dual-perspective Enhancement Module (DEM) is introduced to facilitate effective interaction between the local and global features. Next, an average pooling layer is applied to reduce the number of visual tokens, enhancing computational efficiency and speeding up both training and inference processes. Finally, the refined visual tokens are concatenated with textual tokens of the instruction and fed into the LLM, which generates responses sequentially, token by token.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        267.5
+      ],
+      "image_size": [
+        1800,
+        692
+      ]
+    },
+    {
+      "index": 91,
+      "title": "SlowFast-LLaVA: A Strong Training-Free Baseline for Video Large Language Models",
+      "slug": "slowfast-llava",
+      "source_url": "https://arxiv.org/abs/2407.15841",
+      "selection_note": "Canonical two-pathway architecture and the paper's main technical contribution.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2407.15841",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2: Visualization of SlowFast-LLaVA, which is a training-free model built upon LLaVA-NeXT",
+      "display_caption": "SlowFast-LLaVA combines low-frame-rate spatial detail with high-frame-rate motion features.",
+      "alt": "SlowFast-LLaVA: A Strong Training-Free Baseline for Video Large Language Models architecture: SlowFast-LLaVA combines low-frame-rate spatial detail with high-frame-rate motion features.",
+      "file": "slowfast-llava-2024-arch.png",
+      "extracted_caption": "Figure 2: Visualization of SlowFast-LLaVA, which is a training-free model built upon LLaVA-NeXT without further fine-tuning. The Slow pathway (in color yellow) extracts features at a low frame rate while keeping as much spatial detail as possible with more tokens, and the Fast pathway (in color blue) operates on a high frame rate but applies a larger spatial pooling stride to focus on the motion cue. This design allows us to adequately preserve adequate spatial and temporal information, and aggregate them together as an effective representation for detailed video understanding.",
+      "crop_pdf_points": [
+        100.0,
+        75.0,
+        512.0,
+        202.0
+      ],
+      "image_size": [
+        1800,
+        535
+      ],
+      "crop_override_pdf_points": [
+        100,
+        75,
+        512,
+        202
+      ]
+    },
+    {
+      "index": 92,
+      "title": "EVLM: An Efficient Vision-Language Model for Visual Understanding",
+      "slug": "evlm",
+      "source_url": "https://arxiv.org/abs/2407.14177",
+      "selection_note": "Complete framework diagram; later figures focus on attention details, MoE structure, or training convergence.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2407.14177",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: The framework diagram of our multi-modal model.",
+      "display_caption": "EVLM injects hierarchical EVA2-CLIP features into the language model through gated cross-attention layers.",
+      "alt": "EVLM: An Efficient Vision-Language Model for Visual Understanding architecture: EVLM injects hierarchical EVA2-CLIP features into the language model through gated cross-attention layers.",
+      "file": "evlm-2024-arch.png",
+      "extracted_caption": "Figure 2: The framework diagram of our multi-modal model.",
+      "crop_pdf_points": [
+        65.0,
+        65.0,
+        547.0,
+        342.0
+      ],
+      "image_size": [
+        1800,
+        949
+      ],
+      "crop_override_pdf_points": [
+        65,
+        65,
+        547,
+        342
+      ]
+    },
+    {
+      "index": 93,
+      "title": "InternLM-XComposer-2.5: A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output",
+      "slug": "internlm-xcomposer-2-5",
+      "source_url": "https://arxiv.org/abs/2407.03320",
+      "selection_note": "Only full model framework; preceding figures are capability demonstrations.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2407.03320",
+      "figure": "5",
+      "pdf_page": 6,
+      "paper_caption": "Figure 5. Framework of IXC-2.5 that supports the multi-modal",
+      "display_caption": "InternLM-XComposer-2.5's framework supports text, single and multiple images, and video inputs.",
+      "alt": "InternLM-XComposer-2.5: A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output architecture: InternLM-XComposer-2.5's framework supports text, single and multiple images, and video inputs.",
+      "file": "internlm-xcomposer-2-5-2024-arch.png",
+      "extracted_caption": "Figure 5. Framework of IXC-2.5 that supports the multi-modal inputs, including text, single/multiple images, and videos.",
+      "crop_pdf_points": [
+        299.88,
+        49.03,
+        590.58,
+        436.03
+      ],
+      "image_size": [
+        1187,
+        1806
+      ]
+    },
+    {
+      "index": 94,
+      "title": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "slug": "omg-llava",
+      "source_url": "https://arxiv.org/abs/2406.19389",
+      "selection_note": "Direct full-system architecture; preferable to the architecture taxonomy or decoder-only detail.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2406.19389",
+      "figure": "3",
+      "pdf_page": 5,
+      "paper_caption": "Figure 3: The Overview of OMG-LLaVA. OMG-LLaVA consists of OMG-Seg and LLM. OMG-Seg tokenizes",
+      "display_caption": "OMG-LLaVA connects OMG-Seg visual tokens and prompts to an LLM that can decode segmentation outputs.",
+      "alt": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding architecture: OMG-LLaVA connects OMG-Seg visual tokens and prompts to an LLM that can decode segmentation outputs.",
+      "file": "omg-llava-2024-arch.png",
+      "extracted_caption": "Figure 3: The Overview of OMG-LLaVA. OMG-LLaVA consists of OMG-Seg and LLM. OMG-Seg tokenizes the image into pixel-centric visual tokens, the detected objects, and inputs visual prompts into object-centric visual tokens. Additionally, the [SEG] token output by LLM is decoded by OMG-Seg into segmentation masks. OMG-Seg remains frozen at all stages.",
+      "crop_pdf_points": [
+        21.42,
+        87.32,
+        590.58,
+        206.07
+      ],
+      "image_size": [
+        1800,
+        527
+      ]
+    },
+    {
+      "index": 95,
+      "title": "EVE: Unveiling Encoder-Free Vision-Language Models",
+      "slug": "eve",
+      "source_url": "https://arxiv.org/abs/2406.11832",
+      "selection_note": "Canonical encoder-free architecture; Figure 1 is a generic comparison and Figure 4 is a training pipeline.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2406.11832",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2: Overview of our proposed EVE. We start by encoding images using a concise (a) patch",
+      "display_caption": "EVE combines patch embedding, a decoder-only backbone, patch alignment, and next-word prediction without a separate vision encoder.",
+      "alt": "EVE: Unveiling Encoder-Free Vision-Language Models architecture: EVE combines patch embedding, a decoder-only backbone, patch alignment, and next-word prediction without a separate vision encoder.",
+      "file": "eve-2024-arch.png",
+      "extracted_caption": "Figure 2: Overview of our proposed EVE. We start by encoding images using a concise (a) patch embedding layer, and then concatenate the patch and word features into a decoder-only network. Next, we facilitate image perception through visual representation supervision using a (b) patch aligning layer, and achieve linguistic conceptual alignment using a next-word prediction pretext task.",
+      "crop_pdf_points": [
+        21.42,
+        28.0,
+        590.58,
+        237.19
+      ],
+      "image_size": [
+        1800,
+        723
+      ]
+    },
+    {
+      "index": 96,
+      "title": "Parrot: Multilingual Visual Instruction Tuning",
+      "slug": "parrot",
+      "source_url": "https://arxiv.org/abs/2406.02539",
+      "selection_note": "Canonical full model diagram; preferable to the dataset, benchmark, and training-detail figures.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2406.02539",
+      "figure": "5",
+      "pdf_page": 6,
+      "paper_caption": "Figure 5. The overall architecture of PARROT. It converts English-biased features to language-specific features based on the multilingual",
+      "display_caption": "PARROT aligns multilingual visual features through a projector, multilingual mixture of experts, and language model.",
+      "alt": "Parrot: Multilingual Visual Instruction Tuning architecture: PARROT aligns multilingual visual features through a projector, multilingual mixture of experts, and language model.",
+      "file": "parrot-2024-arch.png",
+      "extracted_caption": "Figure 5. The overall architecture of PARROT. It converts English-biased features to language-specific features based on the multilingual MoE module, aiming to improve the multilingual capabilities. The training details within each stage are presented on the right.",
+      "crop_pdf_points": [
+        50.0,
+        60.0,
+        548.0,
+        262.0
+      ],
+      "image_size": [
+        1800,
+        708
+      ],
+      "crop_override_pdf_points": [
+        50,
+        60,
+        548,
+        262
+      ]
+    },
+    {
+      "index": 97,
+      "title": "ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models",
+      "slug": "convllava",
+      "source_url": "https://arxiv.org/abs/2405.15738",
+      "selection_note": "Direct architecture comparison exposing hierarchical token compression and trainable modules by stage.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2405.15738",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "Figure 1: We show the structure for LLaVA and ConvLLaVA in (a) and (b). ConvNeXt has a",
+      "display_caption": "ConvLLaVA uses a hierarchical ConvNeXt vision encoder to compress visual tokens between stages.",
+      "alt": "ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models architecture: ConvLLaVA uses a hierarchical ConvNeXt vision encoder to compress visual tokens between stages.",
+      "file": "convllava-2024-arch.png",
+      "extracted_caption": "Figure 1: We show the structure for LLaVA and ConvLLaVA in (a) and (b). ConvNeXt has a hierarchical structure which compresses visual tokens between stages. The training procedure is composed of three training stages and the trainable parameters for each stage are shown in (c).",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        208.0
+      ],
+      "image_size": [
+        1800,
+        634
+      ]
+    },
+    {
+      "index": 98,
+      "title": "CogVLM2: Enhanced Vision-Language Models for Image and Video Understanding",
+      "slug": "cogvlm2",
+      "source_url": "https://arxiv.org/abs/2408.16500",
+      "selection_note": "Canonical family architecture; preferable to the benchmark teaser and temporal-grounding data pipeline.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.16500",
+      "figure": "2",
+      "pdf_page": 5,
+      "paper_caption": "Figure 2: The architecture of the CogVLM Family. Taking a high resolution image or the extracted",
+      "display_caption": "CogVLM2 processes high-resolution images and video frames through a ViT encoder, adapter, and visual-language decoder.",
+      "alt": "CogVLM2: Enhanced Vision-Language Models for Image and Video Understanding architecture: CogVLM2 processes high-resolution images and video frames through a ViT encoder, adapter, and visual-language decoder.",
+      "file": "cogvlm2-2024-arch.png",
+      "extracted_caption": "Figure 2: The architecture of the CogVLM Family. Taking a high resolution image or the extracted frames from a given video, CogVLM models embed visual information with a pre-trained ViT Encoder and an Adapter. The embedded visual features are sent to a Visual Language Decoder. CogVLM2-Video is capable of answering image-related and video-related queries.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        323.75
+      ],
+      "image_size": [
+        1800,
+        1092
+      ]
+    },
+    {
+      "index": 99,
+      "title": "PaliGemma: A Versatile and Transferable 3B Vision-Language Model",
+      "slug": "paligemma",
+      "source_url": "https://arxiv.org/abs/2407.07726",
+      "selection_note": "Explicit full architecture; clearer and more complete than the masking, training, and ablation figures.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2407.07726",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "Figure 1 | PaliGemma’s architecture: a SigLIP image encoder feeds into a Gemma decoder LM.",
+      "display_caption": "PaliGemma connects a SigLIP image encoder to a Gemma autoregressive decoder language model.",
+      "alt": "PaliGemma: A Versatile and Transferable 3B Vision-Language Model architecture: PaliGemma connects a SigLIP image encoder to a Gemma autoregressive decoder language model.",
+      "file": "paligemma-2024-arch.png",
+      "extracted_caption": "Figure 1 | PaliGemma’s architecture: a SigLIP image encoder feeds into a Gemma decoder LM.",
+      "crop_pdf_points": [
+        78.0,
+        78.0,
+        517.0,
+        305.0
+      ],
+      "image_size": [
+        1800,
+        917
+      ],
+      "crop_override_pdf_points": [
+        78,
+        78,
+        517,
+        305
+      ]
+    },
+    {
+      "index": 100,
+      "title": "xGen-MM (BLIP-3): An Open-Source Framework for Building Powerful and Responsible Large Multimodal Models",
+      "slug": "xgen-mm-blip-3",
+      "source_url": "https://arxiv.org/abs/2408.08872",
+      "selection_note": "Canonical token-flow architecture; preferable to the broader framework comparison and dataset figures.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.08872",
+      "figure": "2",
+      "pdf_page": 2,
+      "paper_caption": "Figure 2. Overview of the BLIP-3 architecture. Free-form in-",
+      "display_caption": "BLIP-3 feeds interleaved visual and text tokens through a scalable vision-token sampler into a pretrained language model.",
+      "alt": "xGen-MM (BLIP-3): An Open-Source Framework for Building Powerful and Responsible Large Multimodal Models architecture: BLIP-3 feeds interleaved visual and text tokens through a scalable vision-token sampler into a pretrained language model.",
+      "file": "xgen-mm-blip-3-2024-arch.png",
+      "extracted_caption": "Figure 2. Overview of the BLIP-3 architecture. Free-form in- terleaved images and texts from the ensembled interleaved and caption datasets are input into the framework, with each modal- ity undergoing a separate tokenization process to be fed into the pre-trained LLM in natural order. A standard auto-regressive loss is then applied to the text tokens. The Vision Transformer is kept frozen during training, while all other parameters, including the vision token sampler and the pre-trained LLM, are trained.",
+      "crop_pdf_points": [
+        312.0,
+        305.0,
+        560.0,
+        487.0
+      ],
+      "image_size": [
+        1187,
+        862
+      ],
+      "crop_override_pdf_points": [
+        312,
+        305,
+        560,
+        487
+      ]
+    },
+    {
+      "index": 101,
+      "title": "MANTIS: Mastering Multi-Image Understanding Through Interleaved Instruction Tuning",
+      "slug": "mantis",
+      "source_url": "https://arxiv.org/abs/2405.01483",
+      "selection_note": "The paper contains capability examples, dataset statistics and illustrations, and case studies, none of which is a model architecture or system diagram.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The paper contains capability examples, dataset statistics and illustrations, and case studies, none of which is a model architecture or system diagram."
+    },
+    {
+      "index": 102,
+      "title": "Moondream-next: Compact Vision-Language Model with Enhanced Capabilities",
+      "slug": "moondream-next",
+      "source_url": "https://huggingface.co/vikhyatk/moondream-next",
+      "selection_note": "The rolling model card and official repository provide implementation details but no legitimate architecture or system figure.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The rolling model card and official repository provide implementation details but no legitimate architecture or system figure."
+    },
+    {
+      "index": 103,
+      "title": "Idefics2",
+      "slug": "idefics2",
+      "source_url": "https://arxiv.org/abs/2405.02246",
+      "selection_note": "Canonical input-to-output architecture; preferable to the later cross-attention comparison and ablation figures.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2405.02246",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: Idefics2 fully-autoregressive architecture: Input images are processed by the Vision encoder.",
+      "display_caption": "Idefics2 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model.",
+      "alt": "Idefics2 architecture: Idefics2 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model.",
+      "file": "idefics2-2024-arch.png",
+      "extracted_caption": "Figure 2: Idefics2 fully-autoregressive architecture: Input images are processed by the Vision encoder. The resulting visual features are mapped (and optionally pooled) to the LLM input space to get the visual tokens (64 in our standard configuration). They are concatenated (and potentially interleaved) with the input sequence of text embeddings (green and red column). The concatenated sequence is fed to the language model (LLM), which predicts the text tokens output.",
+      "crop_pdf_points": [
+        21.42,
+        225.76,
+        590.58,
+        395.07
+      ],
+      "image_size": [
+        1753,
+        783
+      ]
+    },
+    {
+      "index": 104,
+      "title": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "slug": "internlm-xcomposer2-4khd",
+      "source_url": "https://arxiv.org/abs/2404.06512",
+      "selection_note": "Best model-specific architectural mechanism; the remaining figures are benchmarks, chats, or resolution ablations.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2404.06512",
+      "figure": "4",
+      "pdf_page": 5,
+      "paper_caption": "Figure 4. The illustration of processing high-resolution input.",
+      "display_caption": "InternLM-XComposer2-4KHD dynamically partitions high-resolution images into local patches while retaining a global thumbnail.",
+      "alt": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD architecture: InternLM-XComposer2-4KHD dynamically partitions high-resolution images into local patches while retaining a global thumbnail.",
+      "file": "internlm-xcomposer2-4khd-2024-arch.png",
+      "extracted_caption": "Figure 4. The illustration of processing high-resolution input.",
+      "crop_pdf_points": [
+        299.88,
+        32.0,
+        590.58,
+        219.4
+      ],
+      "image_size": [
+        1209,
+        723
+      ]
+    },
+    {
+      "index": 105,
+      "title": "DeepSeek-VL: Towards Real-World Vision-Language Understanding",
+      "slug": "deepseek-vl",
+      "source_url": "https://arxiv.org/abs/2403.05525",
+      "selection_note": "Best model-specific system figure, with all principal components and frozen or trainable states; other figures are capabilities or examples.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2403.05525",
+      "figure": "3",
+      "pdf_page": 12,
+      "paper_caption": "Figure 3 | Our training pipelines consist of three stages. Stage 1 involves training the Vision-",
+      "display_caption": "DeepSeek-VL trains its hybrid vision encoder, vision-language adaptor, and language model across three progressive stages.",
+      "alt": "DeepSeek-VL: Towards Real-World Vision-Language Understanding architecture: DeepSeek-VL trains its hybrid vision encoder, vision-language adaptor, and language model across three progressive stages.",
+      "file": "deepseek-vl-2024-arch.png",
+      "extracted_caption": "Figure 3 | Our training pipelines consist of three stages. Stage 1 involves training the Vision- Language (VL) adaptor while keeping the hybrid vision encoder and language model fixed. Stage 2 is the crucial part of the joint vision and language pretraining, where both VL adaptor and language model are trainable. Stage 3 is the supervised fine-tuning phase, during which the low-resolution vision encoder SigLIP-L, VL adaptor, and language model will be trained.",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.44,
+        273.85
+      ],
+      "image_size": [
+        1800,
+        716
+      ]
+    },
+    {
+      "index": 106,
+      "title": "SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models",
+      "slug": "sphinx-x",
+      "source_url": "https://arxiv.org/abs/2402.05935",
+      "selection_note": "Canonical family architecture; preferable to capability demonstrations and benchmark summaries.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2402.05935",
+      "figure": "3",
+      "pdf_page": 5,
+      "paper_caption": "Figure 3. Overall paradigm of SPHINX-X family. On top of SPHINX (Lin et al., 2023), we adopt three modifications for a more general",
+      "display_caption": "SPHINX-X combines mixed visual experts, padded-tile skip tokens, high-resolution partitioning, and unified training.",
+      "alt": "SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models architecture: SPHINX-X combines mixed visual experts, padded-tile skip tokens, high-resolution partitioning, and unified training.",
+      "file": "sphinx-x-2024-arch.png",
+      "extracted_caption": "Figure 3. Overall paradigm of SPHINX-X family. On top of SPHINX (Lin et al., 2023), we adopt three modifications for a more general and concise architecture: removing redundant visual encoders in Mixture of Visual Experts (MoV), bypassing fully-padded sub-images with skip tokens, and simplifying multi-stage training into a one-stage all-in-one approach.",
+      "crop_pdf_points": [
+        45.0,
+        70.0,
+        595.0,
+        335.0
+      ],
+      "image_size": [
+        1800,
+        1233
+      ],
+      "crop_override_pdf_points": [
+        45,
+        70,
+        595,
+        335
+      ]
+    },
+    {
+      "index": 107,
+      "title": "LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge",
+      "slug": "llava-1-6",
+      "source_url": "https://llava-vl.github.io/blog/2024-01-30-llava-next/",
+      "selection_note": "The official release's only model-specific technical diagram and its defining architecture change; benchmarks and qualitative examples were rejected.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "source_image_url": "https://llava-vl.github.io/blog/assets/images/llava-1-6/high_res_arch_v2.png",
+      "arxiv_id": null,
+      "figure": "Unnumbered, Illustration of dynamic high resolution scheme",
+      "pdf_page": null,
+      "paper_caption": "",
+      "display_caption": "LLaVA-NeXT's AnyRes scheme partitions high-resolution images into a configurable grid of local views.",
+      "alt": "LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge architecture: LLaVA-NeXT's AnyRes scheme partitions high-resolution images into a configurable grid of local views.",
+      "file": "llava-1-6-official-arch.png"
+    },
+    {
+      "index": 108,
+      "title": "MiniCPM-V: A GPT-4V Level MLLM on Your Phone",
+      "slug": "minicpm-v",
+      "source_url": "https://arxiv.org/abs/2408.01800",
+      "selection_note": "Canonical overall architecture; preferable to the RLAIF-V and deployment figures.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2408.01800",
+      "figure": "3",
+      "pdf_page": 5,
+      "paper_caption": "Figure 3: Model architecture. (a) Overall structure presents the architecture of the model including",
+      "display_caption": "MiniCPM-V combines a visual encoder, shared compression layer, language model, and adaptive high-resolution encoding.",
+      "alt": "MiniCPM-V: A GPT-4V Level MLLM on Your Phone architecture: MiniCPM-V combines a visual encoder, shared compression layer, language model, and adaptive high-resolution encoding.",
+      "file": "minicpm-v-2024-arch.png",
+      "extracted_caption": "Figure 3: Model architecture. (a) Overall structure presents the architecture of the model including the visual encoder, shared compression layer, and LLM. (b) Adaptive visual encoding deals with high-resolution inputs in various aspect ratios.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        326.57
+      ],
+      "image_size": [
+        1800,
+        1132
+      ]
+    },
+    {
+      "index": 109,
+      "title": "MouSi: Poly-Visual-Expert Vision-Language Models",
+      "slug": "mousi",
+      "source_url": "https://arxiv.org/abs/2401.17221",
+      "selection_note": "Canonical poly-vision-expert architecture showing all principal model components.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2401.17221",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: An overview of the MouSi model structure. The poly-vision-expert MouSi model supports",
+      "display_caption": "MouSi integrates heterogeneous visual experts through a fusion network and projector into a language model.",
+      "alt": "MouSi: Poly-Visual-Expert Vision-Language Models architecture: MouSi integrates heterogeneous visual experts through a fusion network and projector into a language model.",
+      "file": "mousi-2024-arch.png",
+      "extracted_caption": "Figure 2: An overview of the MouSi model structure. The poly-vision-expert MouSi model supports the integration of visual experts with various types and capabilities.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        319.8
+      ],
+      "image_size": [
+        1800,
+        1121
+      ]
+    },
+    {
+      "index": 110,
+      "title": "InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model",
+      "slug": "internlm-xcomposer2",
+      "source_url": "https://arxiv.org/abs/2401.16420",
+      "selection_note": "The paper's only legitimate model-specific architectural mechanism; Figure 1 is a capability and benchmark overview.",
+      "editorial_confidence": "medium",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2401.16420",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2. The illustration of the Partial-LoRA. The blue tokens",
+      "display_caption": "InternLM-XComposer2 applies Partial-LoRA only to visual tokens while preserving language-only behavior.",
+      "alt": "InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model architecture: InternLM-XComposer2 applies Partial-LoRA only to visual tokens while preserving language-only behavior.",
+      "file": "internlm-xcomposer2-2024-arch.png",
+      "extracted_caption": "Figure 2. The illustration of the Partial-LoRA. The blue tokens represent the visual tokens and the gray tokens are the language tokens. Our Partial-LoRA is only applied to the visual tokens.",
+      "crop_pdf_points": [
+        299.88,
+        32.0,
+        590.58,
+        238.28
+      ],
+      "image_size": [
+        1063,
+        826
+      ]
+    },
+    {
+      "index": 111,
+      "title": "MoE-LLaVA: Mixture of Experts for Large Vision-Language Models",
+      "slug": "moe-llava",
+      "source_url": "https://arxiv.org/abs/2401.15947",
+      "selection_note": "Best consolidated architecture and training overview, including the router and active experts.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2401.15947",
+      "figure": "2",
+      "pdf_page": 2,
+      "paper_caption": "Figure 2. Illustration of MoE-Tuning. The MoE-Tuning consists",
+      "display_caption": "MoE-LLaVA routes multimodal tokens through sparse experts added to a vision-encoder, projector, and language-model backbone.",
+      "alt": "MoE-LLaVA: Mixture of Experts for Large Vision-Language Models architecture: MoE-LLaVA routes multimodal tokens through sparse experts added to a vision-encoder, projector, and language-model backbone.",
+      "file": "moe-llava-2024-arch.png",
+      "extracted_caption": "Figure 2. Illustration of MoE-Tuning. The MoE-Tuning consists of three stages. In stage I, only the MLP is trained. In stage II, all parameters are trained except for the Vision Encoder (VE). In stage III, FFNs are used to initialize the experts in MoE, and only the MoE layers are trained. For each MoE layer, only two experts are activated for each token, while the other experts remain silent.",
+      "crop_pdf_points": [
+        55.0,
+        62.0,
+        293.0,
+        207.0
+      ],
+      "image_size": [
+        1179,
+        706
+      ],
+      "crop_override_pdf_points": [
+        55,
+        62,
+        293,
+        207
+      ]
+    },
+    {
+      "index": 112,
+      "title": "moondream1 and moondream2",
+      "slug": "moondream1-and-moondream2",
+      "source_url": "https://github.com/vikhyat/moondream",
+      "selection_note": "Official repository and model cards describe the implementation but provide no legitimate family architecture or system figure.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "Official repository and model cards describe the implementation but provide no legitimate family architecture or system figure."
+    },
+    {
+      "index": 113,
+      "title": "FireLLaVA",
+      "slug": "firellava",
+      "source_url": "https://huggingface.co/fireworks-ai/FireLLaVA-13b",
+      "selection_note": "A generic LLaVA diagram would not document FireLLaVA's own contribution and should not be substituted.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "A generic LLaVA diagram would not document FireLLaVA's own contribution and should not be substituted."
+    },
+    {
+      "index": 114,
+      "title": "COSMO: COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training",
+      "slug": "cosmo",
+      "source_url": "https://arxiv.org/abs/2401.00849",
+      "selection_note": "Canonical model-specific system diagram showing modality handling and the two learning paths.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2401.00849",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3. An introduction to CosMo: This model handles both",
+      "display_caption": "CosMo handles image and video inputs through a language model trained with contrastive and language-modeling objectives.",
+      "alt": "COSMO: COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training architecture: CosMo handles image and video inputs through a language model trained with contrastive and language-modeling objectives.",
+      "file": "cosmo-2024-arch.png",
+      "extracted_caption": "Figure 3. An introduction to CosMo: This model handles both image/video text pairs and inter-level image/video text pairs. The Large Language Model is divided into two parts to compute con- trastive loss and language modeling loss.",
+      "crop_pdf_points": [
+        45.0,
+        67.0,
+        292.0,
+        219.0
+      ],
+      "image_size": [
+        1194,
+        719
+      ],
+      "crop_override_pdf_points": [
+        45,
+        67,
+        292,
+        219
+      ]
+    },
+    {
+      "index": 115,
+      "title": "TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones",
+      "slug": "tinygpt-v",
+      "source_url": "https://arxiv.org/abs/2312.16862",
+      "selection_note": "Explicit full architecture; preferable to the encoder-only, component, and training-stage figures.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2312.16862",
+      "figure": "4",
+      "pdf_page": 4,
+      "paper_caption": "Figure 4: Architecture of TinyGPT-V. The model takes a",
+      "display_caption": "TinyGPT-V projects frozen visual-backbone and Q-Former outputs through two linear layers into Phi-2.",
+      "alt": "TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones architecture: TinyGPT-V projects frozen visual-backbone and Q-Former outputs through two linear layers into Phi-2.",
+      "file": "tinygpt-v-2023-arch.png",
+      "extracted_caption": "Figure 4: Architecture of TinyGPT-V. The model takes a visual backbone, which remains frozen during all training phases. We concatenate Q-Former layer visual output tokens from ViT backbone and project them into Phi-2 language model space via two linear projection layers.",
+      "crop_pdf_points": [
+        50.0,
+        60.0,
+        295.0,
+        225.0
+      ],
+      "image_size": [
+        1199,
+        771
+      ],
+      "crop_override_pdf_points": [
+        50,
+        60,
+        295,
+        225
+      ]
+    },
+    {
+      "index": 116,
+      "title": "MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices",
+      "slug": "mobilevlm",
+      "source_url": "https://arxiv.org/abs/2312.16886",
+      "selection_note": "Canonical complete architecture and the defining projector mechanism in one figure.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2312.16886",
+      "figure": "1",
+      "pdf_page": 5,
+      "paper_caption": "Figure 1. The MobileVLM architecture (right) utilizes MobileLLaMA as its language model, intakes Xv and Xq which are image and",
+      "display_caption": "MobileVLM connects a visual encoder to MobileLLaMA through a lightweight downsample projector.",
+      "alt": "MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices architecture: MobileVLM connects a visual encoder to MobileLLaMA through a lightweight downsample projector.",
+      "file": "mobilevlm-2023-arch.png",
+      "extracted_caption": "Figure 1. The MobileVLM architecture (right) utilizes MobileLLaMA as its language model, intakes Xv and Xq which are image and language instructions as respective inputs and gives Ya as the output language response. LDP refers to a lightweight downsample projector (left).",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        261.32
+      ],
+      "image_size": [
+        1749,
+        920
+      ]
+    },
+    {
+      "index": 117,
+      "title": "Alpha-CLIP: A CLIP Model Focusing on Wherever You Want",
+      "slug": "alpha-clip",
+      "source_url": "https://arxiv.org/abs/2312.03818",
+      "selection_note": "Part (b) is the canonical model modification, while the combined figure also documents its training-data path.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2312.03818",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3. The pipeline of our data generation method and model architecture. (a) Our method generates millions of RGBA-region",
+      "display_caption": "Alpha-CLIP extends CLIP with an alpha channel that focuses visual encoding on a specified region.",
+      "alt": "Alpha-CLIP: A CLIP Model Focusing on Wherever You Want architecture: Alpha-CLIP extends CLIP with an alpha channel that focuses visual encoding on a specified region.",
+      "file": "alpha-clip-2023-arch.png",
+      "extracted_caption": "Figure 3. The pipeline of our data generation method and model architecture. (a) Our method generates millions of RGBA-region text pairs. (b) Alpha-CLIP modifies the CLIP image encoder to take an additional alpha channel along with RGB.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        240.49
+      ],
+      "image_size": [
+        1800,
+        619
+      ]
+    },
+    {
+      "index": 118,
+      "title": "Nous-Hermes-2-Vision - Mistral 7B",
+      "slug": "nous-hermes-2-vision",
+      "source_url": "https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha",
+      "selection_note": "The card describes SigLIP integration and training data in prose but contains no legitimate architecture or system figure.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The card describes SigLIP integration and training data in prose but contains no legitimate architecture or system figure."
+    },
+    {
+      "index": 119,
+      "title": "SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models",
+      "slug": "sphinx",
+      "source_url": "https://arxiv.org/abs/2311.07575",
+      "selection_note": "Canonical full paradigm; preferable to the high-resolution-only detail figure.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.07575",
+      "figure": "3",
+      "pdf_page": 6,
+      "paper_caption": "Figure 3: The joint mixing paradigm of SPHINX. with mixed tuning tasks (a), mixed visual",
+      "display_caption": "SPHINX jointly mixes tuning tasks, visual embeddings, and model weights in one multimodal architecture.",
+      "alt": "SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models architecture: SPHINX jointly mixes tuning tasks, visual embeddings, and model weights in one multimodal architecture.",
+      "file": "sphinx-2023-arch.png",
+      "extracted_caption": "Figure 3: The joint mixing paradigm of SPHINX. with mixed tuning tasks (a), mixed visual embeddings (b), and mixed model weights (c).",
+      "crop_pdf_points": [
+        80.0,
+        55.0,
+        573.0,
+        245.0
+      ],
+      "image_size": [
+        1800,
+        735
+      ],
+      "crop_override_pdf_points": [
+        80,
+        55,
+        573,
+        245
+      ]
+    },
+    {
+      "index": 120,
+      "title": "Florence-2: A Deep Dive into its Unified Architecture and Multi-Task Capabilities",
+      "slug": "florence-2",
+      "source_url": "https://arxiv.org/abs/2311.06242",
+      "selection_note": "Canonical architecture plus the unified multitask interface; later figures are data and evaluation analyses.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.06242",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2. Florence-2 consists of an image encoder and standard multi-modality encoder-decoder. We train Florence-2 on our FLD-5B",
+      "display_caption": "Florence-2 combines an image encoder and multimodality encoder-decoder through a unified task-prompt interface.",
+      "alt": "Florence-2: A Deep Dive into its Unified Architecture and Multi-Task Capabilities architecture: Florence-2 combines an image encoder and multimodality encoder-decoder through a unified task-prompt interface.",
+      "file": "florence-2-2023-arch.png",
+      "extracted_caption": "Figure 2. Florence-2 consists of an image encoder and standard multi-modality encoder-decoder. We train Florence-2 on our FLD-5B data in a unified multitask learning paradigm, resulting in a generaslist vision foundation model, which can perform various vision tasks.",
+      "crop_pdf_points": [
+        45.0,
+        65.0,
+        550.0,
+        355.0
+      ],
+      "image_size": [
+        1800,
+        1020
+      ],
+      "crop_override_pdf_points": [
+        45,
+        65,
+        550,
+        355
+      ]
+    },
+    {
+      "index": 121,
+      "title": "u-LLaVA: Unifying Multi-Modal Tasks via Large Language Model",
+      "slug": "u-llava",
+      "source_url": "https://arxiv.org/abs/2311.05348",
+      "selection_note": "Canonical two-stage system architecture covering alignment and task-specific execution.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.05348",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "Figure 1: Overview of u-LLaVA. In stage I, image and spatio-temporal features are used to efficiently boost the general-purpose modality",
+      "display_caption": "u-LLaVA unifies modality alignment with task-specific projectors, decoders, and patched downstream modules.",
+      "alt": "u-LLaVA: Unifying Multi-Modal Tasks via Large Language Model architecture: u-LLaVA unifies modality alignment with task-specific projectors, decoders, and patched downstream modules.",
+      "file": "u-llava-2023-arch.png",
+      "extracted_caption": "Figure 1: Overview of u-LLaVA. In stage I, image and spatio-temporal features are used to efficiently boost the general-purpose modality alignment. In Stage II, task-specific projectors and decoders are jointly trained for region and pixel-level understanding. Further, additional modules such as stable diffusion [39] can be easily patched for downstream tasks.",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.44,
+        277.16
+      ],
+      "image_size": [
+        1800,
+        732
+      ]
+    },
+    {
+      "index": 122,
+      "title": "LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents",
+      "slug": "llava-plus",
+      "source_url": "https://arxiv.org/abs/2311.05437",
+      "selection_note": "Best system architecture overview; Figure 1 is a capability montage rather than a technical diagram.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.05437",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: The four-step LLaVA-Plus pipeline.",
+      "display_caption": "LLaVA-Plus retrieves skills, invokes tools, consumes their results, and generates a final response.",
+      "alt": "LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents architecture: LLaVA-Plus retrieves skills, invokes tools, consumes their results, and generates a final response.",
+      "file": "llava-plus-2023-arch.png",
+      "extracted_caption": "Figure 2: The four-step LLaVA-Plus pipeline.",
+      "crop_pdf_points": [
+        315.0,
+        510.0,
+        514.0,
+        585.0
+      ],
+      "image_size": [
+        958,
+        334
+      ],
+      "crop_override_pdf_points": [
+        315,
+        510,
+        514,
+        585
+      ]
+    },
+    {
+      "index": 123,
+      "title": "OtterHD: A High-Resolution Multi-modality Model",
+      "slug": "otterhd",
+      "source_url": "https://arxiv.org/abs/2311.04219",
+      "selection_note": "The paper's figures cover demonstrations, benchmark construction, throughput, resolution, and loss; none is a legitimate architecture substitute.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The paper's figures cover demonstrations, benchmark construction, throughput, resolution, and loss; none is a legitimate architecture substitute."
+    },
+    {
+      "index": 124,
+      "title": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "slug": "covlm",
+      "source_url": "https://arxiv.org/pdf/2311.03354",
+      "selection_note": "Complete vision module plus communication-token and LLM data path; unambiguously the architecture overview.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.03354",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2: Overview of our CoVLM framework. Our vision module consists of a CLIP encoder to",
+      "display_caption": "CoVLM vision module and communication-token framework.",
+      "alt": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding architecture: CoVLM vision module and communication-token framework.",
+      "file": "covlm-2023-arch.png",
+      "extracted_caption": "Figure 2: Overview of our CoVLM framework. Our vision module consists of a CLIP encoder to encode the image, and an object detector which takes in the image together with language inputs to generate relevant regions. For language modelling, we insert a set of communication tokens into the LLM, which can appear after a visual entity with a <visual> token or after a relationship with a <previsual> token. The last hidden layer of the LLM is then sent to the object detector to propose regions relevant to the language inputs so far. This is termed as top down language-to-vision communication. Next, in vision-to-language communication, the features of the proposed regions are fed back to LLM via <box> or <prebox> token for further language generation.",
+      "crop_pdf_points": [
+        100.0,
+        78.0,
+        508.0,
+        228.0
+      ],
+      "image_size": [
+        1800,
+        663
+      ],
+      "crop_override_pdf_points": [
+        100,
+        78,
+        508,
+        228
+      ]
+    },
+    {
+      "index": 125,
+      "title": "GLaMM: Pixel Grounding Large Multimodal Model",
+      "slug": "glamm",
+      "source_url": "https://arxiv.org/pdf/2311.03356",
+      "selection_note": "Shows the global, region, and grounding encoders, LLM, pixel decoder, and all three grounding levels.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.03356",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2. GLaMM’s architecture. The figure illustrates our model architecture, showcasing its ability to offer scene-level understanding,",
+      "display_caption": "GLaMM architecture for scene-, region-, and pixel-level grounding.",
+      "alt": "GLaMM: Pixel Grounding Large Multimodal Model architecture: GLaMM architecture for scene-, region-, and pixel-level grounding.",
+      "file": "glamm-2023-arch.png",
+      "extracted_caption": "Figure 2. GLaMM’s architecture. The figure illustrates our model architecture, showcasing its ability to offer scene-level understanding, region-level interpretation, and pixel-level grounding. Top: The core components of GLaMM, including the global image encoder, region encoder, LLM, grounding image encoder, and pixel decoder, are cohesively tailored for vision-language tasks across different granularities. The vision-to-language (V-L) projection layer efficiently maps image features into the language domain, and the pixel decoder utilizes the language-to-prompt (L-P) projection layer, transforming text embeddings related to segmentation into the decoder space. A major feature of GLaMM is its ability to perform our newly introduced Grounded Conversation Generation (GCG) task. This highlights the model’s capability to anchor specific phrases to corresponding segmentation masks in the image. Bottom: The diverse downstream applications of GLaMM, including referring expression segmentation, region-level captioning, image-level captioning, and phrase grounding.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        247.06
+      ],
+      "image_size": [
+        1800,
+        660
+      ]
+    },
+    {
+      "index": 126,
+      "title": "Fuyu-8B: A Multimodal Architecture for AI Agents",
+      "slug": "fuyu-8b",
+      "source_url": "https://www.adept.ai/blog/fuyu-8b",
+      "selection_note": "The official launch article's architecture diagram shows image patches projected directly into the decoder-only Transformer.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "source_image_url": "https://huggingface.co/adept/fuyu-8b/resolve/main/architecture.png",
+      "arxiv_id": null,
+      "figure": "Diagram of the Fuyu model architecture",
+      "pdf_page": null,
+      "paper_caption": "",
+      "display_caption": "Fuyu-8B projects image patches directly into a decoder-only Transformer.",
+      "alt": "Fuyu-8B: A Multimodal Architecture for AI Agents architecture: Fuyu-8B projects image patches directly into a decoder-only Transformer.",
+      "file": "fuyu-8b-official-arch.png"
+    },
+    {
+      "index": 127,
+      "title": "PaLI-3 Vision Language Models: Smaller, Faster, Stronger",
+      "slug": "pali-3-vision-language-models",
+      "source_url": "https://arxiv.org/pdf/2310.09199",
+      "selection_note": "Canonical end-to-end SigLIP-to-UL2 architecture overview.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2310.09199",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "Figure 1: Overview of the PaLI-3 (5B) model: images are encoded into visual tokens individually",
+      "display_caption": "PaLI-3 connects a contrastively pretrained SigLIP encoder to an encoder-decoder UL2 Transformer.",
+      "alt": "PaLI-3 Vision Language Models: Smaller, Faster, Stronger architecture: PaLI-3 connects a contrastively pretrained SigLIP encoder to an encoder-decoder UL2 Transformer.",
+      "file": "pali-3-vision-language-models-2023-arch.png",
+      "extracted_caption": "Figure 1: Overview of the PaLI-3 (5B) model: images are encoded into visual tokens individually by the contrastively pretrained 2B SigLIP vision model. Along with a query, these visual tokens are passed to an 3B encoder-decoder UL2 Transformer which produces the desired answer. In such a setup, a contrastively pretrained model provides significantly more useful tokens than one classification pretrained model as in previous PaLI models.",
+      "crop_pdf_points": [
+        100.0,
+        75.0,
+        512.0,
+        287.0
+      ],
+      "image_size": [
+        1800,
+        896
+      ],
+      "crop_override_pdf_points": [
+        100,
+        75,
+        512,
+        287
+      ]
+    },
+    {
+      "index": 128,
+      "title": "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
+      "slug": "minigpt-v2",
+      "source_url": "https://arxiv.org/pdf/2310.09478",
+      "selection_note": "Explicit model diagram covering the frozen ViT, token concatenation, projection, and LLaMA-2.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2310.09478",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: Architecture of MiniGPT-v2.",
+      "display_caption": "MiniGPT-v2 architecture with frozen ViT, token concatenation, projection, and LLaMA-2.",
+      "alt": "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning architecture: MiniGPT-v2 architecture with frozen ViT, token concatenation, projection, and LLaMA-2.",
+      "file": "minigpt-v2-2023-arch.png",
+      "extracted_caption": "Figure 2: Architecture of MiniGPT-v2. The model takes a ViT visual backbone, which remains frozen during all training phases. We concatenate four adjacent visual output tokens from ViT back- bone and project them into LLaMA-2 language model space via a linear projection layer.",
+      "crop_pdf_points": [
+        299.88,
+        351.24,
+        590.58,
+        556.22
+      ],
+      "image_size": [
+        1024,
+        898
+      ]
+    },
+    {
+      "index": 129,
+      "title": "BakLLaVA",
+      "slug": "bakllava",
+      "source_url": "https://huggingface.co/SkunkworksAI/BakLLaVA-1",
+      "selection_note": "The official model card and repository describe a LLaVA-on-Mistral derivative but publish no model-specific architecture figure.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The official model card and repository describe a LLaVA-on-Mistral derivative but publish no model-specific architecture figure."
+    },
+    {
+      "index": 130,
+      "title": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "slug": "ferret",
+      "source_url": "https://arxiv.org/pdf/2310.07704",
+      "selection_note": "Shows the hybrid region representation, spatial-aware visual sampler, and complete Ferret model.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2310.07704",
+      "figure": "3",
+      "pdf_page": 5,
+      "paper_caption": "Figure 3: Overview of the proposed Ferret model architecture. (Left) The proposed hybrid region",
+      "display_caption": "Ferret hybrid region representation, spatial-aware sampler, and complete model architecture.",
+      "alt": "Ferret: Refer and Ground Anything Anywhere at Any Granularity architecture: Ferret hybrid region representation, spatial-aware sampler, and complete model architecture.",
+      "file": "ferret-2023-arch.png",
+      "extracted_caption": "Figure 3: Overview of the proposed Ferret model architecture. (Left) The proposed hybrid region representation and spatial-aware visual sampler. (Right) Overall model architecture. All parameters besides the image encoder are trainable.",
+      "crop_pdf_points": [
+        90.0,
+        75.0,
+        522.0,
+        250.0
+      ],
+      "image_size": [
+        1800,
+        707
+      ],
+      "crop_override_pdf_points": [
+        90,
+        75,
+        522,
+        250
+      ]
+    },
+    {
+      "index": 131,
+      "title": "LLaVA 1.5: Improved Baselines with Visual Instruction Tuning",
+      "slug": "llava-1-5",
+      "source_url": "https://arxiv.org/pdf/2310.03744",
+      "selection_note": "Clean architecture diagram for higher-resolution grid encoding; preferable to Figure 1, which mixes benchmarks with a small architecture inset.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2310.03744",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2. LLaVA-1.5-HD. Scaling LLaVA-1.5 to higher resolutions by splitting the image into grids and encoding them independently. This",
+      "display_caption": "LLaVA-1.5-HD grid-based encoding for arbitrary image resolutions.",
+      "alt": "LLaVA 1.5: Improved Baselines with Visual Instruction Tuning architecture: LLaVA-1.5-HD grid-based encoding for arbitrary image resolutions.",
+      "file": "llava-1-5-2023-arch.png",
+      "extracted_caption": "Figure 2. LLaVA-1.5-HD. Scaling LLaVA-1.5 to higher resolutions by splitting the image into grids and encoding them independently. This allows the model to scale to any resolution, without performing positional embedding interpolation for ViTs. We additionally concatenate the feature of a downsampled image to provide the LLM with a global context.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        185.21
+      ],
+      "image_size": [
+        1800,
+        500
+      ]
+    },
+    {
+      "index": 132,
+      "title": "CogVLM: Visual Expert for Pretrained Language Models",
+      "slug": "cogvlm",
+      "source_url": "https://arxiv.org/pdf/2311.03079",
+      "selection_note": "Canonical input and visual-expert Transformer-block diagram.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2311.03079",
+      "figure": "4",
+      "pdf_page": 3,
+      "paper_caption": "Figure 4. The architecture of CogVLM. (a) The illustration about",
+      "display_caption": "CogVLM input pathway and visual-expert Transformer block.",
+      "alt": "CogVLM: Visual Expert for Pretrained Language Models architecture: CogVLM input pathway and visual-expert Transformer block.",
+      "file": "cogvlm-2023-arch.png",
+      "extracted_caption": "Figure 4. The architecture of CogVLM. (a) The illustration about the input, where an image is processed by a pretrained ViT and mapped into the same space as the text features. (b) The Trans- former block in the language model. The image features have a different QKV matrix and FFN. Only the purple parts are trainable.",
+      "crop_pdf_points": [
+        300.0,
+        60.0,
+        548.0,
+        216.0
+      ],
+      "image_size": [
+        1163,
+        689
+      ],
+      "crop_override_pdf_points": [
+        300,
+        60,
+        548,
+        216
+      ]
+    },
+    {
+      "index": 133,
+      "title": "MetaCLIP: Demystifying CLIP Data",
+      "slug": "metaclip",
+      "source_url": "https://arxiv.org/pdf/2309.16671",
+      "selection_note": "The paper contributes data curation rather than a model architecture; Figure 5 is a data-pipeline case study.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The paper contributes data curation rather than a model architecture; Figure 5 is a data-pipeline case study."
+    },
+    {
+      "index": 134,
+      "title": "Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",
+      "slug": "qwen-vl",
+      "source_url": "https://arxiv.org/pdf/2308.12966",
+      "selection_note": "Best available model-specific overview; it identifies QwenLM, ViT, and the cross-attention adapter across all three stages, though it is primarily a training pipeline.",
+      "editorial_confidence": "medium",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2308.12966",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3: The training pipeline of the Qwen-VL series.",
+      "display_caption": "Qwen-VL visual-language architecture across pretraining, multitask pretraining, and supervised finetuning.",
+      "alt": "Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond architecture: Qwen-VL visual-language architecture across pretraining, multitask pretraining, and supervised finetuning.",
+      "file": "qwen-vl-2023-arch.png",
+      "extracted_caption": "Figure 3: The training pipeline of the Qwen-VL series.",
+      "crop_pdf_points": [
+        65.0,
+        198.0,
+        548.0,
+        411.0
+      ],
+      "image_size": [
+        1800,
+        713
+      ],
+      "crop_override_pdf_points": [
+        65,
+        198,
+        548,
+        411
+      ]
+    },
+    {
+      "index": 135,
+      "title": "IDEFICS",
+      "slug": "idefics",
+      "source_url": "https://huggingface.co/blog/idefics",
+      "selection_note": "The official launch post and model card have capability and performance illustrations but no IDEFICS-specific architecture diagram.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The official launch post and model card have capability and performance illustrations but no IDEFICS-specific architecture diagram."
+    },
+    {
+      "index": 136,
+      "title": "BLIVA: A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions",
+      "slug": "bliva",
+      "source_url": "https://arxiv.org/pdf/2308.09936",
+      "selection_note": "Explicit architecture with frozen image encoder, Q-Former, patch projection, and frozen LLM.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2308.09936",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2: Model architecture of BLIVA. BLIVA uses a Q-Former to draw out instruction-aware visual features from the patch",
+      "display_caption": "BLIVA architecture with frozen image encoder, Q-Former, patch projection, and frozen LLM.",
+      "alt": "BLIVA: A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions architecture: BLIVA architecture with frozen image encoder, Q-Former, patch projection, and frozen LLM.",
+      "file": "bliva-2023-arch.png",
+      "extracted_caption": "Figure 2: Model architecture of BLIVA. BLIVA uses a Q-Former to draw out instruction-aware visual features from the patch embeddings generated by a frozen image encoder. These learned query embeddings are then fed as soft prompt inputs into the frozen Language-Learning Model (LLM). Additionally, the system repurposes the originally encoded patch embeddings through a fully connected projection layer, serving as a supplementary source of visual information for the frozen LLM.",
+      "crop_pdf_points": [
+        21.42,
+        98.62,
+        590.58,
+        249.45
+      ],
+      "image_size": [
+        1800,
+        655
+      ]
+    },
+    {
+      "index": 137,
+      "title": "KOSMOS-2: Grounding Multimodal Large Language Models to the World",
+      "slug": "kosmos-2",
+      "source_url": "https://arxiv.org/pdf/2306.14824",
+      "selection_note": "The paper's model-specific system overview captures grounded input and output behavior; no more detailed internal architecture figure is published.",
+      "editorial_confidence": "medium",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2306.14824",
+      "figure": "1",
+      "pdf_page": 1,
+      "paper_caption": "Figure 1: KOSMOS-2 is a multimodal large language model that has new capabilities of multimodal",
+      "display_caption": "KOSMOS-2 system overview for multimodal grounding and referring.",
+      "alt": "KOSMOS-2: Grounding Multimodal Large Language Models to the World architecture: KOSMOS-2 system overview for multimodal grounding and referring.",
+      "file": "kosmos-2-2023-arch.png",
+      "extracted_caption": "Figure 1: KOSMOS-2 is a multimodal large language model that has new capabilities of multimodal grounding and referring. KOSMOS-2 can understand multimodal input, follow instructions, perceive object descriptions (e.g., bounding boxes), and ground language to the visual world.",
+      "crop_pdf_points": [
+        125.0,
+        430.0,
+        490.0,
+        665.0
+      ],
+      "image_size": [
+        1800,
+        1138
+      ],
+      "crop_override_pdf_points": [
+        125,
+        430,
+        490,
+        665
+      ]
+    },
+    {
+      "index": 138,
+      "title": "LaVIN: Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models",
+      "slug": "lavin",
+      "source_url": "https://arxiv.org/pdf/2305.15023",
+      "selection_note": "Canonical complete LaVIN architecture plus its modality-adaptation mechanism.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2305.15023",
+      "figure": "2",
+      "pdf_page": 4,
+      "paper_caption": "Figure 2: The overview of the Mixture-of-Modality Adaptation (MMA) and the architecture of",
+      "display_caption": "LaVIN architecture and Mixture-of-Modality Adaptation mechanism.",
+      "alt": "LaVIN: Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models architecture: LaVIN architecture and Mixture-of-Modality Adaptation mechanism.",
+      "file": "lavin-2023-arch.png",
+      "extracted_caption": "Figure 2: The overview of the Mixture-of-Modality Adaptation (MMA) and the architecture of LaVIN. In LaVIN, the novel Mixture-of-Modality Adapters are employed to process the instructions of different modalities. During instruction tuning, LaVIN is optimized by Mixture of Modality Training (MMT) in an end-to-end manner.",
+      "crop_pdf_points": [
+        21.42,
+        28.0,
+        590.58,
+        247.11
+      ],
+      "image_size": [
+        1800,
+        778
+      ]
+    },
+    {
+      "index": 139,
+      "title": "InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning",
+      "slug": "instructblip",
+      "source_url": "https://arxiv.org/pdf/2305.06500",
+      "selection_note": "Explicit frozen encoder, Q-Former, frozen LLM, and instruction-conditioning pathway.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2305.06500",
+      "figure": "3",
+      "pdf_page": 5,
+      "paper_caption": "Figure 3: Model architecture of InstructBLIP. The Q-Former extracts instruction-aware visual features",
+      "display_caption": "InstructBLIP architecture with instruction-aware Q-Former and frozen LLM.",
+      "alt": "InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning architecture: InstructBLIP architecture with instruction-aware Q-Former and frozen LLM.",
+      "file": "instructblip-2023-arch.png",
+      "extracted_caption": "Figure 3: Model architecture of InstructBLIP. The Q-Former extracts instruction-aware visual features from the output embeddings of the frozen image encoder, and feeds the visual features as soft prompt input to the frozen LLM. We instruction-tune the model with the language modeling loss to generate the response.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        248.91
+      ],
+      "image_size": [
+        1800,
+        757
+      ]
+    },
+    {
+      "index": 140,
+      "title": "ImageBind: One Embedding Space To Bind Them All",
+      "slug": "imagebind",
+      "source_url": "https://arxiv.org/pdf/2305.05665",
+      "selection_note": "Canonical six-modality joint-embedding system diagram.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2305.05665",
+      "figure": "2",
+      "pdf_page": 3,
+      "paper_caption": "Figure 2. IMAGEBIND overview. Different modalities occur naturally aligned in different data sources, for instance images+text and",
+      "display_caption": "ImageBind aligns six modalities in one shared embedding space.",
+      "alt": "ImageBind: One Embedding Space To Bind Them All architecture: ImageBind aligns six modalities in one shared embedding space.",
+      "file": "imagebind-2023-arch.png",
+      "extracted_caption": "Figure 2. IMAGEBIND overview. Different modalities occur naturally aligned in different data sources, for instance images+text and video+audio in web data, depth or thermal information with images, IMU data in videos captured with egocentric cameras, etc. IMAGE- BIND links all these modalities in a common embedding space, enabling new emergent alignments and capabilities.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        179.45
+      ],
+      "image_size": [
+        1800,
+        370
+      ]
+    },
+    {
+      "index": 141,
+      "title": "LLaVA: Large Language and Vision Assistant - Visual Instruction Tuning",
+      "slug": "llava",
+      "source_url": "https://arxiv.org/pdf/2304.08485",
+      "selection_note": "Explicit CLIP-to-projection-to-language-model architecture.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2304.08485",
+      "figure": "1",
+      "pdf_page": 4,
+      "paper_caption": "Figure 1: LLaVA network architecture.",
+      "display_caption": "LLaVA connects CLIP visual features to a language model through a learned projection.",
+      "alt": "LLaVA: Large Language and Vision Assistant - Visual Instruction Tuning architecture: LLaVA connects CLIP visual features to a language model through a learned projection.",
+      "file": "llava-2023-arch.png",
+      "extracted_caption": "Figure 1: LLaVA network architecture. For an input image Xv, we consider the pre-trained CLIP visual encoder ViT-L/14 [40], which provides the visual feature Zv = g(Xv). The grid features before and after the last Transformer layer are considered in our experiments. We consider a simple linear layer to connect image features into the word embedding space. Specifically, we apply a trainable projection matrix W to convert Zv into language embedding tokens Hv, which have the same dimensionality as the word embedding space in the language model: Hv = W · Zv, with Zv = g(Xv) (1) Thus, we have a sequence of visual tokens Hv. Note that our simple projection scheme is lightweight, which allows us to iterate data centric experiments quickly. More sophisticated schemes to con- nect the image and language representations can also be considered, such as gated cross-attention in Flamingo [2] and Q-former in BLIP-2 [28]. We leave exploring possibly more effective and sophisticated architecture designs for LLaVA as future work.",
+      "crop_pdf_points": [
+        21.42,
+        287.64,
+        590.58,
+        382.68
+      ],
+      "image_size": [
+        1438,
+        467
+      ]
+    },
+    {
+      "index": 142,
+      "title": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+      "slug": "minigpt-4",
+      "source_url": "https://arxiv.org/pdf/2304.10592",
+      "selection_note": "Canonical ViT and Q-Former, linear projection, and Vicuna diagram.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2304.10592",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "Figure 1: The architecture of MiniGPT-4. It consists of a vision encoder with a pretrained ViT and",
+      "display_caption": "MiniGPT-4 architecture with ViT, Q-Former, linear projection, and Vicuna.",
+      "alt": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models architecture: MiniGPT-4 architecture with ViT, Q-Former, linear projection, and Vicuna.",
+      "file": "minigpt-4-2023-arch.png",
+      "extracted_caption": "Figure 1: The architecture of MiniGPT-4. It consists of a vision encoder with a pretrained ViT and Q-Former, a single linear projection layer, and an advanced Vicuna large language model. MiniGPT-4 only requires training the linear projection layer to align the visual features with the Vicuna.",
+      "crop_pdf_points": [
+        21.42,
+        147.99,
+        590.58,
+        287.11
+      ],
+      "image_size": [
+        1440,
+        641
+      ]
+    },
+    {
+      "index": 143,
+      "title": "SigLIP: Sigmoid Loss for Language Image Pre-Training",
+      "slug": "siglip",
+      "source_url": "https://arxiv.org/pdf/2303.15343",
+      "selection_note": "The paper changes the training loss, not the encoder architecture; Figure 1 is a distributed loss-implementation mock-up.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "The paper changes the training loss, not the encoder architecture; Figure 1 is a distributed loss-implementation mock-up."
+    },
+    {
+      "index": 144,
+      "title": "OpenFlamingo: An Open-Source Framework for Training Large Autoregressive Vision-Language Models",
+      "slug": "openflamingo",
+      "source_url": "https://arxiv.org/pdf/2308.01390",
+      "selection_note": "The only legitimate model-specific system overview in the paper; it shows the interleaved interface but not internal components.",
+      "editorial_confidence": "medium",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2308.01390",
+      "figure": "2",
+      "pdf_page": 2,
+      "paper_caption": "Figure 2: OpenFlamingo-9B (pictured) can process interleaved image-and-text sequences. This interface",
+      "display_caption": "OpenFlamingo-9B interleaved image-and-text system interface.",
+      "alt": "OpenFlamingo: An Open-Source Framework for Training Large Autoregressive Vision-Language Models architecture: OpenFlamingo-9B interleaved image-and-text system interface.",
+      "file": "openflamingo-2023-arch.png",
+      "extracted_caption": "Figure 2: OpenFlamingo-9B (pictured) can process interleaved image-and-text sequences. This interface allows OpenFlamingo to learn many vision-language tasks through in-context demonstrations.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        350.2
+      ],
+      "image_size": [
+        1800,
+        1048
+      ]
+    },
+    {
+      "index": 145,
+      "title": "PaLM-E: An Embodied Multimodal Language Model",
+      "slug": "palm-e",
+      "source_url": "https://arxiv.org/pdf/2303.03378",
+      "selection_note": "Canonical system overview covering sensor encoders, PaLM-E, tasks, and embodied outputs.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2303.03378",
+      "figure": "1",
+      "pdf_page": 1,
+      "paper_caption": "Figure 1: PaLM-E is a single general-purpose multimodal language model for embodied reasoning tasks, visual-language tasks,",
+      "display_caption": "PaLM-E combines sensor encoders and a language model for embodied and visual-language tasks.",
+      "alt": "PaLM-E: An Embodied Multimodal Language Model architecture: PaLM-E combines sensor encoders and a language model for embodied and visual-language tasks.",
+      "file": "palm-e-2023-arch.png",
+      "extracted_caption": "Figure 1: PaLM-E is a single general-purpose multimodal language model for embodied reasoning tasks, visual-language tasks, and language tasks. PaLM-E transfers knowledge from visual-language domains into embodied reasoning – from robot planning in environments with complex dynamics and physical constraints, to answering questions about the observable world. PaLM-E operates on multimodal sentences, i.e. sequences of tokens where inputs from arbitrary modalities (e.g. images, neural 3D representations, or states, in green and blue) are inserted alongside text tokens (in orange) as input to an LLM, trained end-to-end.",
+      "crop_pdf_points": [
+        50.0,
+        178.0,
+        550.0,
+        365.0
+      ],
+      "image_size": [
+        1800,
+        671
+      ],
+      "crop_override_pdf_points": [
+        50,
+        178,
+        550,
+        365
+      ]
+    },
+    {
+      "index": 146,
+      "title": "KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models",
+      "slug": "kosmos-1",
+      "source_url": "https://arxiv.org/pdf/2302.14045",
+      "selection_note": "Best model-specific system overview of multimodal inputs, embeddings, MLLM, and outputs; no detailed block diagram is published.",
+      "editorial_confidence": "medium",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2302.14045",
+      "figure": "1",
+      "pdf_page": 1,
+      "paper_caption": "Figure 1: KOSMOS-1 is a multimodal large language model (MLLM) that is capable of perceiving",
+      "display_caption": "KOSMOS-1 multimodal input, embedding, language-model, and output overview.",
+      "alt": "KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models architecture: KOSMOS-1 multimodal input, embedding, language-model, and output overview.",
+      "file": "kosmos-1-2023-arch.png",
+      "extracted_caption": "Figure 1: KOSMOS-1 is a multimodal large language model (MLLM) that is capable of perceiving multimodal input, following instructions, and performing in-context learning for not only language tasks but also multimodal tasks. In this work, we align vision with large language models (LLMs), advancing the trend of going from LLMs to MLLMs.",
+      "crop_pdf_points": [
+        100.0,
+        238.0,
+        505.0,
+        650.0
+      ],
+      "image_size": [
+        1800,
+        1939
+      ],
+      "crop_override_pdf_points": [
+        100,
+        238,
+        505,
+        650
+      ]
+    },
+    {
+      "index": 147,
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+      "slug": "blip-2",
+      "source_url": "https://arxiv.org/pdf/2301.12597",
+      "selection_note": "Canonical two-stage bridge from frozen image encoder through Q-Former to frozen LLM.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2301.12597",
+      "figure": "1",
+      "pdf_page": 1,
+      "paper_caption": "Figure 1. Overview of BLIP-2’s framework.",
+      "display_caption": "BLIP-2 bridges a frozen image encoder and frozen LLM through a two-stage Q-Former.",
+      "alt": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models architecture: BLIP-2 bridges a frozen image encoder and frozen LLM through a two-stage Q-Former.",
+      "file": "blip-2-2023-arch.png",
+      "extracted_caption": "Figure 1. Overview of BLIP-2’s framework. We pre-train a lightweight Querying Transformer following a two-stage strat- egy to bridge the modality gap. The first stage bootstraps vision- language representation learning from a frozen image encoder. The second stage bootstraps vision-to-language generative learning from a frozen LLM, which enables zero-shot instructed image-to- text generation (see Figure 4 for more examples).",
+      "crop_pdf_points": [
+        300.0,
+        208.0,
+        548.0,
+        328.0
+      ],
+      "image_size": [
+        1206,
+        563
+      ],
+      "crop_override_pdf_points": [
+        300,
+        208,
+        548,
+        328
+      ]
+    },
+    {
+      "index": 148,
+      "title": "MULTIINSTRUCT: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning",
+      "slug": "multiinstruct",
+      "source_url": "https://arxiv.org/pdf/2212.10773",
+      "selection_note": "Figures cover examples, task taxonomy, performance, and attention; the paper publishes no model-specific architecture figure.",
+      "editorial_confidence": "high",
+      "status": "no-published-figure",
+      "note": "Figures cover examples, task taxonomy, performance, and attention; the paper publishes no model-specific architecture figure."
+    },
+    {
+      "index": 149,
+      "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+      "slug": "pali",
+      "source_url": "https://arxiv.org/pdf/2209.06794",
+      "selection_note": "Canonical scalable ViT plus encoder-decoder Transformer architecture.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2209.06794",
+      "figure": "1",
+      "pdf_page": 4,
+      "paper_caption": "Figure 1: The PaLI main architecture",
+      "display_caption": "PaLI combines a scalable ViT with an encoder-decoder Transformer.",
+      "alt": "PaLI: A Jointly-Scaled Multilingual Language-Image Model architecture: PaLI combines a scalable ViT with an encoder-decoder Transformer.",
+      "file": "pali-2022-arch.png",
+      "extracted_caption": "Figure 1: The PaLI main architecture is simple and scalable. It uses an encoder-decoder Transformer model, with a large-capacity ViT component for image processing.",
+      "crop_pdf_points": [
+        100.0,
+        74.0,
+        353.0,
+        172.0
+      ],
+      "image_size": [
+        1181,
+        420
+      ],
+      "crop_override_pdf_points": [
+        100,
+        74,
+        353,
+        172
+      ]
+    },
+    {
+      "index": 150,
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "slug": "flamingo",
+      "source_url": "https://arxiv.org/pdf/2204.14198",
+      "selection_note": "The paper's canonical full architecture overview; preferable to Figure 4, which isolates only the gated cross-attention layer.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2204.14198",
+      "figure": "3",
+      "pdf_page": 4,
+      "paper_caption": "Figure 3: Flamingo architecture overview. Flamingo is a family of visual language models (VLMs)",
+      "display_caption": "Flamingo architecture for interleaved visual inputs and free-form text output.",
+      "alt": "Flamingo: a Visual Language Model for Few-Shot Learning architecture: Flamingo architecture for interleaved visual inputs and free-form text output.",
+      "file": "flamingo-2022-arch.png",
+      "extracted_caption": "Figure 3: Flamingo architecture overview. Flamingo is a family of visual language models (VLMs) that take as input visual data interleaved with text and produce free-form text as output.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        248.63
+      ],
+      "image_size": [
+        1800,
+        803
+      ]
+    },
+    {
+      "index": 151,
+      "title": "BLIP: Bootstrapping Language-Image Pre-training",
+      "slug": "blip",
+      "source_url": "https://arxiv.org/pdf/2201.12086",
+      "selection_note": "Canonical multimodal mixture-of-encoder-decoder architecture and objectives.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2201.12086",
+      "figure": "2",
+      "pdf_page": 2,
+      "paper_caption": "Figure 2. Pre-training model architecture and objectives of BLIP (same parameters have the same color). We propose multimodal mixture",
+      "display_caption": "BLIP multimodal mixture-of-encoder-decoder architecture and training objectives.",
+      "alt": "BLIP: Bootstrapping Language-Image Pre-training architecture: BLIP multimodal mixture-of-encoder-decoder architecture and training objectives.",
+      "file": "blip-2022-arch.png",
+      "extracted_caption": "Figure 2. Pre-training model architecture and objectives of BLIP (same parameters have the same color). We propose multimodal mixture of encoder-decoder, a uniﬁed vision-language model which can operate in one of the three functionalities: (1) Unimodal encoder is trained with an image-text contrastive (ITC) loss to align the vision and language representations. (2) Image-grounded text encoder uses additional cross-attention layers to model vision-language interactions, and is trained with a image-text matching (ITM) loss to distinguish between positive and negative image-text pairs. (3) Image-grounded text decoder replaces the bi-directional self-attention layers with causal self-attention layers, and shares the same cross-attention layers and feed forward networks as the encoder. The decoder is trained with a language modeling (LM) loss to generate captions given images.",
+      "crop_pdf_points": [
+        55.0,
+        58.0,
+        542.0,
+        255.0
+      ],
+      "image_size": [
+        1800,
+        728
+      ],
+      "crop_override_pdf_points": [
+        55,
+        58,
+        542,
+        255
+      ]
+    },
+    {
+      "index": 152,
+      "title": "GLIP: Grounded Language-Image Pre-training",
+      "slug": "glip",
+      "source_url": "https://arxiv.org/pdf/2112.03857",
+      "selection_note": "Canonical image and language encoders, deep fusion, and word-region alignment architecture.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2112.03857",
+      "figure": "2",
+      "pdf_page": 2,
+      "paper_caption": "Figure 2. A uniﬁed framework for detection and grounding. Unlike a classical object detection model",
+      "display_caption": "GLIP image and language encoders with deep fusion and word-region alignment.",
+      "alt": "GLIP: Grounded Language-Image Pre-training architecture: GLIP image and language encoders with deep fusion and word-region alignment.",
+      "file": "glip-2021-arch.png",
+      "extracted_caption": "Figure 2. A uniﬁed framework for detection and grounding. Unlike a classical object detection model which predicts a categorical class for each detected object, we reformulate detection as a grounding task by aligning each region/box to phrases in a text prompt. GLIP jointly trains an image encoder and a language encoder to predict the correct pairings of regions and words. We further add the cross-modality deep fusion to early fuse information from two modalities and to learn a language-aware visual representation.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        251.03
+      ],
+      "image_size": [
+        1800,
+        669
+      ]
+    },
+    {
+      "index": 153,
+      "title": "FROZEN: Multimodal Few-Shot Learning with Frozen Language Models",
+      "slug": "frozen",
+      "source_url": "https://arxiv.org/pdf/2106.13884",
+      "selection_note": "Best architecture and training diagram; Figure 3 is only the inference-time task interface.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2106.13884",
+      "figure": "2",
+      "pdf_page": 2,
+      "paper_caption": "Figure 2: Gradients through a frozen lan-",
+      "display_caption": "FROZEN trains a vision encoder through a frozen language model.",
+      "alt": "FROZEN: Multimodal Few-Shot Learning with Frozen Language Models architecture: FROZEN trains a vision encoder through a frozen language model.",
+      "file": "frozen-2021-arch.png",
+      "extracted_caption": "Figure 2: Gradients through a frozen lan- guage model’s self attention layers are used to train the vision encoder.",
+      "crop_pdf_points": [
+        338.0,
+        335.0,
+        512.0,
+        450.0
+      ],
+      "image_size": [
+        821,
+        575
+      ],
+      "crop_override_pdf_points": [
+        338,
+        335,
+        512,
+        450
+      ]
+    },
+    {
+      "index": 154,
+      "title": "CLIP: Contrastive Language-Image Pre-training",
+      "slug": "clip",
+      "source_url": "https://arxiv.org/pdf/2103.00020",
+      "selection_note": "Canonical dual-encoder contrastive training and zero-shot classifier overview.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2103.00020",
+      "figure": "1",
+      "pdf_page": 2,
+      "paper_caption": "Figure 1. Summary of our approach. While standard image models jointly train an image feature extractor and a linear classiﬁer to predict",
+      "display_caption": "CLIP dual-encoder contrastive training and zero-shot classification approach.",
+      "alt": "CLIP: Contrastive Language-Image Pre-training architecture: CLIP dual-encoder contrastive training and zero-shot classification approach.",
+      "file": "clip-2021-arch.png",
+      "extracted_caption": "Figure 1. Summary of our approach. While standard image models jointly train an image feature extractor and a linear classiﬁer to predict some label, CLIP jointly trains an image encoder and a text encoder to predict the correct pairings of a batch of (image, text) training examples. At test time the learned text encoder synthesizes a zero-shot linear classiﬁer by embedding the names or descriptions of the target dataset’s classes.",
+      "crop_pdf_points": [
+        52.0,
+        74.0,
+        548.0,
+        246.0
+      ],
+      "image_size": [
+        1800,
+        617
+      ],
+      "crop_override_pdf_points": [
+        52,
+        74,
+        548,
+        246
+      ]
+    },
+    {
+      "index": 155,
+      "title": "ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "slug": "vit",
+      "source_url": "https://arxiv.org/pdf/2010.11929",
+      "selection_note": "Canonical patch embedding, Transformer encoder, and classification-token architecture.",
+      "editorial_confidence": "high",
+      "status": "extracted",
+      "source_kind": "arxiv",
+      "source_image_url": null,
+      "arxiv_id": "2010.11929",
+      "figure": "1",
+      "pdf_page": 3,
+      "paper_caption": "Figure 1: Model overview. We split an image into ﬁxed-size patches, linearly embed each of them,",
+      "display_caption": "ViT patch embedding, Transformer encoder, and classification-token architecture.",
+      "alt": "ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale architecture: ViT patch embedding, Transformer encoder, and classification-token architecture.",
+      "file": "vit-2020-arch.png",
+      "extracted_caption": "Figure 1: Model overview. We split an image into ﬁxed-size patches, linearly embed each of them, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder. In order to perform classiﬁcation, we use the standard approach of adding an extra learnable “classiﬁcation token” to the sequence. The illustration of the Transformer encoder was inspired by Vaswani et al. (2017).",
+      "crop_pdf_points": [
+        135.0,
+        75.0,
+        478.0,
+        255.0
+      ],
+      "image_size": [
+        1642,
+        854
+      ],
+      "crop_override_pdf_points": [
+        135,
+        75,
+        478,
+        255
+      ]
     }
   ]
 }

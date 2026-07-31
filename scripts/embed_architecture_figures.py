@@ -31,16 +31,26 @@ def figure_block(record: dict[str, object]) -> str:
     alt = html.escape(str(record["alt"]), quote=True)
     caption = html.escape(str(record["display_caption"]))
     image = html.escape(f"assets/architectures/{record['file']}", quote=True)
-    figure = html.escape(str(record["figure"]))
-    page = record["pdf_page"]
+    source_kind = str(record.get("source_kind", "arxiv"))
+    if source_kind == "official-web":
+        credit = (
+            f"<b>Official architecture diagram.</b> {caption} "
+            f'<a href="{source}">Primary source</a>. '
+        )
+    else:
+        figure = html.escape(str(record["figure"]))
+        page = record["pdf_page"]
+        credit = (
+            f"<b>Figure {figure}.</b> {caption} "
+            f'<a href="{source}">Source paper</a>, PDF p. {page}. '
+        )
     return (
         f"<!-- {marker} -->\n"
         '<p align="center">\n'
         f'  <img src="{image}" alt="{alt}" width="820">\n'
         "</p>\n"
         '<p align="center"><sub>'
-        f"<b>Figure {figure}.</b> {caption} "
-        f'<a href="{source}">Source paper</a>, PDF p. {page}. '
+        f"{credit}"
         '<a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.'
         "</sub></p>\n"
         f"<!-- /{marker} -->\n\n"
@@ -67,7 +77,9 @@ def update_readme(records: list[dict[str, object]]) -> None:
     ]
     titles = [match.group(1) for match in matches]
     if len(titles) != len(set(titles)):
-        raise RuntimeError("duplicate architecture titles prevent stable figure matching")
+        raise RuntimeError(
+            "duplicate architecture titles prevent stable figure matching"
+        )
     positions = {title: position for position, title in enumerate(titles)}
 
     for record in records:
@@ -82,7 +94,22 @@ def update_readme(records: list[dict[str, object]]) -> None:
             re.S,
         )
         section = marker_pattern.sub("", section)
-        details = re.search(r"(?m)^<details>\s*$", section)
+        # Legacy panels used mutable user-attachment images without durable
+        # figure provenance. Remove that entire centered block before adding
+        # the audited local asset (or an explicit no-figure decision).
+        section = re.sub(
+            r'<p\s+align="center">\s*<img\s+src="https?://[^>]*?/?>\s*(?:</p>\s*)?',
+            "",
+            section,
+            flags=re.I,
+        )
+        section = re.sub(
+            r'<p\s+align="center">\s*<img\b.*?</p>\s*',
+            "",
+            section,
+            flags=re.I | re.S,
+        )
+        details = re.search(r"(?m)^<details\b[^>]*>", section)
         if not details:
             raise RuntimeError(f"missing details panel for entry {record['index']}")
         before = section[: details.start()].rstrip("\n")
@@ -106,8 +133,13 @@ def write_credits(records: list[dict[str, object]]) -> None:
         if record["status"] != "extracted":
             continue
         title = str(record["title"]).replace("|", "\\|")
-        source = f"[paper]({record['source_url']})"
-        figure = f"Fig. {record['figure']}, PDF p. {record['pdf_page']}"
+        source_kind = str(record.get("source_kind", "arxiv"))
+        source = f"[primary source]({record['source_url']})"
+        figure = (
+            "Official architecture diagram"
+            if source_kind == "official-web"
+            else f"Fig. {record['figure']}, PDF p. {record['pdf_page']}"
+        )
         local = f"[{record['file']}]({record['file']})"
         lines.append(f"| {title} | {source} | {figure} | {local} |")
     lines.append("")
@@ -145,6 +177,10 @@ def verify_readme(records: list[dict[str, object]]) -> None:
             raise RuntimeError(f"figure markers are not attached to {title}")
         if text.count(start_marker) != 1 or text.count(end_marker) != 1:
             raise RuntimeError(f"figure markers are duplicated for {title}")
+        if record["status"] == "extracted":
+            asset = ROOT / "assets" / "architectures" / str(record["file"])
+            if not asset.exists() or asset.stat().st_size < 10_000:
+                raise RuntimeError(f"missing or undersized architecture asset: {asset}")
 
 
 def main() -> int:
@@ -163,7 +199,9 @@ def main() -> int:
     update_readme(records)
     write_credits(records)
     print(f"embedded {sum(r['status'] == 'extracted' for r in records)} figures")
-    print(f"documented {sum(r['status'] == 'no-published-figure' for r in records)} no-figure sources")
+    print(
+        f"documented {sum(r['status'] == 'no-published-figure' for r in records)} no-figure sources"
+    )
     return 0
 
 

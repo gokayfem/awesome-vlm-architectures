@@ -7,14 +7,17 @@ import argparse
 import json
 import math
 import re
+import time
+import urllib.request
 from pathlib import Path
 
 import fitz
-from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "assets" / "architectures" / "manifest.json"
+CROP_OVERRIDES = ROOT / "assets" / "architectures" / "crop_overrides.json"
 PDF_DIR = ROOT / "tmp" / "pdfs"
 OUTPUT_DIR = ROOT / "assets" / "architectures"
 CONTACT_DIR = PDF_DIR / "contacts"
@@ -22,15 +25,38 @@ RENDER_DPI = 360
 MAX_WIDTH = 1800
 
 
+def ensure_pdf(arxiv_id: str) -> Path:
+    """Return a cached primary-source PDF, downloading it when necessary."""
+    PDF_DIR.mkdir(parents=True, exist_ok=True)
+    pdf = PDF_DIR / f"{arxiv_id}.pdf"
+    if pdf.exists() and pdf.stat().st_size >= 50_000:
+        return pdf
+    temporary = pdf.with_suffix(".pdf.part")
+    request = urllib.request.Request(
+        f"https://arxiv.org/pdf/{arxiv_id}",
+        headers={"User-Agent": "awesome-vlm-architectures/figure-extractor"},
+    )
+    with urllib.request.urlopen(request, timeout=90) as response:
+        temporary.write_bytes(response.read())
+    temporary.replace(pdf)
+    time.sleep(0.15)
+    return pdf
+
+
 def normalize_figure(value: str) -> str:
-    return re.sub(r"[^0-9a-z]", "", value.lower().replace("figure", "").replace("fig", ""))
+    return re.sub(
+        r"[^0-9a-z]", "", value.lower().replace("figure", "").replace("fig", "")
+    )
 
 
 def find_caption_block(page: fitz.Page, figure: str) -> tuple[fitz.Rect, str]:
     wanted = normalize_figure(figure)
     patterns = [
         re.compile(rf"(?:Figure|Fig\.)\s*{re.escape(wanted)}\b", re.I),
-        re.compile(rf"(?:Figure|Fig\.)\s*{re.escape(wanted.rstrip('abcdefghijklmnopqrstuvwxyz'))}\b", re.I),
+        re.compile(
+            rf"(?:Figure|Fig\.)\s*{re.escape(wanted.rstrip('abcdefghijklmnopqrstuvwxyz'))}\b",
+            re.I,
+        ),
     ]
     matches: list[tuple[fitz.Rect, str]] = []
     for block in page.get_text("blocks", sort=True):
@@ -38,12 +64,21 @@ def find_caption_block(page: fitz.Page, figure: str) -> tuple[fitz.Rect, str]:
         if any(pattern.search(text) for pattern in patterns):
             matches.append((fitz.Rect(block[:4]), text))
     if not matches:
-        raise ValueError(f"caption for {figure} not found on PDF page {page.number + 1}")
-    matches.sort(key=lambda item: (0 if item[1].lower().lstrip().startswith(("figure", "fig.")) else 1, item[0].y0))
+        raise ValueError(
+            f"caption for {figure} not found on PDF page {page.number + 1}"
+        )
+    matches.sort(
+        key=lambda item: (
+            0 if item[1].lower().lstrip().startswith(("figure", "fig.")) else 1,
+            item[0].y0,
+        )
+    )
     return matches[0]
 
 
-def prose_block_before(page: fitz.Page, caption: fitz.Rect, x_clip: fitz.Rect) -> fitz.Rect | None:
+def prose_block_before(
+    page: fitz.Page, caption: fitz.Rect, x_clip: fitz.Rect
+) -> fitz.Rect | None:
     candidates = []
     for block in page.get_text("blocks", sort=True):
         rect = fitz.Rect(block[:4])
@@ -98,12 +133,12 @@ def extract(record: dict[str, object]) -> Path:
     arxiv_id = str(record["arxiv_id"])
     page_number = int(record["pdf_page"])
     figure = str(record["figure"])
-    pdf = PDF_DIR / f"{arxiv_id}.pdf"
-    if not pdf.exists() or pdf.stat().st_size < 50_000:
-        raise FileNotFoundError(pdf)
+    pdf = ensure_pdf(arxiv_id)
     document = fitz.open(pdf)
     if not 1 <= page_number <= len(document):
-        raise ValueError(f"invalid page {page_number} for {arxiv_id} ({len(document)} pages)")
+        raise ValueError(
+            f"invalid page {page_number} for {arxiv_id} ({len(document)} pages)"
+        )
     page = document[page_number - 1]
     caption_rect, caption_text = find_caption_block(page, figure)
     override = record.get("crop_override_pdf_points")
@@ -139,10 +174,22 @@ def make_contact_sheet(records: list[dict[str, object]], group: int) -> Path:
         image = Image.open(OUTPUT_DIR / str(record["file"])).convert("RGB")
         image.thumbnail((thumb_width - 24, cell_height - 58), Image.Resampling.LANCZOS)
         x = (position % columns) * thumb_width + (thumb_width - image.width) // 2
-        y = (position // columns) * cell_height + 38 + (cell_height - 48 - image.height) // 2
+        y = (
+            (position // columns) * cell_height
+            + 38
+            + (cell_height - 48 - image.height) // 2
+        )
         sheet.paste(image, (x, y))
         label = f"{record['index']:02} {record['slug']} - Fig {record['figure']} p{record['pdf_page']}"
-        draw.text(((position % columns) * thumb_width + 10, (position // columns) * cell_height + 9), label, fill="black", font=font)
+        draw.text(
+            (
+                (position % columns) * thumb_width + 10,
+                (position // columns) * cell_height + 9,
+            ),
+            label,
+            fill="black",
+            font=font,
+        )
     CONTACT_DIR.mkdir(parents=True, exist_ok=True)
     destination = CONTACT_DIR / f"contact-{group:02}.jpg"
     sheet.save(destination, quality=88, optimize=True)
@@ -151,12 +198,35 @@ def make_contact_sheet(records: list[dict[str, object]], group: int) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--contacts", action="store_true", help="also create 12-up QA contact sheets")
+    parser.add_argument(
+        "--contacts", action="store_true", help="also create 12-up QA contact sheets"
+    )
+    parser.add_argument(
+        "--new-only",
+        action="store_true",
+        help="extract only records with selected status, leaving reviewed assets untouched",
+    )
+    parser.add_argument(
+        "--indices",
+        nargs="+",
+        type=int,
+        help="extract only these stable manifest indices, regardless of current status",
+    )
     args = parser.parse_args()
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    overrides = json.loads(CROP_OVERRIDES.read_text(encoding="utf-8"))[
+        "pdf_points_by_manifest_index"
+    ]
+    for record in data["figures"]:
+        override = overrides.get(str(record["index"]))
+        if override:
+            record["crop_override_pdf_points"] = override
     failures = []
     for record in data["figures"]:
-        if record.get("status") not in {"selected", "extracted"}:
+        allowed_statuses = {"selected"} if args.new_only else {"selected", "extracted"}
+        if args.indices and int(record["index"]) not in args.indices:
+            continue
+        if record.get("status") not in allowed_statuses:
             continue
         try:
             destination = extract(record)
@@ -167,7 +237,9 @@ def main() -> int:
             record["error"] = str(error)
             failures.append((record["index"], str(error)))
             print(f"[{record['index']:02}] FAILED: {error}")
-    MANIFEST.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    MANIFEST.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     if args.contacts:
         count = sum(record.get("status") == "extracted" for record in data["figures"])
         for group in range(1, math.ceil(count / 12) + 1):

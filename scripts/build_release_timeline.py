@@ -19,14 +19,26 @@ README = ROOT / "README.md"
 LEGACY_RELEASES_BY_MIGRATION_ID: dict[int, tuple[str, str, str]] = {
     59: ("2023-04-17", "arXiv v1", "https://arxiv.org/abs/2304.08485"),
     60: ("2023-10-05", "arXiv v1", "https://arxiv.org/abs/2310.03744"),
-    61: ("2024-01-30", "official release", "https://llava-vl.github.io/blog/2024-01-30-llava-next/"),
-    62: ("2024-05-14", "official release", "https://developers.googleblog.com/en/gemma-family-and-toolkit-expansion-io-2024/"),
+    61: (
+        "2024-01-30",
+        "official release",
+        "https://llava-vl.github.io/blog/2024-01-30-llava-next/",
+    ),
+    62: (
+        "2024-05-14",
+        "official release",
+        "https://developers.googleblog.com/en/gemma-family-and-toolkit-expansion-io-2024/",
+    ),
     63: ("2024-12-04", "arXiv v1", "https://arxiv.org/abs/2412.03555"),
     64: ("2024-11-21", "arXiv v1", "https://arxiv.org/abs/2411.14402"),
     65: ("2024-12-13", "arXiv v1", "https://arxiv.org/abs/2412.10360"),
     66: ("2024-10-08", "arXiv v1", "https://arxiv.org/abs/2410.05993"),
     67: ("2024-06-17", "arXiv v1", "https://arxiv.org/abs/2406.11832"),
-    68: ("2025-02-08", "official release", "https://huggingface.co/BAAI/EVE-7B-HD-v2.0"),
+    68: (
+        "2025-02-08",
+        "official release",
+        "https://huggingface.co/BAAI/EVE-7B-HD-v2.0",
+    ),
     69: ("2024-10-17", "arXiv v1", "https://arxiv.org/abs/2410.13848"),
     70: ("2024-11-15", "arXiv v1", "https://arxiv.org/abs/2411.10440"),
     71: ("2024-11-06", "official release", "https://github.com/microsoft/LLM2CLIP"),
@@ -34,32 +46,64 @@ LEGACY_RELEASES_BY_MIGRATION_ID: dict[int, tuple[str, str, str]] = {
     73: ("2025-01-14", "arXiv v1", "https://arxiv.org/abs/2501.08313"),
     74: ("2024-09-17", "arXiv v1", "https://arxiv.org/abs/2409.11402"),
     75: ("2024-12-16", "arXiv v1", "https://arxiv.org/abs/2412.11475"),
-    76: ("2024-09-11", "official release", "https://docs.mistral.ai/models/model-cards/pixtral-12b-24-09"),
+    76: (
+        "2024-09-11",
+        "official release",
+        "https://docs.mistral.ai/models/model-cards/pixtral-12b-24-09",
+    ),
     77: ("2025-01-07", "arXiv v1", "https://arxiv.org/abs/2501.04001"),
     78: ("2024-11-05", "official release", "https://github.com/bytedance/tarsier"),
-    79: ("2025-01-20", "official release", "https://huggingface.co/bytedance-research/UI-TARS-7B-SFT"),
+    79: (
+        "2025-01-20",
+        "official release",
+        "https://huggingface.co/bytedance-research/UI-TARS-7B-SFT",
+    ),
     80: ("2024-12-31", "arXiv v1", "https://arxiv.org/abs/2501.00574"),
-    81: ("2025-01-21", "official release", "https://github.com/DAMO-NLP-SG/VideoLLaMA3"),
-    82: ("2024-09-25", "official release", "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/"),
+    81: (
+        "2025-01-21",
+        "official release",
+        "https://github.com/DAMO-NLP-SG/VideoLLaMA3",
+    ),
+    82: (
+        "2024-09-25",
+        "official release",
+        "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/",
+    ),
     83: ("2024-11-26", "official release", "https://huggingface.co/blog/smolvlm"),
     84: ("2024-04-15", "official release", "https://huggingface.co/blog/idefics2"),
     85: ("2024-08-22", "arXiv v1", "https://arxiv.org/abs/2408.12637"),
     86: ("2024-01-29", "arXiv v1", "https://arxiv.org/abs/2401.16420"),
     87: ("2024-04-09", "arXiv v1", "https://arxiv.org/abs/2404.06512"),
     88: ("2024-07-03", "arXiv v1", "https://arxiv.org/abs/2407.03320"),
-    89: ("2024-12-05", "official release", "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/"),
+    89: (
+        "2024-12-05",
+        "official release",
+        "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+    ),
     90: ("2024-03-08", "arXiv v1", "https://arxiv.org/abs/2403.05525"),
     91: ("2024-12-13", "arXiv v1", "https://arxiv.org/abs/2412.10302"),
     92: ("2024-05-02", "arXiv v1", "https://arxiv.org/abs/2405.01483"),
     93: ("2023-08-24", "arXiv v1", "https://arxiv.org/abs/2308.12966"),
     94: ("2024-08-29", "official release", "https://qwenlm.github.io/blog/qwen2-vl/"),
     95: ("2025-01-26", "official release", "https://qwenlm.github.io/blog/qwen2.5-vl/"),
-    96: ("2024-01-20", "official release", "https://huggingface.co/vikhyatk/moondream1"),
-    97: ("2024-04-19", "official release", "https://huggingface.co/vikhyatk/moondream-next"),
+    96: (
+        "2024-01-20",
+        "official release",
+        "https://huggingface.co/vikhyatk/moondream1",
+    ),
+    97: (
+        "2024-04-19",
+        "official release",
+        "https://huggingface.co/vikhyatk/moondream-next",
+    ),
     98: ("2024-02-08", "arXiv v1", "https://arxiv.org/abs/2402.05935"),
     99: ("2022-01-28", "arXiv v1", "https://arxiv.org/abs/2201.12086"),
     100: ("2023-01-30", "arXiv v1", "https://arxiv.org/abs/2301.12597"),
-    101: ("2024-05-06", "official release", "https://huggingface.co/Salesforce/xgen-mm-phi3-mini-instruct-r-v1"),
+    101: (
+        "2024-05-06",
+        "official release",
+        "https://huggingface.co/Salesforce/xgen-mm-phi3-mini-instruct-r-v1",
+    ),
     102: ("2023-05-11", "arXiv v1", "https://arxiv.org/abs/2305.06500"),
     103: ("2023-02-27", "arXiv v1", "https://arxiv.org/abs/2302.14045"),
     104: ("2023-06-26", "arXiv v1", "https://arxiv.org/abs/2306.14824"),
@@ -71,8 +115,16 @@ LEGACY_RELEASES_BY_MIGRATION_ID: dict[int, tuple[str, str, str]] = {
     110: ("2024-07-23", "arXiv v1", "https://arxiv.org/abs/2407.16198"),
     111: ("2024-07-24", "arXiv v1", "https://arxiv.org/abs/2407.17453"),
     112: ("2024-01-30", "official release", "https://huggingface.co/openbmb/MiniCPM-V"),
-    113: ("2025-01-12", "official release", "https://huggingface.co/openbmb/MiniCPM-o-2_6"),
-    114: ("2024-08-05", "official release", "https://llava-vl.github.io/blog/2024-08-05-llava-onevision/"),
+    113: (
+        "2025-01-12",
+        "official release",
+        "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+    ),
+    114: (
+        "2024-08-05",
+        "official release",
+        "https://llava-vl.github.io/blog/2024-08-05-llava-onevision/",
+    ),
     115: ("2024-08-09", "arXiv v1", "https://arxiv.org/abs/2408.05211"),
     116: ("2024-08-28", "arXiv v1", "https://arxiv.org/abs/2408.15998"),
     117: ("2025-01-10", "official release", "https://huggingface.co/nvidia/Eagle2-9B"),
@@ -80,27 +132,47 @@ LEGACY_RELEASES_BY_MIGRATION_ID: dict[int, tuple[str, str, str]] = {
     119: ("2022-12-21", "arXiv v1", "https://arxiv.org/abs/2212.10773"),
     120: ("2024-01-30", "arXiv v1", "https://arxiv.org/abs/2401.17221"),
     121: ("2023-05-24", "arXiv v1", "https://arxiv.org/abs/2305.15023"),
-    122: ("2023-11-28", "official release", "https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha"),
+    122: (
+        "2023-11-28",
+        "official release",
+        "https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha",
+    ),
     123: ("2023-12-28", "arXiv v1", "https://arxiv.org/abs/2312.16862"),
     124: ("2023-11-06", "arXiv v1", "https://arxiv.org/abs/2311.03354"),
     125: ("2023-11-06", "arXiv v1", "https://arxiv.org/abs/2311.03356"),
     126: ("2024-01-01", "arXiv v1", "https://arxiv.org/abs/2401.00849"),
-    127: ("2024-01-05", "official release", "https://huggingface.co/fireworks-ai/FireLLaVA-13b"),
+    127: (
+        "2024-01-05",
+        "official release",
+        "https://huggingface.co/fireworks-ai/FireLLaVA-13b",
+    ),
     128: ("2023-11-09", "arXiv v1", "https://arxiv.org/abs/2311.05348"),
     129: ("2024-01-29", "arXiv v1", "https://arxiv.org/abs/2401.15947"),
     130: ("2023-08-19", "arXiv v1", "https://arxiv.org/abs/2308.09936"),
     131: ("2023-12-28", "arXiv v1", "https://arxiv.org/abs/2312.16886"),
     132: ("2021-06-25", "arXiv v1", "https://arxiv.org/abs/2106.13884"),
-    133: ("2022-04-28", "official release", "https://deepmind.google/blog/tackling-multiple-tasks-with-a-single-visual-language-model/"),
+    133: (
+        "2022-04-28",
+        "official release",
+        "https://deepmind.google/blog/tackling-multiple-tasks-with-a-single-visual-language-model/",
+    ),
     134: ("2023-03-14", "official release", "https://doi.org/10.5281/zenodo.7733589"),
     135: ("2023-08-22", "official release", "https://huggingface.co/blog/idefics"),
     136: ("2022-09-14", "arXiv v1", "https://arxiv.org/abs/2209.06794"),
     137: ("2023-10-13", "arXiv v1", "https://arxiv.org/abs/2310.09199"),
     138: ("2023-03-06", "arXiv v1", "https://arxiv.org/abs/2303.03378"),
-    139: ("2023-04-16", "official release", "https://github.com/Vision-CAIR/MiniGPT-4/commit/f1a33af2274217f6d2b0bd60639a7e0e965392f0"),
+    139: (
+        "2023-04-16",
+        "official release",
+        "https://github.com/Vision-CAIR/MiniGPT-4/commit/f1a33af2274217f6d2b0bd60639a7e0e965392f0",
+    ),
     140: ("2023-10-13", "official release", "https://github.com/Vision-CAIR/MiniGPT-4"),
     141: ("2023-11-09", "arXiv v1", "https://arxiv.org/abs/2311.05437"),
-    142: ("2023-10-12", "official release", "https://huggingface.co/SkunkworksAI/BakLLaVA-1"),
+    142: (
+        "2023-10-12",
+        "official release",
+        "https://huggingface.co/SkunkworksAI/BakLLaVA-1",
+    ),
     143: ("2023-10-05", "official release", "https://github.com/THUDM/CogVLM"),
     144: ("2024-05-20", "official release", "https://github.com/THUDM/CogVLM2"),
     145: ("2023-10-11", "arXiv v1", "https://arxiv.org/abs/2310.07704"),
@@ -117,30 +189,108 @@ LEGACY_RELEASES_BY_MIGRATION_ID: dict[int, tuple[str, str, str]] = {
 }
 
 LEGACY_LABELS_BY_MIGRATION_ID = [
-    "LLaVA", "LLaVA 1.5", "LLaVA 1.6", "PaliGemma", "PaliGemma 2", "AIMv2",
-    "Apollo", "ARIA", "EVE", "EVEv2", "Janus and Janus-Pro", "LLaVA-CoT",
-    "LLM2CLIP", "Maya", "MiniMax-01", "NVLM", "OmniVLM", "Pixtral 12B", "Sa2VA",
-    "Tarsier2", "UI-TARS", "VideoChat-Flash", "VideoLLaMA 3", "Llama 3.2-Vision",
-    "SmolVLM", "Idefics2", "Idefics3-8B", "InternLM-XComposer2",
-    "InternLM-XComposer2-4KHD", "InternLM-XComposer-2.5", "InternVL 2.5", "DeepSeek-VL",
-    "DeepSeek-VL2", "MANTIS", "Qwen-VL", "Qwen2-VL", "Qwen2.5-VL",
-    "moondream1 and moondream2", "Moondream-next", "SPHINX-X", "BLIP", "BLIP-2",
-    "xGen-MM (BLIP-3)", "InstructBLIP", "KOSMOS-1", "KOSMOS-2", "ConvLLaVA",
-    "Parrot", "OMG-LLaVA", "EVLM", "SlowFast-LLaVA", "INF-LLaVA", "VILA²",
-    "MiniCPM-V", "MiniCPM-o-2.6", "LLaVA-OneVision", "VITA", "EAGLE", "Eagle 2",
-    "Florence-2", "MULTIINSTRUCT", "MouSi", "LaVIN", "Nous-Hermes-2-Vision - Mistral 7B",
-    "TinyGPT-V", "CoVLM", "GLaMM", "COSMO", "FireLLaVA", "u-LLaVA", "MoE-LLaVA",
-    "BLIVA", "MobileVLM", "FROZEN", "Flamingo", "OpenFlamingo", "IDEFICS", "PaLI",
-    "PaLI-3 Vision Language Models", "PaLM-E", "MiniGPT-4", "MiniGPT-v2", "LLaVA-Plus",
-    "BakLLaVA", "CogVLM", "CogVLM2", "Ferret", "Fuyu-8B", "OtterHD", "SPHINX", "CLIP",
-    "MetaCLIP", "Alpha-CLIP", "GLIP", "ImageBind", "SigLIP", "ViT",
+    "LLaVA",
+    "LLaVA 1.5",
+    "LLaVA 1.6",
+    "PaliGemma",
+    "PaliGemma 2",
+    "AIMv2",
+    "Apollo",
+    "ARIA",
+    "EVE",
+    "EVEv2",
+    "Janus and Janus-Pro",
+    "LLaVA-CoT",
+    "LLM2CLIP",
+    "Maya",
+    "MiniMax-01",
+    "NVLM",
+    "OmniVLM",
+    "Pixtral 12B",
+    "Sa2VA",
+    "Tarsier2",
+    "UI-TARS",
+    "VideoChat-Flash",
+    "VideoLLaMA 3",
+    "Llama 3.2-Vision",
+    "SmolVLM",
+    "Idefics2",
+    "Idefics3-8B",
+    "InternLM-XComposer2",
+    "InternLM-XComposer2-4KHD",
+    "InternLM-XComposer-2.5",
+    "InternVL 2.5",
+    "DeepSeek-VL",
+    "DeepSeek-VL2",
+    "MANTIS",
+    "Qwen-VL",
+    "Qwen2-VL",
+    "Qwen2.5-VL",
+    "moondream1 and moondream2",
+    "Moondream-next",
+    "SPHINX-X",
+    "BLIP",
+    "BLIP-2",
+    "xGen-MM (BLIP-3)",
+    "InstructBLIP",
+    "KOSMOS-1",
+    "KOSMOS-2",
+    "ConvLLaVA",
+    "Parrot",
+    "OMG-LLaVA",
+    "EVLM",
+    "SlowFast-LLaVA",
+    "INF-LLaVA",
+    "VILA²",
+    "MiniCPM-V",
+    "MiniCPM-o-2.6",
+    "LLaVA-OneVision",
+    "VITA",
+    "EAGLE",
+    "Eagle 2",
+    "Florence-2",
+    "MULTIINSTRUCT",
+    "MouSi",
+    "LaVIN",
+    "Nous-Hermes-2-Vision - Mistral 7B",
+    "TinyGPT-V",
+    "CoVLM",
+    "GLaMM",
+    "COSMO",
+    "FireLLaVA",
+    "u-LLaVA",
+    "MoE-LLaVA",
+    "BLIVA",
+    "MobileVLM",
+    "FROZEN",
+    "Flamingo",
+    "OpenFlamingo",
+    "IDEFICS",
+    "PaLI",
+    "PaLI-3 Vision Language Models",
+    "PaLM-E",
+    "MiniGPT-4",
+    "MiniGPT-v2",
+    "LLaVA-Plus",
+    "BakLLaVA",
+    "CogVLM",
+    "CogVLM2",
+    "Ferret",
+    "Fuyu-8B",
+    "OtterHD",
+    "SPHINX",
+    "CLIP",
+    "MetaCLIP",
+    "Alpha-CLIP",
+    "GLIP",
+    "ImageBind",
+    "SigLIP",
+    "ViT",
 ]
 
 AUDITED_RELEASES_BY_LABEL = {
     label: LEGACY_RELEASES_BY_MIGRATION_ID[index]
-    for index, label in zip(
-        range(59, 156), LEGACY_LABELS_BY_MIGRATION_ID, strict=True
-    )
+    for index, label in zip(range(59, 156), LEGACY_LABELS_BY_MIGRATION_ID, strict=True)
 }
 
 # Preserve the hand-edited concise descriptions from the original timeline.
@@ -226,12 +376,15 @@ def parse_sections(text: str) -> list[dict[str, object]]:
     matches = list(re.finditer(r"(?m)^### \*\*(.+?)\*\*\s*$", body))
     sections: list[dict[str, object]] = []
     for position, match in enumerate(matches):
-        section_end = matches[position + 1].start() if position + 1 < len(matches) else len(body)
+        section_end = (
+            matches[position + 1].start() if position + 1 < len(matches) else len(body)
+        )
         raw = body[match.start() : section_end]
         paragraphs = [part.strip() for part in re.split(r"\n\s*\n", raw)]
         contribution = next(
             (
-                part for part in paragraphs[1:]
+                part
+                for part in paragraphs[1:]
                 if part and not part.startswith(("[!", "<", "<!--", "**Released:**"))
             ),
             None,
@@ -245,16 +398,18 @@ def parse_sections(text: str) -> list[dict[str, object]]:
         elif ":" in heading:
             contribution = heading.split(":", 1)[1].strip()
         released = re.search(r"(?m)^\*\*Released:\*\* (\d{4}-\d{2}-\d{2})\s*$", raw)
-        sections.append({
-            "index": position + 1,
-            "heading": heading,
-            "label": label,
-            "contribution": clean_inline(contribution),
-            "released": released.group(1) if released else None,
-            "start": start + match.start(),
-            "end": start + section_end,
-            "raw": raw,
-        })
+        sections.append(
+            {
+                "index": position + 1,
+                "heading": heading,
+                "label": label,
+                "contribution": clean_inline(contribution),
+                "released": released.group(1) if released else None,
+                "start": start + match.start(),
+                "end": start + section_end,
+                "raw": raw,
+            }
+        )
     return sections
 
 
@@ -273,7 +428,9 @@ def release_date(section: dict[str, object]) -> str:
     )
 
 
-def chronological_sections(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+def chronological_sections(
+    sections: list[dict[str, object]],
+) -> list[dict[str, object]]:
     """Return newest-first sections while preserving same-day editorial order."""
     return sorted(sections, key=release_date, reverse=True)
 
@@ -315,7 +472,14 @@ def timeline_block(sections: list[dict[str, object]]) -> str:
     for section in sections:
         value = release_date(section)
         date.fromisoformat(value)
-        rows.append((value, int(section["index"]), str(section["label"]), str(section["contribution"])))
+        rows.append(
+            (
+                value,
+                int(section["index"]),
+                str(section["label"]),
+                str(section["contribution"]),
+            )
+        )
     lines = [
         "## Release Timeline",
         "",
@@ -329,15 +493,20 @@ def timeline_block(sections: list[dict[str, object]]) -> str:
         "| Date | Architecture | Distinctive contribution |",
         "| --- | --- | --- |",
     ]
-    lines.extend(f"| {released} | {label} | {contribution} |" for released, _, label, contribution in rows)
-    lines.extend([
-        "",
-        "</details>",
-        "",
-        "<!--lint enable table-pipe-alignment table-cell-padding-->",
-        "",
-        "",
-    ])
+    lines.extend(
+        f"| {released} | {label} | {contribution} |"
+        for released, _, label, contribution in rows
+    )
+    lines.extend(
+        [
+            "",
+            "</details>",
+            "",
+            "<!--lint enable table-pipe-alignment table-cell-padding-->",
+            "",
+            "",
+        ]
+    )
     return "\n".join(lines)
 
 
@@ -363,7 +532,9 @@ def validate(text: str) -> None:
     if len(expected_links) != len(set(expected_links)):
         raise ValueError("duplicate GitHub heading anchors in architecture panels")
     if model_links != expected_links:
-        raise ValueError("model index and architecture panels are not in identical order")
+        raise ValueError(
+            "model index and architecture panels are not in identical order"
+        )
 
     start = text.index("## Release Timeline")
     end = text.index("## Architectures", start)
@@ -383,8 +554,7 @@ def validate(text: str) -> None:
         missing = sorted(set(labels) - set(table_labels))
         extra = sorted(set(table_labels) - set(labels))
         raise ValueError(
-            "timeline/architecture order mismatch; "
-            f"missing={missing}, extra={extra}"
+            "timeline/architecture order mismatch; " f"missing={missing}, extra={extra}"
         )
     expected_summary = (
         f"<summary>🗓️ <i>Release Timeline ({len(sections)} architectures, newest first)"
@@ -411,7 +581,11 @@ def build(original: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--check", action="store_true", help="fail if README is not generated consistently")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="fail if README is not generated consistently",
+    )
     args = parser.parse_args()
     raw = README.read_bytes().decode("utf-8")
     original = raw.replace("\r\n", "\n")

@@ -27,6 +27,11 @@ jobs:
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.13"
+      - name: Python lint
+        run: |
+          python -m pip install ruff==0.3.2
+          ruff check scripts
+          ruff format --check scripts
       - name: Awesome lint
         run: npx --yes awesome-lint@2.3.0 README.md
       - name: Markdown lint

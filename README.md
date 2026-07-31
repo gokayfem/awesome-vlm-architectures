@@ -1370,9 +1370,12 @@ EVEv2 represents a significant advancement in encoder-free vision-language model
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/BAAI/EVE-7B-HD-v2.0)<br>
 Haiwen Diao, Xiaotong Li, Yufeng Cui, Yueze Wang, Haoge Deng, Ting Pan, Wenxuan Wang, Huchuan Lu, Xinlong Wang
 
+<!-- architecture-figure:59 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/23a33fe6-d4c5-4a9d-b45f-f5612f7848a5" width="600" alt="Architecture diagram for EVEv2: Improved Baselines for Encoder-Free Vision-Language Models" />
+  <img src="assets/architectures/evev2-2025-arch.png" alt="EVEv2: Improved Baselines for Encoder-Free Vision-Language Models architecture: EVEv2.0 architecture: lossless patch embeddings and text tokens enter a unified decoder-only VLM whose attention, feed-forward, and normalization layers use modality-specific weights." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> EVEv2.0 architecture: lossless patch embeddings and text tokens enter a unified decoder-only VLM whose attention, feed-forward, and normalization layers use modality-specific weights. <a href="https://arxiv.org/abs/2502.06788">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:59 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1389,9 +1392,12 @@ Qwen2.5-VL represents a significant advancement in the Qwen series of vision-lan
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)<br>
 Qwen Team
 
+<!-- architecture-figure:60 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/59f0878d-42c1-4013-af78-406b2f4763fe" width=600 alt="Architecture diagram for Qwen2.5-VL: Enhanced Vision-Language Capabilities in the Qwen Series" />
+  <img src="assets/architectures/qwen2-5-vl-2025-arch.png" alt="Qwen2.5-VL: Enhanced Vision-Language Capabilities in the Qwen Series architecture: Qwen2.5-VL framework: a vision encoder processes native-resolution images and dynamic-FPS video into variable-length tokens for a Qwen2.5 language-model decoder with multimodal rotary position encoding." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> Qwen2.5-VL framework: a vision encoder processes native-resolution images and dynamic-FPS video into variable-length tokens for a Qwen2.5 language-model decoder with multimodal rotary position encoding. <a href="https://arxiv.org/abs/2502.13923">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:60 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1408,9 +1414,12 @@ VideoLLaMA3 is a vision-centric multimodal foundation model designed for both im
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2501.13106)<br>
 Boqiang Zhang, Kehan Li, Zesen Cheng, Zhiqiang Hu, Yuqian Yuan, Guanzheng Chen, Sicong Leng, Yuming Jiang, Hang Zhang, Xin Li, Peng Jin, Wenqi Zhang, Fan Wang, Lidong Bing, Deli Zhao
 
+<!-- architecture-figure:61 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/350a1228-c14e-45ed-b59f-e99608ee9a7d" width=600 alt="Architecture diagram for VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding" />
+  <img src="assets/architectures/videollama-3-2025-arch.png" alt="VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding architecture: VideoLLaMA 3 pipeline with any-resolution vision tokenization and a differential frame pruner that compresses redundant video tokens before language-model processing." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> VideoLLaMA 3 pipeline with any-resolution vision tokenization and a differential frame pruner that compresses redundant video tokens before language-model processing. <a href="https://arxiv.org/abs/2501.13106">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:61 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1425,9 +1434,12 @@ UI-TARS is a native GUI agent model that operates solely on screenshots, perform
 [![arXiv](https://img.shields.io/badge/arXiv-2501.12326-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2501.12326) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/bytedance/UI-TARS) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/bytedance-research/UI-TARS-7B-SFT)<br>
 Yujia Qin, Yining Ye, Junjie Fang, Haoming Wang, Shihao Liang, Shizuo Tian, Junda Zhang, Jiahao Li, Yunxin Li, Shijue Huang, Wanjun Zhong, Kuanye Li, Jiale Yang, Yu Miao, Woyu Lin, Longxiang Liu, Xu Jiang, Qianli Ma, Jingyu Li, Xiaojun Xiao, Kai Cai, Chuang Li, Yaowei Zheng, Chaolin Jin, Chen Li, Xiao Zhou, Minchao Wang, Haoli Chen, Zhaojian Li, Haihua Yang, Haifeng Liu, Feng Lin, Tao Peng, Xin Liu, Guang Shi
 
+<!-- architecture-figure:62 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/9dccbdf3-a0ab-4ae4-930b-09a974f14a03" width="600" alt="Architecture diagram for UI-TARS: Pioneering Automated GUI Interaction with Native Agents" />
+  <img src="assets/architectures/ui-tars-2025-arch.png" alt="UI-TARS: Pioneering Automated GUI Interaction with Native Agents architecture: UI-TARS architecture and capability overview, connecting visual GUI observations and interaction histories to perception, action, system-level reasoning, and learning from prior experience." width="820">
 </p>
+<p align="center"><sub><b>Figure 4.</b> UI-TARS architecture and capability overview, connecting visual GUI observations and interaction histories to perception, action, system-level reasoning, and learning from prior experience. <a href="https://arxiv.org/abs/2501.12326">Source paper</a>, PDF p. 14. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:62 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1443,6 +1455,13 @@ MiniMax-01 is a series of large foundation models, including MiniMax-Text-01 and
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/MiniMax-AI/MiniMax-01)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/MiniMaxAI/MiniMax-VL-01)<br>
 MiniMax, Aonian Li, Bangwei Gong, Bo Yang, Boji Shan, Chang Liu, Cheng Zhu, Chunhao Zhang, Congchao Guo, Da Chen, Dong Li, Enwei Jiao, Gengxin Li, Guojun Zhang, Haohai Sun, Houze Dong, Jiadai Zhu, Jiaqi Zhuang, Jiayuan Song, Jin Zhu, Jingtao Han, Jingyang Li, Junbin Xie, Junhao Xu, Junjie Yan, Kaishun Zhang, Kecheng Xiao, Kexi Kang, Le Han, Leyang Wang, Lianfei Yu, Liheng Feng, Lin Zheng, Linbo Chai, Long Xing, Meizhi Ju, Mingyuan Chi, Mozhi Zhang, Peikai Huang, Pengcheng Niu, Pengfei Li, Pengyu Zhao, Qi Yang, Qidi Xu, Qiexiang Wang, Qin Wang, Qiuhui Li, Ruitao Leng, Shengmin Shi, Shuqi Yu, Sichen Li, Songquan Zhu, Tao Huang, Tianrun Liang, Weigao Sun, Weixuan Sun, Weiyu Cheng, Wenkai Li, Xiangjun Song, Xiao Su, Xiaodong Han, Xinjie Zhang, Xinzhu Hou, Xu Min, Xun Zou, Xuyang Shen, Yan Gong, Yingjie Zhu, Yipeng Zhou, Yiran Zhong, Yongyi Hu, Yuanxiang Fan, Yue Yu, Yufeng Yang, Yuhao Li, Yunan Huang, Yunji Li, Yunpeng Huang, Yunzhi Xu, Yuxin Mao, Zehan Li, Zekang Li, Zewei Tao, Zewen Ying, Zhaoyang Cong, Zhen Qin, Zhenhua Fan, Zhihang Yu, Zhuo Jiang, Zijia Wu
+
+<!-- architecture-figure:63 -->
+<p align="center">
+  <img src="assets/architectures/minimax-01-2025-arch.png" alt="MiniMax-01: Scaling Foundation Models with Lightning Attention architecture: MiniMax-Text-01 backbone architecture, interleaving Lightning Attention and softmax-attention transformer blocks with routed mixture-of-experts feed-forward layers." width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> MiniMax-Text-01 backbone architecture, interleaving Lightning Attention and softmax-attention transformer blocks with routed mixture-of-experts feed-forward layers. <a href="https://arxiv.org/abs/2501.08313">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:63 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1461,9 +1480,12 @@ MiniCPM-o-2.6 is a powerful 8B parameter multimodal large language model (MLLM) 
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/openbmb/MiniCPM-o-2_6)<br>
 OpenBMB
 
+<!-- architecture-figure:64 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/cb066a40-8da7-4775-b002-7c054697f1ec" width=600 alt="Architecture diagram for MiniCPM-o-2.6: A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming" />
+  <img src="assets/architectures/minicpm-o-2-6-official-arch.png" alt="MiniCPM-o-2.6: A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming architecture: MiniCPM-o 2.6 end-to-end omni-modal streaming architecture, using time-division multiplexing to combine visual, audio, and query streams in a shared backbone with streaming speech decoding." width="820">
 </p>
+<p align="center"><sub><b>Official architecture diagram.</b> MiniCPM-o 2.6 end-to-end omni-modal streaming architecture, using time-division multiplexing to combine visual, audio, and query streams in a shared backbone with streaming speech decoding. <a href="https://huggingface.co/openbmb/MiniCPM-o-2_6">Primary source</a>. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:64 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1482,9 +1504,12 @@ Eagle 2 is a family of vision-language models (VLMs) developed with a data-centr
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/nvidia/Eagle2-9B)<br>
 Zhiqi Li, Guo Chen, Shilong Liu, Shihao Wang, Yilin Zhao, Subhashree Radhakrishnan, Nadine Chang, Matthieu Le, De-An Huang, Ilia Karmanov, Lukas Voegtle, Jose M. Alvarez, Bryan Catanzaro, Jan Kautz, Andrew Tao, Vibashan VS, Yishen Ji, Shiyi Lan, Hao Zhang, Karan Sapra, Amala Deshmukh, Tuomas Rintamaki, Philipp Fischer, Timo Roman, Tong Lu, Guilin Liu, Zhiding Yu
 
+<!-- architecture-figure:65 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/e4280077-c80f-4cca-bd8f-3122a322520e" width="600" alt="Architecture diagram for Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models" />
+  <img src="assets/architectures/eagle-2-2025-arch.png" alt="Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models architecture: Eagle 2&#x27;s tiled mixture of vision encoders, combining SigLIP and ConvNeXt features through dynamic image splitting, feature concatenation, pixel shuffle, and an MLP connector to the LLM." width="820">
 </p>
+<p align="center"><sub><b>Figure 11.</b> Eagle 2&#x27;s tiled mixture of vision encoders, combining SigLIP and ConvNeXt features through dynamic image splitting, feature concatenation, pixel shuffle, and an MLP connector to the LLM. <a href="https://arxiv.org/abs/2501.14818">Source paper</a>, PDF p. 7. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:65 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1504,9 +1529,12 @@ Sa2VA is a unified model for dense grounded understanding of both images and vid
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2501.04001)<br>
 Haobo Yuan, Xiangtai Li, Tao Zhang, Zilong Huang, Shilin Xu, Shunping Ji, Yunhai Tong, Lu Qi, Jiashi Feng, Ming-Hsuan Yang
 
+<!-- architecture-figure:66 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7527a503-4987-4401-961b-f52532788b1f" width="600" alt="Architecture diagram for Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos" />
+  <img src="assets/architectures/sa2va-2025-arch.png" alt="Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos architecture: Sa2VA model: text, prompts, images, and videos are encoded for an LLM, whose segmentation token is combined with SAM 2 features to decode image or video masks." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> Sa2VA model: text, prompts, images, and videos are encoded for an LLM, whose segmentation token is combined with SAM 2 features to decode image or video masks. <a href="https://arxiv.org/abs/2501.04001">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:66 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1521,9 +1549,12 @@ VideoChat-Flash is a system designed for handling long-form video content in mul
 [![arXiv](https://img.shields.io/badge/arXiv-2501.00574-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2501.00574) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/OpenGVLab/VideoChat-Flash) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2_5-2B_res448)<br>
 Xinhao Li, Yi Wang, Jiashuo Yu, Xiangyu Zeng, Yuhan Zhu, Haian Huang, Jianfei Gao, Kunchang Li, Yinan He, Chenting Wang, Yu Qiao, Yali Wang, Limin Wang
 
+<!-- architecture-figure:67 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/49048795-6a76-41e7-b441-1313d0813630" width="600" alt="Architecture diagram for VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling" />
+  <img src="assets/architectures/videochat-flash-2025-arch.png" alt="VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling architecture: VideoChat-Flash framework with hierarchical video-token compression: shared encoders and connectors first compress clips, then the LLM performs video-level compression for long-context inference." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> VideoChat-Flash framework with hierarchical video-token compression: shared encoders and connectors first compress clips, then the LLM performs video-level compression for long-context inference. <a href="https://arxiv.org/abs/2501.00574">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:67 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1539,9 +1570,13 @@ OmniVLM is a sub-billion-parameter vision-language model designed for efficient 
 [![arXiv](https://img.shields.io/badge/arXiv-2412.11475-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2412.11475)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/NexaAIDev/OmniVLM-968M)<br>
 Wei Chen, Zhiyuan Li, Shuo Xin
+
+<!-- architecture-figure:68 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/da2a140a-5efe-4499-addc-8ccbb3e9792a" width="600" alt="Architecture diagram for OmniVLM: A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference" />
+  <img src="assets/architectures/omnivlm-2024-arch.png" alt="OmniVLM: A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference architecture: OmniVLM architecture: a vision transformer feeds a reshape-based projector that compresses image tokens before they join text tokens in the Qwen2.5-0.5B-Instruct language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> OmniVLM architecture: a vision transformer feeds a reshape-based projector that compresses image tokens before they join text tokens in the Qwen2.5-0.5B-Instruct language model. <a href="https://arxiv.org/abs/2412.11475">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:68 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1557,9 +1592,12 @@ Apollo is a family of Large Multimodal Models (LMMs) designed for video understa
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://apollo-lmms.github.io/)<br>
 Orr Zohar, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, Xide Xia
 
+<!-- architecture-figure:69 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/9222064a-d7a3-4e6b-a14d-bc9a5c679450" width="600" alt="Architecture diagram for Apollo: An Exploration of Video Understanding in Large Multimodal Models" />
+  <img src="assets/architectures/apollo-2024-arch.png" alt="Apollo: An Exploration of Video Understanding in Large Multimodal Models architecture: Apollo architecture: image and video encoders process N-frame clips, interpolated features are concatenated channel-wise, and a Perceiver resampler produces a fixed token set for the language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 8.</b> Apollo architecture: image and video encoders process N-frame clips, interpolated features are concatenated channel-wise, and a Perceiver resampler produces a fixed token set for the language model. <a href="https://arxiv.org/abs/2412.10360">Source paper</a>, PDF p. 21. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:69 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1580,9 +1618,12 @@ DeepSeek-VL2 is an advanced series of large Mixture-of-Experts (MoE) Vision-Lang
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small)<br>
 Zhiyu Wu, Xiaokang Chen, Zizheng Pan, Xingchao Liu, Wen Liu, Damai Dai, and et al.
 
+<!-- architecture-figure:70 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/6bf7a0ce-5fa1-46ae-9f24-cb75df607a19" alt="Architecture diagram for DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding" />
+  <img src="assets/architectures/deepseek-vl2-2024-arch.png" alt="DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding architecture: DeepSeek-VL2 architecture: dynamic image tiling feeds a vision encoder and vision-language adapter whose image tokens join text tokens in a DeepSeek-MoE language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> DeepSeek-VL2 architecture: dynamic image tiling feeds a vision encoder and vision-language adapter whose image tokens join text tokens in a DeepSeek-MoE language model. <a href="https://arxiv.org/abs/2412.10302">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:70 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1600,9 +1641,12 @@ Maya is an open-source Multimodal Multilingual Vision Language Model (mVLM) desi
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/maya-multimodal/maya)<br>
 Nahid Alam, Karthik Reddy Kanjula, Bala Krishna S Vegesna, S M Iftekhar Uddin, Drishti Sharma, Abhipsha Das, Shayekh Bin Islam, Surya Guthikonda, Timothy Chung, Anthony Susevski, Ryan Sze-Yin Chan, Roshan Santhosh, Snegha A, Chen Liu, Isha Chaturvedi, Ashvanth.S, Snehanshu Mukherjee, Alham Fikri Aji
 
+<!-- architecture-figure:71 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/f413afd9-3eee-4a5e-940a-b148fdf3189b" width="600" alt="Architecture diagram for Maya: An Instruction Finetuned Multilingual Multimodal Model" />
+  <img src="assets/architectures/maya-2024-arch.png" alt="Maya: An Instruction Finetuned Multilingual Multimodal Model architecture: Maya&#x27;s LLaVA-derived architecture, projecting multilingual SigLIP vision features into the embedding space of a multilingual language model for instruction following." width="820">
 </p>
+<p align="center"><sub><b>Figure 7.</b> Maya&#x27;s LLaVA-derived architecture, projecting multilingual SigLIP vision features into the embedding space of a multilingual language model for instruction following. <a href="https://arxiv.org/abs/2412.07112">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:71 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1618,9 +1662,13 @@ InternVL 2.5 is an advanced Multimodal Large Language Model (MLLM) series that b
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/OpenGVLab/InternVL)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/OpenGVLab/InternVL2_5-78B)<br>
 Zhe Chen, Weiyun Wang, Yue Cao, Yangzhou Liu, Zhangwei Gao, Erfei Cui, Jinguo Zhu, Shenglong Ye, Hao Tian, Zhaoyang Liu, Lixin Gu, Xuehui Wang, Qingyun Li, Yimin Ren, Zixuan Chen, Jiapeng Luo, Jiahao Wang, Tan Jiang, Bo Wang, Conghui He, Botian Shi, Xingcheng Zhang, Han Lv, Yi Wang, Wenqi Shao, Pei Chu, Zhongying Tu, Tong He, Zhiyong Wu, Huipeng Deng, Jiaye Ge, Kai Chen, Kaipeng Zhang, Limin Wang, Min Dou, Lewei Lu, Xizhou Zhu, Tong Lu, Dahua Lin, Yu Qiao, Jifeng Dai, Wenhai Wang
+
+<!-- architecture-figure:72 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/d1651bde-a587-4b60-83e4-40468d6442ee" width="600" alt="Architecture diagram for InternVL 2.5: Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling" />
+  <img src="assets/architectures/internvl-2-5-2024-arch.png" alt="InternVL 2.5: Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling architecture: InternVL 2.5&#x27;s ViT-MLP-LLM architecture with pixel-unshuffle visual-token compression." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> InternVL 2.5&#x27;s ViT-MLP-LLM architecture with pixel-unshuffle visual-token compression. <a href="https://arxiv.org/abs/2412.05271">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:72 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1637,9 +1685,12 @@ PaliGemma 2 is an upgraded family of open Vision-Language Models (VLMs) based on
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/collections/google/paligemma-2-release-67500e1e1dbfdd4dee27ba48)<br>
 Andreas Steiner, André Susano Pinto, Michael Tschannen, Daniel Keysers, Xiao Wang, Yonatan Bitton, Alexey Gritsenko, Matthias Minderer, Anthony Sherbondy, Shangbang Long, Siyang Qin, Reeve Ingle, Emanuele Bugliarello, Sahar Kazemzadeh, Thomas Mesnard, Ibrahim Alabdulmohsin, Lucas Beyer and Xiaohua Zhai
 
+<!-- architecture-figure:73 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/4ce402be-d644-4143-a57c-9e7f4d811d95" width="600" alt="Architecture diagram for PaliGemma 2: A Family of Versatile VLMs for Transfer" />
+  <img src="assets/architectures/paligemma-2-2024-arch.png" alt="PaliGemma 2: A Family of Versatile VLMs for Transfer architecture: PaliGemma 2 processes variable-resolution images with SigLIP, a linear projector, and Gemma 2." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> PaliGemma 2 processes variable-resolution images with SigLIP, a linear projector, and Gemma 2. <a href="https://arxiv.org/abs/2412.03555">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:73 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1683,9 +1734,12 @@ SmolVLM is a 2B parameter vision-language model (VLM) that achieves state-of-the
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct)<br>
 Andres Marafioti, Merve Noyan, Miquel Farré, Elie Bakouch, Pedro Cuenca
 
+<!-- architecture-figure:74 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/901ed802-5c1c-4733-ab2a-6b61514b9c71" width="600" alt="Architecture diagram for SmolVLM: A Small, Efficient, and Open-Source Vision-Language Model" />
+  <img src="assets/architectures/smolvlm-official-arch.png" alt="SmolVLM: A Small, Efficient, and Open-Source Vision-Language Model architecture: SmolVLM&#x27;s SigLIP vision encoder, aggressive pixel-shuffle compression, and SmolLM2 language backbone." width="820">
 </p>
+<p align="center"><sub><b>Official architecture diagram.</b> SmolVLM&#x27;s SigLIP vision encoder, aggressive pixel-shuffle compression, and SmolLM2 language backbone. <a href="https://huggingface.co/blog/smolvlm">Primary source</a>. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:74 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1704,9 +1758,12 @@ AIMv2 is a family of generalist vision encoders that autoregressively generates 
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/apple/aimv2-large-patch14-224)<br>
 Enrico Fini, Mustafa Shukor, David Haldimann, Sai Aitharaju, Alexander Toshev, Marcin Eichner, Moin Nabi, Xiujun Li, Philipp Dufter, Michal Klein, Victor G. Turrisi da Costa, Louis Béthune, Zhe Gan, Alaaeldin El-Nouby
 
+<!-- architecture-figure:75 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c89a0be9-8743-4800-8d3c-ec51a4c99f4d" width="600" alt="AIMv2 architecture" />
+  <img src="assets/architectures/aimv2-2024-arch.png" alt="AIMv2: Multimodal Autoregressive Pre-training of Large Vision Encoders architecture: AIMv2&#x27;s prefix-attention vision encoder and joint autoregressive multimodal decoder." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> AIMv2&#x27;s prefix-attention vision encoder and joint autoregressive multimodal decoder. <a href="https://arxiv.org/abs/2411.14402">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:75 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1723,9 +1780,12 @@ LLaVA-CoT is a novel Vision-Language Model (VLM) designed to perform autonomous,
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/Xkev/Llama-3.2V-11B-cot)<br>
 Guowei Xu, Peng Jin, Hao Li, Yibing Song, Lichao Sun, Li Yuan
 
+<!-- architecture-figure:76 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/1a5e32f0-4ffc-4514-8401-25777c2fac10" width="600" alt="Architecture diagram for LLaVA-CoT: Let Vision Language Models Reason Step-by-Step" />
+  <img src="assets/architectures/llava-cot-2024-arch.png" alt="LLaVA-CoT: Let Vision Language Models Reason Step-by-Step architecture: LLaVA-CoT&#x27;s Best-of-N, stage-wise beam-search, and stage-wise retracing inference procedures." width="820">
 </p>
+<p align="center"><sub><b>Figure 4.</b> LLaVA-CoT&#x27;s Best-of-N, stage-wise beam-search, and stage-wise retracing inference procedures. <a href="https://arxiv.org/abs/2411.10440">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:76 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1742,9 +1802,12 @@ LLM2CLIP is a fine-tuning approach which integrates Large Language Models (LLMs)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/microsoft/LLM2CLIP-EVA02-B-16)<br>
 Weiquan Huang, Aoqi Wu, Yifan Yang, Xufang Luo, Yuqing Yang, Liang Hu, Qi Dai, Xiyang Dai, Dongdong Chen, Chong Luo, Lili Qiu
 
+<!-- architecture-figure:77 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/44d6952e-98ea-4875-bd9c-0a09a683bcbb" width="600" alt="Architecture diagram for LLM2CLIP: Powerful Language Model Unlocks Richer Visual Representation" />
+  <img src="assets/architectures/llm2clip-2024-arch.png" alt="LLM2CLIP: Powerful Language Model Unlocks Richer Visual Representation architecture: LLM2CLIP fine-tunes an LLM for caption discrimination before using it to train stronger CLIP representations." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> LLM2CLIP fine-tunes an LLM for caption discrimination before using it to train stronger CLIP representations. <a href="https://arxiv.org/abs/2411.04997">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:77 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1760,9 +1823,9 @@ Tarsier2 is a state-of-the-art large vision-language model (LVLM) that excels in
 [![arXiv](https://img.shields.io/badge/arXiv-2501.07888-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2501.07888) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/bytedance/tarsier) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/omni-research/Tarsier-7b)<br>
 Liping Yuan, Jiawei Wang, Haomiao Sun, Yuchen Zhang, Yuan Lin
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/e6626842-69ac-4547-8c4b-cb260dd349ca" width="600" alt="Architecture diagram for Tarsier2: Advancing Large Vision-Language Models from Detailed Video Description to Comprehensive Video Understanding" />
-</p>
+<!-- architecture-figure:78 -->
+> **Architecture figure:** The paper contains capability, dataset, DPO-construction, and benchmark figures but inherits Qwen2-VL and provides no architecture overview; a training diagram would be misleading.
+<!-- /architecture-figure:78 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1780,9 +1843,12 @@ Janus decouples the visual pathways used for understanding and generation while 
 DeepSeek-AI<br>
 **Released:** 2024-10-17
 
+<!-- architecture-figure:79 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/657b0f2a-7a0e-4aed-a214-a33485990790" width="600" alt="Architecture diagram for Janus-Pro: Unified Multimodal Understanding and Generation with Data and Model Scaling" />
+  <img src="assets/architectures/janus-and-janus-pro-2025-arch.png" alt="Janus and Janus-Pro: Decoupled Visual Understanding and Generation architecture: Janus-Pro decouples visual understanding and generation encoders around a shared autoregressive transformer." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> Janus-Pro decouples visual understanding and generation encoders around a shared autoregressive transformer. <a href="https://arxiv.org/abs/2501.17811">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:79 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1801,9 +1867,9 @@ ARIA is an open-source, multimodal native Mixture-of-Experts (MoE) model designe
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/blog/RhymesAI/aria)<br>
 Dongxu Li, Yudong Liu, Haoning Wu, Yue Wang, Zhiqi Shen, Bowen Qu, Xinyao Niu, Fan Zhou, Chengen Huang, Yanpeng Li, Chongyan Zhu, Xiaoyi Ren, Chao Li, Yifan Ye, Peng Liu, Lihuan Zhang, Hanshu Yan, Guoyin Wang, Bei Chen, Junnan Li
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/efe4a7ba-756a-4da8-b261-5a0093f28b03" width="600" alt="Architecture diagram for ARIA: An Open Multimodal Native Mixture-of-Experts Model" />
-</p>
+<!-- architecture-figure:80 -->
+> **Architecture figure:** ARIA&#x27;s visual encoder, projection layer, and fine-grained MoE are described in prose and a configuration table; its only numbered model figure visualizes expert specialization, not architecture.
+<!-- /architecture-figure:80 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1872,9 +1938,10 @@ Llama 3.2-Vision extends the Llama 3 text-only model with multimodal capabilitie
 
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/meta-llama/llama-models) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision)<br>
 Meta
-<p align="center">
-<img src="https://github.com/user-attachments/assets/f6428237-8607-4de1-975d-dfc4c683b7a3" width=600 alt="Architecture diagram for Llama 3.2-Vision: Enhanced Multimodal Capabilities Built on Llama 3" />
-</p>
+
+<!-- architecture-figure:81 -->
+> **Architecture figure:** The official source describes the image encoder and cross-attention adapter in prose; benchmark tables and marketing artwork are not legitimate substitutes.
+<!-- /architecture-figure:81 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1890,9 +1957,13 @@ NVLM 1.0 is a family of multimodal large language models (LLMs) achieving state-
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/NVIDIA/Megatron-LM/tree/NVLM-1.0)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/nvidia/NVLM-D-72B)<br>
 Wenliang Dai, Nayeon Lee, Boxin Wang, Zhuolin Yang, Zihan Liu, Jon Barker, Tuomas Rintamaki, Mohammad Shoeybi, Bryan Catanzaro, Wei Ping
+
+<!-- architecture-figure:82 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/da882643-ac1d-4566-8287-cd8da3897a88" width="600" alt="Architecture diagram for NVLM: Open Frontier-Class Multimodal LLMs" />
+  <img src="assets/architectures/nvlm-2024-arch.png" alt="NVLM: Open Frontier-Class Multimodal LLMs architecture: NVLM-X, NVLM-H, and NVLM-D share a dynamic-high-resolution visual pathway but integrate vision differently." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> NVLM-X, NVLM-H, and NVLM-D share a dynamic-high-resolution visual pathway but integrate vision differently. <a href="https://arxiv.org/abs/2409.11402">Source paper</a>, PDF p. 9. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:82 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1908,9 +1979,13 @@ Pixtral 12B is a 12-billion-parameter multimodal language model developed by Mis
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/pixtral.md)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/mistralai/Pixtral-12B-2409)<br>
 Pravesh Agrawal, Szymon Antoniak, Emma Bou Hanna, Baptiste Bout, Devendra Chaplot, Jessica Chudnovsky, et al. (Mistral AI Science Team)
+
+<!-- architecture-figure:83 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5187d3c0-e284-40eb-bb94-53105c8cbe11" width="600" alt="Architecture diagram for Pixtral 12B: A Cutting-Edge Open Multimodal Language Model" />
+  <img src="assets/architectures/pixtral-12b-2024-arch.png" alt="Pixtral 12B: A Cutting-Edge Open Multimodal Language Model architecture: Pixtral combines a variable-resolution vision encoder with a 128K-context multimodal decoder." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> Pixtral combines a variable-resolution vision encoder with a 128K-context multimodal decoder. <a href="https://arxiv.org/abs/2410.07073">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:83 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1952,9 +2027,12 @@ Qwen2-VL is the latest iteration of the Qwen vision-language model family, build
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/QwenLM/Qwen2-VL) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/collections/Qwen/qwen2-vl-66cee7455501d7126940800d)<br>
 Bai, Jinze and Bai, Shuai and Yang, Shusheng and Wang, Shijie and Tan, Sinan and Wang, Peng and Lin, Junyang and Zhou, Chang and Zhou, Jingren<br>
 
+<!-- architecture-figure:84 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/37c2fb7a-66e1-475f-86e4-f00b4ac1c879" alt="Architecture diagram for Qwen2-VL: A Powerful Open-Source Vision-Language Model for Image and Video Understanding" />
+  <img src="assets/architectures/qwen2-vl-2024-arch.png" alt="Qwen2-VL: A Powerful Open-Source Vision-Language Model for Image and Video Understanding architecture: Qwen2-VL&#x27;s M-RoPE decomposes multimodal position encoding into temporal, height, and width components." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> Qwen2-VL&#x27;s M-RoPE decomposes multimodal position encoding into temporal, height, and width components. <a href="https://arxiv.org/abs/2409.12191">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:84 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -1969,9 +2047,12 @@ EAGLE is a family of open-source Multimodal Large Language Models (MLLMs) that l
 [![arXiv](https://img.shields.io/badge/arXiv-2408.15998-b31b1b.svg?style=flat-square)](https://arxiv.org/pdf/2408.15998) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/NVlabs/EAGLE) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/NVEagle/Eagle-X5-13B-Chat)<br>
 Min Shi, Fuxiao Liu, Shihao Wang, Shijia Liao, Subhashree Radhakrishnan, De-An Huang, Hongxu Yin, Karan Sapra, Yaser Yacoob, Humphrey Shi, Bryan Catanzaro, Andrew Tao, Jan Kautz, Zhiding Yu, Guilin Liu<br>
 
+<!-- architecture-figure:85 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/4e057a78-3fad-4a04-9a05-0f5361a8255b" alt="Architecture diagram for EAGLE: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders" />
+  <img src="assets/architectures/eagle-2024-arch.png" alt="EAGLE: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders architecture: EAGLE explores mixtures of vision experts and alternative fusion strategies for multimodal language models." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> EAGLE explores mixtures of vision experts and alternative fusion strategies for multimodal language models. <a href="https://arxiv.org/abs/2408.15998">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:85 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2010,9 +2091,13 @@ Idefics3-8B is a powerful open-source vision-language model (VLM) that significa
 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.12637-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2408.12637) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/HuggingFaceM4/idefics3)<br>
 Hugo Laurençon, Andrés Marafioti, Victor Sanh, Léo Tronchon<br>
+
+<!-- architecture-figure:86 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5e61fec2-b41b-4ad8-a167-1966f169b866" alt="Architecture diagram for Idefics3-8B: Building and Better Understanding Vision-Language Models" />
+  <img src="assets/architectures/idefics3-8b-2024-arch.png" alt="Idefics3-8B: Building and Better Understanding Vision-Language Models architecture: Idefics3 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> Idefics3 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model. <a href="https://arxiv.org/abs/2408.12637">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:86 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2077,9 +2162,12 @@ VITA is the first open-source Multimodal Large Language Model (MLLM) capable of 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.05211-b31b1b.svg?style=flat-square)](https://arxiv.org/pdf/2408.05211) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/VITA-MLLM/VITA) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/VITA-MLLM)<br>
 Chaoyou Fu, Haojia Lin, Zuwei Long, Yunhang Shen, Meng Zhao, Yifan Zhang, Xiong Wang, Di Yin, Long Ma, Xiawu Zheng, Ran He, Rongrong Ji, Yunsheng Wu, Caifeng Shan, Xing Sun
 
+<!-- architecture-figure:87 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/94e2b781-0c86-47df-ac18-76ebc71bb349" alt="Architecture diagram for VITA: Towards Open-Source Interactive Omni Multimodal LLM" />
+  <img src="assets/architectures/vita-2024-arch.png" alt="VITA: Towards Open-Source Interactive Omni Multimodal LLM architecture: VITA unifies text, audio, image, and video inputs with state tokens, an LLM, and speech output." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> VITA unifies text, audio, image, and video inputs with state tokens, an LLM, and speech output. <a href="https://arxiv.org/abs/2408.05211">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:87 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2094,9 +2182,12 @@ LLaVA-OneVision is a family of open large multimodal models (LMMs) designed to e
 [![arXiv](https://img.shields.io/badge/arXiv-2408.03326-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2408.03326) [![Website](https://img.shields.io/badge/🌐-Website-blue)](https://llava-vl.github.io/blog/2024-08-05-llava-onevision/) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2408.03326)<br>
 Bo Li, Yuanhan Zhang, Dong Guo, Renrui Zhang, Feng Li, Hao Zhang, Kaichen Zhang, Yanwei Li, Ziwei Liu, Chunyuan Li<br>
 
+<!-- architecture-figure:88 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/abe36db3-571d-4068-b532-7512d4a5fcc5" alt="Architecture diagram for LLaVA-OneVision: Easy Visual Task Transfer" />
+  <img src="assets/architectures/llava-onevision-2024-arch.png" alt="LLaVA-OneVision: Easy Visual Task Transfer architecture: LLaVA-OneVision extends the minimal LLaVA vision-encoder, projector, and LLM architecture to multiple visual signals." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> LLaVA-OneVision extends the minimal LLaVA vision-encoder, projector, and LLM architecture to multiple visual signals. <a href="https://arxiv.org/abs/2408.03326">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:88 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2113,9 +2204,12 @@ VILA² (VILA-augmented-VILA) introduces a novel approach to address the limitati
 [![arXiv](https://img.shields.io/badge/arXiv-2407.17453-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2407.17453) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2407.17453)<br>
 Yunhao Fang, Ligeng Zhu, Yao Lu, Yan Wang, Pavlo Molchanov, Jang Hyun Cho, Marco Pavone, Song Han, Hongxu Yin<br>
 
+<!-- architecture-figure:89 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/b7602734-1163-49aa-bf78-27ae42a520bd" alt="Architecture diagram for VILA&#178;: VILA Augmented VILA" />
+  <img src="assets/architectures/vila-2024-arch.png" alt="VILA²: VILA Augmented VILA architecture: VILA² improves itself through generic model-in-the-loop recaptioning and specialist-model augmentation." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> VILA² improves itself through generic model-in-the-loop recaptioning and specialist-model augmentation. <a href="https://arxiv.org/abs/2407.17453">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:89 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2130,9 +2224,12 @@ INF-LLaVA is a novel Multimodal Large Language Model (MLLM) designed to effectiv
 [![arXiv](https://img.shields.io/badge/arXiv-2407.16198-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2407.16198) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/WeihuangLin/INF-LLaVA) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2407.16198)<br>
 Yiwei Ma, Zhibin Wang, Xiaoshuai Sun, Weihuang Lin, Qiang Zhou, Jiayi Ji, Rongrong Ji<br>
 
+<!-- architecture-figure:90 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/641027c4-a5eb-42e8-8486-b58f3508c553" alt="Architecture diagram for INF-LLaVA: High-Resolution Image Perception for Multimodal Large Language Models" />
+  <img src="assets/architectures/inf-llava-2024-arch.png" alt="INF-LLaVA: High-Resolution Image Perception for Multimodal Large Language Models architecture: INF-LLaVA combines dual-perspective cropping, CLIP encoding, feature recombination, enhancement, and language reasoning." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> INF-LLaVA combines dual-perspective cropping, CLIP encoding, feature recombination, enhancement, and language reasoning. <a href="https://arxiv.org/abs/2407.16198">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:90 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2147,9 +2244,12 @@ SlowFast-LLaVA (SF-LLaVA) is a training-free video large language model that eff
 [![arXiv](https://img.shields.io/badge/arXiv-2407.15841-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2407.15841) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2407.15841)<br>
 Mingze Xu, Mingfei Gao, Zhe Gan, Hong-You Chen, Zhengfeng Lai, Haiming Gang, Kai Kang, Afshin Dehghan<br>
 
+<!-- architecture-figure:91 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/6e1e2f43-86a7-42e3-998a-24bbd8f1c741" alt="Architecture diagram for SlowFast-LLaVA: A Strong Training-Free Baseline for Video Large Language Models" />
+  <img src="assets/architectures/slowfast-llava-2024-arch.png" alt="SlowFast-LLaVA: A Strong Training-Free Baseline for Video Large Language Models architecture: SlowFast-LLaVA combines low-frame-rate spatial detail with high-frame-rate motion features." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> SlowFast-LLaVA combines low-frame-rate spatial detail with high-frame-rate motion features. <a href="https://arxiv.org/abs/2407.15841">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:91 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2164,9 +2264,12 @@ EVLM is an efficient multimodal language model designed to minimize computationa
 [![arXiv](https://img.shields.io/badge/arXiv-2407.14177-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2407.14177) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2407.14177)<br>
 Kaibing Chen, Dong Shen, Hanwen Zhong, Huasong Zhong, Kui Xia, Di Xu, Wei Yuan, Yifei Hu, Bin Wen, Tianke Zhang, Changyi Liu, Dewen Fan, Huihui Xiao, Jiahong Wu, Fan Yang, Size Li, Di Zhang<br>
 
+<!-- architecture-figure:92 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/87563a37-e65e-44d4-a0e1-aea452ae313c" alt="Architecture diagram for EVLM: An Efficient Vision-Language Model for Visual Understanding" />
+  <img src="assets/architectures/evlm-2024-arch.png" alt="EVLM: An Efficient Vision-Language Model for Visual Understanding architecture: EVLM injects hierarchical EVA2-CLIP features into the language model through gated cross-attention layers." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> EVLM injects hierarchical EVA2-CLIP features into the language model through gated cross-attention layers. <a href="https://arxiv.org/abs/2407.14177">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:92 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2181,9 +2284,12 @@ InternLM-XComposer-2.5 (IXC-2.5) is a versatile Large Vision Language Model (LVL
 [![arXiv](https://img.shields.io/badge/arXiv-2407.03320-b31b1b.svg?style=flat-square)](https://arxiv.org/pdf/2407.03320) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/InternLM/InternLM-XComposer) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/Willow123/InternLM-XComposer)<br>
 Pan Zhang, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Rui Qian, Lin Chen, Qipeng Guo, Haodong Duan, Bin Wang, Linke Ouyang, Songyang Zhang, Wenwei Zhang, Yining Li, Yang Gao, Peng Sun, Xinyue Zhang, Wei Li, Jingwen Li, Wenhai Wang, Hang Yan, Conghui He, Xingcheng Zhang, Kai Chen, Jifeng Dai, Yu Qiao, Dahua Lin, Jiaqi Wang<br>
 
+<!-- architecture-figure:93 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/1330a013-930b-4b23-90dc-94616b59ca0b" alt="Architecture diagram for InternLM-XComposer-2.5: A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output" />
+  <img src="assets/architectures/internlm-xcomposer-2-5-2024-arch.png" alt="InternLM-XComposer-2.5: A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output architecture: InternLM-XComposer-2.5&#x27;s framework supports text, single and multiple images, and video inputs." width="820">
 </p>
+<p align="center"><sub><b>Figure 5.</b> InternLM-XComposer-2.5&#x27;s framework supports text, single and multiple images, and video inputs. <a href="https://arxiv.org/abs/2407.03320">Source paper</a>, PDF p. 6. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:93 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2198,9 +2304,12 @@ OMG-LLaVA presents a novel framework that unifies image-level, object-level, and
 [![arXiv](https://img.shields.io/badge/arXiv-2406.19389-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2406.19389) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/lxtGH/OMG-Seg) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2406.19389)<br>
 Tao Zhang, Xiangtai Li, Hao Fei, Haobo Yuan, Shengqiong Wu, Shunping Ji, Chen Change Loy, Shuicheng Yan<br>
 
+<!-- architecture-figure:94 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c2830cc5-ab00-4c48-898e-a077cdc7b947" alt="Architecture diagram for OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding" />
+  <img src="assets/architectures/omg-llava-2024-arch.png" alt="OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding architecture: OMG-LLaVA connects OMG-Seg visual tokens and prompts to an LLM that can decode segmentation outputs." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> OMG-LLaVA connects OMG-Seg visual tokens and prompts to an LLM that can decode segmentation outputs. <a href="https://arxiv.org/abs/2406.19389">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:94 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2243,9 +2352,13 @@ EVE is an encoder-free vision-language model (VLM) that directly processes image
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/baaivision/EVE)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/BAAI/EVE-7B-HD-v1.0)<br>
 Haiwen Diao, Yufeng Cui, Xiaotong Li, Yueze Wang, Huchuan Lu, Xinlong Wang
+
+<!-- architecture-figure:95 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c10e987d-9e11-41d7-968c-617b60d3b0bd" width="600" alt="Architecture diagram for EVE: Unveiling Encoder-Free Vision-Language Models" />
+  <img src="assets/architectures/eve-2024-arch.png" alt="EVE: Unveiling Encoder-Free Vision-Language Models architecture: EVE combines patch embedding, a decoder-only backbone, patch alignment, and next-word prediction without a separate vision encoder." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> EVE combines patch embedding, a decoder-only backbone, patch alignment, and next-word prediction without a separate vision encoder. <a href="https://arxiv.org/abs/2406.11832">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:95 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2286,9 +2399,12 @@ Parrot tackles the issue of "multilingual erosion" in Multimodal Large Language 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.02539-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2406.02539) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/AIDC-AI/Parrot)<br>
 Hai-Long Sun, Da-Wei Zhou, Yang Li, Shiyin Lu, Chao Yi, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang, De-Chuan Zhan, Han-Jia Ye<br>
 
+<!-- architecture-figure:96 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/467964a0-4ccc-4cec-802a-c93b310d3118" alt="Architecture diagram for Parrot: Multilingual Visual Instruction Tuning" />
+  <img src="assets/architectures/parrot-2024-arch.png" alt="Parrot: Multilingual Visual Instruction Tuning architecture: PARROT aligns multilingual visual features through a projector, multilingual mixture of experts, and language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 5.</b> PARROT aligns multilingual visual features through a projector, multilingual mixture of experts, and language model. <a href="https://arxiv.org/abs/2406.02539">Source paper</a>, PDF p. 6. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:96 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2303,9 +2419,12 @@ ConvLLaVA addresses the limitations of Vision Transformers (ViTs) in high-resolu
 [![arXiv](https://img.shields.io/badge/arXiv-2405.15738-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2405.15738) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/alibaba/conv-llava) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2405.15738)<br>
 Chunjiang Ge, Sijie Cheng, Ziming Wang, Jiale Yuan, Yuan Gao, Jun Song, Shiji Song, Gao Huang, Bo Zheng<br>
 
+<!-- architecture-figure:97 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/ad7e129a-f958-4b30-8327-7df509994bea" alt="Architecture diagram for ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models" />
+  <img src="assets/architectures/convllava-2024-arch.png" alt="ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models architecture: ConvLLaVA uses a hierarchical ConvNeXt vision encoder to compress visual tokens between stages." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> ConvLLaVA uses a hierarchical ConvNeXt vision encoder to compress visual tokens between stages. <a href="https://arxiv.org/abs/2405.15738">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:97 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2342,9 +2461,12 @@ CogVLM2 is a family of open-source visual language models designed to push the b
 [![arXiv](https://img.shields.io/badge/arXiv-2408.16500-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2408.16500) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/THUDM/CogVLM2) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/collections/THUDM/cogvlm2-6645f36a29948b67dc4eef75)<br>
 Wenyi Hong, Weihan Wang, Ming Ding, Wenmeng Yu, Qingsong Lv, Yan Wang, Yean Cheng, Shiyu Huang, Junhui Ji, Zhao Xue, Lei Zhao, Zhuoyi Yang, Xiaotao Gu, Xiaohan Zhang, Guanyu Feng, Da Yin, Zihan Wang, Ji Qi, Xixuan Song, Peng Zhang, Debing Liu, Bin Xu, Juanzi Li, Yuxiao Dong, Jie Tang<br>
 
+<!-- architecture-figure:98 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/f60247aa-66b3-486c-891c-c29cefe8aed4" alt="Architecture diagram for CogVLM2: Enhanced Vision-Language Models for Image and Video Understanding" />
+  <img src="assets/architectures/cogvlm2-2024-arch.png" alt="CogVLM2: Enhanced Vision-Language Models for Image and Video Understanding architecture: CogVLM2 processes high-resolution images and video frames through a ViT encoder, adapter, and visual-language decoder." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> CogVLM2 processes high-resolution images and video frames through a ViT encoder, adapter, and visual-language decoder. <a href="https://arxiv.org/abs/2408.16500">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:98 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2386,9 +2508,12 @@ PaliGemma is a compact, open-source vision-language model designed to be easily 
 [![arXiv](https://img.shields.io/badge/arXiv-2407.07726-b31b1b.svg?style=flat-square)](https://arxiv.org/pdf/2407.07726) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/paligemma/README.md) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/big-vision/paligemma)<br>
 Lucas Beyer, Andreas Steiner, André Susano Pinto, Alexander Kolesnikov, Xiao Wang, Daniel Salz, Maxim Neumann, Ibrahim Alabdulmohsin, Michael Tschannen, Emanuele Bugliarello, Thomas Unterthiner, Daniel Keysers, Skanda Koppula, Fangyu Liu, Adam Grycner, Alexey Gritsenko, Neil Houlsby, Manoj Kumar, Keran Rong, Julian Eisenschlos, Rishabh Kabra, Matthias Bauer, Matko Bošnjak, Xi Chen, Matthias Minderer, Paul Voigtlaender, Ioana Bica, Ivana Balazevic, Joan Puigcerver, Pinelopi Papalampidi, Olivier Henaff, Xi Xiong, Radu Soricut, Jeremiah Harmsen, Xiaohua Zhai<br>
 
+<!-- architecture-figure:99 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/186371d0-6861-4b68-b32e-fee77cc75ef2" alt="Architecture diagram for PaliGemma: A Versatile and Transferable 3B Vision-Language Model" />
+  <img src="assets/architectures/paligemma-2024-arch.png" alt="PaliGemma: A Versatile and Transferable 3B Vision-Language Model architecture: PaliGemma connects a SigLIP image encoder to a Gemma autoregressive decoder language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> PaliGemma connects a SigLIP image encoder to a Gemma autoregressive decoder language model. <a href="https://arxiv.org/abs/2407.07726">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:99 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2403,9 +2528,12 @@ xGen-MM (BLIP-3) is a comprehensive framework developed by Salesforce for traini
 [![arXiv](https://img.shields.io/badge/arXiv-2408.08872-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2408.08872) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/collections/Salesforce/xgen-mm-1-models-and-datasets-662971d6cecbf3a7f80ecc2e)<br>
 Le Xue, Manli Shu, Anas Awadalla, Jun Wang, An Yan, Senthil Purushwalkam, Honglu Zhou, Viraj Prabhu, Yutong Dai, Michael S Ryoo, Shrikant Kendre, Jieyu Zhang, Can Qin, Shu Zhang, Chia-Chih Chen, Ning Yu, Juntao Tan, Tulika Manoj Awalgaonkar, Shelby Heinecke, Huan Wang, Yejin Choi, Ludwig Schmidt, Zeyuan Chen, Silvio Savarese, Juan Carlos Niebles, Caiming Xiong, Ran Xu<br>
 
+<!-- architecture-figure:100 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/e6e166c8-871e-420c-bbf1-b64c3c22e06a" alt="Architecture diagram for xGen-MM (BLIP-3): An Open-Source Framework for Building Powerful and Responsible Large Multimodal Models" />
+  <img src="assets/architectures/xgen-mm-blip-3-2024-arch.png" alt="xGen-MM (BLIP-3): An Open-Source Framework for Building Powerful and Responsible Large Multimodal Models architecture: BLIP-3 feeds interleaved visual and text tokens through a scalable vision-token sampler into a pretrained language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> BLIP-3 feeds interleaved visual and text tokens through a scalable vision-token sampler into a pretrained language model. <a href="https://arxiv.org/abs/2408.08872">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:100 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2419,9 +2547,11 @@ MANTIS is a family of open-source large multimodal models that demonstrate state
 
 [![arXiv](https://img.shields.io/badge/arXiv-2405.01483-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2405.01483) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/TIGER-AI-Lab/Mantis) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TIGER-Lab/Mantis)<br>
 Dongfu Jiang, Xuan He, Huaye Zeng, Cong Wei, Max Ku, Qian Liu, Wenhu Chen<br>
-<p align="center">
-<img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/dd4bbdf4-5ab9-4e12-89bd-94c5beb2d114" alt="Architecture diagram for MANTIS: Mastering Multi-Image Understanding Through Interleaved Instruction Tuning" />
-</p>
+
+<!-- architecture-figure:101 -->
+> **Architecture figure:** The paper contains capability examples, dataset statistics and illustrations, and case studies, none of which is a model architecture or system diagram.
+<!-- /architecture-figure:101 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
@@ -2436,6 +2566,10 @@ Moondream is a compact (1.9B parameters) vision-language model (VLM) that priori
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/vikhyat/moondream)
 [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/vikhyatk/moondream-next)
 
+<!-- architecture-figure:102 -->
+> **Architecture figure:** The rolling model card and official repository provide implementation details but no legitimate architecture or system figure.
+<!-- /architecture-figure:102 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
@@ -2448,9 +2582,15 @@ IDEFICS2, an 8B parameter open-source vision-language model, efficiently process
 
 [![arXiv](https://img.shields.io/badge/arXiv-2405.02246-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2405.02246) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/HuggingFaceM4/idefics-8b)<br>
 Hugo Laurençon, Léo Tronchon, Matthieu Cord, Victor Sanh
+<br>
+
+<!-- architecture-figure:103 -->
 <p align="center">
-<img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/c197c8c5-8da2-4d96-8999-8e05e81f1506" alt="Architecture diagram for Idefics2" />
-</p><br>
+  <img src="assets/architectures/idefics2-2024-arch.png" alt="Idefics2 architecture: Idefics2 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model." width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Idefics2 maps vision-encoder features into interleaved visual tokens consumed by an autoregressive language model. <a href="https://arxiv.org/abs/2405.02246">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:103 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2463,9 +2603,14 @@ InternLM-XComposer2-4KHD, building on its predecessor, pioneers high-resolution 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2404.06512v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2404.06512v1)<br>
 Xiaoyi Dong, Pan Zhang, Yuhang Zang, Yuhang Cao, Bin Wang, Linke Ouyang, Songyang Zhang, Haodong Duan, Wenwei Zhang, Yining Li, Hang Yan, Yang Gao, Zhe Chen, Xinyue Zhang, Wei Li, Jingwen Li, Wenhai Wang, Kai Chen, Conghui He, Xingcheng Zhang, Jifeng Dai, Yu Qiao, Dahua Lin, Jiaqi Wang<br>
+
+<!-- architecture-figure:104 -->
 <p align="center">
-<img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/c09b67fb-32eb-43de-82fa-96c3af22caf4" alt="Architecture diagram for InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD" />
+  <img src="assets/architectures/internlm-xcomposer2-4khd-2024-arch.png" alt="InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD architecture: InternLM-XComposer2-4KHD dynamically partitions high-resolution images into local patches while retaining a global thumbnail." width="820">
 </p>
+<p align="center"><sub><b>Figure 4.</b> InternLM-XComposer2-4KHD dynamically partitions high-resolution images into local patches while retaining a global thumbnail. <a href="https://arxiv.org/abs/2404.06512">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:104 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
@@ -2503,9 +2648,14 @@ DeepSeek-VL, utilizing a hybrid vision encoder combining SigLIP-L and SAM-B, exc
 [![arXiv](https://img.shields.io/badge/arXiv-2403.05525-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.05525) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/deepseek-ai/DeepSeek-VL)
 
 Haoyu Lu, Wen Liu, Bo Zhang, Bingxuan Wang, Kai Dong, Bo Liu, Jingxiang Sun, Tongzheng Ren, Zhuoshu Li, Hao Yang, Yaofeng Sun, Chengqi Deng, Hanwei Xu, Zhenda Xie, Chong Ruan<br>
+
+<!-- architecture-figure:105 -->
 <p align="center">
-<img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/7b7283d2-b2d5-4ab6-891a-18a9760ef7ca" alt="Architecture diagram for DeepSeek-VL: Towards Real-World Vision-Language Understanding" />
+  <img src="assets/architectures/deepseek-vl-2024-arch.png" alt="DeepSeek-VL: Towards Real-World Vision-Language Understanding architecture: DeepSeek-VL trains its hybrid vision encoder, vision-language adaptor, and language model across three progressive stages." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> DeepSeek-VL trains its hybrid vision encoder, vision-language adaptor, and language model across three progressive stages. <a href="https://arxiv.org/abs/2403.05525">Source paper</a>, PDF p. 12. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:105 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2543,9 +2693,14 @@ SPHINX-X refines multi-modal large language models by streamlining its architect
 
 [![arXiv](https://img.shields.io/badge/arXiv-2402.05935-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2402.05935) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/alpha-vllm/llama2-accessory) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/Alpha-VLLM/SPHINX)<br>
 Peng Gao, Renrui Zhang, Chris Liu, Longtian Qiu, Siyuan Huang, Weifeng Lin, Shitian Zhao, Shijie Geng, Ziyi Lin, Peng Jin, Kaipeng Zhang, Wenqi Shao, Chao Xu, Conghui He, Junjun He, Hao Shao, Pan Lu, Hongsheng Li, Yu Qiao
+
+<!-- architecture-figure:106 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/1c4e9a86-9a21-4911-bcb6-d2a79c181510" alt="Architecture diagram for SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models" />
+  <img src="assets/architectures/sphinx-x-2024-arch.png" alt="SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models architecture: SPHINX-X combines mixed visual experts, padded-tile skip tokens, high-resolution partitioning, and unified training." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> SPHINX-X combines mixed visual experts, padded-tile skip tokens, high-resolution partitioning, and unified training. <a href="https://arxiv.org/abs/2402.05935">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:106 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2558,9 +2713,15 @@ LLaVA-NeXT advances on LLaVA-1.5 by incorporating high-resolution image processi
 
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://llava-vl.github.io/blog/2024-01-30-llava-next/)<br>
 Haotian Liu, Chunyuan Li, Yuheng Li, Bo Li, Yuanhan Zhang, Sheng Shen, Yong Jae Lee
+<br>
+
+<!-- architecture-figure:107 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/032ef144-ec10-41da-80a1-2cecd66c86ee" alt="Architecture diagram for LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge" />
-</p><br>
+  <img src="assets/architectures/llava-1-6-official-arch.png" alt="LLaVA 1.6: LLaVA-NeXT Improved reasoning, OCR, and world knowledge architecture: LLaVA-NeXT&#x27;s AnyRes scheme partitions high-resolution images into a configurable grid of local views." width="820">
+</p>
+<p align="center"><sub><b>Official architecture diagram.</b> LLaVA-NeXT&#x27;s AnyRes scheme partitions high-resolution images into a configurable grid of local views. <a href="https://llava-vl.github.io/blog/2024-01-30-llava-next/">Primary source</a>. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:107 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2574,9 +2735,12 @@ MiniCPM-V is a series of efficient Multimodal Large Language Models (MLLMs) desi
 [![arXiv](https://img.shields.io/badge/arXiv-2408.01800-b31b1b.svg?style=flat-square)](https://arxiv.org/pdf/2408.01800) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/OpenBMB/MiniCPM-V) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/openbmb/MiniCPM-V-2_6)<br>
 Yuan Yao, Tianyu Yu, Ao Zhang, Chongyi Wang, Junbo Cui, Hongji Zhu, Tianchi Cai, Haoyu Li, Weilin Zhao, Zhihui He, Qianyu Chen, Huarong Zhou, Zhensheng Zou, Haoye Zhang, Shengding Hu, Zhi Zheng, Jie Zhou, Jie Cai, Xu Han, Guoyang Zeng, Dahai Li, Zhiyuan Liu, Maosong Sun<br>
 
+<!-- architecture-figure:108 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/d943871a-ca05-46d6-9572-7fe02dda1495" alt="Architecture diagram for MiniCPM-V: A GPT-4V Level MLLM on Your Phone" />
+  <img src="assets/architectures/minicpm-v-2024-arch.png" alt="MiniCPM-V: A GPT-4V Level MLLM on Your Phone architecture: MiniCPM-V combines a visual encoder, shared compression layer, language model, and adaptive high-resolution encoding." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> MiniCPM-V combines a visual encoder, shared compression layer, language model, and adaptive high-resolution encoding. <a href="https://arxiv.org/abs/2408.01800">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:108 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2592,9 +2756,14 @@ MouSi pushes the boundaries of VLMs by incorporating multiple visual experts lik
 
 [![arXiv](https://img.shields.io/badge/arXiv-2401.17221-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2401.17221) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/fudannlplab/mousi)<br>
 Xiaoran Fan, Tao Ji, Changhao Jiang, Shuo Li, Senjie Jin, Sirui Song, Junke Wang, Boyang Hong, Lu Chen, Guodong Zheng, Ming Zhang, Caishuang Huang, Rui Zheng, Zhiheng Xi, Yuhao Zhou, Shihan Dou, Junjie Ye, Hang Yan, Tao Gui, Qi Zhang, Xipeng Qiu, Xuanjing Huang, Zuxuan Wu, Yu-Gang Jiang
+
+<!-- architecture-figure:109 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/7e09c9d8-4c18-4970-9a24-b5e538285a72" alt="Architecture diagram for MouSi: Poly-Visual-Expert Vision-Language Models" />
+  <img src="assets/architectures/mousi-2024-arch.png" alt="MouSi: Poly-Visual-Expert Vision-Language Models architecture: MouSi integrates heterogeneous visual experts through a fusion network and projector into a language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> MouSi integrates heterogeneous visual experts through a fusion network and projector into a language model. <a href="https://arxiv.org/abs/2401.17221">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:109 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2607,9 +2776,14 @@ InternLM-XComposer2 excels in free-form text-image composition and comprehension
 
 [![arXiv](https://img.shields.io/badge/arXiv-2401.16420-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2401.16420) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/InternLM/InternLM-XComposer) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Willow123/InternLM-XComposer)<br>
 Xiaoyi Dong, Pan Zhang, Yuhang Zang, Yuhang Cao, Bin Wang, Linke Ouyang, Xilin Wei, Songyang Zhang, Haodong Duan, Maosong Cao, Wenwei Zhang, Yining Li, Hang Yan, Yang Gao, Xinyue Zhang, Wei Li, Jingwen Li, Kai Chen, Conghui He, Xingcheng Zhang, Yu Qiao, Dahua Lin, Jiaqi Wang
+
+<!-- architecture-figure:110 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/732d3b7b-02de-42d3-ae76-800bf035b391" alt="Architecture diagram for InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model" />
+  <img src="assets/architectures/internlm-xcomposer2-2024-arch.png" alt="InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model architecture: InternLM-XComposer2 applies Partial-LoRA only to visual tokens while preserving language-only behavior." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> InternLM-XComposer2 applies Partial-LoRA only to visual tokens while preserving language-only behavior. <a href="https://arxiv.org/abs/2401.16420">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:110 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2622,9 +2796,14 @@ MoE-LLaVA introduces a novel approach by incorporating Mixture of Experts (MoE) 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2401.15947-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2401.15947) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/PKU-YuanGroup/MoE-LLaVA) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/LanguageBind/MoE-LLaVA)<br>
 Bin Lin, Zhenyu Tang, Yang Ye, Jiaxi Cui, Bin Zhu, Peng Jin, Jinfa Huang, Junwu Zhang, Munan Ning, Li Yuan
+
+<!-- architecture-figure:111 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0e5e214b-be64-4aac-aba4-04c97970b9de" alt="Architecture diagram for MoE-LLaVA: Mixture of Experts for Large Vision-Language Models" />
+  <img src="assets/architectures/moe-llava-2024-arch.png" alt="MoE-LLaVA: Mixture of Experts for Large Vision-Language Models architecture: MoE-LLaVA routes multimodal tokens through sparse experts added to a vision-encoder, projector, and language-model backbone." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> MoE-LLaVA routes multimodal tokens through sparse experts added to a vision-encoder, projector, and language-model backbone. <a href="https://arxiv.org/abs/2401.15947">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:111 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2637,9 +2816,11 @@ moondream1 and moondream2 are vision-language models with moondream2 building up
 
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/vikhyat/moondream) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/vikhyatk/moondream2)<br>
 @vikhyatk
-<p align="center">
-<img src="https://github.com/gokayfem/awesome-vlm-architectures/assets/88277926/e979d327-3423-4a91-92f2-02a3dc3189a8" alt="Architecture diagram for moondream1 and moondream2" />
-</p>
+
+<!-- architecture-figure:112 -->
+> **Architecture figure:** Official repository and model cards describe the implementation but provide no legitimate family architecture or system figure.
+<!-- /architecture-figure:112 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2651,6 +2832,10 @@ moondream1 and moondream2 are vision-language models with moondream2 building up
 FireLLaVA breaks new ground by combining the CodeLlama 34B Instruct model for advanced language understanding with a CLIP-ViT-based visual interpretation component, training on a unique dataset incorporating bounding box labels and captions to excel in visual language conversations.
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/fireworks-ai/FireLLaVA-13b)
+
+<!-- architecture-figure:113 -->
+> **Architecture figure:** A generic LLaVA diagram would not document FireLLaVA&#x27;s own contribution and should not be substituted.
+<!-- /architecture-figure:113 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
@@ -2665,9 +2850,14 @@ COSMO presents a streamlined multimodal framework by combining a Vision Transfor
 [![arXiv](https://img.shields.io/badge/arXiv-2401.00849v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2401.00849v1) [![Website](https://img.shields.io/badge/Project-Website-blue?style=flat-square)](https://fingerrec.github.io/cosmo)
 
 Alex Jinpeng Wang, Linjie Li, Kevin Qinghong Lin, Jianfeng Wang, Kevin Lin, Zhengyuan Yang, Lijuan Wang, Mike Zheng Shou
+
+<!-- architecture-figure:114 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0c256daa-1573-4110-a665-5927ee2e293f" alt="Architecture diagram for COSMO: COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training" />
+  <img src="assets/architectures/cosmo-2024-arch.png" alt="COSMO: COntrastive Streamlined MultimOdal Model with Interleaved Pre-Training architecture: CosMo handles image and video inputs through a language model trained with contrastive and language-modeling objectives." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> CosMo handles image and video inputs through a language model trained with contrastive and language-modeling objectives. <a href="https://arxiv.org/abs/2401.00849">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:114 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2680,9 +2870,14 @@ TinyGPT-V prioritizes efficiency in multimodal large language models by combinin
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.16862v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2312.16862v1) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/DLYuanGod/TinyGPT-V) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/llizhx/TinyGPT-V)<br>
 Zhengqing Yuan, Zhaoxu Li, Lichao Sun
+
+<!-- architecture-figure:115 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3e7c93bc-7963-4c2e-b207-226a03d152ca" alt="Architecture diagram for TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones" />
+  <img src="assets/architectures/tinygpt-v-2023-arch.png" alt="TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones architecture: TinyGPT-V projects frozen visual-backbone and Q-Former outputs through two linear layers into Phi-2." width="820">
 </p>
+<p align="center"><sub><b>Figure 4.</b> TinyGPT-V projects frozen visual-backbone and Q-Former outputs through two linear layers into Phi-2. <a href="https://arxiv.org/abs/2312.16862">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:115 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2695,9 +2890,14 @@ MobileVLM offers a mobile-optimized vision-language model that combines a CLIP V
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.16886-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2312.16886) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/meituan-automl/mobilevlm)<br>
 Xiangxiang Chu, Limeng Qiao, Xinyang Lin, Shuang Xu, Yang Yang, Yiming Hu, Fei Wei, Xinyu Zhang, Bo Zhang, Xiaolin Wei, Chunhua Shen
+
+<!-- architecture-figure:116 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/59a06109-ba49-4299-951c-d7c0c562bca3" alt="Architecture diagram for MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices" />
+  <img src="assets/architectures/mobilevlm-2023-arch.png" alt="MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices architecture: MobileVLM connects a visual encoder to MobileLLaMA through a lightweight downsample projector." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> MobileVLM connects a visual encoder to MobileLLaMA through a lightweight downsample projector. <a href="https://arxiv.org/abs/2312.16886">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:116 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2711,9 +2911,14 @@ Alpha-CLIP builds upon the CLIP model by incorporating region awareness through 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.03818-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2312.03818) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/SunzeY/AlphaCLIP)
 
 Zeyi Sun, Ye Fang, Tong Wu, Pan Zhang, Yuhang Zang, Shu Kong, Yuanjun Xiong, Dahua Lin, Jiaqi Wang
+
+<!-- architecture-figure:117 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/07bd6161-1682-4954-97f3-3770258bfa8c" alt="Architecture diagram for Alpha-CLIP: A CLIP Model Focusing on Wherever You Want" />
+  <img src="assets/architectures/alpha-clip-2023-arch.png" alt="Alpha-CLIP: A CLIP Model Focusing on Wherever You Want architecture: Alpha-CLIP extends CLIP with an alpha channel that focuses visual encoding on a specified region." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> Alpha-CLIP extends CLIP with an alpha channel that focuses visual encoding on a specified region. <a href="https://arxiv.org/abs/2312.03818">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:117 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2727,6 +2932,11 @@ Nous-Hermes-2-Vision builds upon OpenHermes-2.5 by integrating the efficient Sig
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/NousResearch/Nous-Hermes-2-Vision-Alpha)<br>
 This project is led by qnguyen3 and teknium.
+
+<!-- architecture-figure:118 -->
+> **Architecture figure:** The card describes SigLIP integration and training data in prose but contains no legitimate architecture or system figure.
+<!-- /architecture-figure:118 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2739,9 +2949,14 @@ SPHINX pushes the boundaries of multi-modal LLMs by jointly mixing model weights
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.07575v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.07575v1) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/alpha-vllm/)
 Ziyi Lin, Chris Liu, Renrui Zhang, Peng Gao, Longtian Qiu, Han Xiao, Han Qiu, Chen Lin, Wenqi Shao, Keqin Chen, Jiaming Han, Siyuan Huang, Yichi Zhang, Xuming He, Hongsheng Li, Yu Qiao
+
+<!-- architecture-figure:119 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/3a1bf3fa-d0c5-4692-b9a8-97bea41ce226" alt="Architecture diagram for SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models" />
+  <img src="assets/architectures/sphinx-2023-arch.png" alt="SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models architecture: SPHINX jointly mixes tuning tasks, visual embeddings, and model weights in one multimodal architecture." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> SPHINX jointly mixes tuning tasks, visual embeddings, and model weights in one multimodal architecture. <a href="https://arxiv.org/abs/2311.07575">Source paper</a>, PDF p. 6. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:119 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2755,9 +2970,12 @@ Florence-2 presents a significant advancement in vision foundation models, aimin
 [![arXiv](https://img.shields.io/badge/arXiv-2311.06242-b31b1b.svg?style=flat-square)](https://arxiv.org/pdf/2311.06242) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/gokaygokay/Florence-2)<br>
 Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan<br>
 
+<!-- architecture-figure:120 -->
 <p align="center">
-<img src="https://github.com/user-attachments/assets/f9c1f95b-ba6a-4a55-bf52-fa043b339d27" alt="Architecture diagram for Florence-2: A Deep Dive into its Unified Architecture and Multi-Task Capabilities" />
+  <img src="assets/architectures/florence-2-2023-arch.png" alt="Florence-2: A Deep Dive into its Unified Architecture and Multi-Task Capabilities architecture: Florence-2 combines an image encoder and multimodality encoder-decoder through a unified task-prompt interface." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> Florence-2 combines an image encoder and multimodality encoder-decoder through a unified task-prompt interface. <a href="https://arxiv.org/abs/2311.06242">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:120 -->
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
@@ -2771,9 +2989,14 @@ u-LLaVA introduces a novel projector-based architecture that unifies multi-modal
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.05348-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.05348) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/OPPOMKLab/u-LLaVA)<br>
 Jinjin Xu, Liwu Xu, Yuzhe Yang, Xiang Li, Yanchun Xie, Yi-Jie Huang, Yaqian Li
+
+<!-- architecture-figure:121 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/dcb6b046-fa56-4a02-9123-2ef2185c635a" alt="Architecture diagram for u-LLaVA: Unifying Multi-Modal Tasks via Large Language Model" />
+  <img src="assets/architectures/u-llava-2023-arch.png" alt="u-LLaVA: Unifying Multi-Modal Tasks via Large Language Model architecture: u-LLaVA unifies modality alignment with task-specific projectors, decoders, and patched downstream modules." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> u-LLaVA unifies modality alignment with task-specific projectors, decoders, and patched downstream modules. <a href="https://arxiv.org/abs/2311.05348">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:121 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2786,9 +3009,14 @@ LLaVA-Plus pioneers the creation of multimodal agents by integrating diverse vis
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.05437-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.05437) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/LLaVA-VL/LLaVA-Plus-Codebase)<br>
 Shilong Liu, Hao Cheng, Haotian Liu, Hao Zhang, Feng Li, Tianhe Ren, Xueyan Zou, Jianwei Yang, Hang Su, Jun Zhu, Lei Zhang, Jianfeng Gao, Chunyuan Li
+
+<!-- architecture-figure:122 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/1ede1c4f-bdeb-48e0-ae8e-ccfbee1dea51" alt="Architecture diagram for LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents" />
+  <img src="assets/architectures/llava-plus-2023-arch.png" alt="LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents architecture: LLaVA-Plus retrieves skills, invokes tools, consumes their results, and generates a final response." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> LLaVA-Plus retrieves skills, invokes tools, consumes their results, and generates a final response. <a href="https://arxiv.org/abs/2311.05437">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:122 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2802,6 +3030,11 @@ OtterHD-8B, inspired by Fuyu-8B, directly integrates pixel-level information fro
 [![arXiv](https://img.shields.io/badge/arXiv-2311.04219v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.04219v1) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/luodian/otter)
 
 Bo Li, Peiyuan Zhang, Jingkang Yang, Yuanhan Zhang, Fanyi Pu, Ziwei Liu
+
+<!-- architecture-figure:123 -->
+> **Architecture figure:** The paper&#x27;s figures cover demonstrations, benchmark construction, throughput, resolution, and loss; none is a legitimate architecture substitute.
+<!-- /architecture-figure:123 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2814,9 +3047,14 @@ CoVLM distinguishes itself by using novel communication tokens to enable dynamic
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.03354v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.03354v1)<br>
 Junyan Li, Delin Chen, Yining Hong, Zhenfang Chen, Peihao Chen, Yikang Shen, Chuang Gan
+
+<!-- architecture-figure:124 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/80e807cb-c2cf-491a-a3b4-1223afde1981" alt="Architecture diagram for CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding" />
+  <img src="assets/architectures/covlm-2023-arch.png" alt="CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding architecture: CoVLM vision module and communication-token framework." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> CoVLM vision module and communication-token framework. <a href="https://arxiv.org/pdf/2311.03354">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:124 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2829,9 +3067,14 @@ GLaMM excels in pixel-level grounding by utilizing a five-component architecture
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.03356-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.03356) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/mbzuai-oryx/groundingLMM)<br>
 Hanoona Rasheed, Muhammad Maaz, Sahal Shaji Mullappilly, Abdelrahman Shaker, Salman Khan, Hisham Cholakkal, Rao M. Anwer, Erix Xing, Ming-Hsuan Yang, Fahad S. Khan<br>
+
+<!-- architecture-figure:125 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/ccb22206-6a48-4b77-8cc1-094fe86d72fd" alt="Architecture diagram for GLaMM: Pixel Grounding Large Multimodal Model" />
+  <img src="assets/architectures/glamm-2023-arch.png" alt="GLaMM: Pixel Grounding Large Multimodal Model architecture: GLaMM architecture for scene-, region-, and pixel-level grounding." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> GLaMM architecture for scene-, region-, and pixel-level grounding. <a href="https://arxiv.org/pdf/2311.03356">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:125 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2846,9 +3089,13 @@ Fuyu-8B introduces a streamlined architecture for AI agents by directly projecti
 )](https://www.adept.ai/blog/fuyu-8b) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/adept/fuyu-8b)<br>
 Rohan Bavishi, Erich Elsen, Curtis Hawthorne, Maxwell Nye, Augustus Odena, Arushi Somani, Sağnak Taşırlar
 
+<!-- architecture-figure:126 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/61a75fb4-ced7-419c-bff7-7cb2e3ddc02d" alt="Architecture diagram for Fuyu-8B: A Multimodal Architecture for AI Agents" />
+  <img src="assets/architectures/fuyu-8b-official-arch.png" alt="Fuyu-8B: A Multimodal Architecture for AI Agents architecture: Fuyu-8B projects image patches directly into a decoder-only Transformer." width="820">
 </p>
+<p align="center"><sub><b>Official architecture diagram.</b> Fuyu-8B projects image patches directly into a decoder-only Transformer. <a href="https://www.adept.ai/blog/fuyu-8b">Primary source</a>. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:126 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2861,9 +3108,14 @@ PaLI-3 presents a powerful yet efficient vision-language model that integrates a
 
 [![arXiv](https://img.shields.io/badge/arXiv-2310.09199-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2310.09199) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/kyegomez/PALI3)<br>
 Xi Chen, Xiao Wang, Lucas Beyer, Alexander Kolesnikov, Jialin Wu, Paul Voigtlaender, Basil Mustafa, Sebastian Goodman, Ibrahim Alabdulmohsin, Piotr Padlewski, Daniel Salz, Xi Xiong, Daniel Vlasic, Filip Pavetic, Keran Rong, Tianli Yu, Daniel Keysers, Xiaohua Zhai, Radu Soricut
+
+<!-- architecture-figure:127 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/92d34b30-b13b-44ed-90b5-3c8568a9b634" alt="Architecture diagram for PaLI-3 Vision Language Models: Smaller, Faster, Stronger" />
+  <img src="assets/architectures/pali-3-vision-language-models-2023-arch.png" alt="PaLI-3 Vision Language Models: Smaller, Faster, Stronger architecture: PaLI-3 connects a contrastively pretrained SigLIP encoder to an encoder-decoder UL2 Transformer." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> PaLI-3 connects a contrastively pretrained SigLIP encoder to an encoder-decoder UL2 Transformer. <a href="https://arxiv.org/pdf/2310.09199">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:127 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2876,9 +3128,14 @@ MiniGPT-v2 acts as a unified interface for vision-language multi-task learning b
 
 [![arXiv](https://img.shields.io/badge/arXiv-2310.09478v3-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2310.09478v3)<br>
 Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
+
+<!-- architecture-figure:128 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/2354442a-0e96-4010-8b4f-8bc3d666427e" alt="Architecture diagram for MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning" />
+  <img src="assets/architectures/minigpt-v2-2023-arch.png" alt="MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning architecture: MiniGPT-v2 architecture with frozen ViT, token concatenation, projection, and LLaMA-2." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> MiniGPT-v2 architecture with frozen ViT, token concatenation, projection, and LLaMA-2. <a href="https://arxiv.org/pdf/2310.09478">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:128 -->
+
 <details><br>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2890,6 +3147,11 @@ Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghu
 BakLLaVA elevates the LLaVA framework by employing a Mistral 7B base enhanced with LLaVA 1.5 architecture, undergoing a meticulous two-stage training process on a diverse dataset to achieve superior performance in multimodal benchmarks, outperforming competitors like Llama 2 13B.
 
 [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/skunkworksai/bakllava) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/SkunkworksAI/BakLLaVA-1)
+
+<!-- architecture-figure:129 -->
+> **Architecture figure:** The official model card and repository describe a LLaVA-on-Mistral derivative but publish no model-specific architecture figure.
+<!-- /architecture-figure:129 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2902,8 +3164,14 @@ FERRET, a multimodal large language model, excels in spatial referencing and gro
 
 [![arXiv](https://img.shields.io/badge/arXiv-2310.07704v1-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2310.07704v1) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/apple/ml-ferret)<br>
 Haoxuan You, Haotian Zhang, Zhe Gan, Xianzhi Du, Bowen Zhang, Zirui Wang, Liangliang Cao, Shih-Fu Chang, Yinfei Yang
+
+<!-- architecture-figure:130 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/a5ff801f-d523-4383-8b89-e2499976b2bb" alt="Architecture diagram for Ferret: Refer and Ground Anything Anywhere at Any Granularity" />
+  <img src="assets/architectures/ferret-2023-arch.png" alt="Ferret: Refer and Ground Anything Anywhere at Any Granularity architecture: Ferret hybrid region representation, spatial-aware sampler, and complete model architecture." width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> Ferret hybrid region representation, spatial-aware sampler, and complete model architecture. <a href="https://arxiv.org/pdf/2310.07704">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:130 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2916,9 +3184,14 @@ LLaVA 1.5 enhances its multimodal understanding by replacing its initial linear 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2310.03744-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2310.03744)<br>
 Haotian Liu, Chunyuan Li, Yuheng Li, Yong Jae Lee
+
+<!-- architecture-figure:131 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c7112b75-3b86-48a2-9c0f-f1dc1dc6ee06" alt="Architecture diagram for LLaVA 1.5: Improved Baselines with Visual Instruction Tuning" />
+  <img src="assets/architectures/llava-1-5-2023-arch.png" alt="LLaVA 1.5: Improved Baselines with Visual Instruction Tuning architecture: LLaVA-1.5-HD grid-based encoding for arbitrary image resolutions." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> LLaVA-1.5-HD grid-based encoding for arbitrary image resolutions. <a href="https://arxiv.org/pdf/2310.03744">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:131 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2931,8 +3204,14 @@ CogVLM enhances pretrained language models with a dedicated visual expert module
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.03079v2-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2311.03079v2) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/thudm/cogvlm)<br>
 Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, Jiazheng Xu, Bin Xu, Juanzi Li, Yuxiao Dong, Ming Ding, Jie Tang
+
+<!-- architecture-figure:132 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/93d951e1-ad49-47fd-9135-c11bc69d49bc" alt="Architecture diagram for CogVLM: Visual Expert for Pretrained Language Models" />
+  <img src="assets/architectures/cogvlm-2023-arch.png" alt="CogVLM: Visual Expert for Pretrained Language Models architecture: CogVLM input pathway and visual-expert Transformer block." width="820">
+</p>
+<p align="center"><sub><b>Figure 4.</b> CogVLM input pathway and visual-expert Transformer block. <a href="https://arxiv.org/pdf/2311.03079">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:132 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2945,9 +3224,11 @@ MetaCLIP refines the data curation process for training vision-language models b
 
 [![arXiv](https://img.shields.io/badge/arXiv-2309.16671-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2309.16671) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/facebookresearch/MetaCLIP)<br>
 Hu Xu, Saining Xie, Xiaoqing Ellen Tan, Po-Yao Huang, Russell Howes, Vasu Sharma, Shang-Wen Li, Gargi Ghosh, Luke Zettlemoyer, Christoph Feichtenhofer
-<p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/a6c79d0e-a4c7-48c9-86b6-3a8cc9853e11" alt="Architecture diagram for MetaCLIP: Demystifying CLIP Data" />
-</p>
+
+<!-- architecture-figure:133 -->
+> **Architecture figure:** The paper contributes data curation rather than a model architecture; Figure 5 is a data-pipeline case study.
+<!-- /architecture-figure:133 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2961,9 +3242,14 @@ Qwen-VL distinguishes itself by integrating a Vision Transformer with a large la
 [![arXiv](https://img.shields.io/badge/arXiv-2308.12966-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2308.12966) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/qwenlm/qwen-vl)
 
 Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, Jingren Zhou
+
+<!-- architecture-figure:134 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c9358aad-63e2-44d3-b3af-38e9d4f6aeaa" alt="Architecture diagram for Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond" />
+  <img src="assets/architectures/qwen-vl-2023-arch.png" alt="Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond architecture: Qwen-VL visual-language architecture across pretraining, multitask pretraining, and supervised finetuning." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> Qwen-VL visual-language architecture across pretraining, multitask pretraining, and supervised finetuning. <a href="https://arxiv.org/pdf/2308.12966">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:134 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2975,6 +3261,11 @@ Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang 
 IDEFICS, an 80B parameter vision-language model inspired by Flamingo, processes interleaved image and text sequences, utilizing a GPT-4 and Flamingo-based architecture to achieve robust multimodal understanding, trained on a diverse range of web-based datasets, including the specialized OBELICS dataset.
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/HuggingFaceM4/idefics-80b)
+
+<!-- architecture-figure:135 -->
+> **Architecture figure:** The official launch post and model card have capability and performance illustrations but no IDEFICS-specific architecture diagram.
+<!-- /architecture-figure:135 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -2987,9 +3278,14 @@ BLIVA augments the InstructBLIP model with a Visual Assistant, incorporating enc
 
 [![arXiv](https://img.shields.io/badge/arXiv-2308.09936v3-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2308.09936v3) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/mlpc-ucsd/bliva)<br>
 Wenbo Hu, Yifan Xu, Yi Li, Weiyue Li, Zeyuan Chen, Zhuowen Tu
+
+<!-- architecture-figure:136 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/44c53b8a-ad35-4eca-a68b-63af32e6ccf1" alt="Architecture diagram for BLIVA: A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions" />
+  <img src="assets/architectures/bliva-2023-arch.png" alt="BLIVA: A Simple Multimodal LLM for Better Handling of Text-rich Visual Questions architecture: BLIVA architecture with frozen image encoder, Q-Former, patch projection, and frozen LLM." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> BLIVA architecture with frozen image encoder, Q-Former, patch projection, and frozen LLM. <a href="https://arxiv.org/pdf/2308.09936">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:136 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3002,9 +3298,14 @@ KOSMOS-2, extending the KOSMOS-1 architecture, incorporates grounded image-text 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2306.14824-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2306.14824) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/microsoft/unilm/tree/master/kosmos-2) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/ydshieh/Kosmos-2)<br>
 Zhiliang Peng, Wenhui Wang, Li Dong, Yaru Hao, Shaohan Huang, Shuming Ma, Furu Wei
+
+<!-- architecture-figure:137 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/17420c9c-759d-4690-bfc8-e8d7792111e7" alt="Architecture diagram for KOSMOS-2: Grounding Multimodal Large Language Models to the World" />
+  <img src="assets/architectures/kosmos-2-2023-arch.png" alt="KOSMOS-2: Grounding Multimodal Large Language Models to the World architecture: KOSMOS-2 system overview for multimodal grounding and referring." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> KOSMOS-2 system overview for multimodal grounding and referring. <a href="https://arxiv.org/pdf/2306.14824">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:137 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3017,9 +3318,14 @@ LaVIN offers an efficient and cost-effective approach to vision-language instruc
 
 [![arXiv](https://img.shields.io/badge/arXiv-2305.15023v3-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2305.15023v3) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/luogen1996/lavin)<br>
 Gen Luo, Yiyi Zhou, Tianhe Ren, Shengxin Chen, Xiaoshuai Sun, Rongrong Ji
+
+<!-- architecture-figure:138 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/8afc8259-fa72-4e52-8080-a4ea12208e32" alt="Architecture diagram for LaVIN: Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models" />
+  <img src="assets/architectures/lavin-2023-arch.png" alt="LaVIN: Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models architecture: LaVIN architecture and Mixture-of-Modality Adaptation mechanism." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> LaVIN architecture and Mixture-of-Modality Adaptation mechanism. <a href="https://arxiv.org/pdf/2305.15023">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:138 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3032,9 +3338,14 @@ InstructBLIP enhances the BLIP-2 framework by introducing instruction tuning to 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2305.06500v2-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2305.06500v2) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hysts/InstructBLIP)<br>
 Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, Steven Hoi
+
+<!-- architecture-figure:139 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/5839e3a6-6fb8-469c-b84e-d60a851c1642" alt="Architecture diagram for InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning" />
+  <img src="assets/architectures/instructblip-2023-arch.png" alt="InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning architecture: InstructBLIP architecture with instruction-aware Q-Former and frozen LLM." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> InstructBLIP architecture with instruction-aware Q-Former and frozen LLM. <a href="https://arxiv.org/pdf/2305.06500">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:139 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3047,9 +3358,14 @@ ImageBind revolutionizes multimodal learning by creating a single, joint embeddi
 
 [![arXiv](https://img.shields.io/badge/arXiv-2305.05665-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2305.05665) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/facebookresearch/imagebind)<br>
 Rohit Girdhar, Alaaeldin El-Nouby, Zhuang Liu, Mannat Singh, Kalyan Vasudev Alwala, Armand Joulin, Ishan Misra
+
+<!-- architecture-figure:140 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/fbf8bcdd-b1bb-4fd8-8723-3c82e84ef759" alt="Architecture diagram for ImageBind: One Embedding Space To Bind Them All" />
+  <img src="assets/architectures/imagebind-2023-arch.png" alt="ImageBind: One Embedding Space To Bind Them All architecture: ImageBind aligns six modalities in one shared embedding space." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> ImageBind aligns six modalities in one shared embedding space. <a href="https://arxiv.org/pdf/2305.05665">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:140 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3063,9 +3379,14 @@ LLaVA seamlessly integrates a pre-trained language model (Vicuna) with a visual 
 [![arXiv](https://img.shields.io/badge/arXiv-2304.08485-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2304.08485) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/haotian-liu/LLaVA)
 
 Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
+
+<!-- architecture-figure:141 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/722f0fbb-ea52-4a8a-ab1e-bec45ca7d04f" alt="Architecture diagram for LLaVA: Large Language and Vision Assistant - Visual Instruction Tuning" />
+  <img src="assets/architectures/llava-2023-arch.png" alt="LLaVA: Large Language and Vision Assistant - Visual Instruction Tuning architecture: LLaVA connects CLIP visual features to a language model through a learned projection." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> LLaVA connects CLIP visual features to a language model through a learned projection. <a href="https://arxiv.org/pdf/2304.08485">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:141 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3078,9 +3399,14 @@ MiniGPT-4 seamlessly blends visual and language processing by connecting a pretr
 
 [![arXiv](https://img.shields.io/badge/arXiv-2304.10592v2-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2304.10592v2) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/vision-cair/minigpt-4)<br>
 Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, Mohamed Elhoseiny
+
+<!-- architecture-figure:142 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/0e5ff945-1271-4189-8dd9-b0abd88eacc1" alt="Architecture diagram for MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models" />
+  <img src="assets/architectures/minigpt-4-2023-arch.png" alt="MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models architecture: MiniGPT-4 architecture with ViT, Q-Former, linear projection, and Vicuna." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> MiniGPT-4 architecture with ViT, Q-Former, linear projection, and Vicuna. <a href="https://arxiv.org/pdf/2304.10592">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:142 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3093,9 +3419,11 @@ SigLIP introduces a simple pairwise sigmoid loss for language-image pre-training
 
 [![arXiv](https://img.shields.io/badge/arXiv-2303.15343-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2303.15343)<br>
 Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov, Lucas Beyer<br>
-<p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/60018313-37dd-4dbd-8eb4-a3075fd26663" alt="Architecture diagram for SigLIP: Sigmoid Loss for Language Image Pre-Training" />
-</p>
+
+<!-- architecture-figure:143 -->
+> **Architecture figure:** The paper changes the training loss, not the encoder architecture; Figure 1 is a distributed loss-implementation mock-up.
+<!-- /architecture-figure:143 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3108,6 +3436,14 @@ OpenFlamingo, an open-source adaptation of DeepMind's Flamingo, combines a CLIP 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2308.01390-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2308.01390) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/mlfoundations/open_flamingo)<br>
 Anas Awadalla, Irena Gao, Josh Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt
+
+<!-- architecture-figure:144 -->
+<p align="center">
+  <img src="assets/architectures/openflamingo-2023-arch.png" alt="OpenFlamingo: An Open-Source Framework for Training Large Autoregressive Vision-Language Models architecture: OpenFlamingo-9B interleaved image-and-text system interface." width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> OpenFlamingo-9B interleaved image-and-text system interface. <a href="https://arxiv.org/pdf/2308.01390">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:144 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3120,9 +3456,14 @@ PaLM-E innovates by embedding continuous sensory data, including images and sens
 
 [![arXiv](https://img.shields.io/badge/arXiv-2303.03378-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2303.03378) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://palm-e.github.io)<br>
 Danny Driess, Fei Xia, Mehdi S. M. Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, Wenlong Huang, Yevgen Chebotar, Pierre Sermanet, Daniel Duckworth, Sergey Levine, Vincent Vanhoucke, Karol Hausman, Marc Toussaint, Klaus Greff, Andy Zeng, Igor Mordatch, Pete Florence
+
+<!-- architecture-figure:145 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/67e5bbc7-1800-46e8-8ef1-b3b72a901a12" alt="Architecture diagram for PaLM-E: An Embodied Multimodal Language Model" />
+  <img src="assets/architectures/palm-e-2023-arch.png" alt="PaLM-E: An Embodied Multimodal Language Model architecture: PaLM-E combines sensor encoders and a language model for embodied and visual-language tasks." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> PaLM-E combines sensor encoders and a language model for embodied and visual-language tasks. <a href="https://arxiv.org/pdf/2303.03378">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:145 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3135,9 +3476,14 @@ KOSMOS-1, a multimodal large language model, leverages a Transformer-based archi
 
 [![arXiv](https://img.shields.io/badge/arXiv-2302.14045-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2302.14045) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/microsoft/unilm)<br>
 Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, Tengchao Lv, Lei Cui, Owais Khan Mohammed, Barun Patra, Qiang Liu, Kriti Aggarwal, Zewen Chi, Johan Bjorck, Vishrav Chaudhary, Subhojit Som, Xia Song, Furu Wei
+
+<!-- architecture-figure:146 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/33fd99a9-e89a-4905-8917-f03452fd5e6a" alt="Architecture diagram for KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models" />
+  <img src="assets/architectures/kosmos-1-2023-arch.png" alt="KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models architecture: KOSMOS-1 multimodal input, embedding, language-model, and output overview." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> KOSMOS-1 multimodal input, embedding, language-model, and output overview. <a href="https://arxiv.org/pdf/2302.14045">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:146 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3150,9 +3496,15 @@ BLIP-2 leverages the power of frozen pre-trained image encoders and large langua
 
 [![arXiv](https://img.shields.io/badge/arXiv-2301.12597-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2301.12597) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) [![Gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Salesforce/BLIP2)<br>
 Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, Steven Hoi
+<br>
+
+<!-- architecture-figure:147 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/604460f9-478c-4cc1-ba35-287447c04b26" alt="Architecture diagram for BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models" />
-</p><br>
+  <img src="assets/architectures/blip-2-2023-arch.png" alt="BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models architecture: BLIP-2 bridges a frozen image encoder and frozen LLM through a two-stage Q-Former." width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> BLIP-2 bridges a frozen image encoder and frozen LLM through a two-stage Q-Former. <a href="https://arxiv.org/pdf/2301.12597">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:147 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3165,9 +3517,11 @@ MULTIINSTRUCT leverages the OFA model as its foundation, employing a Transformer
 
 [![arXiv](https://img.shields.io/badge/arXiv-2212.10773-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2212.10773) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/vt-nlp/multiinstruct)<br>
 Zhiyang Xu, Ying Shen, Lifu Huang
-<p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/bedfc8b1-7aff-44af-b605-4470ad030bdf" alt="Architecture diagram for MULTIINSTRUCT: Improving Multi-Modal Zero-Shot Learning via Instruction Tuning" />
-</p>
+
+<!-- architecture-figure:148 -->
+> **Architecture figure:** Figures cover examples, task taxonomy, performance, and attention; the paper publishes no model-specific architecture figure.
+<!-- /architecture-figure:148 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3180,9 +3534,14 @@ PaLI distinguishes itself as a jointly-scaled multilingual language-image model 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2209.06794-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2209.06794) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/google-research/big_vision)<br>
 Xi Chen, Xiao Wang, Lucas Beyer, Alexander Kolesnikov, Jialin Wu, Paul Voigtlaender, Basil Mustafa, Sebastian Goodman, Ibrahim Alabdulmohsin, Piotr Padlewski, Daniel Salz, Xi Xiong, Daniel Vlasic, Filip Pavetic, Keran Rong, Tianli Yu, Daniel Keysers, Xiaohua Zhai, Radu Soricut
+
+<!-- architecture-figure:149 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/2565afb0-901c-4438-9488-c73a86261aa5" alt="Architecture diagram for PaLI: A Jointly-Scaled Multilingual Language-Image Model" />
+  <img src="assets/architectures/pali-2022-arch.png" alt="PaLI: A Jointly-Scaled Multilingual Language-Image Model architecture: PaLI combines a scalable ViT with an encoder-decoder Transformer." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> PaLI combines a scalable ViT with an encoder-decoder Transformer. <a href="https://arxiv.org/pdf/2209.06794">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:149 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3195,9 +3554,14 @@ Flamingo pioneers a Perceiver-based VLM architecture that utilizes a Perceiver R
 
 [![arXiv](https://img.shields.io/badge/arXiv-2204.14198v2-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2204.14198v2)<br>
 Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katie Millican, Malcolm Reynolds, Roman Ring, Eliza Rutherford, Serkan Cabi, Tengda Han, Zhitao Gong, Sina Samangooei, Marianne Monteiro, Jacob Menick, Sebastian Borgeaud, Andrew Brock, Aida Nematzadeh, Sahand Sharifzadeh, Mikolaj Binkowski, Ricardo Barreira, Oriol Vinyals, Andrew Zisserman, Karen Simonyan
+
+<!-- architecture-figure:150 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/b46ebf3e-67fc-401e-a6ea-6f4797da372d" alt="Architecture diagram for Flamingo: a Visual Language Model for Few-Shot Learning" />
+  <img src="assets/architectures/flamingo-2022-arch.png" alt="Flamingo: a Visual Language Model for Few-Shot Learning architecture: Flamingo architecture for interleaved visual inputs and free-form text output." width="820">
 </p>
+<p align="center"><sub><b>Figure 3.</b> Flamingo architecture for interleaved visual inputs and free-form text output. <a href="https://arxiv.org/pdf/2204.14198">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:150 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3210,9 +3574,15 @@ BLIP introduces a versatile Multimodal Mixture of Encoder-Decoder (MED) architec
 
 [![arXiv](https://img.shields.io/badge/arXiv-2201.12086-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2201.12086) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/salesforce/BLIP)<br>
 Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi<br>
+<br>
+
+<!-- architecture-figure:151 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/27db1037-2b48-4097-9891-019ba77fc536" alt="Architecture diagram for BLIP: Bootstrapping Language-Image Pre-training" />
-</p><br>
+  <img src="assets/architectures/blip-2022-arch.png" alt="BLIP: Bootstrapping Language-Image Pre-training architecture: BLIP multimodal mixture-of-encoder-decoder architecture and training objectives." width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> BLIP multimodal mixture-of-encoder-decoder architecture and training objectives. <a href="https://arxiv.org/pdf/2201.12086">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:151 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3225,9 +3595,14 @@ GLIP revolutionizes language-image pre-training by unifying object detection and
 
 [![arXiv](https://img.shields.io/badge/arXiv-2112.03857-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2112.03857) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/microsoft/GLIP)<br>
 Liunian Harold Li, Pengchuan Zhang, Haotian Zhang, Jianwei Yang, Chunyuan Li, Yiwu Zhong, Lijuan Wang, Lu Yuan, Lei Zhang, Jenq-Neng Hwang, Kai-Wei Chang, Jianfeng Gao
+
+<!-- architecture-figure:152 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/06e6f8dc-fbd8-49da-8651-a22ee2edcf3d" alt="Architecture diagram for GLIP: Grounded Language-Image Pre-training" />
+  <img src="assets/architectures/glip-2021-arch.png" alt="GLIP: Grounded Language-Image Pre-training architecture: GLIP image and language encoders with deep fusion and word-region alignment." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> GLIP image and language encoders with deep fusion and word-region alignment. <a href="https://arxiv.org/pdf/2112.03857">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:152 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3240,9 +3615,14 @@ FROZEN enables multimodal few-shot learning by pairing a pre-trained, frozen lan
 
 [![arXiv](https://img.shields.io/badge/arXiv-2106.13884-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2106.13884)<br>
 Maria Tsimpoukelli, Jacob Menick, Serkan Cabi, S. M. Ali Eslami, Oriol Vinyals, Felix Hill
+
+<!-- architecture-figure:153 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/4156475d-e501-495e-98bb-66efdd5b03f7" alt="Architecture diagram for FROZEN: Multimodal Few-Shot Learning with Frozen Language Models" />
+  <img src="assets/architectures/frozen-2021-arch.png" alt="FROZEN: Multimodal Few-Shot Learning with Frozen Language Models architecture: FROZEN trains a vision encoder through a frozen language model." width="820">
 </p>
+<p align="center"><sub><b>Figure 2.</b> FROZEN trains a vision encoder through a frozen language model. <a href="https://arxiv.org/pdf/2106.13884">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:153 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3255,9 +3635,14 @@ CLIP leverages a contrastive learning approach, training separate image and text
 
 [![arXiv](https://img.shields.io/badge/arXiv-2103.00020-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2103.00020) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/openai/CLIP)<br>
 Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, Ilya Sutskever
+
+<!-- architecture-figure:154 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/c335c342-9a2c-4d4e-83d6-d3077cc32643" alt="Architecture diagram for CLIP: Contrastive Language-Image Pre-training" />
+  <img src="assets/architectures/clip-2021-arch.png" alt="CLIP: Contrastive Language-Image Pre-training architecture: CLIP dual-encoder contrastive training and zero-shot classification approach." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> CLIP dual-encoder contrastive training and zero-shot classification approach. <a href="https://arxiv.org/pdf/2103.00020">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:154 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
@@ -3270,9 +3655,14 @@ The Vision Transformer (ViT) revolutionizes image recognition by applying the Tr
 
 [![arXiv](https://img.shields.io/badge/arXiv-2010.11929v2-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2010.11929v2) [![GitHub](https://badges.aleen42.com/src/github.svg)](https://github.com/google-research/vision_transformer)<br>
 Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby
+
+<!-- architecture-figure:155 -->
 <p align="center">
-<img src="https://github.com/gokayfem/Awesome-VLM-Architectures/assets/88277926/b2f77966-c2e8-4204-ba90-be51196a7dee" alt="Architecture diagram for ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" />
+  <img src="assets/architectures/vit-2020-arch.png" alt="ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale architecture: ViT patch embedding, Transformer encoder, and classification-token architecture." width="820">
 </p>
+<p align="center"><sub><b>Figure 1.</b> ViT patch embedding, Transformer encoder, and classification-token architecture. <a href="https://arxiv.org/pdf/2010.11929">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:155 -->
+
 <details>
 <summary>ℹ️ <i>More Information</i></summary><br>
 
