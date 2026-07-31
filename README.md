@@ -20,18 +20,21 @@
 
 If this repository is useful in your work, you may cite it below. Please also cite the original paper for claims about any individual model; this catalog is a guide to the literature, not a substitute for it.
 
+Created and maintained by [Gökay Aydoğan](https://www.researchgate.net/profile/Goekay-Aydogan-2) at [fal.ai](https://fal.ai) ([ORCID](https://orcid.org/0000-0002-2343-9433); [gokay@fal.ai](mailto:gokay@fal.ai)).
+
 Architecture images are credited individually in the [figure credits](assets/architectures/CREDITS.md) and remain subject to the rights described in the [figure notice](assets/architectures/FIGURE_NOTICE.md).
 
 <details>
 <summary>📚 <i>BibTeX</i></summary>
 
 ```bibtex
-@misc{gokayfem2024awesomevlmarchitectures,
-  author       = {{gokayfem}},
+@misc{aydogan2024awesomevlmarchitectures,
+  author       = {Gökay Aydoğan},
   title        = {Awesome VLM Architectures},
   year         = {2024},
   howpublished = {\url{https://github.com/gokayfem/awesome-vlm-architectures}},
-  note         = {GitHub repository}
+  note         = {GitHub repository, fal.ai},
+  url          = {https://github.com/gokayfem/awesome-vlm-architectures}
 }
 ```
 

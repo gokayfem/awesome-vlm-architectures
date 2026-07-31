@@ -3,8 +3,13 @@ message: "If you use this catalog, please cite it using the metadata below."
 title: "Awesome VLM Architectures"
 type: dataset
 authors:
-  - alias: gokayfem
-    website: "https://github.com/gokayfem"
+  - given-names: "Gökay"
+    family-names: "Aydoğan"
+    alias: gokayfem
+    affiliation: "fal.ai"
+    email: "gokay@fal.ai"
+    orcid: "https://orcid.org/0000-0002-2343-9433"
+    website: "https://www.researchgate.net/profile/Goekay-Aydogan-2"
 repository-code: "https://github.com/gokayfem/awesome-vlm-architectures"
 url: "https://github.com/gokayfem/awesome-vlm-architectures"
 date-released: 2024-02-15
