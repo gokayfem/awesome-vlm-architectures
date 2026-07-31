@@ -20,6 +20,8 @@
 
 If this repository is useful in your work, you may cite it below. Please also cite the original paper for claims about any individual model; this catalog is a guide to the literature, not a substitute for it.
 
+Architecture images are credited individually in the [figure credits](assets/architectures/CREDITS.md) and remain subject to the rights described in the [figure notice](assets/architectures/FIGURE_NOTICE.md).
+
 <details>
 <summary>📚 <i>BibTeX</i></summary>
 
@@ -52,7 +54,7 @@ Dates below use the first official model release when one is documented; otherwi
 <!--lint disable table-pipe-alignment table-cell-padding-->
 
 | Date | Architecture | Distinctive contribution |
-|---|---|---|
+| --- | --- | --- |
 | 2026-07-28 | MODUS | Decoder-only any-to-any modeling without modality-specific heads or losses |
 | 2026-07-28 | Argus-Unified | Hybrid continuous and discrete visual tokens for economical understanding and generation |
 | 2026-07-27 | Kimi K3 | Kimi Delta Attention, Attention Residuals, and extremely sparse LatentMoE routing |
@@ -129,6 +131,13 @@ Mingqiao Ye et al., EPFL<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:1 -->
+<p align="center">
+  <img src="assets/architectures/modus-2026-arch.png" alt="MODUS: Decoder-Only Any-to-Any Multimodal Modeling architecture: Decoder-only any-to-any modeling across tokenized 1D and 2D modalities" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Decoder-only any-to-any modeling across tokenized 1D and 2D modalities. <a href="https://arxiv.org/abs/2607.25948">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:1 -->
+
 **MODUS** is a decoder-only any-to-any model that represents diverse modalities inside one autoregressive architecture. Unlike encoder-decoder or diffusion systems assembled around modality-specific output paths, the same model predicts any supported modality from any combination of the others. This makes intermediate-modality chains and self-scoring through a second generated modality native behaviors rather than external workflows.
 
 The design deliberately reuses strong pretrained decoder-only priors instead of training a bespoke multimodal stack from scratch. A single checkpoint is evaluated across heterogeneous tasks and modalities, making MODUS most notable as a general architectural formulation rather than a narrowly optimized VLM endpoint.
@@ -146,6 +155,13 @@ Weiming Zhuang et al.<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:2 -->
+<p align="center">
+  <img src="assets/architectures/argus-unified-2026-arch.png" alt="Argus-Unified: Economical Understanding and Generation architecture: Two-stage hybrid-token training for unified image understanding and generation" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> Two-stage hybrid-token training for unified image understanding and generation. <a href="https://arxiv.org/abs/2607.25527">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:2 -->
 
 **Argus-Unified** resolves the conflicting visual representations required by comprehension and synthesis through hybrid visual tokens. Continuous encoder features preserve semantic information for understanding, while a learned quantizer produces discrete tokens for image generation from the same frozen visual encoder.
 
@@ -165,6 +181,13 @@ Kimi Team, Moonshot AI<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:3 -->
+<p align="center">
+  <img src="assets/architectures/kimi-k3-2026-arch.png" alt="Kimi K3: Kimi Delta Attention at Trillion-Parameter Scale architecture: Kimi Delta Attention, Stable LatentMoE, Attention Residuals, and MoonViT-V2" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Kimi Delta Attention, Stable LatentMoE, Attention Residuals, and MoonViT-V2. <a href="https://arxiv.org/abs/2607.24653">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:3 -->
+
 **Kimi K3** has 2.8T total and 104B active parameters across 93 layers. Sixty-nine layers use gated delta-rule linear attention and 24 use gated Multi-head Latent Attention; learned Attention Residuals create structured information paths across depth. Stable LatentMoE activates 16 of 896 routed experts plus two shared experts, making the model unusually sparse for its scale.
 
 A 401M-parameter MoonViT-V2 encoder supplies native image and video input. The model supports a 1,048,576-token context and receives multimodal, long-context, agentic, reasoning, and tool-use training. Quantization-aware pretraining targets MXFP4 weights and MXFP8 activations rather than treating low-precision deployment as an afterthought.
@@ -182,6 +205,13 @@ Senqiao Yang et al., Microsoft Research<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:4 -->
+<p align="center">
+  <img src="assets/architectures/mage-vl-2026-arch.png" alt="Mage-VL: Codec-Native Streaming Multimodality architecture: Codec-native streaming perception with an event gate and causal language decoder" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> Codec-native streaming perception with an event gate and causal language decoder. <a href="https://arxiv.org/abs/2607.24904">Source paper</a>, PDF p. 8. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:4 -->
 
 **Mage-ViT** replaces uniform frame sampling with selective 16×16-patch encoding guided by motion vectors and residual energy across anchor and predicted frames. This codec-native tokenization reduces visual-token use by more than 75% while retaining spatiotemporal context. The encoder is trained from scratch on roughly 560M unlabeled images and 100M unlabeled video frames.
 
@@ -201,6 +231,10 @@ Thinking Machines Lab<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:5 -->
+> **Architecture figure:** The official Inkling model card contains no architecture figure.
+<!-- /architecture-figure:5 -->
+
 **Inkling** contains 975B total and 41B active parameters. Its MoE layers activate six of 256 routed experts plus two shared experts using sigmoid routing and auxiliary-loss-free balancing. Attention alternates five local sliding-window layers with one global layer and uses learned relative-position representations rather than RoPE; short convolutions further refine key, value, attention, and MLP pathways.
 
 Pretraining spans 45T text, image, audio, and video tokens. Post-training begins with a small synthetic supervised bootstrap and scales asynchronous reinforcement learning across multimodal understanding, tools, coding, mathematics, conversation, and safety. The released weights support controllable reasoning effort and contexts up to one million tokens.
@@ -218,6 +252,13 @@ Tencent Robotics X, Hy Vision Team and Futian Laboratory<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:6 -->
+<p align="center">
+  <img src="assets/architectures/hy-embodied-vlm-2026-arch.png" alt="Hy-Embodied-VLM: Sparse-MoE Reasoning for Physical Agents architecture: Self-evolving supervised fine-tuning, rejection sampling, and specialized reinforcement learning" width="820">
+</p>
+<p align="center"><sub><b>Figure 4.</b> Self-evolving supervised fine-tuning, rejection sampling, and specialized reinforcement learning. <a href="https://arxiv.org/abs/2607.12894">Source paper</a>, PDF p. 11. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:6 -->
 
 **Hy-Embodied-VLM-1.0** connects Hy-ViT2 to a roughly 30B-total, 3B-active language model. Each sparse-MoE layer selects eight of 128 routed experts plus one shared expert. It accepts as many as 128 images in a 32K context and exposes direct-response and explicit-thinking modes through the same checkpoint.
 
@@ -237,6 +278,13 @@ Yuliang Liu et al.<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:7 -->
+<p align="center">
+  <img src="assets/architectures/monkeyocrv2-2026-arch.png" alt="MonkeyOCRv2: Document-Native Visual-Text Pretraining architecture: Document-native pretraining through text generation and pixel reconstruction" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Document-native pretraining through text generation and pixel reconstruction. <a href="https://arxiv.org/abs/2607.11562">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:7 -->
+
 **MonkeyOCRv2** is a visual-text foundation encoder specialized for the properties that natural-image pretraining often misses: dense text, small glyphs, fine strokes, and layout. Its two complementary objectives align images with their transcribed content while forcing the encoder to retain pixel-level document structure.
 
 The MonkeyDoc v2 corpus contains 113M document images in 17 languages. The frozen encoder improves recognition, detection, tamper analysis, segmentation, parsing, and understanding; paired with a lightweight language model, it forms a 0.7B document parser. Public weights were announced July 11, two days before the arXiv report, so the timeline follows the model release rather than the paper date.
@@ -254,6 +302,13 @@ MiniMax<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:8 -->
+<p align="center">
+  <img src="assets/architectures/minimax-m3-2026-arch.png" alt="MiniMax M3: Native Multimodality with Sparse Long-Context Attention architecture: MiniMax Sparse Attention index and exact-attention branches" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> MiniMax Sparse Attention index and exact-attention branches. <a href="https://arxiv.org/abs/2606.13392">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:8 -->
 
 **MiniMax Sparse Attention** adds a lightweight index branch that scores KV blocks independently for each grouped-query-attention group. The main branch performs exact attention only over selected blocks, while a KV-outer kernel groups queries retrieving the same block to improve memory locality and reuse.
 
@@ -273,6 +328,13 @@ Ziang Yan et al.<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:9 -->
+<p align="center">
+  <img src="assets/architectures/internvideo3-2026-arch.png" alt="InternVideo3: Multimodal Contextual Reasoning for Video Agents architecture: InternVideo3 with multimodal multi-head latent attention across long contexts" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> InternVideo3 with multimodal multi-head latent attention across long contexts. <a href="https://arxiv.org/abs/2606.12195">Source paper</a>, PDF p. 7. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:9 -->
+
 **Multimodal Contextual Reasoning** maintains one evolving context containing observations, instructions, intermediate reasoning, tool actions, and memory. This closed loop lets the model accumulate and verify evidence across long videos rather than treating video QA as a single static prompt.
 
 **Multimodal Multi-head Latent Attention** reparameterizes and compresses KV-cache states while preserving the complete visual-token sequence. Training combines continued pretraining, short-to-long supervised tuning, rule-based reinforcement learning, and on-policy distillation; a retrieval-equipped video-agent implementation demonstrates the intended tool-using setting.
@@ -290,6 +352,13 @@ Kwai Keye Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:10 -->
+<p align="center">
+  <img src="assets/architectures/keye-vl-2-0-2026-arch.png" alt="Keye-VL 2.0: Sparse Attention for Long-Video Agents architecture: Four-stage curriculum extending Keye-VL from alignment to 256K context" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Four-stage curriculum extending Keye-VL from alignment to 256K context. <a href="https://arxiv.org/abs/2606.10651">Source paper</a>, PDF p. 8. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:10 -->
 
 **Keye-VL-2.0-30B-A3B** is the first reported adaptation of DeepSeek Sparse Attention to grouped-query multimodal attention. Only 3B of 30B parameters activate per token, while the sparse retrieval mechanism keeps critical frames and long-range dependencies accessible across a 256K context. Heterogeneous ViT-language-model parallelism and custom sparse-attention kernels address the systems cost of hour-long video.
 
@@ -309,6 +378,13 @@ Zyphra<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:11 -->
+<p align="center">
+  <img src="assets/architectures/zamba2-vl-2026-arch.png" alt="Zamba2-VL: Hybrid State-Space Vision-Language Modeling architecture: Zamba2 hybrid state-space language backbone connected to a vision encoder" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Zamba2 hybrid state-space language backbone connected to a vision encoder. <a href="https://arxiv.org/abs/2606.00390">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:11 -->
+
 **Zamba2-VL** extends the Zamba hybrid backbone to vision-language inputs in 1.2B, 2.7B, and 7B variants. Most sequence processing occurs in Mamba-2 state-space layers, with a small set of shared attention blocks supplying global token interaction. This preserves transformer-like multimodal reasoning while moving more computation toward near-linear prefill and bounded recurrent state.
 
 The architecture is particularly relevant for edge and long-context deployment: visual sequences can be large even when the language model is small, so reducing quadratic attention changes time-to-first-token and memory behavior more materially than ordinary parameter pruning.
@@ -326,6 +402,13 @@ NVIDIA<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:12 -->
+<p align="center">
+  <img src="assets/architectures/cosmos-3-2026-arch.png" alt="Cosmos 3: Omnimodal World Modeling with Mixture of Transformers architecture: Mixture-of-Transformers reasoner and generator with shared attention" width="820">
+</p>
+<p align="center"><sub><b>Figure 5.</b> Mixture-of-Transformers reasoner and generator with shared attention. <a href="https://arxiv.org/abs/2606.02800">Source paper</a>, PDF p. 11. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:12 -->
 
 **Cosmos 3** uses a Mixture-of-Transformers with two communicating towers. An autoregressive transformer reasons over language, vision, and action sequences; a diffusion transformer generates continuous images, video, and world trajectories. Their shared representation lets the family serve as a VLM, forward or inverse dynamics model, simulator, generator, or policy without separate task pipelines.
 
@@ -345,6 +428,13 @@ Lance Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:13 -->
+<p align="center">
+  <img src="assets/architectures/lance-2026-arch.png" alt="Lance: Unified Image and Video Understanding, Generation, and Editing architecture: Dual-expert sequence modeling for understanding and visual generation" width="820">
+</p>
+<p align="center"><sub><b>Figure 6.</b> Dual-expert sequence modeling for understanding and visual generation. <a href="https://arxiv.org/abs/2605.18678">Source paper</a>, PDF p. 9. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:13 -->
+
 **Lance** interleaves text, image, and video in a shared 3B-parameter sequence model while routing semantic understanding and visual synthesis through dedicated experts. Semantic ViT tokens coexist with clean or noised VAE latents, and generalized 3D causal attention plus modality-aware positional encoding preserve spatial and temporal relationships.
 
 One checkpoint supports visual understanding, text-to-image and text-to-video generation, image-to-video generation, and editing. Its training-from-scratch recipe uses no more than 128 A100 GPUs, making the contribution as much about an attainable unified architecture as headline generation quality.
@@ -362,6 +452,13 @@ Zyphra<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:14 -->
+<p align="center">
+  <img src="assets/architectures/zaya1-vl-2026-arch.png" alt="ZAYA1-VL: Vision-Specialized Compressed Convolutional Attention architecture: Visual routing, compressed convolutional attention, and a hybrid language backbone" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Visual routing, compressed convolutional attention, and a hybrid language backbone. <a href="https://arxiv.org/abs/2605.08560">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:14 -->
 
 **ZAYA1-VL-8B** joins a Qwen2.5-VL visual encoder to ZAYA1's MoE decoder. Vision-only LoRA and Compressed Convolutional Attention parameters activate for visual tokens without duplicating the language backbone, while bidirectional attention within image-token spans improves spatial integration.
 
@@ -381,6 +478,13 @@ Technology Innovation Institute<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:15 -->
+<p align="center">
+  <img src="assets/architectures/falcon-perception-2026-arch.png" alt="Falcon Perception: Early-Fusion Grounding, Segmentation, and OCR architecture: Early-fusion perception Transformer with grounding, geometry, and segmentation pathways" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Early-fusion perception Transformer with grounding, geometry, and segmentation pathways. <a href="https://arxiv.org/abs/2603.27365">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:15 -->
+
 **Falcon Perception** is a dense early-fusion Transformer in which image patches and text interact from the first layer. Its attention mask is bidirectional over image tokens and causal over prediction tokens. Variable-length instance tokens identify multiple objects, while lightweight continuous heads produce masks without turning segmentation into an unwieldy text sequence.
 
 The family includes a 600M perception model and a 300M OCR model. The paper was submitted March 28, but the timeline uses the documented May 3 public model launch, following this repository's release-date policy.
@@ -398,6 +502,13 @@ GLM-V Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:16 -->
+<p align="center">
+  <img src="assets/architectures/glm-5v-turbo-2026-arch.png" alt="GLM-5V-Turbo: Native Multimodal Agency architecture: Multimodal multi-token prediction with image placeholders and shared Transformer blocks" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Multimodal multi-token prediction with image placeholders and shared Transformer blocks. <a href="https://arxiv.org/abs/2604.26752">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:16 -->
 
 **GLM-5V-Turbo** is organized around end-to-end multimodal agency across images, video, webpages, documents, GUIs, code, and external tools. Its contribution is the integration of perception with the agent loop: observations remain available during planning and execution, and outcomes can be visually verified rather than handed off to a detached captioning stage.
 
@@ -417,6 +528,10 @@ Tommi Kerola et al., Preferred Networks<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:17 -->
+> **Architecture figure:** The PLaMo 2.1-VL paper contains application and data figures, but no model architecture diagram.
+<!-- /architecture-figure:17 -->
+
 **PLaMo 2.1-VL** is designed around a constrained deployment envelope rather than frontier scale. Both sizes support VQA and bounding-box grounding, with evaluations emphasizing Japanese language operation and applications such as factory tool recognition and infrastructure anomaly detection.
 
 A large synthetic-data pipeline supplies Japanese multimodal instructions, grounding examples, and domain-oriented supervision. The entry broadens the catalog's language and edge coverage; its contribution is a deployable bilingual VQA-and-grounding family rather than a new attention primitive.
@@ -434,6 +549,13 @@ Eunbi Choi et al., LG AI Research<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:18 -->
+<p align="center">
+  <img src="assets/architectures/exaone-4-5-2026-arch.png" alt="EXAONE 4.5: Native Multimodal Pretraining for Documents architecture: Native-resolution vision encoding, projection, language decoding, and multi-token prediction" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Native-resolution vision encoding, projection, language decoding, and multi-token prediction. <a href="https://arxiv.org/abs/2604.08644">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:18 -->
 
 **EXAONE 4.5** adds a dedicated vision encoder to the EXAONE 4.0 framework and trains the resulting stack natively over text and visual inputs. Its data mixture is deliberately document-heavy, targeting enterprise documents, OCR-rich layouts, and Korean contextual reasoning while retaining general language capability.
 
@@ -453,6 +575,13 @@ BidirLM Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:19 -->
+<p align="center">
+  <img src="assets/architectures/bidirlm-and-bidirlm-omni-2026-arch.png" alt="BidirLM and BidirLM-Omni: Causal Decoders as Multimodal Encoders architecture: Specialist-backbone merging with frozen modality projection heads" width="820">
+</p>
+<p align="center"><sub><b>Figure 10.</b> Specialist-backbone merging with frozen modality projection heads. <a href="https://arxiv.org/abs/2604.02045">Source paper</a>, PDF p. 25. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:19 -->
+
 **BidirLM** removes the causal mask and adapts a decoder with masked next-token prediction and contrastive learning. Weight merging and mixed-domain training preserve generative knowledge while recovering the full-context interaction needed by retrieval and embedding tasks.
 
 **BidirLM-Omni** combines Qwen3 text, Qwen3-VL, and Qwen3-ASR specialist backbones with frozen visual and audio projectors, aligning all three modalities in one contrastive space. The entry belongs beside CLIP, SigLIP, and ImageBind as an encoder architecture, despite originating from decoder checkpoints.
@@ -470,6 +599,13 @@ Gemma Team, Google DeepMind<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:20 -->
+<p align="center">
+  <img src="assets/architectures/gemma-4-2026-arch.png" alt="Gemma 4: Open-Weight Native Multimodal Models architecture: Aspect-preserving image resizing, patch pooling, and soft-token production" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Aspect-preserving image resizing, patch pooling, and soft-token production. <a href="https://arxiv.org/abs/2607.02770">Source paper</a>, PDF p. 16. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:20 -->
 
 **Gemma 4** is a suite of related architectures rather than one uniform network. E2B and E4B target mobile and edge deployment; 31B is a dense server-class decoder; and 26B-A4B is a sparse Mixture-of-Experts model with roughly 4B active parameters. These branches accept images through improved visual processing, while the mobile models additionally support audio. The distinctive **Gemma 4 12B Unified** removes separate vision and audio encoders: raw image patches and audio features enter through direct linear projections, reducing duplicated encoder memory and latency. Context windows reach 128K or 256K depending on the variant.
 
@@ -491,6 +627,13 @@ Boqiang Zhang, Lei Ke, Ruihan Yang, Qi Gao, Tianyuan Qu, Rossell Chen, Dong Yu, 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:21 -->
+<p align="center">
+  <img src="assets/architectures/penguin-vl-2026-arch.png" alt="Penguin-VL: Efficient VLMs with LLM-Based Vision Encoders architecture: An LLM-initialized vision encoder with priority-aware video-token compression" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> An LLM-initialized vision encoder with priority-aware video-token compression. <a href="https://arxiv.org/abs/2603.06569">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:21 -->
+
 **Penguin-VL** builds its Penguin-Encoder by initializing a vision backbone from a text-only Qwen3-0.6B model. Causal attention is converted to bidirectional attention, and 2D rotary position embeddings permit variable-resolution visual tokenization. The encoder is connected to compact language decoders to form 2B- and 8B-class VLMs. For video, **Temporal Redundancy-Aware compression** assigns larger token budgets to informative key frames and compresses redundant intermediate frames, allowing longer sequences within a fixed visual-token budget.
 
 Training begins with mixed-supervision encoder adaptation. A teacher vision encoder supplies amplitude, direction, and relational distillation targets while image reconstruction-style supervision stabilizes the LLM-to-vision conversion. A low-to-high-resolution curriculum then aligns the encoder for fine-grained perception, followed by unified image and video multimodal pretraining and instruction tuning. This recipe is designed to preserve OCR, spatial, temporal, and dense-captioning signals that category-oriented contrastive objectives can suppress.
@@ -510,6 +653,13 @@ Jyoti Aneja, Michael Harrison, Neel Joshi, Tyler LaBonte, John Langford, Eduardo
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:22 -->
+<p align="center">
+  <img src="assets/architectures/phi-4-reasoning-vision-2026-arch.png" alt="Phi-4-Reasoning-Vision: Compact Multimodal Reasoning architecture: SigLIP2 vision encoding, cross-modal projection, mid-fusion, and language reasoning" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> SigLIP2 vision encoding, cross-modal projection, mid-fusion, and language reasoning. <a href="https://arxiv.org/abs/2603.03975">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:22 -->
 
 **Phi-4-Reasoning-Vision-15B** uses a mid-fusion architecture built from the Phi-4-Reasoning language backbone and a SigLIP 2 vision encoder. Visual features are projected into the language embedding space and inserted into the decoder sequence. Dynamic-resolution processing produces up to 3,600 visual tokens, supporting fine-grained documents and interface screenshots. Bidirectional attention is restricted to tokens within each image, improving spatial interaction while avoiding the overfitting Microsoft observed with broader bidirectional attention.
 
@@ -531,6 +681,13 @@ Yifu Qiu, Paul-Ambroise Duquenne, Holger Schwenk<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:23 -->
+<p align="center">
+  <img src="assets/architectures/v-sonar-and-v-lcm-2026-arch.png" alt="V-SONAR and V-LCM: Vision-Language Modeling in Concept Space architecture: Visual-semantic alignment and concept-space prediction" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Visual-semantic alignment and concept-space prediction. <a href="https://arxiv.org/abs/2603.01096">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:23 -->
+
 **V-SONAR** starts with Meta's Perception Encoder for image and video features and learns a lightweight projector into the pre-existing SONAR embedding space. Positional embeddings and a temporal-attention layer preserve frame order, while attention pooling produces a modality-level representation compatible with SONAR text concepts. Because the target space is shared with OMNISONAR, the representation can be decoded into text across SONAR's multilingual coverage. A text-only Large Concept Model can also consume these aligned visual embeddings without vision-specific pretraining.
 
 V-SONAR is trained with a coarse-to-fine post-hoc alignment curriculum rather than retraining the foundation encoders from scratch. The alignment uses paired visual-caption supervision and SONAR text embeddings, with staged optimization and asynchronous learning rates for the newly initialized projector and pretrained encoder. **V-LCM** then concatenates V-SONAR visual concepts with SONAR language concepts and retains LCM's two-tower contextualizer and denoiser architecture. It predicts the next continuous concept embedding with the same latent-diffusion objective used during text-only LCM pretraining.
@@ -550,6 +707,10 @@ Qwen Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:24 -->
+> **Architecture figure:** Qwen3.5 has no public technical paper containing an architecture figure.
+<!-- /architecture-figure:24 -->
 
 **Qwen3.5** is a natively multimodal decoder family rather than a separate text model with a later VL edition. Its flagship 397B-A17B checkpoint uses sparse Mixture-of-Experts routing, activating about 17B parameters per token, and combines **Gated DeltaNet** linear-attention layers with standard softmax-attention layers. Visual inputs are handled inside the same model interface as text, supporting image and video reasoning, tool use, coding, and long-context agent workflows. Smaller dense and MoE variants extend the design across deployment scales.
 
@@ -571,6 +732,13 @@ Tencent Youtu Lab<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:25 -->
+<p align="center">
+  <img src="assets/architectures/youtu-vl-2026-arch.png" alt="Youtu-VL: Unified Autoregressive Supervision for Dense Vision architecture: Unified visual-text autoregressive supervision and dense-output decoding" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> Unified visual-text autoregressive supervision and dense-output decoding. <a href="https://arxiv.org/abs/2601.19798">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:25 -->
+
 **Vision-Language Unified Autoregressive Supervision** learns a visual codebook whose symbols expand the text vocabulary into one multimodal vocabulary. Visual tokens are not passive conditioning embeddings: the decoder predicts them alongside text through joint visual-token and text reconstruction.
 
 Because dense outputs are serialized in the same vocabulary, a standard autoregressive VLM can produce segmentation, monocular depth, human pose, and object detections without separate heads. This turns dense perception into native generation while retaining ordinary visual question answering and instruction following.
@@ -588,6 +756,13 @@ Kimi Team, Moonshot AI<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:26 -->
+<p align="center">
+  <img src="assets/architectures/kimi-k2-5-and-k2-6-2026-arch.png" alt="Kimi K2.5 and K2.6: Native Multimodal Agentic MoE architecture: Agentic reinforcement-learning environments, rollout management, and training services" width="820">
+</p>
+<p align="center"><sub><b>Figure 10.</b> Agentic reinforcement-learning environments, rollout management, and training services. <a href="https://arxiv.org/abs/2602.02276">Source paper</a>, PDF p. 23. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:26 -->
 
 **Kimi K2.5** connects MoonViT to a 1T-total, 32B-active decoder with 61 layers, Multi-head Latent Attention, and 384 routed experts. Eight routed experts plus shared capacity activate per token. Native multimodal training supports images, video, reasoning, code, tools, and GUI interaction within the same model.
 
@@ -607,6 +782,10 @@ StepFun<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:27 -->
+> **Architecture figure:** The Step3-VL-10B report contains performance and RL figures, but no architecture diagram.
+<!-- /architecture-figure:27 -->
+
 **Step3-VL-10B** is architecturally distinct from the much larger 2025 Step3 sparse-MoE system. Its 1.8B perception encoder is aligned to language during pretraining, then a projector with two stride-2 stages reduces the spatial sequence by 16× before feeding a Qwen3-8B decoder.
 
 Images combine one 728×728 global view with 504×504 local crops, treated as independent batch items. Explicit newline tokens mark patch rows while standard one-dimensional RoPE is retained. The PaCoRe parallel proposer-and-synthesizer reasoning method is a post-training and inference addition rather than the defining visual architecture.
@@ -625,6 +804,13 @@ Baidu ERNIE Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:28 -->
+<p align="center">
+  <img src="assets/architectures/ernie-5-0-2026-arch.png" alt="ERNIE 5.0: Unified Autoregressive Omnimodal Mixture of Experts architecture: Unified image understanding, image generation, and video generation objectives" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Unified image understanding, image generation, and video generation objectives. <a href="https://arxiv.org/abs/2602.04705">Source paper</a>, PDF p. 6. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:28 -->
+
 **ERNIE 5.0** maps language, images, video, and audio into one autoregressive framework using Next-Group-of-Tokens Prediction. Text uses next-token and multi-token prediction; visual generation predicts the next frame and scale; audio generation predicts codec tokens depth-wise. Modality-agnostic expert routing activates less than 3% of the 2.4T-parameter network.
 
 Elastic depth, width, and top-k sparsity train a super-network from which smaller deployment configurations can be extracted. Baidu first unveiled ERNIE 5.0 at Baidu World on November 13, 2025, formally released it in January 2026, and published the technical report on February 4; the timeline therefore uses the earliest documented public disclosure.
@@ -642,6 +828,13 @@ DeepSeek-AI<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:29 -->
+<p align="center">
+  <img src="assets/architectures/deepseek-ocr-2025-arch.png" alt="DeepSeek-OCR: Visual Context Compression through DeepEncoder architecture: A SAM-CLIP DeepEncoder connected to a sparse language decoder" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> A SAM-CLIP DeepEncoder connected to a sparse language decoder. <a href="https://arxiv.org/abs/2510.18234">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:29 -->
 
 **DeepSeek-OCR** consists of **DeepEncoder** and a DeepSeek-3B-MoE decoder with roughly 570M active parameters. DeepEncoder combines a SAM-derived local-perception pathway, a CLIP-derived semantic pathway, convolutional compression, and windowed and global attention to turn high-resolution pages into as few as 64 to 800 visual tokens. Multiple resolution modes trade recognition fidelity for compression.
 
@@ -663,6 +856,13 @@ PaddleOCR Team, Baidu<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:30 -->
+<p align="center">
+  <img src="assets/architectures/paddleocr-vl-2025-arch.png" alt="PaddleOCR-VL: Ultra-Compact Multilingual Document Parsing architecture: Document layout analysis, compact VLM inference, instructions, and structured output" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Document layout analysis, compact VLM inference, instructions, and structured output. <a href="https://arxiv.org/abs/2510.14528">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:30 -->
+
 **PaddleOCR-VL-0.9B** connects a NaViT-style dynamic-resolution visual encoder to the compact ERNIE-4.5-0.3B language model. Variable-resolution packing preserves page detail and aspect ratio without forcing every document through a fixed square canvas. The decoder emits text and structured representations for paragraphs, tables, formulas, charts, and other document elements across 109 languages.
 
 Its curriculum combines element-level recognition with page-level document parsing, followed by instruction tuning on complex layouts and structured outputs. Training data includes multilingual OCR, synthetic and scanned documents, tables, mathematical expressions, charts, reading-order annotations, and layout-rich pages. **PaddleOCR-VL-1.5** (January 2026) adds robust physical-document distortions, seal recognition, and text spotting; **1.6** (June 2026) adds region-aware data optimization and progressive reinforcement-learning post-training without changing the core architecture.
@@ -680,6 +880,13 @@ Qwen Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:31 -->
+<p align="center">
+  <img src="assets/architectures/qwen3-vl-2025-arch.png" alt="Qwen3-VL: DeepStack Vision-Language Models architecture: Vision encoding, DeepStack injection, and dense or mixture-of-experts decoding" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Vision encoding, DeepStack injection, and dense or mixture-of-experts decoding. <a href="https://arxiv.org/abs/2511.21631">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:31 -->
 
 **Qwen3-VL** combines a native-dynamic-resolution Vision Transformer with Qwen3 language backbones in dense 2B, 4B, 8B, and 32B configurations and sparse 30B-A3B and 235B-A22B Mixture-of-Experts configurations. Its **DeepStack** mechanism injects features from multiple ViT depths into corresponding language-model layers instead of relying only on the visual encoder's final layer. **Interleaved-MRoPE** distributes temporal, height, and width position information across rotary-embedding frequencies, while explicit text-timestamp alignment improves event localization in video. The family supports interleaved text, images, and video in a native 256K-token context, with documented extrapolation for longer contexts.
 
@@ -701,6 +908,13 @@ StepFun<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:32 -->
+<p align="center">
+  <img src="assets/architectures/step3-2025-arch.png" alt="Step3: Model-System Co-Design for Cost-Effective Multimodal Intelligence architecture: Attention-FFN disaggregation across attention and expert instances" width="820">
+</p>
+<p align="center"><sub><b>Figure 6.</b> Attention-FFN disaggregation across attention and expert instances. <a href="https://arxiv.org/abs/2507.19427">Source paper</a>, PDF p. 11. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:32 -->
+
 **Step3** uses a 321B-parameter sparse-MoE decoder with approximately 38B parameters active per token. The language stack contains dense lower layers followed by routed expert layers, while its vision pathway supports images and video for multimodal reasoning. The model is designed together with an **Attention-FFN Disaggregation** serving architecture, separating attention and expert computation so hardware placement and communication topology match their different workloads.
 
 Training combines large-scale text and multimodal pretraining with instruction tuning and reasoning-oriented reinforcement learning. The data mixture spans language, code, mathematics, image-text, OCR, documents, charts, multi-image, video, and multimodal reasoning. The system report discloses architecture and deployment mechanisms more clearly than the source-level training corpus, which remains categorically described.
@@ -718,6 +932,13 @@ GLM-V Team, Zhipu AI and Tsinghua University<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:33 -->
+<p align="center">
+  <img src="assets/architectures/glm-4-1v-thinking-2025-arch.png" alt="GLM-4.1V-Thinking: General-Purpose Multimodal Reasoning through Curriculum-Sampled RL architecture: Native-resolution vision encoding, projection, decoding, and timestamped video tokens" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Native-resolution vision encoding, projection, decoding, and timestamped video tokens. <a href="https://arxiv.org/abs/2507.01006">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:33 -->
 
 **GLM-4.1V-9B-Thinking** joins an AIMv2-Huge-initialized vision encoder, an MLP projector, and the GLM-4-9B-0414 language decoder. The vision tower replaces two-dimensional patch convolutions with 3D convolutions, temporally downsampling video while duplicating single images for consistent processing. Interpolated absolute position embeddings and 2D RoPE support native resolutions and extreme aspect ratios; the language decoder applies 3D RoPE to multimodal tokens. Explicit timestamp tokens after video frames supply temporal position and distance cues.
 
@@ -739,6 +960,10 @@ Baidu ERNIE Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:34 -->
+> **Architecture figure:** ERNIE 4.5-VL has no public paper containing an extractable architecture figure.
+<!-- /architecture-figure:34 -->
+
 **ERNIE 4.5-VL** includes 424B-total/47B-active and 28B-total/3B-active multimodal MoE models, plus dense members of the broader ERNIE 4.5 family. Its **heterogeneous modality MoE** shares some experts across text and visual tokens while reserving other experts for individual modalities. Modality-isolated routing, router orthogonality loss, and multimodal token-balancing loss reduce competition between modalities.
 
 The models are jointly pretrained on text, images, and video, then post-trained in both direct-response and thinking modes. PaddlePaddle infrastructure uses heterogeneous hybrid parallelism, hierarchical load balancing, FP8 mixed precision, and fine-grained recomputation to train and serve the sparse models efficiently. Baidu describes broad text, visual-knowledge, OCR, document, chart, video, and reasoning mixtures but does not provide a complete dataset manifest.
@@ -757,6 +982,13 @@ Xiaomi MiMo Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:35 -->
+<p align="center">
+  <img src="assets/architectures/mimo-vl-2025-arch.png" alt="MiMo-VL: Multimodal Pretraining with Mixed On-Policy Reinforcement Learning architecture: Native-resolution vision encoding, projection, and language decoding" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Native-resolution vision encoding, projection, and language decoding. <a href="https://arxiv.org/abs/2506.03569">Source paper</a>, PDF p. 6. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:35 -->
+
 **MiMo-VL-7B** joins a high-resolution vision encoder and projector to a 7B language decoder and is released as supervised and reinforcement-learned checkpoints. Its primary contribution is the training system rather than an exotic connector: long-chain-of-thought examples are introduced during pretraining, not only during post-training, so multimodal reasoning is developed alongside perception and language.
 
 Four pretraining stages consume approximately 2.4T tokens and progressively align vision, general multimodal knowledge, high-quality reasoning, and long-context capabilities. **Mixed On-Policy Reinforcement Learning** then trains one checkpoint across general QA, mathematics, grounding, and GUI tasks using domain-appropriate rule and model rewards. The mixture includes text replay, image-text, OCR, document, chart, video, spatial-grounding, GUI, and reasoning data; a complete source-level inventory is not published.
@@ -774,6 +1006,13 @@ Chaorui Deng, Deyao Zhu, Kunchang Li, Chenhui Gou, Feng Li, Zeyu Wang, Shu Zhong
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:36 -->
+<p align="center">
+  <img src="assets/architectures/bagel-2025-arch.png" alt="BAGEL: A Mixture-of-Transformer-Experts for Unified Understanding and Generation architecture: Shared self-attention with understanding and generation Transformer experts" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Shared self-attention with understanding and generation Transformer experts. <a href="https://arxiv.org/abs/2505.14683">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:36 -->
 
 **BAGEL** is a unified decoder-only model with 14B total and 7B active parameters. Its **Mixture-of-Transformer-Experts** architecture duplicates the Qwen2.5-initialized transformer into understanding and generation experts: text and SigLIP 2 ViT tokens use the understanding parameters, while FLUX-VAE latent tokens use the generation parameters. Both experts operate on one interleaved sequence through shared self-attention at every layer, avoiding a small connector bottleneck between comprehension and synthesis. Text is learned with next-token prediction; images are generated with rectified flow.
 
@@ -795,6 +1034,13 @@ ByteDance Seed Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:37 -->
+<p align="center">
+  <img src="assets/architectures/seed1-5-vl-2025-arch.png" alt="Seed1.5-VL: Sparse-MoE Multimodal Understanding and Agentic Reasoning architecture: Native-resolution vision encoding, adaptation, sparse MoE decoding, and timestamped video" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Native-resolution vision encoding, adaptation, sparse MoE decoding, and timestamped video. <a href="https://arxiv.org/abs/2505.07062">Source paper</a>, PDF p. 5. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:37 -->
+
 **Seed1.5-VL** uses a compact vision tower and a large sparse-MoE language model, maintaining 20B active decoder parameters while scaling total capacity substantially higher. Its visual pathway supports native-aspect-ratio images, multiple images, and video, with explicit support for spatial grounding and GUI control. The same model can provide short direct answers or extended multimodal reasoning.
 
 Training progresses through vision-language pretraining, instruction tuning, long-chain-of-thought cold start, and reinforcement learning. The report emphasizes careful balancing of general text, visual knowledge, OCR and documents, charts, grounding, video, 3D understanding, GUI trajectories, games, and verifiable multimodal-reasoning problems. Source-level corpus provenance and all mixture proportions are not publicly reproducible. The arXiv v1 date is used because an earlier generally accessible official launch date is not unambiguously documented.
@@ -813,6 +1059,10 @@ InternVL Team, OpenGVLab<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:38 -->
+> **Architecture figure:** The InternVL3 paper contains evaluation figures, but no definitive model architecture diagram.
+<!-- /architecture-figure:38 -->
+
 **InternVL3** retains the InternViT-MLP-LLM structure and dynamic image tiling of earlier InternVL releases, but jointly learns language and multimodal knowledge during native pretraining instead of treating vision alignment primarily as a later adaptation stage. The family spans dense and sparse-MoE language backbones. Its training recipe combines multimodal pretraining, supervised fine-tuning, Mixed Preference Optimization, and test-time scaling for visual reasoning.
 
 Released on August 26, 2025, **InternVL3.5** is part of the same evolving family. It introduces **Cascade RL**, using offline RL for stable coarse alignment followed by online RL for refinement. A **Visual Resolution Router** selects visual-token resolution according to input complexity, while **Decoupled Vision-Language Deployment** places the vision encoder and language model on different devices to balance inference load. Training covers image, multi-image, document, chart, video, GUI, grounding, multilingual, and reasoning data; full pretraining provenance is not enumerated.
@@ -830,6 +1080,13 @@ Kimi Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:39 -->
+<p align="center">
+  <img src="assets/architectures/kimi-vl-2025-arch.png" alt="Kimi-VL: Native-Resolution Vision with a Sparse MoE Decoder architecture: MoonViT, multimodal projection, and a sparse mixture-of-experts decoder" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> MoonViT, multimodal projection, and a sparse mixture-of-experts decoder. <a href="https://arxiv.org/abs/2504.07491">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:39 -->
 
 **Kimi-VL-A3B** consists of MoonViT, a two-layer MLP projector, and a Moonlight-derived MoE language model with 16B total and 2.8B activated decoder parameters. MoonViT packs variable-sized patch sequences without tiling images into separately processed crops. It combines interpolated SigLIP-SO400M position embeddings with two-dimensional RoPE, preserving pretrained visual knowledge while representing fine spatial positions. A 2×2 pixel-shuffle operation compresses its output before projection into the language model.
 
@@ -851,6 +1108,10 @@ Meta<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:40 -->
+> **Architecture figure:** The official Llama 4 model card describes the architecture in text and tables only.
+<!-- /architecture-figure:40 -->
+
 **Llama 4 Scout** and **Llama 4 Maverick** are natively multimodal, autoregressive MoE models rather than text decoders retrofitted only during instruction tuning. Scout has 109B total parameters across 16 experts and Maverick approximately 400B across 128 experts; both activate about 17B parameters per token. Early fusion places image and multilingual text tokens in a shared model sequence. Scout supports a 10M-token context, whereas Maverick supports 1M tokens.
 
 Scout was trained on roughly 40T tokens and Maverick on roughly 22T. Meta describes a mixture of public data, licensed data, information from its products and services, and interactions with Meta AI, without releasing a complete corpus manifest. Post-training combines supervised fine-tuning, online reinforcement learning, and direct preference optimization. Maverick was co-distilled from the unreleased Llama 4 Behemoth teacher; Scout also uses distillation during training.
@@ -869,6 +1130,13 @@ Qwen Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:41 -->
+<p align="center">
+  <img src="assets/architectures/qwen2-5-omni-2025-arch.png" alt="Qwen2.5-Omni: Streaming Multimodal Perception and Speech Generation architecture: Thinker-Talker architecture for multimodal perception and streaming speech" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Thinker-Talker architecture for multimodal perception and streaming speech. <a href="https://arxiv.org/abs/2503.20215">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:41 -->
+
 **Qwen2.5-Omni** is an end-to-end any-input model whose block-wise audio and vision encoders accept streaming speech, images, and video alongside text. **Time-aligned Multimodal RoPE (TMRoPE)** interleaves audio and video representations on a synchronized timeline. Its **Thinker-Talker** design separates semantic reasoning from speech realization: the Thinker produces text and hidden representations, while a dual-track autoregressive Talker conditions on those states to generate speech tokens concurrently.
 
 A sliding-window diffusion transformer converts audio tokens into waveform output without waiting for a complete response, reducing first-packet latency. Training jointly aligns text, vision, video, audio, and speech-generation objectives, followed by multimodal instruction tuning. The report describes caption, OCR, video, audio-transcription, speech, and general text mixtures but does not publish a reproducible source-level inventory.
@@ -886,6 +1154,10 @@ Gemma Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:42 -->
+> **Architecture figure:** The Gemma 3 report contains examples and analysis charts, but no architecture diagram.
+<!-- /architecture-figure:42 -->
 
 **Gemma 3** is a family of 1B, 4B, 12B, and 27B open-weight models; the 4B, 12B, and 27B variants accept images as well as text. A shared, frozen 400M-parameter SigLIP vision encoder processes images at 896×896 resolution. Its embeddings are average-pooled into a fixed sequence of 256 soft visual tokens, while a Pan-and-Scan preprocessing method handles non-square and high-resolution inputs through crops. The 1B model remains text-only.
 
@@ -907,6 +1179,10 @@ Cohere Labs<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:43 -->
+> **Architecture figure:** The Aya Vision paper contains data and evaluation figures, but no model architecture diagram.
+<!-- /architecture-figure:43 -->
+
 **Aya Vision** is released in 8B and 32B configurations supporting 23 languages. It connects a vision encoder to Aya Expanse-derived language models and addresses the loss of text-only capability that often occurs when vision is introduced. Its principal modeling contribution is **cross-modal model merging**, which combines separately learned text and multimodal strengths rather than relying only on sequential fine-tuning.
 
 Training uses a synthetic annotation pipeline that generates and filters culturally and linguistically diverse multimodal instructions, avoiding dependence on literal machine translation alone. The mixture covers multilingual visual question answering, captions, OCR, image-grounded generation, and text-and-image translation. The full pretraining corpus is not released; the paper's reproducible contributions center on its annotation, merging, and evaluation recipes.
@@ -924,6 +1200,13 @@ Microsoft Phi Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:44 -->
+<p align="center">
+  <img src="assets/architectures/phi-4-multimodal-2025-arch.png" alt="Phi-4-multimodal: Text, Vision, and Speech through Mixture-of-LoRAs architecture: Vision and audio encoders, projectors, and modality-specific LoRA routes" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Vision and audio encoders, projectors, and modality-specific LoRA routes. <a href="https://arxiv.org/abs/2503.01743">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:44 -->
 
 **Phi-4-multimodal** is a 5.6-billion-parameter multimodal model built around the Phi-4-Mini language model. Separate vision and speech encoders transform non-text inputs, while modality projectors map their representations into the language model's embedding space. Its defining mechanism is a **Mixture-of-LoRAs**: modality-specific LoRA parameters and routers adapt the shared decoder for vision-language, speech-language, and joint vision-speech inference. The design isolates modality extensions more effectively than fully merging every adaptation into the base weights; the speech and audio LoRA component itself contains 460 million parameters.
 
@@ -945,6 +1228,13 @@ Michael Tschannen, Alexey Gritsenko, Xiao Wang, Muhammad Ferjad Naeem, Ibrahim A
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:45 -->
+<p align="center">
+  <img src="assets/architectures/siglip-2-2025-arch.png" alt="SigLIP 2: Multilingual Vision-Language Encoders with Native-Aspect-Ratio Support architecture: Combined contrastive, captioning, masked-prediction, and self-distillation objectives" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Combined contrastive, captioning, masked-prediction, and self-distillation objectives. <a href="https://arxiv.org/abs/2502.14786">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:45 -->
+
 **SigLIP 2** retains the dual-encoder Vision Transformer design and pairwise sigmoid image-text objective of SigLIP, but broadens the representation learned by the vision tower. Its unified recipe combines contrastive image-text learning with captioning-based pretraining, masked prediction, self-distillation, and online data curation. These additions improve not only zero-shot classification and retrieval, but also localization and dense tasks such as segmentation, depth estimation, and surface-normal prediction. Models are released at ViT-B, ViT-L, So400m, and ViT-g scales.
 
 Alongside conventional fixed-resolution checkpoints, the **NaFlex** variants use patch-and-pack processing to retain an image's native aspect ratio and accept different sequence lengths with a single checkpoint. This avoids distortive square resizing and lets users trade visual-token count for inference cost, which is especially useful for documents, screenshots, and OCR-heavy inputs. Standard fixed-resolution models additionally receive a self-distillation stage.
@@ -964,6 +1254,13 @@ Kevin Qinghong Lin, Linjie Li, Difei Gao, Zhengyuan Yang, Shiwei Wu, Zechen Bai,
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:46 -->
+<p align="center">
+  <img src="assets/architectures/showui-2024-arch.png" alt="ShowUI: Vision-Language-Action Modeling for GUI Agents architecture: UI-guided visual-token selection and interleaved action history" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> UI-guided visual-token selection and interleaved action history. <a href="https://arxiv.org/abs/2411.17465">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:46 -->
 
 **ShowUI** adapts Qwen2-VL-2B into an end-to-end GUI agent that predicts textual responses and executable actions from pixels. Its **UI-Guided Visual Token Selection** models screenshot patches as a connected graph, identifies visually redundant regions, and retains representative tokens during selected self-attention blocks. This exploits the repeated colors and structures common in interfaces: the paper reports removing about 33% of visual tokens during training and a 1.4× speedup without sacrificing grounding accuracy.
 
@@ -985,6 +1282,13 @@ Xinlong Wang, Xiaosong Zhang, Zhengxiong Luo, Quan Sun, Yufeng Cui, Jinsheng Wan
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:47 -->
+<p align="center">
+  <img src="assets/architectures/emu3-2024-arch.png" alt="Emu3: Next-Token Prediction across Text, Image, and Video architecture: A single next-token objective across text, image, and video tokens" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> A single next-token objective across text, image, and video tokens. <a href="https://arxiv.org/abs/2409.18869">Source paper</a>, PDF p. 1. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:47 -->
+
 **Emu3** first maps images and videos into discrete codes with a learned vision tokenizer, then interleaves those codes with ordinary text tokens. A single decoder-only transformer models every resulting sequence with the same causal next-token objective. Images are serialized with explicit spatial structure, while videos extend the representation across time. Because generation and perception share the same token space and transformer, Emu3 can caption and answer questions about images, generate images from text, and causally generate or continue video without adding a diffusion decoder or a compositional vision-language bridge.
 
 The 8B transformer is pretrained from scratch on approximately 0.2 trillion visual tokens and 0.8 trillion text tokens. Pretraining establishes general multimodal generation and understanding; separate post-training paths then produce Emu3-Chat for instruction-following perception and Emu3-Gen for controllable image generation. Generation post-training includes supervised fine-tuning and preference optimization, whereas the chat model is tuned on multimodal conversations and perception tasks.
@@ -1004,6 +1308,13 @@ Matt Deitke, Christopher Clark, Sangho Lee, Rohun Tripathi, Yue Yang, Jae Sung P
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:48 -->
+<p align="center">
+  <img src="assets/architectures/molmo-and-pixmo-2024-arch.png" alt="Molmo and PixMo: Open Weights, Open Data, and Grounded Pointing architecture: Vision encoding, multimodal connection, language decoding, and grounded pointing" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Vision encoding, multimodal connection, language decoding, and grounded pointing. <a href="https://arxiv.org/abs/2409.17146">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:48 -->
 
 **Molmo** uses a pretrained CLIP ViT-L/14 vision encoder and a lightweight connector to supply image features to an autoregressive language model. The family spans MolmoE-1B, whose mixture-of-experts backbone has roughly 1B active and 7B total parameters, dense 7B variants based on OLMo or Qwen2, and a 72B Qwen2-based model. Multi-crop high-resolution processing improves fine-detail perception, while coordinate tokens let the model answer with points as well as natural language.
 
@@ -1025,6 +1336,13 @@ VILA-U Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:49 -->
+<p align="center">
+  <img src="assets/architectures/vila-u-2024-arch.png" alt="VILA-U: Fully Autoregressive Visual Understanding and Generation architecture: A shared visual tokenizer, autoregressive model, and modality decoders" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> A shared visual tokenizer, autoregressive model, and modality decoders. <a href="https://arxiv.org/abs/2409.04429">Source paper</a>, PDF p. 3. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:49 -->
+
 **VILA-U** converts images and video frames into discrete visual tokens and processes them together with text through one autoregressive language-model backbone. Its key component is a unified vision tower trained to preserve the information needed for both semantic understanding and visual reconstruction. Aligning its discrete visual tokens with language during pretraining improves perception while allowing the same tokens to be generated directly by next-token prediction.
 
 Training mixes image-text understanding, video understanding, pure text, and high-quality text-to-image examples, then instruction-tunes the model for conversational and generative tasks. The design demonstrates that competitive image generation does not necessarily require a diffusion module and that understanding and generation can share a fully tokenized visual interface.
@@ -1042,6 +1360,13 @@ Show Lab<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:50 -->
+<p align="center">
+  <img src="assets/architectures/show-o-2024-arch.png" alt="Show-o: Autoregressive Language and Discrete-Diffusion Vision in One Transformer architecture: Causal text attention and full-attention discrete image diffusion" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Causal text attention and full-attention discrete image diffusion. <a href="https://arxiv.org/abs/2408.12528">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:50 -->
 
 **Show-o** represents images with discrete visual tokens and processes text and images through one omni-attention transformer. Language and multimodal-understanding sequences use autoregressive next-token prediction, whereas image generation uses iterative masked-token prediction, giving the same network a discrete-diffusion generation path. Its attention mask changes with the task: causal dependencies are retained where autoregression is required, while visual generation tokens can exchange bidirectional context.
 
@@ -1061,6 +1386,13 @@ Meta FAIR<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:51 -->
+<p align="center">
+  <img src="assets/architectures/transfusion-2024-arch.png" alt="Transfusion: Next-Token Text Prediction and Continuous Image Diffusion architecture: A shared Transformer with autoregressive text and continuous image diffusion" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> A shared Transformer with autoregressive text and continuous image diffusion. <a href="https://arxiv.org/abs/2408.11039">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:51 -->
+
 Unlike unified models that quantize images into discrete codes, **Transfusion** retains continuous image representations and denoises them with a diffusion objective. Text tokens and noisy image patches occupy the same sequence; modality-specific input and output layers connect them to a shared transformer. Causal attention governs text, while image patches can interact bidirectionally within each image.
 
 The paper derives scaling behavior from models pretrained from scratch and scales the recipe to 7B parameters and two trillion multimodal tokens. Additional modality-specific encoding and decoding layers improve image fidelity and can compress an image to as few as 16 latent patches. This makes Transfusion an important alternative to fully discrete, next-token-only multimodal architectures.
@@ -1079,6 +1411,13 @@ mPLUG-Owl Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:52 -->
+<p align="center">
+  <img src="assets/architectures/mplug-owl3-2024-arch.png" alt="mPLUG-Owl3: Hyper-Attention for Long Image Sequences architecture: Vision encoding and Hyper-Attention blocks inside the language model" width="820">
+</p>
+<p align="center"><sub><b>Figure 2.</b> Vision encoding and Hyper-Attention blocks inside the language model. <a href="https://arxiv.org/abs/2408.04840">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:52 -->
+
 Instead of concatenating every vision feature with the language sequence and paying full self-attention cost, **mPLUG-Owl3** introduces hyper-attention blocks that use language states to selectively aggregate separately maintained visual features. These blocks are inserted into the language model and create a language-guided semantic space for single images, interleaved image-text documents, retrieved visual knowledge, and long videos.
 
 The approach reduces interference from irrelevant frames and avoids consuming the entire language context with visual tokens. Training combines single-image instruction data with multi-image, interleaved, retrieval-augmented, and video examples. The accompanying Distractor Resistance evaluation measures whether the model can retain the relevant visual evidence when long sequences contain competing images.
@@ -1096,6 +1435,13 @@ Shengbang Tong, Ellis Brown, Penghao Wu, Sanghyun Woo, Manoj Middepogu, Sai Char
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:53 -->
+<p align="center">
+  <img src="assets/architectures/cambrian-1-2024-arch.png" alt="Cambrian-1: Vision-Centric Multimodal LLMs architecture: Spatial Vision Aggregation across multiple visual encoders and decoder layers" width="820">
+</p>
+<p align="center"><sub><b>Figure 8.</b> Spatial Vision Aggregation across multiple visual encoders and decoder layers. <a href="https://arxiv.org/abs/2406.16860">Source paper</a>, PDF p. 13. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:53 -->
 
 **Cambrian-1** treats the language model as an interface for systematically studying visual representations. The paper evaluates more than twenty encoders and builds its strongest systems from complementary CLIP, SigLIP, DINOv2, and ConvNeXt features. Its **Spatial Vision Aggregator** uses learnable visual queries and auxiliary connectors to gather local, spatially aligned evidence from these feature grids. This preserves high-resolution information while producing a fixed, substantially smaller set of tokens for the LLM. Released variants pair the connector with Phi-3, Llama 3, Vicuna 1.5, or Hermes-2-Yi backbones.
 
@@ -1117,6 +1463,13 @@ Alibaba International Digital Commerce<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:54 -->
+<p align="center">
+  <img src="assets/architectures/ovis-2024-arch.png" alt="Ovis: Structural Visual-Text Embedding Alignment architecture: Visual-token probability distributions and structural visual embedding lookup" width="820">
+</p>
+<p align="center"><sub><b>Figure 3.</b> Visual-token probability distributions and structural visual embedding lookup. <a href="https://arxiv.org/abs/2405.20797">Source paper</a>, PDF p. 4. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:54 -->
+
 The original **Ovis** vision encoder predicts distributions over a learnable visual embedding table; weighted combinations of those embeddings become the visual tokens consumed by the language model. This mirrors textual embedding lookup more closely than a conventional MLP connector and makes the visual tokenizer and LLM independently replaceable. Ovis1.5 and 1.6 improved high-resolution processing, data quality, and preference alignment.
 
 **Ovis2**, released January 26, 2025, paired an AIMv2-based visual tokenizer with Qwen2.5 backbones and expanded the family from 1B to 34B, adding stronger OCR, video, multi-image, and reasoning behavior. **Ovis2.5**, released August 15, 2025, moved to a native-variable-resolution SigLIP 2 vision transformer and Qwen3 backbones. Its five-stage curriculum progresses from visual and multimodal pretraining through instruction tuning, DPO, and GRPO, enabling an optional reflective thinking mode.
@@ -1135,6 +1488,10 @@ Microsoft Phi Team<br>
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:55 -->
+> **Architecture figure:** The cited Phi-3 report contains no Phi-3-Vision architecture diagram.
+<!-- /architecture-figure:55 -->
+
 **Phi-3-Vision** connects a vision encoder to the Phi-3 Mini language backbone through a learned projection and uses a dynamic high-resolution image pipeline, preserving detail through global and cropped image features while supporting a 128K-token context. Its 4.2B parameters make it substantially smaller than many contemporary VLMs.
 
 Training combines carefully filtered public material, image-text and interleaved examples, synthetic reasoning data, and instruction data emphasizing OCR, charts, tables, diagrams, slides, and general visual reasoning. Microsoft released Phi-3-Vision on May 21, 2024. **Phi-3.5-Vision** followed on August 22, 2024, maintaining the same compact family design while improving visual quality, multilingual behavior, and multi-frame or multi-image reasoning.
@@ -1152,6 +1509,13 @@ Chameleon Team<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:56 -->
+<p align="center">
+  <img src="assets/architectures/chameleon-2024-arch.png" alt="Chameleon: Mixed-Modal Early-Fusion Foundation Models architecture: Mixed-modal early-fusion tokenization and autoregressive generation" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Mixed-modal early-fusion tokenization and autoregressive generation. <a href="https://arxiv.org/abs/2405.09818">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:56 -->
 
 **Chameleon** converts images into discrete codes with a learned image tokenizer and combines them with text tokens in a unified vocabulary. A decoder-only transformer then models mixed sequences through next-token prediction, enabling text-to-text, image-to-text, text-to-image, and interleaved image-text generation within one architecture. Meta trains 7B- and 34B-parameter variants and introduces stabilization measures tailored to the mixed-modal setting, including query-key normalization, revised normalization placement, and modality-aware normalization.
 
@@ -1173,6 +1537,10 @@ Brandon McKinzie, Zhe Gan, Jean-Philippe Fauconnier, Sam Dodge, Bowen Zhang, Phi
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
 
+<!-- architecture-figure:57 -->
+> **Architecture figure:** MM1 presents an architecture design space and ablations, but no definitive final-model diagram.
+<!-- /architecture-figure:57 -->
+
 **MM1** combines a pretrained vision encoder with a vision-language connector that maps image features into tokens consumed by a decoder-only language model. Apple studies dense models from 3B to 30B parameters alongside mixture-of-experts variants. Controlled experiments vary the image encoder, input resolution, number of visual tokens, connector, and language-model initialization. The results identify the image encoder, resolution, and visual-token budget as consequential choices, while the difference among connector designs is comparatively small once the other components are well configured.
 
 Pretraining uses a deliberate mixture of image-caption pairs, interleaved image-text documents, and text-only sequences. The paper finds that caption data supports strong zero-shot behavior, interleaved documents are especially important for few-shot and in-context learning, and retaining text-only data protects language capability. The scaled recipe gives MM1 multi-image reasoning and few-shot chain-of-thought behavior before supervised fine-tuning; subsequent multimodal instruction tuning improves conversational and benchmark performance.
@@ -1192,6 +1560,13 @@ OpenMOSS<br>
 
 <details>
 <summary>ℹ️ <i>More Information</i></summary>
+
+<!-- architecture-figure:58 -->
+<p align="center">
+  <img src="assets/architectures/anygpt-2024-arch.png" alt="AnyGPT: Unified Any-to-Any Multimodal Modeling with Discrete Tokens architecture: Unified discrete sequence modeling across speech, text, image, and music" width="820">
+</p>
+<p align="center"><sub><b>Figure 1.</b> Unified discrete sequence modeling across speech, text, image, and music. <a href="https://arxiv.org/abs/2402.12226">Source paper</a>, PDF p. 2. <a href="assets/architectures/FIGURE_NOTICE.md">Figure notice</a>.</sub></p>
+<!-- /architecture-figure:58 -->
 
 **AnyGPT** converts every supported modality into discrete tokens and trains a LLaMA-family decoder with the ordinary next-token objective. Modality-specific tokenizers encode and reconstruct speech, images, and music, while special tokens delimit each modality inside interleaved sequences.
 
