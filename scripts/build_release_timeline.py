@@ -440,7 +440,7 @@ def github_anchor(heading: str) -> str:
     cleaned = "".join(
         character
         for character in heading.lower()
-        if character.isalnum() or character in {" ", "-", "_"}
+        if character.isalpha() or character.isdecimal() or character in {" ", "-", "_"}
     )
     return cleaned.replace(" ", "-")
 
