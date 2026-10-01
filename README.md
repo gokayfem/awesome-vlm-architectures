@@ -2199,6 +2199,8 @@ Released by arXiv v1 on September 28, 2025, **LLaVA-OneVision-1.5** preserves th
 
 ### **VILA²: VILA Augmented VILA**
 
+<a id="vila-vila-augmented-vila"></a>
+
 VILA² (VILA-augmented-VILA) introduces a novel approach to address the limitations of data quantity and quality in training Visual Language Models (VLMs). Instead of relying on costly human annotation or distillation from proprietary models, VILA² leverages the VLM itself to iteratively refine and augment its pretraining data, leading to significant performance improvements and achieving state-of-the-art results on the MMMU leaderboard among open-sourced models.
 
 [![arXiv](https://img.shields.io/badge/arXiv-2407.17453-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2407.17453) [![HuggingFace](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/papers/2407.17453)<br>
