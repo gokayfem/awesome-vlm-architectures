@@ -1,0 +1,694 @@
+{
+  "reviewed_on": "2026-10-27",
+  "timezone": "Europe/Istanbul",
+  "baseline_commit": "74897b3",
+  "baseline_reviewed_on": "2026-08-01",
+  "scope": "Architecture families with disclosed technical mechanisms; includes earlier omissions and later family follow-ups.",
+  "additions": [
+    {
+      "title": "DeepSeek-V4.1-Flash: Causal encoder-decoder multimodality with shared sparse KV memory",
+      "released": "2026-09-10",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://deepseek.com/en/news/deepseek-v4-1-flash/",
+      "sources": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
+        "https://deepseek.com/en/news/deepseek-v4-1-flash/",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+      ],
+      "figure_manifest_index": 156,
+      "figure_status": "extracted",
+      "notes": "",
+      "reviewed_model_card_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251"
+    },
+    {
+      "title": "Nemotron 3.5 Super VL: Hybrid state-space MoE for long-context visual agents",
+      "released": "2026-10-15",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+      "sources": [
+        "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf",
+        "https://github.com/NVIDIA-NeMo/Nemotron",
+        "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Super-and-Lightning/",
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+      ],
+      "figure_manifest_index": 157,
+      "figure_status": "extracted",
+      "notes": "Model-card release date; report appeared October 14. C-RADIO version discrepancy retained in audit.",
+      "reviewed_model_card_sha256": "5314d0e464ebb95a4e84a29736b0297a32a0c9eea814a65d8f1791e4cb3f91fb"
+    },
+    {
+      "title": "Nemotron 3.5 Parse: Compact visual-prefix decoding for structured documents",
+      "released": "2026-10-17",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+      "sources": [
+        "https://huggingface.co/nvidia/Nemotron-3.5-Parse"
+      ],
+      "figure_manifest_index": 158,
+      "figure_status": "no-published-figure",
+      "notes": "October 17 is the explicit release date; September repository creation is not the release.",
+      "model_repository_revision": "62cb1e4ba153d113ff64aaf2be6e068c377cf53c",
+      "reviewed_model_card_sha256": "5a449f1bd9f6f00577c741cf2782579c99600d6315cd1ea54d82db6264003376"
+    },
+    {
+      "title": "GLM-5.3-Flash: Native multimodal sparse and linear attention with mHC",
+      "released": "2026-08-26",
+      "date_basis": "First substantive model-card and weight commits on August 26; repository initialized August 25",
+      "date_evidence_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/commit/69032ad82c923115314db825ee12a9b55a8d267b",
+      "sources": [
+        "https://github.com/zai-org/GLM-5",
+        "https://huggingface.co/zai-org/GLM-5.3-Flash"
+      ],
+      "figure_manifest_index": 159,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "reviewed_model_card_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: Sparse hybrid attention and off-accelerator n-gram memory",
+      "released": "2026-08-26",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://github.com/QwenLM/Qwen3.8-Flash-Next",
+      "sources": [
+        "https://arxiv.org/abs/2608.30320",
+        "https://github.com/QwenLM/Qwen3.8-Flash-Next",
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      ],
+      "figure_manifest_index": 160,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "reviewed_model_card_sha256": "35ca37ccc366f1ba478dab33841a2c0c18ce53fd62f291ca05341f7728b225b2"
+    },
+    {
+      "title": "SenseNova-U1 and U1.5: Native pixel-space unified understanding and generation",
+      "released": "2026-04-27",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "sources": [
+        "https://arxiv.org/abs/2609.11929",
+        "https://github.com/OpenSenseNova/SenseNova-U1",
+        "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT"
+      ],
+      "figure_manifest_index": 161,
+      "figure_status": "extracted",
+      "notes": ""
+    },
+    {
+      "title": "LLaDA-UI: Block-diffusion reasoning and actions for GUI agents",
+      "released": "2026-09-09",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2609.13287",
+      "sources": [
+        "https://arxiv.org/abs/2609.13287",
+        "https://github.com/inclusionAI/LLaDA-UI",
+        "https://huggingface.co/inclusionAI/LLaDA-UI"
+      ],
+      "figure_manifest_index": 162,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "f9a59c1945fc4de68f4bd667b49001cba4a1d954",
+      "reviewed_model_card_sha256": "91e20087233402f74972bc72da3f9c08bd4ff5d1a4f991fcab6bcd48d14d8d7a"
+    },
+    {
+      "title": "MiMo-V2.6: Hybrid sliding-window omni encoders and multi-teacher distillation",
+      "released": "2026-09-22",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "sources": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf",
+        "https://mimo.xiaomi.com/mimo-v2-6",
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD"
+      ],
+      "figure_manifest_index": 163,
+      "figure_status": "extracted",
+      "notes": "",
+      "reviewed_model_card_sha256": "e83a1dee8fef10775145c5f56a276e2f4455aa70acf14962b8b66575dfae596e"
+    },
+    {
+      "title": "Holo4: Visual computer-use agents trained across GUI and tool environments",
+      "released": "2026-09-28",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://hcompany.ai/newsroom/holo4",
+      "sources": [
+        "https://github.com/hcompai/hai-agents-python",
+        "https://hcompany.ai/newsroom/holo4",
+        "https://huggingface.co/Hcompany/Holo4-35B-A3B"
+      ],
+      "figure_manifest_index": 164,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "508458727831368da85d53a8055c2b0f923ed4f3",
+      "reviewed_model_card_sha256": "4f1aa5006aa9adaeb5ac549e5a5f8ea164352714a00528b1afb8602812d45b44"
+    },
+    {
+      "title": "North Micro Vision: Compact native-resolution vision with multilayer feature injection",
+      "released": "2026-08-12",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+      "sources": [
+        "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+        "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct"
+      ],
+      "figure_manifest_index": 165,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40",
+      "reviewed_model_card_sha256": "b7837743ea686f54cdc7377ba7bcf05b523649db6a0ef116d3a4ba1bf8059f12"
+    },
+    {
+      "title": "NeoMME: Single-tower bidirectional multimodal embeddings from masked diffusion",
+      "released": "2026-08-31",
+      "date_basis": "First arXiv submission, despite the September identifier",
+      "date_evidence_url": "https://arxiv.org/abs/2609.01657",
+      "sources": [
+        "https://arxiv.org/abs/2609.01657",
+        "https://huggingface.co/Hcompany/NeoMME-260M"
+      ],
+      "figure_manifest_index": 166,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "5ba79fb246e23776d2c2fcead975eae2775ed94b",
+      "reviewed_model_card_sha256": "732a99f5e41f3e79af0b082e25dbb14afd92778cfc43d8a5201fe4584c2f01b3"
+    },
+    {
+      "title": "LensVLM: Selective expansion of visually compressed text context",
+      "released": "2026-05-07",
+      "date_basis": "First arXiv submission; paper revised October 9",
+      "date_evidence_url": "https://arxiv.org/abs/2605.07019",
+      "sources": [
+        "https://arxiv.org/abs/2605.07019",
+        "https://github.com/apple-aiml-research/ml-lensvlm",
+        "https://huggingface.co/apple/LensVLM-9B"
+      ],
+      "figure_manifest_index": 167,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "ac40d9667bd68df3ac9839d3f0dc7bdb93f5f92b",
+      "reviewed_model_card_sha256": "d8fdf357688c3564037d546b6e00266002a330caece25bc9f7b5fecabbd1837e"
+    },
+    {
+      "title": "DiffusionGemma: Cached causal context with a block-diffusion text decoder",
+      "released": "2026-06-10",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "sources": [
+        "https://arxiv.org/abs/2608.00146",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+        "https://huggingface.co/google/diffusiongemma-26B-A4B-it"
+      ],
+      "figure_manifest_index": 168,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "f7f5b7f5fa82ffc52addd066915886d497f5517b",
+      "reviewed_model_card_sha256": "3acbbf7e4c01297291113b1297732b6bcecf0d7769a2571fefeca4f0f5909747"
+    },
+    {
+      "title": "Muse Glimmer: Dense visual agents with local-global attention and diffusion drafting",
+      "released": "2026-08-10",
+      "date_basis": "Model publication commit; card specifies August 2026 only",
+      "date_evidence_url": "https://huggingface.co/meta-models/Muse-Glimmer-30B/commit/46ac57a4502be771dc743ac85866351c5629ca71",
+      "sources": [
+        "https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/",
+        "https://huggingface.co/meta-models/Muse-Glimmer-30B"
+      ],
+      "figure_manifest_index": 169,
+      "figure_status": "extracted",
+      "notes": "October 19 research page is later than the August model publication.",
+      "model_repository_revision": "cec94fcfd6512f2cfe708138c32533b346ea4f69",
+      "reviewed_model_card_sha256": "2ba646dcbe5b3b97daedc59e64ef19505312fa99b6598cacc0b82d93f4d74163"
+    },
+    {
+      "title": "dots3-note-preview: Omnimodal MoE with a sparse vision expert encoder",
+      "released": "2026-08-14",
+      "date_basis": "Explicit preview-release commit dated August 14",
+      "date_evidence_url": "https://huggingface.co/dots-studio/dots3-note-prev/commit/09293f609e9df8ec1b165792420bc7be2cfb86a8",
+      "sources": [
+        "https://studio.dots.ai/dots/dots3-en.html",
+        "https://huggingface.co/dots-studio/dots3-note-prev"
+      ],
+      "figure_manifest_index": 170,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "1e1e7b0cd37a3a48a6c8d7fa55d5f9d14377006b",
+      "reviewed_model_card_sha256": "c6e4b522bfb48bbcb0838b1868f11bf2740d38d7177a627379680bf28f6f7e37"
+    },
+    {
+      "title": "Ling-3.0-flash-VL: Kimi Delta Attention and gated latent attention for vision",
+      "released": "2026-09-04",
+      "date_basis": "First model/configuration upload",
+      "date_evidence_url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL/commit/f0b8aeeaa35ad5746227dc7b71fd72fe90a5c61f",
+      "sources": [
+        "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
+      ],
+      "figure_manifest_index": 171,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "c22bf252f15b66d18ca00a15989ac7ed46b7f09e",
+      "reviewed_model_card_sha256": "0c1f46965c9e8d3dfdf41ac62003007d7d2eb83242d8fa4574ada32bfa37a4ea"
+    },
+    {
+      "title": "Taichu 5.0: Entropy-gated recurrent latent visual reasoning",
+      "released": "2026-09-15",
+      "date_basis": "Explicit Initial release commit",
+      "date_evidence_url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B/commit/18218f75d255291907ab5f1b8d1ef775439934ba",
+      "sources": [
+        "https://github.com/Taichu-AI/ZDTaichu5.0-9B",
+        "https://taichu-ai.github.io/ZDTaichu5.0-9B/",
+        "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B"
+      ],
+      "figure_manifest_index": 172,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "bc125a9819a421755f4dcebe498eb81c139b65a3",
+      "reviewed_model_card_sha256": "c47e34f33e04b4af7b9302702dcdd0f0753454586336485de833677b0989e670"
+    },
+    {
+      "title": "Jina-OCR-v1: Compressed visual parsing with recursive multi-token drafting",
+      "released": "2026-09-02",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2609.03181",
+      "sources": [
+        "https://arxiv.org/abs/2609.03181",
+        "https://huggingface.co/jinaai/jina-ocr-v1"
+      ],
+      "figure_manifest_index": 173,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "904f815deed0fbeab02d82d4648b70106272ffe3",
+      "reviewed_model_card_sha256": "7ba26a97c2a5868f9e786f31477e963e3e568d857df04ba090d2de4bec72c54a"
+    },
+    {
+      "title": "LFM2-VL and LFM2.5-VL: Short-convolution language backbones with native-resolution vision",
+      "released": "2025-08-12",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "sources": [
+        "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+        "https://huggingface.co/LiquidAI/LFM2.5-VL-3B"
+      ],
+      "figure_manifest_index": 174,
+      "figure_status": "extracted",
+      "notes": "LFM2.5-VL-3B update: https://www.liquid.ai/blog/lfm2-5-vl-3b",
+      "model_repository_revision": "35a118d938ce6d123ac2d371649f24a8efb69058",
+      "reviewed_model_card_sha256": "7453c0e9cde760baccb06ef2fb4ac15d63c61ad4cfff6831d337d4a530a250ad"
+    },
+    {
+      "title": "Liquid d1: Single-pass multimodal decisions without text decoding",
+      "released": "2026-10-07",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "sources": [
+        "https://huggingface.co/blog/LiquidAI/open-d1",
+        "https://huggingface.co/LiquidAI/d1-3B"
+      ],
+      "figure_manifest_index": 175,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "051bcc464b01b9f92942b364d9586b0ef5912432",
+      "reviewed_model_card_sha256": "175b0bd5f0b4272a67723e16d5e1994e7a8c2d162e7797c9f1c24c01fed83f1d"
+    },
+    {
+      "title": "Granite Vision 4.1: Window Q-Formers and dual DeepStack feature injection",
+      "released": "2026-04-29",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/ibm-granite/granite-vision-4.1-4b",
+      "sources": [
+        "https://huggingface.co/ibm-granite/granite-vision-4.1-4b"
+      ],
+      "figure_manifest_index": 176,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "37d591f06319e8f1638b5adcf58bdf50e0f84f7a",
+      "reviewed_model_card_sha256": "3aab75f53e18346a30a94a8edfeaafbd160b96feb8f2e4999dc6e03c2ca32d5e"
+    },
+    {
+      "title": "Fara1.5: Verified synthetic environments for screenshot-based computer use",
+      "released": "2026-05-21",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/microsoft/Fara1.5-27B",
+      "sources": [
+        "https://arxiv.org/abs/2606.20785",
+        "https://github.com/microsoft/fara",
+        "https://huggingface.co/microsoft/Fara1.5-27B"
+      ],
+      "figure_manifest_index": 177,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "299c8406a6c6256d45ec200d1ac12b34c5599d9b",
+      "reviewed_model_card_sha256": "e59e160be724f8b509de928e6c1f5f467ed9423b6a4f09764d38c033d076ec7c"
+    },
+    {
+      "title": "Audio-Visual Flamingo: Temporally aligned audio-video reasoning over long clips",
+      "released": "2026-07-17",
+      "date_basis": "First arXiv submission; June 29 card label is a checkpoint date",
+      "date_evidence_url": "https://arxiv.org/abs/2607.16107",
+      "sources": [
+        "https://arxiv.org/abs/2607.16107",
+        "https://github.com/NVIDIA/audio-flamingo",
+        "https://huggingface.co/nvidia/nemotron-labs-audio-visual-flamingo-hf"
+      ],
+      "figure_manifest_index": 178,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "4e40cc207574b8d95628f44691f75b01e012e46c",
+      "reviewed_model_card_sha256": "2e920ad39d038a7e1c00223768c692efa8975c6ff81ef72c1c0d77a6798a28d5"
+    },
+    {
+      "title": "Molmo2: Open video understanding with pointing and object tracking",
+      "released": "2025-12-11",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://allenai.org/blog/molmo2",
+      "sources": [
+        "https://arxiv.org/abs/2601.10611",
+        "https://github.com/allenai/molmo2",
+        "https://allenai.org/blog/molmo2",
+        "https://huggingface.co/allenai/Molmo2-8B"
+      ],
+      "figure_manifest_index": 179,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+      "reviewed_model_card_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a"
+    },
+    {
+      "title": "Qwen3-Omni: Thinker-Talker MoE with streaming multicodebook speech",
+      "released": "2025-09-22",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://github.com/QwenLM/Qwen3-Omni",
+      "sources": [
+        "https://arxiv.org/abs/2509.17765",
+        "https://github.com/QwenLM/Qwen3-Omni",
+        "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct"
+      ],
+      "figure_manifest_index": 180,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "26291f793822fb6be9555850f06dfe95f2d7e695",
+      "reviewed_model_card_sha256": "0e44065c4c4a27071f7239afd5b5a33af5bc2e437dd7ea9950e51aafabfde3df"
+    },
+    {
+      "title": "Mistral Large 3: Large sparse multimodal experts with an integrated visual encoder",
+      "released": "2025-12-02",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://mistral.ai/news/mistral-3/",
+      "sources": [
+        "https://mistral.ai/news/mistral-3/",
+        "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512"
+      ],
+      "figure_manifest_index": 181,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "383ffea2c7d60dfd44ca960e8e691709d4fdb9cd",
+      "reviewed_model_card_sha256": "8f8882191b7bc0e2a348b2f85b35180bc213f4c15da17e8028c8b5cb7a25cb5a"
+    },
+    {
+      "title": "Ministral 3: Dense multimodal backbones with compute-efficient training",
+      "released": "2025-12-02",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://mistral.ai/news/mistral-3/",
+      "sources": [
+        "https://arxiv.org/abs/2601.08584",
+        "https://mistral.ai/news/mistral-3/",
+        "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512"
+      ],
+      "figure_manifest_index": 182,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+      "reviewed_model_card_sha256": "2f37208c16b180cfcc12f94c1a61dd720c5d8106ec3802d7e20c6818dcde5044"
+    },
+    {
+      "title": "Shieldstral: Policy-conditioned visual moderation in one forward pass",
+      "released": "2026-08-04",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://mistral.ai/news/shieldstral/",
+      "sources": [
+        "https://arxiv.org/abs/2607.25857",
+        "https://mistral.ai/news/shieldstral/",
+        "https://huggingface.co/mistralai/Shieldstral-1.0-3B"
+      ],
+      "figure_manifest_index": 183,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "003ec7e2b0bab5f0e6307edbaf186fa5822b76f5",
+      "reviewed_model_card_sha256": "b67233168fac38fa63658f70a1b59901da612cfa19cd14cc6ecaf804b9003d9d"
+    },
+    {
+      "title": "Apertus 1.5: Early fusion of discrete visual and audio tokens",
+      "released": "2026-07-24",
+      "date_basis": "July 24 weight release explicitly recorded in October 15 release notes",
+      "date_evidence_url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "sources": [
+        "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+        "https://huggingface.co/swiss-ai/Apertus-v1.5-70B"
+      ],
+      "figure_manifest_index": 184,
+      "figure_status": "extracted",
+      "notes": ""
+    },
+    {
+      "title": "GroundAnything: Autoregressive and block-diffusion spatial grounding",
+      "released": "2026-09-30",
+      "date_basis": "First paper publication; code and weights followed in October",
+      "date_evidence_url": "https://arxiv.org/abs/2609.39600",
+      "sources": [
+        "https://arxiv.org/abs/2609.39600",
+        "https://github.com/groundingpi/GroundAnything",
+        "https://huggingface.co/GroundingPI/GroundAnything-VLM"
+      ],
+      "figure_manifest_index": 185,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "0f3cf22027493b4f97f342dae1fb298c38b68d27",
+      "reviewed_model_card_sha256": "8264c35cee241f5601ac17051c87704fa33d78376efe2759801200ada56935b4"
+    },
+    {
+      "title": "Qwen3.5-Omni: Hybrid-attention Thinker-Talker and adaptive speech alignment",
+      "released": "2026-04-17",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2604.15804",
+      "sources": [
+        "https://arxiv.org/abs/2604.15804"
+      ],
+      "figure_manifest_index": 186,
+      "figure_status": "extracted",
+      "notes": ""
+    },
+    {
+      "title": "Qwen3.8-Omni-Flash: Native omni agents with spatial audio and sparse long-context reasoning",
+      "released": "2026-09-18",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "sources": [
+        "https://arxiv.org/abs/2609.25611",
+        "https://github.com/QwenLM/Qwen-MM-Plugins",
+        "https://qwen.ai/blog?id=qwen3.8-omni-flash"
+      ],
+      "figure_manifest_index": 187,
+      "figure_status": "extracted",
+      "notes": "Announcement September 18; paper first submitted September 22."
+    },
+    {
+      "title": "Muse Spark Open: Sparse multimodal experts with a shared perception encoder",
+      "released": "2026-10-15",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "sources": [
+        "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/main/README.md",
+        "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
+      ],
+      "figure_manifest_index": 188,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "0fb02478b02565b2ce7fc57e6051c91172774ac9"
+    },
+    {
+      "title": "Step 5 Preview: Deep sparse experts with gated sliding-window and sparse GQA",
+      "released": "2026-10-15",
+      "date_basis": "Dated primary architecture/training article; earlier API release day remains unresolved",
+      "date_evidence_url": "https://platform.stepfun.com/blog/inside-step-5-preview",
+      "sources": [
+        "https://platform.stepfun.com/blog/inside-step-5-preview",
+        "https://huggingface.co/stepfun-ai/Step-5-Preview"
+      ],
+      "figure_manifest_index": 189,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+      "reviewed_model_card_sha256": "58e6b5768025c646002c5dddce5fb09ef4ccf795de2ec3424a0ca9219b163747"
+    },
+    {
+      "title": "LightOnOCR-2 and LightOnOCR-3: Compact end-to-end OCR with document grounding",
+      "released": "2026-01-20",
+      "date_basis": "First technical report for LightOnOCR-2; LightOnOCR-3 released October 8",
+      "date_evidence_url": "https://arxiv.org/abs/2601.14251",
+      "sources": [
+        "https://arxiv.org/abs/2601.14251",
+        "https://github.com/lightonai/LightOnOCR",
+        "https://huggingface.co/blog/lightonai/lightonocr-3",
+        "https://huggingface.co/lightonai/LightOnOCR-3-4B"
+      ],
+      "figure_manifest_index": 190,
+      "figure_status": "extracted",
+      "notes": "",
+      "reviewed_model_card_sha256": "4c56af1be12a620d0cadbb09976c0cd02fac5557f0f780be747d35bd6689fc54"
+    },
+    {
+      "title": "Qwen-Drive-1.0: Shared visual reasoning with external 3D perception and planning",
+      "released": "2026-08-31",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2609.00111",
+      "sources": [
+        "https://arxiv.org/abs/2609.00111",
+        "https://github.com/QwenLM/Qwen-Drive-1.0",
+        "https://huggingface.co/Qwen/Qwen-Drive-1.0-4B"
+      ],
+      "figure_manifest_index": 191,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "28484089a7cc8c335cf5089fb0745cf7c49b6eaa",
+      "reviewed_model_card_sha256": "18e864bce847ff4c045e137ca26342df1e0c544a959cfdbb28529ab905841725"
+    },
+    {
+      "title": "Intern-S1: Scientific multimodality with dynamic tokenization and expert reasoning",
+      "released": "2025-08-21",
+      "date_basis": "First arXiv submission; exact earlier public model-launch date not established in this review",
+      "date_evidence_url": "https://arxiv.org/abs/2508.15763",
+      "sources": [
+        "https://arxiv.org/abs/2508.15763",
+        "https://github.com/InternLM/Intern-S1",
+        "https://huggingface.co/internlm/Intern-S1"
+      ],
+      "figure_manifest_index": 192,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "4ecad381e28293c4825793f113327cc016cdcbda",
+      "reviewed_model_card_sha256": "438f812dd0752c81d2f6236d4449cc0d989fa638d1a1461b983905bc89b81f0b"
+    },
+    {
+      "title": "PerceptionLM: Open data and training for detailed image-video understanding",
+      "released": "2025-04-17",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2504.13180",
+      "sources": [
+        "https://arxiv.org/abs/2504.13180",
+        "https://github.com/facebookresearch/perception_models",
+        "https://huggingface.co/facebook/Perception-LM-3B"
+      ],
+      "figure_manifest_index": 193,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "31e3665b544e2dbac215e80200923139fb398975"
+    },
+    {
+      "title": "Perception Encoder: Contrastive visual pretraining with aligned language and spatial features",
+      "released": "2025-04-17",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2504.13181",
+      "sources": [
+        "https://arxiv.org/abs/2504.13181",
+        "https://github.com/facebookresearch/perception_models",
+        "https://huggingface.co/facebook/PE-Core-G14-448"
+      ],
+      "figure_manifest_index": 194,
+      "figure_status": "extracted",
+      "notes": ""
+    },
+    {
+      "title": "Show-o2: Unified text prediction and continuous visual flow matching",
+      "released": "2025-06-19",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://github.com/showlab/Show-o/tree/main/show-o2",
+      "sources": [
+        "https://arxiv.org/abs/2506.15564",
+        "https://github.com/showlab/Show-o",
+        "https://github.com/showlab/Show-o/tree/main/show-o2",
+        "https://huggingface.co/showlab/show-o2-7B"
+      ],
+      "figure_manifest_index": 195,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "3012b1d6aee8b57829b23d02cba9190ef5cc3361",
+      "reviewed_model_card_sha256": "2deb5ab6aa129e08a108b6ba6148180221a66b692a001f7ba40b3ecafa0dc2b8"
+    },
+    {
+      "title": "Emu3.5: Native multimodal next-token learning with diffusion adaptation",
+      "released": "2025-10-30",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2510.26583",
+      "sources": [
+        "https://arxiv.org/abs/2510.26583",
+        "https://github.com/baaivision/Emu3.5",
+        "https://huggingface.co/BAAI/Emu3.5"
+      ],
+      "figure_manifest_index": 196,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "ef6e632f2cbda5269f766b04e443bbf116cd093e",
+      "reviewed_model_card_sha256": "713a964239430322673a9cacca0624bec3d14f2334f7da0f61d47b003fbd725e"
+    },
+    {
+      "title": "Moondream 3: Compact sparse visual experts with learned attention temperature",
+      "released": "2025-09-18",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://moondream.ai/blog/moondream-3-preview",
+      "sources": [
+        "https://github.com/vikhyat/moondream",
+        "https://moondream.ai/blog/moondream-3-preview",
+        "https://huggingface.co/moondream/moondream3-preview"
+      ],
+      "figure_manifest_index": 197,
+      "figure_status": "no-published-figure",
+      "notes": "",
+      "model_repository_revision": "5112966d1a723413b1c9a1e8bea272b72e647b35",
+      "reviewed_model_card_sha256": "fc7e1551171cb1b5368f7ac2c0d6508e157f28b6864b57070525cc82b6f0324c"
+    },
+    {
+      "title": "OmniVinci: Joint audio-visual alignment with grouped temporal embeddings",
+      "released": "2025-10-17",
+      "date_basis": "First arXiv submission",
+      "date_evidence_url": "https://arxiv.org/abs/2510.15870",
+      "sources": [
+        "https://arxiv.org/abs/2510.15870",
+        "https://github.com/NVlabs/OmniVinci",
+        "https://huggingface.co/nvidia/omnivinci"
+      ],
+      "figure_manifest_index": 198,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "7b3777b1c1f7c4e85f7bdef7b765dee1e76c1b7f",
+      "reviewed_model_card_sha256": "090175be7b8057a3a6f4f102363649600af2e95cfcf7c37cd76aeb201c4efe11"
+    },
+    {
+      "title": "Nemotron Nano V2 VL: Hybrid state-space visual reasoning with efficient video sampling",
+      "released": "2025-10-28",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
+      "sources": [
+        "https://arxiv.org/abs/2511.03929",
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16"
+      ],
+      "figure_manifest_index": 199,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "ca9543b126e8bf3176916d3d305ccc415f89fd4d",
+      "reviewed_model_card_sha256": "bd9351581e5568158a29eb8e158115a8b139a263927f9aeb3e6ed889b286bd74"
+    },
+    {
+      "title": "Nemotron 3 Nano Omni: Hybrid MoE with dynamic visual resolution and native audio",
+      "released": "2026-04-28",
+      "date_basis": "Official release announcement/model card",
+      "date_evidence_url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "sources": [
+        "https://arxiv.org/abs/2604.24954",
+        "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
+      ],
+      "figure_manifest_index": 200,
+      "figure_status": "extracted",
+      "notes": "",
+      "model_repository_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+      "reviewed_model_card_sha256": "3081b24932a80ff4ade38bad73d0b3cb1c161867dad7559bdfa42345879f1348"
+    }
+  ]
+}

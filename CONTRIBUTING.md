@@ -32,6 +32,8 @@ Keep the established three-layer format: a short architecture-first summary, pri
 - Order badges as Paper, Code, then Model or Demo. Labels must match their destinations.
 - Describe the mechanism before benchmark results. Attribute time-sensitive performance claims to the authors and publication date.
 - Organize the expanded explanation as architecture, training or alignment, then datasets.
+- Review the primary paper for an architecture or training figure. Capture the relevant PDF region, inspect the resulting image for clipped labels or unrelated content, and record its source, figure/table number, PDF page, and crop in `assets/architectures/manifest.json`. Use an official diagram when no paper figure is available; explicitly document a completed but unsuccessful figure search instead of inventing a diagram.
+- Keep one figure decision per architecture panel. A family may include `supplemental_figures` for later releases or distinct backbones; label each version accurately. Run `python scripts/embed_architecture_figures.py` to update images and credits, then its `--check` mode to verify them.
 - Link primary sources directly. Secondary articles are appropriate only in the Important References section.
 - Do not add proprietary models whose architecture is not disclosed in enough detail for a technical entry.
 

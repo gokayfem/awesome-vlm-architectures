@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -16,7 +17,7 @@ MANIFEST = ROOT / "assets" / "architectures" / "manifest.json"
 CREDITS = ROOT / "assets" / "architectures" / "CREDITS.md"
 
 
-def figure_block(record: dict[str, object]) -> str:
+def single_figure_block(record: dict[str, object]) -> str:
     index = record["index"]
     marker = f"architecture-figure:{index}"
     if record["status"] == "no-published-figure":
@@ -38,10 +39,11 @@ def figure_block(record: dict[str, object]) -> str:
             f'<a href="{source}">Primary source</a>. '
         )
     else:
+        kind = html.escape(str(record.get("figure_kind", "Figure")))
         figure = html.escape(str(record["figure"]))
         page = record["pdf_page"]
         credit = (
-            f"<b>Figure {figure}.</b> {caption} "
+            f"<b>{kind} {figure}.</b> {caption} "
             f'<a href="{source}">Source paper</a>, PDF p. {page}. '
         )
     return (
@@ -55,6 +57,19 @@ def figure_block(record: dict[str, object]) -> str:
         "</sub></p>\n"
         f"<!-- /{marker} -->\n\n"
     )
+
+
+def figure_block(record: dict[str, object]) -> str:
+    block = single_figure_block(record)
+    marker = f"<!-- /architecture-figure:{record['index']} -->"
+    supplements = []
+    for figure in record.get("supplemental_figures", []):
+        supplemental = single_figure_block({**figure, "index": record["index"]})
+        supplemental = re.sub(
+            r"<!-- /?architecture-figure:[^>]+ -->\n?", "", supplemental
+        )
+        supplements.append(supplemental)
+    return block.replace(marker, "".join(supplements) + marker)
 
 
 def update_readme(records: list[dict[str, object]]) -> None:
@@ -129,7 +144,12 @@ def write_credits(records: list[dict[str, object]]) -> None:
         "| Entry | Source | Figure | Local file |",
         "| --- | --- | ---: | --- |",
     ]
-    for record in records:
+    credit_records = [
+        figure
+        for record in records
+        for figure in [record, *record.get("supplemental_figures", [])]
+    ]
+    for record in credit_records:
         if record["status"] != "extracted":
             continue
         title = str(record["title"]).replace("|", "\\|")
@@ -138,7 +158,7 @@ def write_credits(records: list[dict[str, object]]) -> None:
         figure = (
             "Official architecture diagram"
             if source_kind == "official-web"
-            else f"Fig. {record['figure']}, PDF p. {record['pdf_page']}"
+            else f"{record.get('figure_kind', 'Fig.')} {record['figure']}, PDF p. {record['pdf_page']}"
         )
         local = f"[{record['file']}]({record['file']})"
         lines.append(f"| {title} | {source} | {figure} | {local} |")
@@ -152,6 +172,8 @@ def verify_readme(records: list[dict[str, object]]) -> None:
         "## Important References", 1
     )[0]
     matches = list(re.finditer(r"(?m)^### \*\*(.+?)\*\*\s*$", architecture))
+    if len(matches) != len({match.group(1) for match in matches}):
+        raise RuntimeError("duplicate architecture panel titles")
     sections = {
         match.group(1): architecture[
             match.start() : matches[position + 1].start()
@@ -161,12 +183,20 @@ def verify_readme(records: list[dict[str, object]]) -> None:
         for position, match in enumerate(matches)
     }
     titles = [str(record["title"]) for record in records]
+    missing = set(sections) - set(titles)
+    if missing:
+        raise RuntimeError(
+            f"architecture panels without figure decisions: {sorted(missing)}"
+        )
     indices = [int(record["index"]) for record in records]
     slugs = [str(record["slug"]) for record in records]
     for name, values in (("title", titles), ("index", indices), ("slug", slugs)):
         if len(values) != len(set(values)):
             raise RuntimeError(f"duplicate figure manifest {name}")
+    seen_assets = set()
     for record in records:
+        if record["status"] not in {"extracted", "no-published-figure"}:
+            raise RuntimeError(f"unfinished figure decision: {record['title']}")
         title = str(record["title"])
         if title not in sections:
             raise RuntimeError(f"missing architecture panel for figure record: {title}")
@@ -177,10 +207,26 @@ def verify_readme(records: list[dict[str, object]]) -> None:
             raise RuntimeError(f"figure markers are not attached to {title}")
         if text.count(start_marker) != 1 or text.count(end_marker) != 1:
             raise RuntimeError(f"figure markers are duplicated for {title}")
-        if record["status"] == "extracted":
-            asset = ROOT / "assets" / "architectures" / str(record["file"])
-            if not asset.exists() or asset.stat().st_size < 10_000:
-                raise RuntimeError(f"missing or undersized architecture asset: {asset}")
+        for figure in [record, *record.get("supplemental_figures", [])]:
+            if figure["status"] not in {"extracted", "no-published-figure"}:
+                raise RuntimeError(f"unfinished figure decision: {figure['title']}")
+            if figure["status"] == "extracted":
+                asset = ROOT / "assets" / "architectures" / str(figure["file"])
+                if asset in seen_assets:
+                    raise RuntimeError(f"duplicate architecture asset: {asset}")
+                seen_assets.add(asset)
+                if not asset.exists() or asset.stat().st_size < 10_000:
+                    raise RuntimeError(
+                        f"missing or undersized architecture asset: {asset}"
+                    )
+                expected_hash = figure.get("asset_sha256")
+                if (
+                    expected_hash
+                    and hashlib.sha256(asset.read_bytes()).hexdigest() != expected_hash
+                ):
+                    raise RuntimeError(f"architecture asset checksum mismatch: {asset}")
+        if figure_block(record).strip() not in section:
+            raise RuntimeError(f"figure content is stale for {title}")
 
 
 def main() -> int:
@@ -198,7 +244,12 @@ def main() -> int:
         return 0
     update_readme(records)
     write_credits(records)
-    print(f"embedded {sum(r['status'] == 'extracted' for r in records)} figures")
+    image_count = sum(
+        figure["status"] == "extracted"
+        for record in records
+        for figure in [record, *record.get("supplemental_figures", [])]
+    )
+    print(f"embedded {image_count} figures across {len(records)} panels")
     print(
         f"documented {sum(r['status'] == 'no-published-figure' for r in records)} no-figure sources"
     )

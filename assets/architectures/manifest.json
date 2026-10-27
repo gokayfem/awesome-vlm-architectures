@@ -1640,7 +1640,41 @@
       "paper_caption": "",
       "display_caption": "MiniCPM-o 2.6 end-to-end omni-modal streaming architecture, using time-division multiplexing to combine visual, audio, and query streams in a shared backbone with streaming speech decoding.",
       "alt": "MiniCPM-o-2.6: A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming architecture: MiniCPM-o 2.6 end-to-end omni-modal streaming architecture, using time-division multiplexing to combine visual, audio, and query streams in a shared backbone with streaming speech decoding.",
-      "file": "minicpm-o-2-6-official-arch.png"
+      "file": "minicpm-o-2-6-official-arch.png",
+      "supplemental_figures": [
+        {
+          "index": 64,
+          "title": "MiniCPM-o 4.5",
+          "slug": "minicpm-o-4-5",
+          "status": "extracted",
+          "source_url": "https://arxiv.org/abs/2604.27393",
+          "arxiv_id": "2604.27393",
+          "pdf_page": 4,
+          "figure": "4",
+          "crop_override_pdf_points": [
+            105,
+            55,
+            507,
+            365
+          ],
+          "alt": "MiniCPM-o 4.5 architecture screenshot from its technical report",
+          "display_caption": "MiniCPM-o 4.5 architecture; a later release in this family.",
+          "file": "minicpm-o-4-5-supplement.png",
+          "crop_pdf_points": [
+            105.0,
+            55.0,
+            507.0,
+            365.0
+          ],
+          "image_size": [
+            1800,
+            1256
+          ],
+          "source_pdf_sha256": "29e0be3ce6b6181bd385c1de56c7f7f7b106a8a98ec250a64625a9ab281f5029",
+          "asset_sha256": "77231b1acfb60ca289bb444b8117cea4a4357bca6033697d4be3e8be76042578",
+          "visually_reviewed_on": "2026-10-27"
+        }
+      ]
     },
     {
       "index": 65,
@@ -1675,6 +1709,40 @@
         80,
         538,
         232
+      ],
+      "supplemental_figures": [
+        {
+          "index": 65,
+          "title": "Eagle 2.5",
+          "slug": "eagle-2-5",
+          "status": "extracted",
+          "source_url": "https://arxiv.org/abs/2504.15271",
+          "arxiv_id": "2504.15271",
+          "pdf_page": 4,
+          "figure": "2",
+          "crop_override_pdf_points": [
+            315,
+            80,
+            539,
+            196
+          ],
+          "alt": "Eagle 2.5 architecture screenshot from its technical report",
+          "display_caption": "Eagle 2.5 architecture; a later release in this family.",
+          "file": "eagle-2-5-supplement.png",
+          "crop_pdf_points": [
+            315.0,
+            80.0,
+            539.0,
+            196.0
+          ],
+          "image_size": [
+            1022,
+            520
+          ],
+          "source_pdf_sha256": "281119e779a37087fec3ab830d19876d9c9a20b03d6ad9169ee396d7cc6e6401",
+          "asset_sha256": "34517243d23dbfe62e197f46700f498c76c7d52bceecebb0dc175b0ecaa0989f",
+          "visually_reviewed_on": "2026-10-27"
+        }
       ]
     },
     {
@@ -2865,6 +2933,40 @@
       "image_size": [
         1800,
         1132
+      ],
+      "supplemental_figures": [
+        {
+          "index": 108,
+          "title": "MiniCPM-V 4.5",
+          "slug": "minicpm-v-4-5",
+          "status": "extracted",
+          "source_url": "https://arxiv.org/abs/2509.18154",
+          "arxiv_id": "2509.18154",
+          "pdf_page": 3,
+          "figure": "1",
+          "crop_override_pdf_points": [
+            105,
+            55,
+            507,
+            268
+          ],
+          "alt": "MiniCPM-V 4.5 architecture screenshot from its technical report",
+          "display_caption": "MiniCPM-V 4.5 architecture; a later release in this family.",
+          "file": "minicpm-v-4-5-supplement.png",
+          "crop_pdf_points": [
+            105.0,
+            55.0,
+            507.0,
+            268.0
+          ],
+          "image_size": [
+            1800,
+            879
+          ],
+          "source_pdf_sha256": "f2a65508089fcecf4cf3169806976265dc1f8174854eb18907203e412b2f8d04",
+          "asset_sha256": "badd9debd518fda86f512b77d22a8db1f6881486883564068ea971f351fe895a",
+          "visually_reviewed_on": "2026-10-27"
+        }
       ]
     },
     {
@@ -4167,6 +4269,1164 @@
         478,
         255
       ]
+    },
+    {
+      "index": 156,
+      "title": "DeepSeek-V4.1-Flash: Causal encoder-decoder multimodality with shared sparse KV memory",
+      "slug": "deepseek-v4-1-flash",
+      "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
+      "status": "extracted",
+      "arxiv_id": "deepseek-v41",
+      "pdf_page": 7,
+      "figure": "3",
+      "file": "156-deepseek-v4-1-flash.png",
+      "alt": "DeepSeek-V4.1-Flash architecture or training overview from its primary paper",
+      "display_caption": "A causal encoder-decoder MoE shares global KV memory across decoder layers, combining native vision with compressed sparse attention.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "source_kind": "official-pdf",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.44,
+        326.26
+      ],
+      "image_size": [
+        1800,
+        936
+      ],
+      "asset_sha256": "07bfa3bbe4820081a47780380ad34c4af56a2bf949937d70b86212e5d41e21c3",
+      "source_pdf_sha256": "ba68e2e40408125ae6d2f63a9a241b61c73910691c74ec1a2a7023c851eac08d",
+      "pdf_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/DeepSeek_V41_Tech_Report.pdf",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 157,
+      "title": "Nemotron 3.5 Super VL: Hybrid state-space MoE for long-context visual agents",
+      "slug": "nemotron-3-5-super-vl",
+      "source_url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf",
+      "status": "extracted",
+      "arxiv_id": "nemotron35",
+      "pdf_page": 13,
+      "figure": "4",
+      "file": "157-nemotron-3-5-super-vl.png",
+      "alt": "Nemotron 3.5 Super VL architecture or training overview from its primary paper",
+      "display_caption": "Visual-language post-training pipeline: teachers, text-trunk reinforcement learning, and multi-teacher on-policy distillation.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "source_kind": "official-pdf",
+      "crop_pdf_points": [
+        20.83,
+        75.0,
+        574.44,
+        273.95
+      ],
+      "image_size": [
+        1800,
+        674
+      ],
+      "asset_sha256": "3a90addb5a546fa64fecd1d74ca162e6f28685cc0cfb5cfce172427fbfba1f4c",
+      "crop_override_pdf_points": [
+        20.83,
+        75,
+        574.44,
+        273.95
+      ],
+      "source_pdf_sha256": "425d468015a34f91a8b4e3ce5831ddf664aa5abe669fcfce966832277ac0adf9",
+      "pdf_url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 158,
+      "title": "Nemotron 3.5 Parse: Compact visual-prefix decoding for structured documents",
+      "slug": "nemotron-3-5-parse",
+      "source_url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+      "status": "no-published-figure",
+      "note": "The October 17 model card describes C-RADIO, convolutional compression, and mBART in text; no model-specific architecture diagram or paper was found in the cited release."
+    },
+    {
+      "index": 159,
+      "title": "GLM-5.3-Flash: Native multimodal sparse and linear attention with mHC",
+      "slug": "glm-5-3-flash",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "status": "no-published-figure",
+      "note": "The cited GLM-5.3-Flash card publishes architecture text and benchmark plots, but no model-specific architecture figure. Its linked GLM-5 paper predates this architecture."
+    },
+    {
+      "index": 160,
+      "title": "Qwen3.8-Flash-Next: Sparse hybrid attention and off-accelerator n-gram memory",
+      "slug": "qwen3-8-flash-next",
+      "source_url": "https://arxiv.org/abs/2608.30320",
+      "status": "extracted",
+      "arxiv_id": "2608.30320",
+      "pdf_page": 2,
+      "figure": "1",
+      "file": "160-qwen3-8-flash-next.png",
+      "alt": "Qwen3.8-Flash-Next architecture or training overview from its primary paper",
+      "display_caption": "Gated DeltaNet and micro-block sparse attention combine with n-gram memory and widened residual streams for efficient multimodal inference.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        50.0,
+        574.44,
+        429.66
+      ],
+      "image_size": [
+        1800,
+        1838
+      ],
+      "asset_sha256": "5c43abbe707ba5f565f12120a5074f301ee00a13bee781af937f215c2ceaa21b",
+      "crop_override_pdf_points": [
+        20.83,
+        50,
+        574.44,
+        429.66
+      ],
+      "source_pdf_sha256": "17db868acaa0b86caaf89cd9516e0a92f79d7e161431e5e274b70a3123d60ef7",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 161,
+      "title": "SenseNova-U1 and U1.5: Native pixel-space unified understanding and generation",
+      "slug": "sensenova-u1-and-u1-5",
+      "source_url": "https://arxiv.org/abs/2609.11929",
+      "status": "extracted",
+      "arxiv_id": "2609.11929",
+      "pdf_page": 7,
+      "figure": "3",
+      "file": "161-sensenova-u1-and-u1-5.png",
+      "alt": "SenseNova-U1 and U1.5 architecture or training overview from its primary paper",
+      "display_caption": "A native mixture-of-transformers model unifies visual understanding and generation through lightweight pixel interfaces without a separate pretrained vision encoder or VAE.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        305.72
+      ],
+      "image_size": [
+        1800,
+        866
+      ],
+      "asset_sha256": "20c74c3e4928725383399c9c687cdce6ebf7a462f22fc26b489331131e5bfe12",
+      "source_pdf_sha256": "4a55b4f75e2c4d7ba245cf2f070efc1b993126c41cce559ac7b6a69a476a74aa",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 162,
+      "title": "LLaDA-UI: Block-diffusion reasoning and actions for GUI agents",
+      "slug": "llada-ui",
+      "source_url": "https://arxiv.org/abs/2609.13287",
+      "status": "extracted",
+      "arxiv_id": "2609.13287",
+      "pdf_page": 3,
+      "figure": "2",
+      "file": "162-llada-ui.png",
+      "alt": "LLaDA-UI architecture or training overview from its primary paper",
+      "display_caption": "A native-resolution visual encoder feeds a block-diffusion MoE that jointly predicts GUI reasoning and action tokens.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        382.07
+      ],
+      "image_size": [
+        1800,
+        1126
+      ],
+      "asset_sha256": "f94cebb9cb279ec59dc4529abcdfb045f4a576ca085f5e347e2f2afd3a2d61dc",
+      "source_pdf_sha256": "1991894f8546015349cdf460e5ae3a607da75360f2fd77004161d1869f1764bc",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 163,
+      "title": "MiMo-V2.6: Hybrid sliding-window omni encoders and multi-teacher distillation",
+      "slug": "mimo-v2-6",
+      "source_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf",
+      "status": "extracted",
+      "arxiv_id": "mimo-v26",
+      "pdf_page": 5,
+      "figure": "2",
+      "file": "163-mimo-v2-6.png",
+      "alt": "MiMo-V2.6 architecture or training overview from its primary paper",
+      "display_caption": "Visual and audio encoders feed a hybrid sliding-window MoE, with specialist reinforcement learning consolidated through multi-teacher on-policy distillation.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "source_kind": "official-pdf",
+      "crop_pdf_points": [
+        20.83,
+        32.0,
+        574.45,
+        312.57
+      ],
+      "image_size": [
+        1800,
+        874
+      ],
+      "asset_sha256": "0644e309cc0dfa6ca83d8ba8f65146f38882ad9105ac29dddaa0cd402552cc38",
+      "source_pdf_sha256": "fb81e6e083801b3358f084ed6be953dc23b0d2e434690f4541d5eae03e01e7af",
+      "pdf_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/resolve/main/MiMo_V2_6_technical_report.pdf",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 164,
+      "title": "Holo4: Visual computer-use agents trained across GUI and tool environments",
+      "slug": "holo4",
+      "source_url": "https://hcompany.ai/newsroom/holo4",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "file": "164-holo4.png",
+      "alt": "Holo4 task-factory training pipeline.",
+      "display_caption": "Holo4 task-factory training pipeline.",
+      "selection_note": "Published official model/training diagram, visually inspected.",
+      "image_size": [
+        1640,
+        1252
+      ],
+      "asset_sha256": "8747e2164a7c9fd3f909ffdd18ec0270ec6744dfbc11d50e89028d0ac48e4d70",
+      "visually_reviewed_on": "2026-10-27",
+      "source_image_url": "https://assets.hcompanyprod.fr/holo4/hf/holo4-training.png"
+    },
+    {
+      "index": 165,
+      "title": "North Micro Vision: Compact native-resolution vision with multilayer feature injection",
+      "slug": "north-micro-vision",
+      "source_url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "file": "165-north-micro-vision.png",
+      "alt": "Native-resolution vision encoder, multilayer projection, and local/global language decoder.",
+      "display_caption": "Native-resolution vision encoder, multilayer projection, and local/global language decoder.",
+      "selection_note": "Published official model/training diagram, visually inspected.",
+      "image_size": [
+        1800,
+        1031
+      ],
+      "asset_sha256": "505e78263cd05bbeab330fa27753dcd107643c7f744849248ca50304bccf3d3f",
+      "visually_reviewed_on": "2026-10-27",
+      "source_image_url": "https://cdn-uploads.huggingface.co/production/uploads/66d732effe6684fc16b12c28/hPsTh7FX3ONJXN3WfE0BX.png"
+    },
+    {
+      "index": 166,
+      "title": "NeoMME: Single-tower bidirectional multimodal embeddings from masked diffusion",
+      "slug": "neomme",
+      "source_url": "https://arxiv.org/abs/2609.01657",
+      "status": "extracted",
+      "arxiv_id": "2609.01657",
+      "pdf_page": 1,
+      "figure": "1",
+      "file": "166-neomme.png",
+      "alt": "NeoMME architecture or training overview from its primary paper",
+      "display_caption": "A single bidirectional transformer learns joint text-patch embeddings without a separate vision tower or causal language decoder.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        65.0,
+        488.0,
+        574.0,
+        704.0
+      ],
+      "image_size": [
+        1800,
+        753
+      ],
+      "asset_sha256": "164fc79e84941737962a306c5595fb410aa81bb10794e6c40435b73c9d520fb4",
+      "crop_override_pdf_points": [
+        65,
+        488,
+        574,
+        704
+      ],
+      "source_pdf_sha256": "7c80d67d09f05f7f18841b26e560d265c837e61ec853076a0e2e31852e2cb030",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 167,
+      "title": "LensVLM: Selective expansion of visually compressed text context",
+      "slug": "lensvlm",
+      "source_url": "https://arxiv.org/abs/2605.07019",
+      "status": "extracted",
+      "arxiv_id": "2605.07019",
+      "pdf_page": 3,
+      "figure": "2",
+      "file": "167-lensvlm.png",
+      "alt": "LensVLM architecture or training overview from its primary paper",
+      "display_caption": "A VLM reads rendered text pages and selectively expands relevant regions into higher-fidelity context through learned tool use.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        227.91
+      ],
+      "image_size": [
+        1800,
+        592
+      ],
+      "asset_sha256": "778fff95c9947f95bb5d20990290de82ab7d7982a19612af4386cb539b72038c",
+      "source_pdf_sha256": "f9ceb466a4a2876c0b3ee94cf517dab3bae2c78b720341b55a52d7e0f250f4ea",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 168,
+      "title": "DiffusionGemma: Cached causal context with a block-diffusion text decoder",
+      "slug": "diffusiongemma",
+      "source_url": "https://arxiv.org/abs/2608.00146",
+      "status": "extracted",
+      "arxiv_id": "2608.00146",
+      "pdf_page": 7,
+      "figure": "4",
+      "file": "168-diffusiongemma.png",
+      "display_caption": "Context encoding, iterative canvas denoising, and cached context extension.",
+      "alt": "DiffusionGemma context encoder and diffusion decoder generation pipeline",
+      "crop_pdf_points": [
+        20.83,
+        75.0,
+        574.44,
+        281.85
+      ],
+      "image_size": [
+        1800,
+        821
+      ],
+      "asset_sha256": "e07870f58c8a899ae365565c862116ad81ca807a4e18cddea811f6eb68d13b02",
+      "source_pdf_sha256": "9c8e0cef08271873ff0ce560e0c6149912ce5ce2fa056394de4feec205bb2064",
+      "crop_override_pdf_points": [
+        20.83,
+        75,
+        574.44,
+        281.85
+      ],
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 169,
+      "title": "Muse Glimmer: Dense visual agents with local-global attention and diffusion drafting",
+      "slug": "muse-glimmer",
+      "source_url": "https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/",
+      "status": "extracted",
+      "source_kind": "official-pdf",
+      "arxiv_id": "glimmer",
+      "pdf_url": "https://scontent.fist7-3.fna.fbcdn.net/v/t39.2365-6/855837971_1475273414665369_3935523351908243106_n.pdf?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=dC19Ko9IyxoQ7kNvwHQThhY&_nc_oc=Adp8JtQ_fieYhyfwYVmtoSz_3FTrt6V70YZu8K_zB-3guR6lofj6Kkup_QEXSjnXIOF1R48uc7qLjsFpcWRz6BEC&_nc_zt=14&_nc_ht=scontent.fist7-3.fna&_nc_gid=I3JGwCUJIUR3zYBnJXO2ew&_nc_ss=7020f&oh=00_AQOzUpUNw4Tq5aFbvpb1h5jd-vbx8dNSq5FuxCIoE6tyrw&oe=6AE62862",
+      "pdf_page": 2,
+      "figure": "1",
+      "figure_kind": "Table",
+      "file": "169-muse-glimmer.png",
+      "crop_override_pdf_points": [
+        120,
+        214,
+        492,
+        485
+      ],
+      "display_caption": "Architecture specifications from the paper; no system schematic is published.",
+      "alt": "Muse Glimmer architecture specification table captured from PDF page 2",
+      "crop_pdf_points": [
+        120.0,
+        214.0,
+        492.0,
+        485.0
+      ],
+      "image_size": [
+        1800,
+        1304
+      ],
+      "asset_sha256": "eac544d764b34eb0510ee9f987a9ec7db9757b5e1278edfb945ee95bb9afd90d",
+      "source_pdf_sha256": "1d694cbbd4a8ec703b4798da1ebd0be351a99d4d09aa1930cc296090ff8ca51c",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 170,
+      "title": "dots3-note-preview: Omnimodal MoE with a sparse vision expert encoder",
+      "slug": "dots3-note-preview",
+      "source_url": "https://studio.dots.ai/dots/dots3-en.html",
+      "status": "no-published-figure",
+      "note": "The official dots3 preview card and technical blog provide configuration details but no architecture diagram; the full technical report is still pending."
+    },
+    {
+      "index": 171,
+      "title": "Ling-3.0-flash-VL: Kimi Delta Attention and gated latent attention for vision",
+      "slug": "ling-3-0-flash-vl",
+      "source_url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+      "status": "no-published-figure",
+      "note": "The official Ling-3.0-flash-VL card provides architecture specifications but no architecture diagram. Its training-content disclosure is not an architecture paper."
+    },
+    {
+      "index": 172,
+      "title": "Taichu 5.0: Entropy-gated recurrent latent visual reasoning",
+      "slug": "taichu-5-0",
+      "source_url": "https://taichu-ai.github.io/ZDTaichu5.0-9B/",
+      "status": "no-published-figure",
+      "note": "The Taichu 5.0 project page and model card describe adaptive latent recurrence but provide examples and benchmarks rather than a published architecture diagram."
+    },
+    {
+      "index": 173,
+      "title": "Jina-OCR-v1: Compressed visual parsing with recursive multi-token drafting",
+      "slug": "jina-ocr-v1",
+      "source_url": "https://arxiv.org/abs/2609.03181",
+      "status": "extracted",
+      "arxiv_id": "2609.03181",
+      "pdf_page": 4,
+      "figure": "2",
+      "file": "173-jina-ocr-v1.png",
+      "alt": "Jina-OCR-v1 architecture or training overview from its primary paper",
+      "display_caption": "A DeepSeek-OCR-derived parser adds shared recursive speculative decoding and dense verifiable rewards for document structure.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        266.26
+      ],
+      "image_size": [
+        1800,
+        888
+      ],
+      "asset_sha256": "7efb239c76538c0bf1fcb6fe4ffe0bdb69145274877c4128b5a8d973635f2038",
+      "source_pdf_sha256": "d72210622babdc0d1ab5979c7c283ba05372004e08e696dfd9db2cd6ba2f40c7",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 174,
+      "title": "LFM2-VL and LFM2.5-VL: Short-convolution language backbones with native-resolution vision",
+      "slug": "lfm2-vl-and-lfm2-5-vl",
+      "source_url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "file": "174-lfm2-vl-and-lfm2-5-vl.png",
+      "alt": "LFM2-VL visual encoding, projection, and language backbone; the original family architecture.",
+      "display_caption": "LFM2-VL visual encoding, projection, and language backbone; the original family architecture.",
+      "selection_note": "Published official model/training diagram, visually inspected.",
+      "image_size": [
+        1800,
+        1291
+      ],
+      "asset_sha256": "ee3e49bb6382d84e9478163e6f9d8793a031089a0b02f9dcb20ffe878f0aad95",
+      "visually_reviewed_on": "2026-10-27",
+      "source_image_url": "https://aypchzzf9pftwuto.public.blob.vercel-storage.com/689bafd84898860cd0c654db_Architecture-5--5XJunWUmJkQ7I3W6VscLQysXoMOq51.png"
+    },
+    {
+      "index": 175,
+      "title": "Liquid d1: Single-pass multimodal decisions without text decoding",
+      "slug": "liquid-d1",
+      "source_url": "https://www.liquid.ai/blog/d1-open",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "source_image_url": "https://aypchzzf9pftwuto.public.blob.vercel-storage.com/d1-3b-y3MEyu3FPjYY339B6FLO8aw7Vd1Id8.png",
+      "file": "175-liquid-d1.png",
+      "alt": "Liquid d1-3B decision model architecture",
+      "display_caption": "d1-3B visual decision model: a generative backbone adapted to single-pass decisions.",
+      "image_size": [
+        1800,
+        1013
+      ],
+      "asset_sha256": "0b0d95cc0d3a0b9771adf327fd2dc46636f7a5fd4918d6d7e340e0a2b9e614d2",
+      "supplemental_figures": [
+        {
+          "index": 175,
+          "title": "Liquid d1-omni-600M",
+          "slug": "liquid-d1-omni-600m",
+          "status": "extracted",
+          "source_kind": "official-web",
+          "source_url": "https://www.liquid.ai/blog/d1-open",
+          "source_image_url": "https://aypchzzf9pftwuto.public.blob.vercel-storage.com/d1-omni-600m-68cbEAAfx9hKxvQwZVlBMAWBCYlApJ.png",
+          "file": "liquid-d1-omni-supplement.png",
+          "alt": "Liquid d1-omni-600M encoder and decision heads",
+          "display_caption": "d1-omni-600M decision model with visual and audio encoders; accepts text with either image or audio input.",
+          "image_size": [
+            1800,
+            1013
+          ],
+          "asset_sha256": "61a15a7517f038a7b4f331b33054825dfe01e81b8cf96a233754e2d4e394fc08",
+          "visually_reviewed_on": "2026-10-27"
+        }
+      ],
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 176,
+      "title": "Granite Vision 4.1: Window Q-Formers and dual DeepStack feature injection",
+      "slug": "granite-vision-4-1",
+      "source_url": "https://huggingface.co/ibm-granite/granite-vision-4.1-4b",
+      "status": "no-published-figure",
+      "note": "The Granite Vision 4.1 card describes Window Q-Former and dual DeepStack connections in text. The linked ChartNet dataset paper is not a model-specific architecture diagram."
+    },
+    {
+      "index": 177,
+      "title": "Fara1.5: Verified synthetic environments for screenshot-based computer use",
+      "slug": "fara1-5",
+      "source_url": "https://arxiv.org/abs/2606.20785",
+      "status": "extracted",
+      "arxiv_id": "2606.20785",
+      "pdf_page": 3,
+      "figure": "2",
+      "file": "177-fara1-5.png",
+      "alt": "Fara1.5 architecture or training overview from its primary paper",
+      "display_caption": "A visual-agent family learns computer interaction from verified trajectories generated in live and synthetic environments.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        65.0,
+        590.58,
+        374.32
+      ],
+      "image_size": [
+        1800,
+        1158
+      ],
+      "asset_sha256": "19d7794afdebd94880d889f396217b8e083874ac9bca66bac35fa4fee6854b05",
+      "crop_override_pdf_points": [
+        21.42,
+        65,
+        590.58,
+        374.32
+      ],
+      "source_pdf_sha256": "f8ee122561b8216a70d9555cad780f03db0a349ab4ca816d5f57ea9593f02004",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 178,
+      "title": "Audio-Visual Flamingo: Temporally aligned audio-video reasoning over long clips",
+      "slug": "audio-visual-flamingo",
+      "source_url": "https://arxiv.org/abs/2607.16107",
+      "status": "extracted",
+      "arxiv_id": "2607.16107",
+      "pdf_page": 4,
+      "figure": "2",
+      "file": "178-audio-visual-flamingo.png",
+      "alt": "Audio-Visual Flamingo architecture or training overview from its primary paper",
+      "display_caption": "Paper architecture, including an optional speech-generation path; the released checkpoint produces text only.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        53.0,
+        590.58,
+        430.11
+      ],
+      "image_size": [
+        1800,
+        1395
+      ],
+      "asset_sha256": "595f19df302c0330129901ba74c8b1c1354920817c9048073877e37eaa5df2bc",
+      "crop_override_pdf_points": [
+        21.42,
+        53,
+        590.58,
+        430.11
+      ],
+      "source_pdf_sha256": "168bfd11e349ecef06377bd5e0b1ce5d5c92a3cf6e69d4d8e90997c50f0f0074",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 179,
+      "title": "Molmo2: Open video understanding with pointing and object tracking",
+      "slug": "molmo2",
+      "source_url": "https://arxiv.org/abs/2601.10611",
+      "status": "extracted",
+      "arxiv_id": "2601.10611",
+      "pdf_page": 6,
+      "figure": "2",
+      "file": "179-molmo2.png",
+      "alt": "Molmo2 architecture or training overview from its primary paper",
+      "display_caption": "A grounded image-video model extends open multimodal training to temporal pointing, tracking, and multi-image reasoning.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        65.0,
+        65.0,
+        347.0,
+        279.0
+      ],
+      "image_size": [
+        1399,
+        1052
+      ],
+      "asset_sha256": "6f34a36f0e1b43302258d46a3f940dcdb373a4ff79afde6467f875f5378d3f26",
+      "crop_override_pdf_points": [
+        65,
+        65,
+        347,
+        279
+      ],
+      "source_pdf_sha256": "cd91ee503386ca16469381f560c229246fd6762bd992b4bc687601d6a25fe8fe",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 180,
+      "title": "Qwen3-Omni: Thinker-Talker MoE with streaming multicodebook speech",
+      "slug": "qwen3-omni",
+      "source_url": "https://arxiv.org/abs/2509.17765",
+      "status": "extracted",
+      "arxiv_id": "2509.17765",
+      "pdf_page": 3,
+      "figure": "2",
+      "file": "180-qwen3-omni.png",
+      "alt": "Qwen3-Omni architecture or training overview from its primary paper",
+      "display_caption": "A Thinker-Talker mixture-of-experts system performs multimodal perception and generates streaming text and speech.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        74.77,
+        574.44,
+        461.77
+      ],
+      "image_size": [
+        1800,
+        1835
+      ],
+      "asset_sha256": "29cd2ffe9864cac6e51a08b4cc17b721eb73a426b2fe1fd1023c7a3fba017d6b",
+      "source_pdf_sha256": "4608d7f5d0694dd09a66144dac921797e161331d92b5eef133615bec392ec928",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 181,
+      "title": "Mistral Large 3: Large sparse multimodal experts with an integrated visual encoder",
+      "slug": "mistral-large-3",
+      "source_url": "https://mistral.ai/news/mistral-3/",
+      "status": "no-published-figure",
+      "note": "The Mistral Large 3 release and model card disclose model configuration but no model-specific architecture figure; the Ministral 3 training figure belongs to a different family."
+    },
+    {
+      "index": 182,
+      "title": "Ministral 3: Dense multimodal backbones with compute-efficient training",
+      "slug": "ministral-3",
+      "source_url": "https://arxiv.org/abs/2601.08584",
+      "status": "extracted",
+      "arxiv_id": "2601.08584",
+      "pdf_page": 2,
+      "figure": "1",
+      "file": "182-ministral-3.png",
+      "alt": "Ministral 3 architecture or training overview from its primary paper",
+      "display_caption": "A family of compact dense decoders integrates visual perception across base, instruction, and reasoning variants.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        285.26
+      ],
+      "image_size": [
+        1800,
+        957
+      ],
+      "asset_sha256": "5f526113a51897b05dfcd7325647cdb905a6566eb496f99d51aae2ece09af318",
+      "source_pdf_sha256": "98cb4208c5c8d8246475dee31eab5c3681f4ec88fc4caa5a441d04007c2e5992",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 183,
+      "title": "Shieldstral: Policy-conditioned visual moderation in one forward pass",
+      "slug": "shieldstral",
+      "source_url": "https://arxiv.org/abs/2607.25857",
+      "status": "extracted",
+      "arxiv_id": "2607.25857",
+      "pdf_page": 2,
+      "figure": "1",
+      "file": "183-shieldstral.png",
+      "alt": "Shieldstral architecture or training overview from its primary paper",
+      "display_caption": "A small visual-language model scores compliance with a supplied natural-language policy without lengthy response generation.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        102.92,
+        590.58,
+        258.0
+      ],
+      "image_size": [
+        1736,
+        770
+      ],
+      "asset_sha256": "718f1cc935dc6d4393a9a9df7cbff36bcd41faec4a4c23c7465e67fb5612d4bd",
+      "source_pdf_sha256": "f0c148495ac18ede73a4db2a884f4ce8a9ff1221efdc1902d2b86e0b8a68c2d5",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 184,
+      "title": "Apertus 1.5: Early fusion of discrete visual and audio tokens",
+      "slug": "apertus-1-5",
+      "source_url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "file": "184-apertus-1-5.png",
+      "alt": "Apertus 1.5 continued-pretraining and post-training stages.",
+      "display_caption": "Apertus 1.5 continued-pretraining and post-training stages.",
+      "selection_note": "Published official model/training diagram, visually inspected.",
+      "image_size": [
+        1040,
+        534
+      ],
+      "asset_sha256": "a6bf7db70aec32f836818b41859d86599debe6dc00baac19180fe6e934196125",
+      "visually_reviewed_on": "2026-10-27",
+      "source_image_url": "https://cdn-uploads.huggingface.co/production/uploads/650ed7adf141bc34f91a12ae/Xi58nSrPTd5_ASGNIg60g.png"
+    },
+    {
+      "index": 185,
+      "title": "GroundAnything: Autoregressive and block-diffusion spatial grounding",
+      "slug": "groundanything",
+      "source_url": "https://arxiv.org/abs/2609.39600",
+      "status": "extracted",
+      "arxiv_id": "2609.39600",
+      "pdf_page": 6,
+      "figure": "2",
+      "file": "185-groundanything.png",
+      "alt": "GroundAnything architecture or training overview from its primary paper",
+      "display_caption": "A shared visual-language backbone supports separate autoregressive and parallel diffusion checkpoints for spatial predictions.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        234.61,
+        590.58,
+        387.28
+      ],
+      "image_size": [
+        1800,
+        564
+      ],
+      "asset_sha256": "d789d5f5459192c0a4aa4a0027307a22315c3b338bcc8fb244b52191d1eff46c",
+      "source_pdf_sha256": "c3d7114b3a0d0915186e9a950cee0c33282c96345bd238b4c1813d2afdaacaa9",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 186,
+      "title": "Qwen3.5-Omni: Hybrid-attention Thinker-Talker and adaptive speech alignment",
+      "slug": "qwen3-5-omni",
+      "source_url": "https://arxiv.org/abs/2604.15804",
+      "status": "extracted",
+      "arxiv_id": "2604.15804",
+      "pdf_page": 3,
+      "figure": "2",
+      "file": "186-qwen3-5-omni.png",
+      "alt": "Qwen3.5-Omni architecture or training overview from its primary paper",
+      "display_caption": "A hybrid-attention multimodal MoE couples long-context perception with adaptive text-speech alignment for streaming conversation.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        55.0,
+        574.44,
+        381.2
+      ],
+      "image_size": [
+        1800,
+        1383
+      ],
+      "asset_sha256": "f7a043819cf4e95127041797350b7da237bb17058238b2fd6cd187283556f25e",
+      "crop_override_pdf_points": [
+        20.83,
+        55,
+        574.44,
+        381.2
+      ],
+      "source_pdf_sha256": "ddd68086e90fa908d65731effdc345a1ac2d9a0c8ef8a15fb73463de95bcf364",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 187,
+      "title": "Qwen3.8-Omni-Flash: Native omni agents with spatial audio and sparse long-context reasoning",
+      "slug": "qwen3-8-omni-flash",
+      "source_url": "https://arxiv.org/abs/2609.25611",
+      "status": "extracted",
+      "arxiv_id": "2609.25611",
+      "pdf_page": 4,
+      "figure": "2",
+      "file": "187-qwen3-8-omni-flash.png",
+      "alt": "Qwen3.8-Omni-Flash architecture or training overview from its primary paper",
+      "display_caption": "AuT audio encoder and its local attention layout; this is a component diagram, not the full multimodal system.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        65.0,
+        574.44,
+        373.07
+      ],
+      "image_size": [
+        1433,
+        1306
+      ],
+      "asset_sha256": "cf49f5841f25d6a62824e4b51b85943014b6d12e15e4f37aca6321c448ab59aa",
+      "crop_override_pdf_points": [
+        20.83,
+        65,
+        574.44,
+        373.07
+      ],
+      "source_pdf_sha256": "11baf36092e2bf9c8a828ad5c20d797061a979fe990892a49cb8338ee8fd88a5",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 188,
+      "title": "Muse Spark Open: Sparse multimodal experts with a shared perception encoder",
+      "slug": "muse-spark-open",
+      "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/main/README.md",
+      "status": "no-published-figure",
+      "note": "The Muse Spark Open model card provides architecture specifications but no model-specific diagram. The cited evaluation report is not an architecture paper."
+    },
+    {
+      "index": 189,
+      "title": "Step 5 Preview: Deep sparse experts with gated sliding-window and sparse GQA",
+      "slug": "step-5-preview",
+      "source_url": "https://platform.stepfun.com/blog/inside-step-5-preview",
+      "status": "extracted",
+      "source_kind": "official-web",
+      "file": "189-step-5-preview.png",
+      "alt": "Sparse GQA indexing and selected-token attention in Step 5 Preview.",
+      "display_caption": "Sparse GQA indexing and selected-token attention in Step 5 Preview.",
+      "selection_note": "Published official model/training diagram, visually inspected.",
+      "image_size": [
+        1280,
+        700
+      ],
+      "asset_sha256": "8dc65411c75c0fd46e7c091060ca733a35821ee7a3f69279fda90f9e10cdd375",
+      "visually_reviewed_on": "2026-10-27",
+      "source_image_url": "https://platform.stepfun.com/blog/step5-sparse-gqa.png"
+    },
+    {
+      "index": 190,
+      "title": "LightOnOCR-2 and LightOnOCR-3: Compact end-to-end OCR with document grounding",
+      "slug": "lightonocr-2-and-lightonocr-3",
+      "source_url": "https://arxiv.org/abs/2601.14251",
+      "status": "extracted",
+      "arxiv_id": "2601.14251",
+      "pdf_page": 3,
+      "figure": "1",
+      "file": "190-lightonocr-2-and-lightonocr-3.png",
+      "alt": "LightOnOCR-2 and LightOnOCR-3 architecture or training overview from its primary paper",
+      "display_caption": "A compact page-to-text architecture adds localized document elements, chart extraction, and verification-based training.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        185.0,
+        70.0,
+        430.0,
+        430.0
+      ],
+      "image_size": [
+        1190,
+        1798
+      ],
+      "asset_sha256": "51aee2c7e55b95ccadbf68f86ece0657522886f08dd935624d18d072d2a4f346",
+      "crop_override_pdf_points": [
+        185,
+        70,
+        430,
+        430
+      ],
+      "source_pdf_sha256": "00f9ddddbf236d95b48a61240e60dd7a723052f20d27e1ff89fa8c4a1ef35c9c",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 191,
+      "title": "Qwen-Drive-1.0: Shared visual reasoning with external 3D perception and planning",
+      "slug": "qwen-drive-1-0",
+      "source_url": "https://arxiv.org/abs/2609.00111",
+      "status": "extracted",
+      "arxiv_id": "2609.00111",
+      "pdf_page": 3,
+      "figure": "2",
+      "file": "191-qwen-drive-1-0.png",
+      "alt": "Qwen-Drive-1.0 architecture or training overview from its primary paper",
+      "display_caption": "A shared VLM supports visual questions, explicit 3D perception, and flow-matching trajectory planning through external heads.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        60.0,
+        574.44,
+        296.72
+      ],
+      "image_size": [
+        1800,
+        874
+      ],
+      "asset_sha256": "db76265fe49151b7af15c77e075aefdc974dad6f0ce481555ebd77d73f6fe165",
+      "crop_override_pdf_points": [
+        20.83,
+        60,
+        574.44,
+        296.72
+      ],
+      "source_pdf_sha256": "b53c66b6797c053dc6238944ec38080acc9efd7ef9712395b85e083573fbc4aa",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 192,
+      "title": "Intern-S1: Scientific multimodality with dynamic tokenization and expert reasoning",
+      "slug": "intern-s1",
+      "source_url": "https://arxiv.org/abs/2508.15763",
+      "status": "extracted",
+      "arxiv_id": "2508.15763",
+      "pdf_page": 4,
+      "figure": "3",
+      "file": "192-intern-s1.png",
+      "alt": "Intern-S1 architecture or training overview from its primary paper",
+      "display_caption": "A scientific MoE connects visual and time-series encoders with domain-adaptive tokenization for symbolic scientific inputs.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        65.0,
+        590.58,
+        289.41
+      ],
+      "image_size": [
+        1779,
+        898
+      ],
+      "asset_sha256": "324d3cd457cef0841f25afcb059331110d6a457be2a8dc152e51d027d5e062cf",
+      "crop_override_pdf_points": [
+        21.42,
+        65,
+        590.58,
+        289.41
+      ],
+      "source_pdf_sha256": "08b812d19d83c83dc351078c346828ab7ebb812208fa54db990eaed954195fd0",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 193,
+      "title": "PerceptionLM: Open data and training for detailed image-video understanding",
+      "slug": "perceptionlm",
+      "source_url": "https://arxiv.org/abs/2504.13180",
+      "status": "extracted",
+      "arxiv_id": "2504.13180",
+      "pdf_page": 2,
+      "figure": "1",
+      "file": "193-perceptionlm.png",
+      "alt": "PerceptionLM architecture or training overview from its primary paper",
+      "display_caption": "PerceptionLM model and data overview, linking the visual encoder and language model to annotation and video-data pipelines.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        158.74
+      ],
+      "image_size": [
+        1800,
+        393
+      ],
+      "asset_sha256": "b29542cdfec52e7579f4b90a04b2c9b26c5dd21aa8e7776ae0a4f65553de826b",
+      "source_pdf_sha256": "af62f17abd55e038860539940b41ca082becb250dbdc5d3ab8bd1db75f2ce130",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 194,
+      "title": "Perception Encoder: Contrastive visual pretraining with aligned language and spatial features",
+      "slug": "perception-encoder",
+      "source_url": "https://arxiv.org/abs/2504.13181",
+      "status": "extracted",
+      "arxiv_id": "2504.13181",
+      "pdf_page": 2,
+      "figure": "1",
+      "file": "194-perception-encoder.png",
+      "alt": "Perception Encoder architecture or training overview from its primary paper",
+      "display_caption": "A contrastively pretrained encoder family adapts shared visual representations for image-video retrieval, language models, and dense spatial tasks.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        167.83
+      ],
+      "image_size": [
+        1800,
+        405
+      ],
+      "asset_sha256": "4031e3b3b56ead7adec3785e277438ab73e8bc43ed90df62082ad673c7218da8",
+      "source_pdf_sha256": "6db3c34bd289f15007c6883848767b406cbda0dd84638bc948dbc05b86dda37d",
+      "visually_reviewed_on": "2026-10-27",
+      "supplemental_figures": [
+        {
+          "index": 194,
+          "title": "Perception Encoder Audiovisual",
+          "slug": "perception-encoder-av",
+          "status": "extracted",
+          "source_url": "https://arxiv.org/abs/2512.19687",
+          "arxiv_id": "2512.19687",
+          "pdf_page": 3,
+          "figure": "2",
+          "crop_override_pdf_points": [
+            65,
+            55,
+            548,
+            214
+          ],
+          "file": "perception-encoder-av-supplement.png",
+          "alt": "Perception Encoder Audiovisual architecture and contrastive alignment pairs",
+          "display_caption": "PE-AV audio, frame, video, fusion, and text encoders with cross-modal contrastive objectives.",
+          "crop_pdf_points": [
+            65.0,
+            55.0,
+            548.0,
+            214.0
+          ],
+          "image_size": [
+            1446,
+            768
+          ],
+          "asset_sha256": "3c10de6490494cf254327cc211d965f0bf9015ae21a0d7ddaa713421e14c8162",
+          "source_pdf_sha256": "e3f717d0c8c1111cb6c8b07e24390efdf936913d19d0cae3e1967b98402842fd",
+          "visually_reviewed_on": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "index": 195,
+      "title": "Show-o2: Unified text prediction and continuous visual flow matching",
+      "slug": "show-o2",
+      "source_url": "https://arxiv.org/abs/2506.15564",
+      "status": "extracted",
+      "arxiv_id": "2506.15564",
+      "pdf_page": 4,
+      "figure": "1",
+      "file": "195-show-o2.png",
+      "alt": "Show-o2 architecture or training overview from its primary paper",
+      "display_caption": "A dual-path visual representation combines autoregressive text modeling with flow matching in a shared multimodal transformer.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        103.0,
+        72.0,
+        510.0,
+        327.0
+      ],
+      "image_size": [
+        1800,
+        1144
+      ],
+      "asset_sha256": "41a5623e58902436f56a1c8ce76875983902186bbe27e01f801e0cade716fc7b",
+      "crop_override_pdf_points": [
+        103,
+        72,
+        510,
+        327
+      ],
+      "source_pdf_sha256": "081494e8e7aea985cf943c04f46ae2405eec16acfe15ef7e89b95f346a43ccc4",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 196,
+      "title": "Emu3.5: Native multimodal next-token learning with diffusion adaptation",
+      "slug": "emu3-5",
+      "source_url": "https://arxiv.org/abs/2510.26583",
+      "status": "extracted",
+      "arxiv_id": "2510.26583",
+      "pdf_page": 5,
+      "figure": "3",
+      "file": "196-emu3-5.png",
+      "alt": "Emu3.5 architecture or training overview from its primary paper",
+      "display_caption": "A native discrete-token model learns interleaved visual-language sequences and explores parallel decoding through diffusion adaptation.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        21.42,
+        32.0,
+        590.58,
+        236.85
+      ],
+      "image_size": [
+        1800,
+        653
+      ],
+      "asset_sha256": "2d489f87700496c6d1c467afba1b292dff96d6b561aaebf60d658641838128fd",
+      "source_pdf_sha256": "68c26d4edc2591f12111c2daca0e2f8edc8c09afe769bae3acd4ea846e004365",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 197,
+      "title": "Moondream 3: Compact sparse visual experts with learned attention temperature",
+      "slug": "moondream-3",
+      "source_url": "https://moondream.ai/blog/moondream-3-preview",
+      "status": "no-published-figure",
+      "note": "The Moondream 3 release notes and model card describe the sparse decoder and visual pathway but provide no model-specific architecture diagram or technical paper."
+    },
+    {
+      "index": 198,
+      "title": "OmniVinci: Joint audio-visual alignment with grouped temporal embeddings",
+      "slug": "omnivinci",
+      "source_url": "https://arxiv.org/abs/2510.15870",
+      "status": "extracted",
+      "arxiv_id": "2510.15870",
+      "pdf_page": 2,
+      "figure": "2",
+      "file": "198-omnivinci.png",
+      "alt": "OmniVinci architecture or training overview from its primary paper",
+      "display_caption": "Joint audio-video perception and text reasoning; the illustrated frozen TTS component is external speech synthesis.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        75.0,
+        574.44,
+        303.66
+      ],
+      "image_size": [
+        1800,
+        798
+      ],
+      "asset_sha256": "0640308b5137c8b9322992b6e9b4b10703d144f46ddaabf754b807247dc6ed9c",
+      "crop_override_pdf_points": [
+        20.83,
+        75,
+        574.44,
+        303.66
+      ],
+      "source_pdf_sha256": "cecac016360d1bee7e1b8abf6c9c93ba9525ce0b6f5bc3205e331188957571a6",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 199,
+      "title": "Nemotron Nano V2 VL: Hybrid state-space visual reasoning with efficient video sampling",
+      "slug": "nemotron-nano-v2-vl",
+      "source_url": "https://arxiv.org/abs/2511.03929",
+      "status": "extracted",
+      "arxiv_id": "2511.03929",
+      "pdf_page": 2,
+      "figure": "1",
+      "file": "199-nemotron-nano-v2-vl.png",
+      "alt": "Nemotron Nano V2 VL architecture or training overview from its primary paper",
+      "display_caption": "A dense hybrid Mamba-Transformer language backbone combines C-RADIO perception with token-efficient video handling.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        350.0,
+        574.44,
+        639.85
+      ],
+      "image_size": [
+        1689,
+        1256
+      ],
+      "asset_sha256": "241b71ad589423828b841859d04108bc69faba757d3663e787d8cfca9746eb7b",
+      "crop_override_pdf_points": [
+        20.83,
+        350,
+        574.44,
+        639.85
+      ],
+      "source_pdf_sha256": "2595647d16fe398dcf0e845174c9fc6336f1c18ff6fa64881db1f173463c6822",
+      "visually_reviewed_on": "2026-10-27"
+    },
+    {
+      "index": 200,
+      "title": "Nemotron 3 Nano Omni: Hybrid MoE with dynamic visual resolution and native audio",
+      "slug": "nemotron-3-nano-omni",
+      "source_url": "https://arxiv.org/abs/2604.24954",
+      "status": "extracted",
+      "arxiv_id": "2604.24954",
+      "pdf_page": 3,
+      "figure": "1",
+      "file": "200-nemotron-3-nano-omni.png",
+      "alt": "Nemotron 3 Nano Omni architecture or training overview from its primary paper",
+      "display_caption": "A hybrid Mamba-Transformer MoE adds native audio and temporal visual compression to efficient multimodal reasoning.",
+      "selection_note": "Primary-paper architecture, training, or representation overview; rendered from PDF and visually checked.",
+      "crop_pdf_points": [
+        20.83,
+        75.0,
+        574.44,
+        295.66
+      ],
+      "image_size": [
+        1678,
+        1045
+      ],
+      "asset_sha256": "a3eb4f3ee5592804a80bc76ec7d9e417782a7bf3f5e0b4bb3859986a08e4371d",
+      "crop_override_pdf_points": [
+        20.83,
+        75,
+        574.44,
+        295.66
+      ],
+      "source_pdf_sha256": "dd00e605fd69e3e45b4143f147a95649e9f47a52fb983313e1d1bd212fcd3f5a",
+      "visually_reviewed_on": "2026-10-27"
     }
   ]
 }
