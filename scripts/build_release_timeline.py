@@ -295,7 +295,7 @@ AUDITED_RELEASES_BY_LABEL = {
 
 # Preserve the hand-edited concise descriptions from the original timeline.
 CONTRIBUTION_OVERRIDES = {
-    "MODUS": "Decoder-only any-to-any modeling without modality-specific heads or losses",
+    "MODUS": "Shared decoder context with autoregressive and flow-matching modality experts",
     "Argus-Unified": "Hybrid continuous and discrete visual tokens for economical understanding and generation",
     "Kimi K3": "Kimi Delta Attention, Attention Residuals, and extremely sparse LatentMoE routing",
     "Mage-VL": "Codec-native selective video tokenization with a proactive event gate",

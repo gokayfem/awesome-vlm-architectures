@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import io
 import json
 import math
 import re
@@ -25,7 +27,7 @@ RENDER_DPI = 360
 MAX_WIDTH = 1800
 
 
-def ensure_pdf(arxiv_id: str) -> Path:
+def ensure_pdf(arxiv_id: str, pdf_url: str | None = None) -> Path:
     """Return a cached primary-source PDF, downloading it when necessary."""
     PDF_DIR.mkdir(parents=True, exist_ok=True)
     pdf = PDF_DIR / f"{arxiv_id}.pdf"
@@ -33,7 +35,7 @@ def ensure_pdf(arxiv_id: str) -> Path:
         return pdf
     temporary = pdf.with_suffix(".pdf.part")
     request = urllib.request.Request(
-        f"https://arxiv.org/pdf/{arxiv_id}",
+        pdf_url or f"https://arxiv.org/pdf/{arxiv_id}",
         headers={"User-Agent": "awesome-vlm-architectures/figure-extractor"},
     )
     with urllib.request.urlopen(request, timeout=90) as response:
@@ -130,19 +132,38 @@ def trim_white(image: Image.Image, padding: int = 18) -> Image.Image:
 
 
 def extract(record: dict[str, object]) -> Path:
+    if record.get("source_kind") == "official-web":
+        request = urllib.request.Request(
+            str(record["source_image_url"]),
+            headers={"User-Agent": "awesome-vlm-architectures/figure-extractor"},
+        )
+        with urllib.request.urlopen(request, timeout=90) as response:
+            image = Image.open(io.BytesIO(response.read())).convert("RGB")
+        image.thumbnail((MAX_WIDTH, 2400), Image.Resampling.LANCZOS)
+        destination = OUTPUT_DIR / str(record["file"])
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        image.save(destination, format="PNG", optimize=True)
+        record["image_size"] = list(image.size)
+        record["asset_sha256"] = hashlib.sha256(destination.read_bytes()).hexdigest()
+        return destination
     arxiv_id = str(record["arxiv_id"])
     page_number = int(record["pdf_page"])
     figure = str(record["figure"])
-    pdf = ensure_pdf(arxiv_id)
+    pdf = ensure_pdf(arxiv_id, record.get("pdf_url"))
     document = fitz.open(pdf)
     if not 1 <= page_number <= len(document):
         raise ValueError(
             f"invalid page {page_number} for {arxiv_id} ({len(document)} pages)"
         )
     page = document[page_number - 1]
-    caption_rect, caption_text = find_caption_block(page, figure)
     override = record.get("crop_override_pdf_points")
-    clip = fitz.Rect(override) if override else initial_clip(page, caption_rect)
+    if record.get("figure_kind") == "Table":
+        if not override:
+            raise ValueError("table screenshots require a reviewed explicit crop")
+        clip = fitz.Rect(override)
+    else:
+        caption_rect, _ = find_caption_block(page, figure)
+        clip = fitz.Rect(override) if override else initial_clip(page, caption_rect)
     zoom = RENDER_DPI / 72
     pixmap = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), clip=clip, alpha=False)
     image = Image.frombytes("RGB", (pixmap.width, pixmap.height), pixmap.samples)
@@ -153,9 +174,11 @@ def extract(record: dict[str, object]) -> Path:
     destination = OUTPUT_DIR / str(record["file"])
     destination.parent.mkdir(parents=True, exist_ok=True)
     image.save(destination, format="PNG", optimize=True, compress_level=9)
-    record["extracted_caption"] = caption_text
+    # Keep short authored captions in the manifest, not full paper passages.
     record["crop_pdf_points"] = [round(value, 2) for value in clip]
     record["image_size"] = [image.width, image.height]
+    record["asset_sha256"] = hashlib.sha256(destination.read_bytes()).hexdigest()
+    record["source_pdf_sha256"] = hashlib.sha256(pdf.read_bytes()).hexdigest()
     return destination
 
 
@@ -180,7 +203,12 @@ def make_contact_sheet(records: list[dict[str, object]], group: int) -> Path:
             + (cell_height - 48 - image.height) // 2
         )
         sheet.paste(image, (x, y))
-        label = f"{record['index']:02} {record['slug']} - Fig {record['figure']} p{record['pdf_page']}"
+        provenance = (
+            "Official diagram"
+            if record.get("source_kind") == "official-web"
+            else f"{record.get('figure_kind', 'Fig')} {record['figure']} p{record['pdf_page']}"
+        )
+        label = f"{record['index']:02} {record['slug']} - {provenance}"
         draw.text(
             (
                 (position % columns) * thumb_width + 10,
@@ -221,8 +249,13 @@ def main() -> int:
         override = overrides.get(str(record["index"]))
         if override:
             record["crop_override_pdf_points"] = override
+    records = [
+        figure
+        for record in data["figures"]
+        for figure in [record, *record.get("supplemental_figures", [])]
+    ]
     failures = []
-    for record in data["figures"]:
+    for record in records:
         allowed_statuses = {"selected"} if args.new_only else {"selected", "extracted"}
         if args.indices and int(record["index"]) not in args.indices:
             continue
@@ -241,9 +274,9 @@ def main() -> int:
         json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     if args.contacts:
-        count = sum(record.get("status") == "extracted" for record in data["figures"])
+        count = sum(record.get("status") == "extracted" for record in records)
         for group in range(1, math.ceil(count / 12) + 1):
-            print(make_contact_sheet(data["figures"], group).relative_to(ROOT))
+            print(make_contact_sheet(records, group).relative_to(ROOT))
     if failures:
         print(f"{len(failures)} extraction failure(s): {failures}")
     return 1 if failures else 0
